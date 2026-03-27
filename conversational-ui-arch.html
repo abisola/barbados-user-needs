@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GovTech Barbados – Chat-Based Service Delivery Platform Architecture</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #f8fafc;
+    color: #1e293b;
+    padding: 40px;
+    min-height: 100vh;
+  }
+
+  .diagram-wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .diagram-header {
+    margin-bottom: 40px;
+  }
+
+  .diagram-header h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #0f172a;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+  }
+
+  .diagram-header p {
+    font-size: 14px;
+    color: #64748b;
+    margin-top: 6px;
+    max-width: 65ch;
+    line-height: 1.5;
+  }
+
+  svg {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Layer group styling */
+  .layer-group rect.layer-bg {
+    rx: 12;
+    ry: 12;
+  }
+
+  .layer-label {
+    font-family: 'Inter', system-ui, sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.03em;
+  }
+
+  .layer-sublabel {
+    font-family: 'Inter', system-ui, sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    fill: #64748b;
+  }
+
+  .component-box rect {
+    rx: 8;
+    ry: 8;
+    stroke-width: 1;
+  }
+
+  .component-label {
+    font-family: 'Inter', system-ui, sans-serif;
+    font-weight: 500;
+    font-size: 11px;
+  }
+
+  .component-sublabel {
+    font-family: 'Inter', system-ui, sans-serif;
+    font-weight: 400;
+    font-size: 9.5px;
+    fill: #94a3b8;
+  }
+
+  .connection-label {
+    font-family: 'Inter', system-ui, sans-serif;
+    font-weight: 500;
+    font-size: 9.5px;
+    fill: #64748b;
+  }
+
+  .phase-badge {
+    font-family: 'Inter', system-ui, sans-serif;
+    font-weight: 600;
+    font-size: 9px;
+    letter-spacing: 0.05em;
+  }
+
+  .icon-text {
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 16px;
+  }
+
+  /* Legend */
+  .legend {
+    display: flex;
+    gap: 24px;
+    margin-top: 24px;
+    flex-wrap: wrap;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    color: #64748b;
+  }
+
+  .legend-swatch {
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    border: 1px solid rgba(0,0,0,0.08);
+  }
+</style>
+</head>
+<body>
+<div class="diagram-wrapper">
+  <div class="diagram-header">
+    <h1>Chat-Based Government Service Delivery – Platform Architecture</h1>
+    <p>Eight-layer platform stack for GovTech Barbados conversational interface. Lower layers constrain upper layers – weaknesses in foundations limit what channels can deliver.</p>
+  </div>
+
+  <svg viewBox="0 0 1560 1050" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <!-- Arrow markers -->
+      <marker id="arrow-grey" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+        <path d="M0,0 L8,3 L0,6" fill="none" stroke="#94a3b8" stroke-width="1.2"/>
+      </marker>
+      <marker id="arrow-blue" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+        <path d="M0,0 L8,3 L0,6" fill="none" stroke="#3b82f6" stroke-width="1.2"/>
+      </marker>
+      <marker id="arrow-amber" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+        <path d="M0,0 L8,3 L0,6" fill="none" stroke="#d97706" stroke-width="1.2"/>
+      </marker>
+      <marker id="arrow-emerald" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+        <path d="M0,0 L8,3 L0,6" fill="none" stroke="#059669" stroke-width="1.2"/>
+      </marker>
+      <marker id="arrow-violet" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+        <path d="M0,0 L8,3 L0,6" fill="none" stroke="#7c3aed" stroke-width="1.2"/>
+      </marker>
+      <marker id="arrow-rose" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+        <path d="M0,0 L8,3 L0,6" fill="none" stroke="#e11d48" stroke-width="1.2"/>
+      </marker>
+
+      <!-- Subtle grid pattern -->
+      <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+        <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#e2e8f0" stroke-width="0.3"/>
+      </pattern>
+    </defs>
+
+    <!-- Background -->
+    <rect width="1560" height="1050" fill="#f8fafc" rx="0"/>
+    <rect width="1560" height="1050" fill="url(#grid)" opacity="0.5"/>
+
+    <!-- ============================================= -->
+    <!-- CITIZENS (top) -->
+    <!-- ============================================= -->
+    <g transform="translate(530, 12)">
+      <!-- Person icons -->
+      <g transform="translate(0, 0)">
+        <circle cx="20" cy="12" r="10" fill="#e2e8f0" stroke="#94a3b8" stroke-width="1"/>
+        <text x="20" y="16" text-anchor="middle" class="icon-text">👤</text>
+        <text x="20" y="38" text-anchor="middle" class="component-label" fill="#475569">Desktop</text>
+      </g>
+      <g transform="translate(80, 0)">
+        <circle cx="20" cy="12" r="10" fill="#e2e8f0" stroke="#94a3b8" stroke-width="1"/>
+        <text x="20" y="16" text-anchor="middle" class="icon-text">📱</text>
+        <text x="20" y="38" text-anchor="middle" class="component-label" fill="#475569">Mobile</text>
+      </g>
+      <g transform="translate(160, 0)">
+        <circle cx="20" cy="12" r="10" fill="#e2e8f0" stroke="#94a3b8" stroke-width="1"/>
+        <text x="20" y="16" text-anchor="middle" class="icon-text">📞</text>
+        <text x="20" y="38" text-anchor="middle" class="component-label" fill="#475569">Phone</text>
+      </g>
+      <g transform="translate(240, 0)">
+        <circle cx="20" cy="12" r="10" fill="#e2e8f0" stroke="#94a3b8" stroke-width="1"/>
+        <text x="20" y="16" text-anchor="middle" class="icon-text">🏢</text>
+        <text x="20" y="38" text-anchor="middle" class="component-label" fill="#475569">In-person</text>
+      </g>
+      <text x="130" y="58" text-anchor="middle" class="layer-sublabel" style="font-size:10px; fill:#94a3b8;">CITIZENS OF BARBADOS</text>
+    </g>
+
+    <!-- Connection: Citizens to Channels -->
+    <line x1="660" y1="68" x2="660" y2="90" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+
+    <!-- ============================================= -->
+    <!-- LAYER 6: CHANNELS AND FRONT-END -->
+    <!-- ============================================= -->
+    <g class="layer-group" transform="translate(340, 90)">
+      <rect class="layer-bg" x="0" y="0" width="640" height="120" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1"/>
+      <!-- Layer badge -->
+      <rect x="12" y="-10" width="210" height="22" rx="4" fill="#3b82f6"/>
+      <text x="22" y="6" class="phase-badge" fill="white">LAYER 6 · CHANNELS &amp; FRONT-END</text>
+
+      <!-- Components -->
+      <g transform="translate(20, 28)">
+        <rect x="0" y="0" width="108" height="72" fill="white" stroke="#bfdbfe" stroke-width="1" rx="8"/>
+        <text x="54" y="20" text-anchor="middle" class="icon-text">🌐</text>
+        <text x="54" y="38" text-anchor="middle" class="component-label" fill="#1e40af">Web Chat</text>
+        <text x="54" y="52" text-anchor="middle" class="component-sublabel">alpha.gov.bb</text>
+        <rect x="68" y="58" width="38" height="14" rx="3" fill="#dbeafe"/>
+        <text x="87" y="68" text-anchor="middle" style="font-size:8px; font-weight:600; fill:#2563eb;">Ph 1</text>
+      </g>
+      <g transform="translate(140, 28)">
+        <rect x="0" y="0" width="108" height="72" fill="white" stroke="#bfdbfe" stroke-width="1" rx="8"/>
+        <text x="54" y="20" text-anchor="middle" class="icon-text">💬</text>
+        <text x="54" y="38" text-anchor="middle" class="component-label" fill="#1e40af">WhatsApp</text>
+        <text x="54" y="52" text-anchor="middle" class="component-sublabel">Business API</text>
+        <rect x="68" y="58" width="38" height="14" rx="3" fill="#dbeafe"/>
+        <text x="87" y="68" text-anchor="middle" style="font-size:8px; font-weight:600; fill:#2563eb;">Ph 2</text>
+      </g>
+      <g transform="translate(260, 28)">
+        <rect x="0" y="0" width="108" height="72" fill="white" stroke="#bfdbfe" stroke-width="1" rx="8"/>
+        <text x="54" y="20" text-anchor="middle" class="icon-text">📩</text>
+        <text x="54" y="38" text-anchor="middle" class="component-label" fill="#1e40af">SMS</text>
+        <text x="54" y="52" text-anchor="middle" class="component-sublabel">Inclusion fallback</text>
+        <rect x="68" y="58" width="38" height="14" rx="3" fill="#dbeafe"/>
+        <text x="87" y="68" text-anchor="middle" style="font-size:8px; font-weight:600; fill:#2563eb;">Ph 2</text>
+      </g>
+      <g transform="translate(380, 28)">
+        <rect x="0" y="0" width="108" height="72" fill="white" stroke="#bfdbfe" stroke-width="1" rx="8"/>
+        <text x="54" y="20" text-anchor="middle" class="icon-text">🎙️</text>
+        <text x="54" y="38" text-anchor="middle" class="component-label" fill="#1e40af">Voice</text>
+        <text x="54" y="52" text-anchor="middle" class="component-sublabel">Phone IVR</text>
+        <rect x="68" y="58" width="38" height="14" rx="3" fill="#dbeafe"/>
+        <text x="87" y="68" text-anchor="middle" style="font-size:8px; font-weight:600; fill:#2563eb;">Ph 3+</text>
+      </g>
+      <g transform="translate(500, 28)">
+        <rect x="0" y="0" width="120" height="72" fill="white" stroke="#bfdbfe" stroke-width="1" rx="8"/>
+        <text x="60" y="20" text-anchor="middle" class="icon-text">🖥️</text>
+        <text x="60" y="38" text-anchor="middle" class="component-label" fill="#1e40af">Kiosk</text>
+        <text x="60" y="52" text-anchor="middle" class="component-sublabel">Service centres</text>
+        <rect x="78" y="58" width="38" height="14" rx="3" fill="#dbeafe"/>
+        <text x="97" y="68" text-anchor="middle" style="font-size:8px; font-weight:600; fill:#2563eb;">Ph 3+</text>
+      </g>
+    </g>
+
+    <!-- Channel-agnostic note -->
+    <g transform="translate(1010, 120)">
+      <rect x="0" y="0" width="175" height="56" rx="6" fill="#f0f9ff" stroke="#bfdbfe" stroke-width="1" stroke-dasharray="4,3"/>
+      <text x="88" y="22" text-anchor="middle" style="font-size:10px; font-weight:600; fill:#1e40af;">Channel-agnostic</text>
+      <text x="88" y="36" text-anchor="middle" style="font-size:10px; font-weight:400; fill:#64748b;">architecture: same</text>
+      <text x="88" y="48" text-anchor="middle" style="font-size:10px; font-weight:400; fill:#64748b;">back-end, all front-ends</text>
+    </g>
+    <line x1="980" y1="148" x2="1010" y2="148" stroke="#bfdbfe" stroke-width="1" stroke-dasharray="4,3"/>
+
+
+    <!-- ============================================= -->
+    <!-- Connection: Channels down to AI layer -->
+    <!-- ============================================= -->
+    <path d="M 660,210 L 660,255" stroke="#3b82f6" stroke-width="1.8" marker-end="url(#arrow-blue)" fill="none"/>
+    <text x="672" y="238" class="connection-label" fill="#3b82f6">citizen queries</text>
+
+
+    <!-- ============================================= -->
+    <!-- LAYER 8: ANALYTICS (right side, spanning) -->
+    <!-- ============================================= -->
+    <g class="layer-group" transform="translate(1300, 255)">
+      <rect class="layer-bg" x="0" y="0" width="240" height="500" fill="#faf5ff" stroke="#e9d5ff" stroke-width="1"/>
+      <rect x="12" y="-10" width="220" height="22" rx="4" fill="#7c3aed"/>
+      <text x="22" y="6" class="phase-badge" fill="white">LAYER 8 · ANALYTICS &amp; MONITORING</text>
+
+      <g transform="translate(16, 30)">
+        <rect x="0" y="0" width="208" height="52" fill="white" stroke="#e9d5ff" stroke-width="1" rx="6"/>
+        <text x="16" y="22" class="icon-text" style="font-size:14px;">📊</text>
+        <text x="38" y="22" class="component-label" fill="#6d28d9">Conversation Analytics</text>
+        <text x="38" y="36" class="component-sublabel">Topics, failures, drop-offs</text>
+      </g>
+      <g transform="translate(16, 92)">
+        <rect x="0" y="0" width="208" height="52" fill="white" stroke="#e9d5ff" stroke-width="1" rx="6"/>
+        <text x="16" y="22" class="icon-text" style="font-size:14px;">✅</text>
+        <text x="38" y="22" class="component-label" fill="#6d28d9">Quality Monitoring</text>
+        <text x="38" y="36" class="component-sublabel">Automated + human eval</text>
+      </g>
+      <g transform="translate(16, 154)">
+        <rect x="0" y="0" width="208" height="52" fill="white" stroke="#e9d5ff" stroke-width="1" rx="6"/>
+        <text x="16" y="22" class="icon-text" style="font-size:14px;">⚡</text>
+        <text x="38" y="22" class="component-label" fill="#6d28d9">Performance Monitoring</text>
+        <text x="38" y="36" class="component-sublabel">Uptime, latency, errors</text>
+      </g>
+      <g transform="translate(16, 216)">
+        <rect x="0" y="0" width="208" height="52" fill="white" stroke="#e9d5ff" stroke-width="1" rx="6"/>
+        <text x="16" y="22" class="icon-text" style="font-size:14px;">👍</text>
+        <text x="38" y="22" class="component-label" fill="#6d28d9">Citizen Feedback</text>
+        <text x="38" y="36" class="component-sublabel">Thumbs, free-text, CSAT</text>
+      </g>
+      <g transform="translate(16, 278)">
+        <rect x="0" y="0" width="208" height="52" fill="white" stroke="#e9d5ff" stroke-width="1" rx="6"/>
+        <text x="16" y="22" class="icon-text" style="font-size:14px;">📈</text>
+        <text x="38" y="22" class="component-label" fill="#6d28d9">Reporting Dashboards</text>
+        <text x="38" y="36" class="component-sublabel">Service owners, leadership</text>
+      </g>
+      <g transform="translate(16, 340)">
+        <rect x="0" y="0" width="208" height="52" fill="white" stroke="#e9d5ff" stroke-width="1" rx="6"/>
+        <text x="16" y="22" class="icon-text" style="font-size:14px;">🔄</text>
+        <text x="38" y="22" class="component-label" fill="#6d28d9">Improvement Loop</text>
+        <text x="38" y="36" class="component-sublabel">Weekly review → updates</text>
+      </g>
+
+      <!-- Spanning arrow -->
+      <line x1="-8" y1="40" x2="-8" y2="480" stroke="#c4b5fd" stroke-width="2" stroke-dasharray="6,4"/>
+      <text x="-16" y="260" text-anchor="middle" transform="rotate(-90, -16, 260)" style="font-size:10px; font-weight:600; fill:#8b5cf6; letter-spacing:0.08em;">SPANS ALL LAYERS</text>
+    </g>
+
+    <!-- Horizontal connections from layers to analytics -->
+    <path d="M 1080,320 L 1300,320" stroke="#c4b5fd" stroke-width="1" stroke-dasharray="3,3"/>
+    <path d="M 1080,440 L 1300,440" stroke="#c4b5fd" stroke-width="1" stroke-dasharray="3,3"/>
+    <path d="M 1080,580 L 1300,580" stroke="#c4b5fd" stroke-width="1" stroke-dasharray="3,3"/>
+    <path d="M 1080,720 L 1300,720" stroke="#c4b5fd" stroke-width="1" stroke-dasharray="3,3"/>
+
+
+    <!-- ============================================= -->
+    <!-- LAYER 3: AI / RAG LAYER (THE BRAIN) -->
+    <!-- ============================================= -->
+    <g class="layer-group" transform="translate(80, 255)">
+      <rect class="layer-bg" x="0" y="0" width="1000" height="140" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="1"/>
+      <rect x="12" y="-10" width="240" height="22" rx="4" fill="#059669"/>
+      <text x="22" y="6" class="phase-badge" fill="white">LAYER 3 · RETRIEVAL &amp; AI (THE BRAIN)</text>
+
+      <g transform="translate(16, 28)">
+        <rect x="0" y="0" width="140" height="90" fill="white" stroke="#a7f3d0" stroke-width="1" rx="8"/>
+        <text x="70" y="22" text-anchor="middle" class="icon-text">🧠</text>
+        <text x="70" y="42" text-anchor="middle" class="component-label" fill="#065f46">LLM</text>
+        <text x="70" y="56" text-anchor="middle" class="component-sublabel">Claude / GPT-4 API</text>
+        <text x="70" y="68" text-anchor="middle" class="component-sublabel">or open-source model</text>
+        <rect x="82" y="74" width="52" height="14" rx="3" fill="#d1fae5"/>
+        <text x="108" y="84" text-anchor="middle" style="font-size:8px; font-weight:600; fill:#059669;">Ph 1</text>
+      </g>
+      <g transform="translate(170, 28)">
+        <rect x="0" y="0" width="140" height="90" fill="white" stroke="#a7f3d0" stroke-width="1" rx="8"/>
+        <text x="70" y="22" text-anchor="middle" class="icon-text">🗄️</text>
+        <text x="70" y="42" text-anchor="middle" class="component-label" fill="#065f46">Vector Database</text>
+        <text x="70" y="56" text-anchor="middle" class="component-sublabel">Pinecone / Weaviate /</text>
+        <text x="70" y="68" text-anchor="middle" class="component-sublabel">pgvector / FAISS</text>
+        <rect x="82" y="74" width="52" height="14" rx="3" fill="#d1fae5"/>
+        <text x="108" y="84" text-anchor="middle" style="font-size:8px; font-weight:600; fill:#059669;">Ph 1</text>
+      </g>
+      <g transform="translate(324, 28)">
+        <rect x="0" y="0" width="140" height="90" fill="white" stroke="#a7f3d0" stroke-width="1" rx="8"/>
+        <text x="70" y="22" text-anchor="middle" class="icon-text">⚙️</text>
+        <text x="70" y="42" text-anchor="middle" class="component-label" fill="#065f46">Embedding Pipeline</text>
+        <text x="70" y="56" text-anchor="middle" class="component-sublabel">Content → embeddings</text>
+        <text x="70" y="68" text-anchor="middle" class="component-sublabel">Sync on content change</text>
+        <rect x="82" y="74" width="52" height="14" rx="3" fill="#d1fae5"/>
+        <text x="108" y="84" text-anchor="middle" style="font-size:8px; font-weight:600; fill:#059669;">Ph 1</text>
+      </g>
+      <g transform="translate(478, 28)">
+        <rect x="0" y="0" width="140" height="90" fill="white" stroke="#a7f3d0" stroke-width="1" rx="8"/>
+        <text x="70" y="22" text-anchor="middle" class="icon-text">🔗</text>
+        <text x="70" y="42" text-anchor="middle" class="component-label" fill="#065f46">Orchestration</text>
+        <text x="70" y="56" text-anchor="middle" class="component-sublabel">LangChain / LlamaIndex</text>
+        <text x="70" y="68" text-anchor="middle" class="component-sublabel">Query → retrieve → respond</text>
+        <rect x="82" y="74" width="52" height="14" rx="3" fill="#d1fae5"/>
+        <text x="108" y="84" text-anchor="middle" style="font-size:8px; font-weight:600; fill:#059669;">Ph 1</text>
+      </g>
+      <g transform="translate(632, 28)">
+        <rect x="0" y="0" width="140" height="90" fill="white" stroke="#a7f3d0" stroke-width="1" rx="8"/>
+        <text x="70" y="22" text-anchor="middle" class="icon-text">🛡️</text>
+        <text x="70" y="42" text-anchor="middle" class="component-label" fill="#065f46">Guardrails</text>
+        <text x="70" y="56" text-anchor="middle" class="component-sublabel">Anti-hallucination</text>
+        <text x="70" y="68" text-anchor="middle" class="component-sublabel">Safety &amp; boundaries</text>
+        <rect x="82" y="74" width="52" height="14" rx="3" fill="#d1fae5"/>
+        <text x="108" y="84" text-anchor="middle" style="font-size:8px; font-weight:600; fill:#059669;">Ph 1</text>
+      </g>
+      <g transform="translate(786, 28)">
+        <rect x="0" y="0" width="195" height="90" fill="white" stroke="#a7f3d0" stroke-width="1" rx="8"/>
+        <text x="98" y="22" text-anchor="middle" class="icon-text">👤</text>
+        <text x="98" y="42" text-anchor="middle" class="component-label" fill="#065f46">Human Escalation</text>
+        <text x="98" y="56" text-anchor="middle" class="component-sublabel">Hand-off to live agent</text>
+        <text x="98" y="68" text-anchor="middle" class="component-sublabel">when AI is not confident</text>
+        <rect x="135" y="74" width="52" height="14" rx="3" fill="#d1fae5"/>
+        <text x="161" y="84" text-anchor="middle" style="font-size:8px; font-weight:600; fill:#059669;">Ph 1</text>
+      </g>
+    </g>
+
+
+    <!-- ============================================= -->
+    <!-- MIDDLE ROW: Identity (left) | Content (centre) | Integration (right) -->
+    <!-- ============================================= -->
+
+    <!-- Connection: AI down to Content -->
+    <path d="M 500,395 L 500,440" stroke="#059669" stroke-width="1.8" marker-end="url(#arrow-emerald)" fill="none"/>
+    <text x="512" y="422" class="connection-label" fill="#059669">retrieves from</text>
+
+    <!-- Connection: AI down to Identity -->
+    <path d="M 200,395 L 200,440" stroke="#059669" stroke-width="1.5" marker-end="url(#arrow-amber)" fill="none"/>
+    <text x="214" y="422" class="connection-label" fill="#d97706">verifies user</text>
+
+    <!-- Connection: AI down to Integration -->
+    <path d="M 870,395 L 870,440" stroke="#059669" stroke-width="1.5" marker-end="url(#arrow-grey)" fill="none"/>
+    <text x="884" y="422" class="connection-label" fill="#64748b">calls back-end</text>
+
+
+    <!-- ============================================= -->
+    <!-- LAYER 4: IDENTITY AND AUTHENTICATION (left) -->
+    <!-- ============================================= -->
+    <g class="layer-group" transform="translate(20, 440)">
+      <rect class="layer-bg" x="0" y="0" width="290" height="168" fill="#fff7ed" stroke="#fed7aa" stroke-width="1"/>
+      <rect x="12" y="-10" width="250" height="22" rx="4" fill="#d97706"/>
+      <text x="22" y="6" class="phase-badge" fill="white">LAYER 4 · IDENTITY &amp; AUTHENTICATION</text>
+
+      <g transform="translate(12, 26)">
+        <rect x="0" y="0" width="126" height="56" fill="white" stroke="#fed7aa" stroke-width="1" rx="6"/>
+        <text x="63" y="20" text-anchor="middle" class="component-label" fill="#92400e">🔓 Anonymous</text>
+        <text x="63" y="34" text-anchor="middle" class="component-sublabel">No auth required</text>
+        <rect x="76" y="40" width="44" height="14" rx="3" fill="#ffedd5"/>
+        <text x="98" y="50" text-anchor="middle" style="font-size:8px; font-weight:600; fill:#d97706;">Ph 1</text>
+      </g>
+      <g transform="translate(150, 26)">
+        <rect x="0" y="0" width="126" height="56" fill="white" stroke="#fed7aa" stroke-width="1" rx="6"/>
+        <text x="63" y="20" text-anchor="middle" class="component-label" fill="#92400e">🔑 Light Verify</text>
+        <text x="63" y="34" text-anchor="middle" class="component-sublabel">Name + DOB + ref</text>
+        <rect x="76" y="40" width="44" height="14" rx="3" fill="#ffedd5"/>
+        <text x="98" y="50" text-anchor="middle" style="font-size:8px; font-weight:600; fill:#d97706;">Ph 3</text>
+      </g>
+      <g transform="translate(12, 92)">
+        <rect x="0" y="0" width="126" height="56" fill="white" stroke="#fed7aa" stroke-width="1" rx="6"/>
+        <text x="63" y="20" text-anchor="middle" class="component-label" fill="#92400e">🪪 Authenticated</text>
+        <text x="63" y="34" text-anchor="middle" class="component-sublabel">National digital ID</text>
+        <rect x="76" y="40" width="44" height="14" rx="3" fill="#ffedd5"/>
+        <text x="98" y="50" text-anchor="middle" style="font-size:8px; font-weight:600; fill:#d97706;">Ph 4</text>
+      </g>
+      <g transform="translate(150, 92)">
+        <rect x="0" y="0" width="126" height="56" fill="white" stroke="#fed7aa" stroke-width="1" rx="6"/>
+        <text x="63" y="20" text-anchor="middle" class="component-label" fill="#92400e">📋 Consent Mgmt</text>
+        <text x="63" y="34" text-anchor="middle" class="component-sublabel">Data use &amp; retention</text>
+        <rect x="76" y="40" width="44" height="14" rx="3" fill="#ffedd5"/>
+        <text x="98" y="50" text-anchor="middle" style="font-size:8px; font-weight:600; fill:#d97706;">Ph 1</text>
+      </g>
+    </g>
+
+
+    <!-- ============================================= -->
+    <!-- LAYER 2: CONTENT AND KNOWLEDGE BASE (centre) -->
+    <!-- ============================================= -->
+    <g class="layer-group" transform="translate(330, 440)">
+      <rect class="layer-bg" x="0" y="0" width="400" height="168" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1"/>
+      <rect x="12" y="-10" width="260" height="22" rx="4" fill="#16a34a"/>
+      <text x="22" y="6" class="phase-badge" fill="white">LAYER 2 · CONTENT &amp; KNOWLEDGE BASE</text>
+
+      <g transform="translate(12, 26)">
+        <rect x="0" y="0" width="120" height="56" fill="white" stroke="#bbf7d0" stroke-width="1" rx="6"/>
+        <text x="60" y="20" text-anchor="middle" class="component-label" fill="#166534">📝 Service Desc.</text>
+        <text x="60" y="34" text-anchor="middle" class="component-sublabel">Plain language</text>
+        <rect x="70" y="40" width="44" height="14" rx="3" fill="#dcfce7"/>
+        <text x="92" y="50" text-anchor="middle" style="font-size:8px; font-weight:600; fill:#16a34a;">Ph 0</text>
+      </g>
+      <g transform="translate(140, 26)">
+        <rect x="0" y="0" width="120" height="56" fill="white" stroke="#bbf7d0" stroke-width="1" rx="6"/>
+        <text x="60" y="20" text-anchor="middle" class="component-label" fill="#166534">✓ Eligibility</text>
+        <text x="60" y="34" text-anchor="middle" class="component-sublabel">Structured criteria</text>
+        <rect x="70" y="40" width="44" height="14" rx="3" fill="#dcfce7"/>
+        <text x="92" y="50" text-anchor="middle" style="font-size:8px; font-weight:600; fill:#16a34a;">Ph 0</text>
+      </g>
+      <g transform="translate(268, 26)">
+        <rect x="0" y="0" width="120" height="56" fill="white" stroke="#bbf7d0" stroke-width="1" rx="6"/>
+        <text x="60" y="20" text-anchor="middle" class="component-label" fill="#166534">❓ FAQs</text>
+        <text x="60" y="34" text-anchor="middle" class="component-sublabel">Citizen enquiries</text>
+        <rect x="70" y="40" width="44" height="14" rx="3" fill="#dcfce7"/>
+        <text x="92" y="50" text-anchor="middle" style="font-size:8px; font-weight:600; fill:#16a34a;">Ph 0</text>
+      </g>
+      <g transform="translate(12, 92)">
+        <rect x="0" y="0" width="184" height="56" fill="white" stroke="#bbf7d0" stroke-width="1" rx="6"/>
+        <text x="92" y="20" text-anchor="middle" class="component-label" fill="#166534">🏗️ CMS / Content Repository</text>
+        <text x="92" y="34" text-anchor="middle" class="component-sublabel">Single source of truth + editorial process</text>
+        <rect x="132" y="40" width="44" height="14" rx="3" fill="#dcfce7"/>
+        <text x="154" y="50" text-anchor="middle" style="font-size:8px; font-weight:600; fill:#16a34a;">Ph 0</text>
+      </g>
+      <g transform="translate(204, 92)">
+        <rect x="0" y="0" width="184" height="56" fill="white" stroke="#bbf7d0" stroke-width="1" rx="6"/>
+        <text x="92" y="20" text-anchor="middle" class="component-label" fill="#166534">📄 Content Model</text>
+        <text x="92" y="34" text-anchor="middle" class="component-sublabel">Machine-readable schema for services</text>
+        <rect x="132" y="40" width="44" height="14" rx="3" fill="#dcfce7"/>
+        <text x="154" y="50" text-anchor="middle" style="font-size:8px; font-weight:600; fill:#16a34a;">Ph 0</text>
+      </g>
+    </g>
+
+
+    <!-- ============================================= -->
+    <!-- LAYER 5: INTEGRATION (right) -->
+    <!-- ============================================= -->
+    <g class="layer-group" transform="translate(750, 440)">
+      <rect class="layer-bg" x="0" y="0" width="330" height="168" fill="#f5f3ff" stroke="#ddd6fe" stroke-width="1"/>
+      <rect x="12" y="-10" width="260" height="22" rx="4" fill="#6d28d9"/>
+      <text x="22" y="6" class="phase-badge" fill="white">LAYER 5 · INTEGRATION &amp; INTEROP</text>
+
+      <g transform="translate(12, 26)">
+        <rect x="0" y="0" width="148" height="56" fill="white" stroke="#ddd6fe" stroke-width="1" rx="6"/>
+        <text x="74" y="20" text-anchor="middle" class="component-label" fill="#4c1d95">🚪 API Gateway</text>
+        <text x="74" y="34" text-anchor="middle" class="component-sublabel">Auth, rate limit, routing</text>
+        <rect x="98" y="40" width="44" height="14" rx="3" fill="#ede9fe"/>
+        <text x="120" y="50" text-anchor="middle" style="font-size:8px; font-weight:600; fill:#6d28d9;">Ph 3</text>
+      </g>
+      <g transform="translate(170, 26)">
+        <rect x="0" y="0" width="148" height="56" fill="white" stroke="#ddd6fe" stroke-width="1" rx="6"/>
+        <text x="74" y="20" text-anchor="middle" class="component-label" fill="#4c1d95">🔌 API Adapters</text>
+        <text x="74" y="34" text-anchor="middle" class="component-sublabel">Legacy system wrappers</text>
+        <rect x="98" y="40" width="44" height="14" rx="3" fill="#ede9fe"/>
+        <text x="120" y="50" text-anchor="middle" style="font-size:8px; font-weight:600; fill:#6d28d9;">Ph 3–4</text>
+      </g>
+      <g transform="translate(12, 92)">
+        <rect x="0" y="0" width="148" height="56" fill="white" stroke="#ddd6fe" stroke-width="1" rx="6"/>
+        <text x="74" y="20" text-anchor="middle" class="component-label" fill="#4c1d95">🔄 Data Exchange</text>
+        <text x="74" y="34" text-anchor="middle" class="component-sublabel">X-Road / GovStack model</text>
+        <rect x="98" y="40" width="44" height="14" rx="3" fill="#ede9fe"/>
+        <text x="120" y="50" text-anchor="middle" style="font-size:8px; font-weight:600; fill:#6d28d9;">Ph 4</text>
+      </g>
+      <g transform="translate(170, 92)">
+        <rect x="0" y="0" width="148" height="56" fill="white" stroke="#ddd6fe" stroke-width="1" rx="6"/>
+        <text x="74" y="20" text-anchor="middle" class="component-label" fill="#4c1d95">🚌 Integration Bus</text>
+        <text x="74" y="34" text-anchor="middle" class="component-sublabel">Message transform/route</text>
+        <rect x="98" y="40" width="44" height="14" rx="3" fill="#ede9fe"/>
+        <text x="120" y="50" text-anchor="middle" style="font-size:8px; font-weight:600; fill:#6d28d9;">Ph 4</text>
+      </g>
+    </g>
+
+
+    <!-- ============================================= -->
+    <!-- Connections: Content and Registers -->
+    <!-- ============================================= -->
+    <path d="M 530,608 L 530,660" stroke="#16a34a" stroke-width="1.8" marker-end="url(#arrow-emerald)" fill="none"/>
+    <text x="542" y="640" class="connection-label" fill="#16a34a">references (not copies)</text>
+
+    <!-- Connection: Integration to Registers (sideways feed) -->
+    <path d="M 870,608 L 870,640 L 770,640 L 770,660" stroke="#6d28d9" stroke-width="1.2" marker-end="url(#arrow-violet)" fill="none" stroke-dasharray="5,3"/>
+    <text x="826" y="654" class="connection-label" fill="#6d28d9">consumes registers</text>
+
+
+    <!-- ============================================= -->
+    <!-- LAYER 7: PAYMENTS (far right, connected to integration) -->
+    <!-- ============================================= -->
+    <g class="layer-group" transform="translate(750, 630)">
+      <rect class="layer-bg" x="0" y="0" width="330" height="100" fill="#fff1f2" stroke="#fecdd3" stroke-width="1"/>
+      <rect x="12" y="-10" width="160" height="22" rx="4" fill="#e11d48"/>
+      <text x="22" y="6" class="phase-badge" fill="white">LAYER 7 · PAYMENTS</text>
+
+      <g transform="translate(12, 24)">
+        <rect x="0" y="0" width="148" height="56" fill="white" stroke="#fecdd3" stroke-width="1" rx="6"/>
+        <text x="74" y="20" text-anchor="middle" class="component-label" fill="#9f1239">💳 Payment Gateway</text>
+        <text x="74" y="34" text-anchor="middle" class="component-sublabel">Powertranz / FAC</text>
+        <rect x="98" y="40" width="44" height="14" rx="3" fill="#ffe4e6"/>
+        <text x="120" y="50" text-anchor="middle" style="font-size:8px; font-weight:600; fill:#e11d48;">Ph 4</text>
+      </g>
+      <g transform="translate(170, 24)">
+        <rect x="0" y="0" width="148" height="56" fill="white" stroke="#fecdd3" stroke-width="1" rx="6"/>
+        <text x="74" y="20" text-anchor="middle" class="component-label" fill="#9f1239">🔗 Payment Links</text>
+        <text x="74" y="34" text-anchor="middle" class="component-sublabel">In-conversation links</text>
+        <rect x="98" y="40" width="44" height="14" rx="3" fill="#ffe4e6"/>
+        <text x="120" y="50" text-anchor="middle" style="font-size:8px; font-weight:600; fill:#e11d48;">Ph 4</text>
+      </g>
+    </g>
+
+    <!-- Connection: Integration to Payments -->
+    <path d="M 915,608 L 915,630" stroke="#e11d48" stroke-width="1.5" marker-end="url(#arrow-rose)" fill="none"/>
+
+
+    <!-- ============================================= -->
+    <!-- Government back-end systems (right, connected to integration) -->
+    <!-- ============================================= -->
+    <g transform="translate(1100, 470)">
+      <rect x="0" y="0" width="180" height="90" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="5,3"/>
+      <text x="90" y="22" text-anchor="middle" style="font-size:11px; font-weight:600; fill:#475569;">Government</text>
+      <text x="90" y="36" text-anchor="middle" style="font-size:11px; font-weight:600; fill:#475569;">Back-End Systems</text>
+      <text x="90" y="52" text-anchor="middle" class="component-sublabel">Case mgmt, licensing,</text>
+      <text x="90" y="63" text-anchor="middle" class="component-sublabel">registration, forms</text>
+      <text x="90" y="80" text-anchor="middle" style="font-size:9px; font-weight:500; fill:#94a3b8; font-style:italic;">Siloed, limited APIs</text>
+    </g>
+    <!-- Connection: Integration to back-end -->
+    <path d="M 1080,520 L 1100,515" stroke="#94a3b8" stroke-width="1.2" marker-end="url(#arrow-grey)" fill="none" stroke-dasharray="4,3"/>
+    <text x="1088" y="508" class="connection-label">API calls</text>
+
+
+    <!-- ============================================= -->
+    <!-- LAYER 1: CANONICAL REGISTERS (bottom, full width) -->
+    <!-- ============================================= -->
+    <g class="layer-group" transform="translate(20, 660)">
+      <rect class="layer-bg" x="0" y="0" width="710" height="196" fill="#fefce8" stroke="#fde68a" stroke-width="1"/>
+      <rect x="12" y="-10" width="300" height="22" rx="4" fill="#ca8a04"/>
+      <text x="22" y="6" class="phase-badge" fill="white">LAYER 1 · CANONICAL REGISTERS &amp; REFERENCE DATA</text>
+
+      <!-- Row 1 -->
+      <g transform="translate(12, 26)">
+        <rect x="0" y="0" width="130" height="48" fill="white" stroke="#fde68a" stroke-width="1" rx="6"/>
+        <text x="65" y="20" text-anchor="middle" class="component-label" fill="#854d0e">🏛️ Organisations</text>
+        <text x="65" y="34" text-anchor="middle" class="component-sublabel">Ministries, depts, agencies</text>
+      </g>
+      <g transform="translate(150, 26)">
+        <rect x="0" y="0" width="130" height="48" fill="white" stroke="#fde68a" stroke-width="1" rx="6"/>
+        <text x="65" y="20" text-anchor="middle" class="component-label" fill="#854d0e">📍 Offices</text>
+        <text x="65" y="34" text-anchor="middle" class="component-sublabel">Locations, hours, services</text>
+      </g>
+      <g transform="translate(288, 26)">
+        <rect x="0" y="0" width="130" height="48" fill="white" stroke="#fde68a" stroke-width="1" rx="6"/>
+        <text x="65" y="20" text-anchor="middle" class="component-label" fill="#854d0e">📋 Services</text>
+        <text x="65" y="34" text-anchor="middle" class="component-sublabel">IDs, owners, categories</text>
+      </g>
+      <g transform="translate(426, 26)">
+        <rect x="0" y="0" width="130" height="48" fill="white" stroke="#fde68a" stroke-width="1" rx="6"/>
+        <text x="65" y="20" text-anchor="middle" class="component-label" fill="#854d0e">🏠 Addresses</text>
+        <text x="65" y="34" text-anchor="middle" class="component-sublabel">Canonical address register</text>
+      </g>
+      <g transform="translate(564, 26)">
+        <rect x="0" y="0" width="130" height="48" fill="white" stroke="#fde68a" stroke-width="1" rx="6"/>
+        <text x="65" y="20" text-anchor="middle" class="component-label" fill="#854d0e">💰 Fees</text>
+        <text x="65" y="34" text-anchor="middle" class="component-sublabel">Charges, effective dates</text>
+      </g>
+
+      <!-- Row 2 -->
+      <g transform="translate(12, 82)">
+        <rect x="0" y="0" width="130" height="48" fill="white" stroke="#fde68a" stroke-width="1" rx="6"/>
+        <text x="65" y="20" text-anchor="middle" class="component-label" fill="#854d0e">⚖️ Legislation</text>
+        <text x="65" y="34" text-anchor="middle" class="component-sublabel">Laws, statutory instruments</text>
+      </g>
+      <g transform="translate(150, 82)">
+        <rect x="0" y="0" width="130" height="48" fill="white" stroke="#fde68a" stroke-width="1" rx="6"/>
+        <text x="65" y="20" text-anchor="middle" class="component-label" fill="#854d0e">🗺️ Parishes</text>
+        <text x="65" y="34" text-anchor="middle" class="component-sublabel">Boundaries, constituencies</text>
+      </g>
+      <g transform="translate(288, 82)">
+        <rect x="0" y="0" width="130" height="48" fill="white" stroke="#fde68a" stroke-width="1" rx="6"/>
+        <text x="65" y="20" text-anchor="middle" class="component-label" fill="#854d0e">📄 Forms</text>
+        <text x="65" y="34" text-anchor="middle" class="component-sublabel">Versions, service links</text>
+      </g>
+      <g transform="translate(426, 82)">
+        <rect x="0" y="0" width="130" height="48" fill="white" stroke="#fde68a" stroke-width="1" rx="6"/>
+        <text x="65" y="20" text-anchor="middle" class="component-label" fill="#854d0e">📅 Holidays</text>
+        <text x="65" y="34" text-anchor="middle" class="component-sublabel">Civic dates, closures</text>
+      </g>
+      <g transform="translate(564, 82)">
+        <rect x="0" y="0" width="130" height="48" fill="white" stroke="#fde68a" stroke-width="1" rx="6"/>
+        <text x="65" y="20" text-anchor="middle" class="component-label" fill="#854d0e">🔧 Specialist</text>
+        <text x="65" y="34" text-anchor="middle" class="component-sublabel">Licences, professions…</text>
+      </g>
+
+      <!-- Register infrastructure row -->
+      <g transform="translate(12, 142)">
+        <rect x="0" y="0" width="220" height="40" fill="#fef9c3" stroke="#fde68a" stroke-width="1" rx="6"/>
+        <text x="110" y="18" text-anchor="middle" style="font-size:10px; font-weight:600; fill:#854d0e;">Register Framework</text>
+        <text x="110" y="30" text-anchor="middle" class="component-sublabel">Standards, versioning, custodians</text>
+      </g>
+      <g transform="translate(240, 142)">
+        <rect x="0" y="0" width="220" height="40" fill="#fef9c3" stroke="#fde68a" stroke-width="1" rx="6"/>
+        <text x="110" y="18" text-anchor="middle" style="font-size:10px; font-weight:600; fill:#854d0e;">Publication Mechanism</text>
+        <text x="110" y="30" text-anchor="middle" class="component-sublabel">CSV/JSON → API layer</text>
+      </g>
+      <g transform="translate(468, 142)">
+        <rect x="0" y="0" width="226" height="40" fill="#fef9c3" stroke="#fde68a" stroke-width="1" rx="6"/>
+        <text x="113" y="18" text-anchor="middle" style="font-size:10px; font-weight:600; fill:#854d0e;">Governance Process</text>
+        <text x="113" y="30" text-anchor="middle" class="component-sublabel">Change mgmt → chatbot updates</text>
+      </g>
+    </g>
+
+
+    <!-- ============================================= -->
+    <!-- MATURITY JOURNEY (bottom) -->
+    <!-- ============================================= -->
+    <g transform="translate(20, 890)">
+      <rect x="0" y="0" width="1520" height="56" rx="8" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1"/>
+      <text x="20" y="20" style="font-size:10px; font-weight:700; fill:#475569; letter-spacing:0.05em;">MATURITY JOURNEY</text>
+
+      <!-- Phase arrows -->
+      <g transform="translate(20, 30)">
+        <rect x="0" y="0" width="200" height="22" rx="4" fill="#16a34a"/>
+        <text x="100" y="15" text-anchor="middle" style="font-size:10px; font-weight:600; fill:white;">Phase 0: Registers + Content</text>
+      </g>
+      <text x="228" y="45" style="font-size:16px; fill:#94a3b8;">→</text>
+      <g transform="translate(248, 30)">
+        <rect x="0" y="0" width="200" height="22" rx="4" fill="#059669"/>
+        <text x="100" y="15" text-anchor="middle" style="font-size:10px; font-weight:600; fill:white;">Phase 1: Info Chatbot</text>
+      </g>
+      <text x="456" y="45" style="font-size:16px; fill:#94a3b8;">→</text>
+      <g transform="translate(476, 30)">
+        <rect x="0" y="0" width="200" height="22" rx="4" fill="#3b82f6"/>
+        <text x="100" y="15" text-anchor="middle" style="font-size:10px; font-weight:600; fill:white;">Phase 2: Multi-channel</text>
+      </g>
+      <text x="684" y="45" style="font-size:16px; fill:#94a3b8;">→</text>
+      <g transform="translate(704, 30)">
+        <rect x="0" y="0" width="220" height="22" rx="4" fill="#d97706"/>
+        <text x="110" y="15" text-anchor="middle" style="font-size:10px; font-weight:600; fill:white;">Phase 3: Guided Transactions</text>
+      </g>
+      <text x="932" y="45" style="font-size:16px; fill:#94a3b8;">→</text>
+      <g transform="translate(952, 30)">
+        <rect x="0" y="0" width="200" height="22" rx="4" fill="#e11d48"/>
+        <text x="100" y="15" text-anchor="middle" style="font-size:10px; font-weight:600; fill:white;">Phase 4: Transactional</text>
+      </g>
+    </g>
+
+
+    <!-- ============================================= -->
+    <!-- KEY INSIGHT callout -->
+    <!-- ============================================= -->
+    <g transform="translate(20, 960)">
+      <rect x="0" y="0" width="1520" height="42" rx="6" fill="#fef9c3" stroke="#fde68a" stroke-width="1"/>
+      <text x="20" y="16" style="font-size:10px; font-weight:700; fill:#854d0e; letter-spacing:0.04em;">⚠ CRITICAL CONSTRAINT</text>
+      <text x="20" y="32" style="font-size:11px; font-weight:400; fill:#713f12;">The most significant gaps are canonical reference data (registers) and structured content – not technology. No amount of AI sophistication compensates for poor source data.</text>
+    </g>
+
+  </svg>
+
+  <!-- Legend -->
+  <div class="legend">
+    <div class="legend-item"><div class="legend-swatch" style="background:#fefce8; border-color:#fde68a;"></div> L1: Registers (foundation)</div>
+    <div class="legend-item"><div class="legend-swatch" style="background:#f0fdf4; border-color:#bbf7d0;"></div> L2: Content &amp; KB</div>
+    <div class="legend-item"><div class="legend-swatch" style="background:#ecfdf5; border-color:#a7f3d0;"></div> L3: AI / RAG</div>
+    <div class="legend-item"><div class="legend-swatch" style="background:#fff7ed; border-color:#fed7aa;"></div> L4: Identity</div>
+    <div class="legend-item"><div class="legend-swatch" style="background:#f5f3ff; border-color:#ddd6fe;"></div> L5: Integration</div>
+    <div class="legend-item"><div class="legend-swatch" style="background:#eff6ff; border-color:#bfdbfe;"></div> L6: Channels</div>
+    <div class="legend-item"><div class="legend-swatch" style="background:#fff1f2; border-color:#fecdd3;"></div> L7: Payments</div>
+    <div class="legend-item"><div class="legend-swatch" style="background:#faf5ff; border-color:#e9d5ff;"></div> L8: Analytics</div>
+  </div>
+
+</div>
+</body>
+</html>
