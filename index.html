@@ -1,0 +1,446 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GovTech Barbados – User Needs</title>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #F5F0EB;
+    font-family: 'Inter', sans-serif;
+    padding: 40px 24px 60px;
+    min-height: 100vh;
+  }
+
+  .page-header {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  .page-header h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #2D2D2D;
+    margin-bottom: 6px;
+    letter-spacing: -0.5px;
+  }
+
+  .page-header .subtitle {
+    font-size: 14px;
+    color: #777;
+    font-weight: 400;
+  }
+
+  .section {
+    max-width: 1200px;
+    margin: 0 auto 52px;
+  }
+
+  .section-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #999;
+    margin-bottom: 20px;
+    padding-left: 4px;
+  }
+
+  .notes-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+  }
+
+  .note {
+    width: 240px;
+    min-height: 200px;
+    padding: 24px 22px 20px;
+    border-radius: 2px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow:
+      2px 3px 8px rgba(0,0,0,0.08),
+      0 1px 2px rgba(0,0,0,0.06);
+    transform: rotate(var(--rot, 0deg));
+    transition: transform 0.2s ease;
+  }
+
+  .note:hover {
+    transform: rotate(0deg) scale(1.04);
+    z-index: 10;
+    box-shadow:
+      4px 6px 16px rgba(0,0,0,0.12),
+      0 2px 4px rgba(0,0,0,0.08);
+  }
+
+  .note .ref {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    opacity: 0.45;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+  }
+
+  .note .need-text {
+    font-family: 'Caveat', cursive;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.25;
+    color: #2D2D2D;
+    flex-grow: 1;
+  }
+
+  .note .evidence-tag {
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 12px;
+    opacity: 0.5;
+  }
+
+  /* Post-it colours */
+  .yellow  { background: #FFF9B1; }
+  .pink    { background: #FFD1DC; }
+  .blue    { background: #C5E8F7; }
+  .green   { background: #C8F7C5; }
+  .orange  { background: #FFD8A8; }
+  .purple  { background: #E0D4F5; }
+  .peach   { background: #FFDAB9; }
+  .mint    { background: #B5EAD7; }
+
+  /* Slight rotations for organic feel */
+  .note:nth-child(8n+1) { --rot: -1.2deg; }
+  .note:nth-child(8n+2) { --rot: 0.8deg; }
+  .note:nth-child(8n+3) { --rot: -0.5deg; }
+  .note:nth-child(8n+4) { --rot: 1.4deg; }
+  .note:nth-child(8n+5) { --rot: -0.9deg; }
+  .note:nth-child(8n+6) { --rot: 0.6deg; }
+  .note:nth-child(8n+7) { --rot: -1.5deg; }
+  .note:nth-child(8n+8) { --rot: 1.0deg; }
+
+  .tape {
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%) rotate(var(--tape-rot, 0deg));
+    width: 50px;
+    height: 16px;
+    background: rgba(255,255,255,0.55);
+    border-radius: 1px;
+  }
+
+  .note:nth-child(odd) .tape  { --tape-rot: -3deg; }
+  .note:nth-child(even) .tape { --tape-rot: 2deg; }
+
+  .legend {
+    max-width: 1200px;
+    margin: 0 auto 40px;
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    padding-left: 4px;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    color: #888;
+    font-weight: 500;
+  }
+
+  .legend-swatch {
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  }
+
+  .footer {
+    max-width: 1200px;
+    margin: 40px auto 0;
+    text-align: center;
+    font-size: 11px;
+    color: #aaa;
+    padding-top: 24px;
+    border-top: 1px solid #e0d8d0;
+  }
+</style>
+</head>
+<body>
+
+<div class="page-header">
+  <h1>What Barbadians Need from Government Services</h1>
+  <div class="subtitle">25 user needs from 2,054 citizens &middot; January 2026</div>
+</div>
+
+<div class="legend">
+  <div class="legend-item"><div class="legend-swatch yellow"></div>Cross-cutting</div>
+  <div class="legend-item"><div class="legend-swatch pink"></div>Healthcare</div>
+  <div class="legend-item"><div class="legend-swatch blue"></div>Licensing</div>
+  <div class="legend-item"><div class="legend-swatch orange"></div>Tax (BRA / TAMIS)</div>
+  <div class="legend-item"><div class="legend-swatch purple"></div>NIS &amp; Pensions</div>
+  <div class="legend-item"><div class="legend-swatch green"></div>Business Registration</div>
+  <div class="legend-item"><div class="legend-swatch mint"></div>Transport</div>
+  <div class="legend-item"><div class="legend-swatch peach"></div>Records</div>
+</div>
+
+<!-- CROSS-CUTTING -->
+<div class="section">
+  <div class="section-label">Cross-cutting</div>
+  <div class="notes-row">
+
+    <div class="note yellow">
+      <div class="tape"></div>
+      <div class="ref">X1</div>
+      <div class="need-text">I need to know what documents I need before I go, so I don't get turned away</div>
+      <div class="evidence-tag">Strong &middot; 91% said important</div>
+    </div>
+
+    <div class="note yellow">
+      <div class="tape"></div>
+      <div class="ref">X2</div>
+      <div class="need-text">I need to get everything done in one visit, not keep coming back</div>
+      <div class="evidence-tag">Strong &middot; 87% said important</div>
+    </div>
+
+    <div class="note yellow">
+      <div class="tape"></div>
+      <div class="ref">X3</div>
+      <div class="need-text">I need to finish the whole thing online, not start online then end up at an office</div>
+      <div class="evidence-tag">Strong &middot; 69% said important</div>
+    </div>
+
+    <div class="note yellow">
+      <div class="tape"></div>
+      <div class="ref">X4</div>
+      <div class="need-text">I need someone to actually answer when I call or email</div>
+      <div class="evidence-tag">Strong &middot; 50+ respondents</div>
+    </div>
+
+    <div class="note yellow">
+      <div class="tape"></div>
+      <div class="ref">X5</div>
+      <div class="need-text">I need to see where my application stands without visiting just to ask</div>
+      <div class="evidence-tag">Moderate &middot; 56% said important</div>
+    </div>
+
+    <div class="note yellow">
+      <div class="tape"></div>
+      <div class="ref">X6</div>
+      <div class="need-text">I need departments to share my info so I'm not carrying papers between offices</div>
+      <div class="evidence-tag">Strong &middot; 24+ respondents</div>
+    </div>
+
+    <div class="note yellow">
+      <div class="tape"></div>
+      <div class="ref">X7</div>
+      <div class="need-text">I need gov't websites to work properly on my phone</div>
+      <div class="evidence-tag">Moderate &middot; 22 SPSS + context</div>
+    </div>
+
+    <div class="note yellow">
+      <div class="tape"></div>
+      <div class="ref">X8</div>
+      <div class="need-text">I need to be told when deadlines are coming, not find out after I owe money</div>
+      <div class="evidence-tag">Moderate &middot; 27+ respondents</div>
+    </div>
+
+  </div>
+</div>
+
+<!-- HEALTHCARE -->
+<div class="section">
+  <div class="section-label">Healthcare</div>
+  <div class="notes-row">
+
+    <div class="note pink">
+      <div class="tape"></div>
+      <div class="ref">H1</div>
+      <div class="need-text">I need to get an appointment without arriving at 6am and waiting four hours</div>
+      <div class="evidence-tag">Strong &middot; 54+ respondents</div>
+    </div>
+
+    <div class="note pink">
+      <div class="tape"></div>
+      <div class="ref">H2</div>
+      <div class="need-text">I need to pick up my medication quickly, not queue for hours for a repeat prescription</div>
+      <div class="evidence-tag">Moderate &middot; 18 respondents</div>
+    </div>
+
+    <div class="note pink">
+      <div class="tape"></div>
+      <div class="ref">H3</div>
+      <div class="need-text">I need my health records available wherever I get treated, not scattered across clinics</div>
+      <div class="evidence-tag">Moderate &middot; ~7 respondents</div>
+    </div>
+
+    <div class="note pink">
+      <div class="tape"></div>
+      <div class="ref">H4</div>
+      <div class="need-text">I need to know if my test results are normal without coming in just to hear that</div>
+      <div class="evidence-tag">Emerging &middot; 2 respondents</div>
+    </div>
+
+  </div>
+</div>
+
+<!-- LICENSING -->
+<div class="section">
+  <div class="section-label">Vehicle Licensing (BLA)</div>
+  <div class="notes-row">
+
+    <div class="note blue">
+      <div class="tape"></div>
+      <div class="ref">L1</div>
+      <div class="need-text">I need to renew my licence without going to the Pine – pay online, get it online</div>
+      <div class="evidence-tag">Strong &middot; 65 Typeform + 46% difficulty</div>
+    </div>
+
+    <div class="note blue">
+      <div class="tape"></div>
+      <div class="ref">L2</div>
+      <div class="need-text">I need to understand what the licensing website is asking me to do</div>
+      <div class="evidence-tag">Moderate (lower) &middot; 2 specific + 35% difficulty</div>
+    </div>
+
+  </div>
+</div>
+
+<!-- TAX -->
+<div class="section">
+  <div class="section-label">Tax (BRA / TAMIS)</div>
+  <div class="notes-row">
+
+    <div class="note orange">
+      <div class="tape"></div>
+      <div class="ref">T1</div>
+      <div class="need-text">I need to know when my taxes are due before penalties pile up</div>
+      <div class="evidence-tag">Moderate &middot; 5 Typeform + 27 SPSS</div>
+    </div>
+
+    <div class="note orange">
+      <div class="tape"></div>
+      <div class="ref">T2</div>
+      <div class="need-text">I need tax services to work on my phone without constant zooming</div>
+      <div class="evidence-tag">Moderate &middot; 22 SPSS (general)</div>
+    </div>
+
+    <div class="note orange">
+      <div class="tape"></div>
+      <div class="ref">T3</div>
+      <div class="need-text">I need to understand the filing process and know if I'm ready to file</div>
+      <div class="evidence-tag">Emerging &middot; 1 detailed respondent</div>
+    </div>
+
+    <div class="note orange">
+      <div class="tape"></div>
+      <div class="ref">T4</div>
+      <div class="need-text">I need one login for all my tax services, not different passwords for each</div>
+      <div class="evidence-tag">Emerging &middot; 3 respondents total</div>
+    </div>
+
+  </div>
+</div>
+
+<!-- NIS & PENSIONS -->
+<div class="section">
+  <div class="section-label">NIS &amp; Pensions</div>
+  <div class="notes-row">
+
+    <div class="note purple">
+      <div class="tape"></div>
+      <div class="ref">N1</div>
+      <div class="need-text">I need to track where my NIS claim is – I've been waiting a year with no updates</div>
+      <div class="evidence-tag">Strong &middot; 12+ respondents (high severity)</div>
+    </div>
+
+    <div class="note purple">
+      <div class="tape"></div>
+      <div class="ref">N2</div>
+      <div class="need-text">I need to pay my NIS contributions online with a method that actually works</div>
+      <div class="evidence-tag">Moderate (lower) &middot; ~9 respondents</div>
+    </div>
+
+    <div class="note purple">
+      <div class="tape"></div>
+      <div class="ref">N3</div>
+      <div class="need-text">I need my pension to keep coming when I switch from Treasury to NIS – no gap</div>
+      <div class="evidence-tag">Emerging &middot; 2 respondents (severe impact)</div>
+    </div>
+
+  </div>
+</div>
+
+<!-- BUSINESS -->
+<div class="section">
+  <div class="section-label">Business Registration (CAIPO)</div>
+  <div class="notes-row">
+
+    <div class="note green">
+      <div class="tape"></div>
+      <div class="ref">B1</div>
+      <div class="need-text">I need to know exactly what's required before I start registering, not find out halfway through</div>
+      <div class="evidence-tag">Moderate &middot; 4 CAIPO + 91% general</div>
+    </div>
+
+    <div class="note green">
+      <div class="tape"></div>
+      <div class="ref">B2</div>
+      <div class="need-text">I need confirmation my submission was received – even just an automated email</div>
+      <div class="evidence-tag">Strong &middot; 15+ respondents (cross-cutting)</div>
+    </div>
+
+  </div>
+</div>
+
+<!-- TRANSPORT -->
+<div class="section">
+  <div class="section-label">Public Transport</div>
+  <div class="notes-row">
+
+    <div class="note mint">
+      <div class="tape"></div>
+      <div class="ref">PT1</div>
+      <div class="need-text">I need to know when and whether my bus is coming, so I'm not waiting an hour guessing</div>
+      <div class="evidence-tag">Strong &middot; 29+ respondents</div>
+    </div>
+
+  </div>
+</div>
+
+<!-- RECORDS -->
+<div class="section">
+  <div class="section-label">Records &amp; Certificates</div>
+  <div class="notes-row">
+
+    <div class="note peach">
+      <div class="tape"></div>
+      <div class="ref">R1</div>
+      <div class="need-text">I need to get my birth certificate without visiting and waiting a week</div>
+      <div class="evidence-tag">Moderate &middot; 14+ respondents</div>
+    </div>
+
+  </div>
+</div>
+
+<div class="footer">
+  GovTech Barbados &middot; Citizen Research Synthesis &middot; March 2026 &middot; Based on GOV.UK Service Manual framework
+</div>
+
+</body>
+</html>
