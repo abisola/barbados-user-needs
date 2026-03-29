@@ -1,0 +1,471 @@
+
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: var(--font-sans); }
+.wrap { padding: 20px 0; }
+.title { font-size: 15px; font-weight: 500; color: var(--color-text-primary); margin-bottom: 4px; }
+.subtitle { font-size: 12px; color: var(--color-text-secondary); margin-bottom: 20px; }
+
+.layer {
+  border-radius: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  border: 1px solid var(--color-border-tertiary);
+}
+.layer-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.15s;
+}
+.layer-header:hover { background: var(--color-background-secondary); }
+.layer-num {
+  font-size: 11px;
+  font-weight: 500;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.layer-label { flex: 1; font-size: 13px; font-weight: 500; color: var(--color-text-primary); }
+.layer-tag {
+  font-size: 10px;
+  font-weight: 500;
+  padding: 2px 8px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.chevron {
+  font-size: 11px;
+  color: var(--color-text-tertiary);
+  transition: transform 0.2s;
+}
+.chevron.open { transform: rotate(90deg); }
+
+.layer-body {
+  display: none;
+  padding: 0 14px 14px;
+  border-top: 1px solid var(--color-border-tertiary);
+}
+.layer-body.open { display: block; }
+
+.section-head {
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-tertiary);
+  margin: 12px 0 6px;
+}
+.pill-row { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 4px; }
+.pill {
+  font-size: 11px;
+  padding: 3px 9px;
+  border-radius: 20px;
+  border: 1px solid var(--color-border-tertiary);
+  color: var(--color-text-secondary);
+}
+.pill.hi { border-color: transparent; }
+.note {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  margin-top: 6px;
+}
+.gap-bar {
+  background: var(--color-background-secondary);
+  border-radius: 6px;
+  padding: 8px 10px;
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+  margin-top: 8px;
+  border-left: 3px solid;
+}
+
+/* Team section */
+.team-wrap {
+  margin-top: 20px;
+  border: 1px solid var(--color-border-tertiary);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.team-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  cursor: pointer;
+  user-select: none;
+}
+.team-header:hover { background: var(--color-background-secondary); }
+.team-label { flex: 1; font-size: 13px; font-weight: 500; color: var(--color-text-primary); }
+.team-body { display: none; padding: 0 14px 14px; border-top: 1px solid var(--color-border-tertiary); }
+.team-body.open { display: block; }
+.role-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 8px; margin-top: 12px; }
+.role-card {
+  border-radius: 8px;
+  padding: 10px 12px;
+  border: 1px solid var(--color-border-tertiary);
+}
+.role-title { font-size: 12px; font-weight: 500; color: var(--color-text-primary); margin-bottom: 3px; }
+.role-desc { font-size: 11px; color: var(--color-text-secondary); line-height: 1.5; }
+
+/* Phase strip */
+.phase-strip { display: flex; gap: 6px; margin-top: 20px; flex-wrap: wrap; }
+.phase-box {
+  flex: 1;
+  min-width: 100px;
+  border-radius: 8px;
+  padding: 10px;
+  border: 1px solid var(--color-border-tertiary);
+  font-size: 11px;
+}
+.phase-title { font-weight: 500; color: var(--color-text-primary); margin-bottom: 2px; font-size: 12px; }
+.phase-desc { color: var(--color-text-secondary); line-height: 1.5; }
+
+/* Color theming per layer */
+.l1 { --lc: #0C447C; --lbg: #E6F1FB; --lbg2: #B5D4F4; }
+.l2 { --lc: #085041; --lbg: #E1F5EE; --lbg2: #9FE1CB; }
+.l3 { --lc: #3C3489; --lbg: #EEEDFE; --lbg2: #CECBF6; }
+.l4 { --lc: #854F0B; --lbg: #FAEEDA; --lbg2: #FAC775; }
+.l5 { --lc: #712B13; --lbg: #FAECE7; --lbg2: #F5C4B3; }
+.l6 { --lc: #0F6E56; --lbg: #E1F5EE; --lbg2: #5DCAA5; }
+.l7 { --lc: #633806; --lbg: #FAEEDA; --lbg2: #EF9F27; }
+.l8 { --lc: #3B6D11; --lbg: #EAF3DE; --lbg2: #97C459; }
+
+.layer-num { background: var(--lbg2, #ddd); color: var(--lc, #333); }
+.layer-tag { background: var(--lbg, #eee); color: var(--lc, #555); }
+.gap-bar { border-left-color: var(--lbg2, #aaa); }
+
+@media (prefers-color-scheme: dark) {
+  .l1 { --lc: #85B7EB; --lbg: #042C53; --lbg2: #0C447C; }
+  .l2 { --lc: #5DCAA5; --lbg: #04342C; --lbg2: #085041; }
+  .l3 { --lc: #AFA9EC; --lbg: #26215C; --lbg2: #3C3489; }
+  .l4 { --lc: #FAC775; --lbg: #412402; --lbg2: #633806; }
+  .l5 { --lc: #F0997B; --lbg: #4A1B0C; --lbg2: #712B13; }
+  .l6 { --lc: #9FE1CB; --lbg: #04342C; --lbg2: #0F6E56; }
+  .l7 { --lc: #EF9F27; --lbg: #412402; --lbg2: #854F0B; }
+  .l8 { --lc: #C0DD97; --lbg: #173404; --lbg2: #3B6D11; }
+}
+</style>
+
+<div class="wrap">
+<div class="title">Chat-based government service delivery — platform stack</div>
+<div class="subtitle">GovTech Barbados · 8-layer delta analysis · Click any layer to expand</div>
+
+<!-- Layer 1 -->
+<div class="layer l1">
+  <div class="layer-header" onclick="toggle(this)">
+    <div class="layer-num">1</div>
+    <div class="layer-label">Canonical registers & reference data</div>
+    <div class="layer-tag">Foundation</div>
+    <div class="chevron">▶</div>
+  </div>
+  <div class="layer-body">
+    <div class="section-head">What's needed</div>
+    <p class="note">Authoritative, curated, machine-readable lists that act as single sources of truth — managed as first-class products with named custodians, version control, and APIs.</p>
+    <div class="section-head">Key registers</div>
+    <div class="pill-row">
+      <span class="pill hi" style="background:var(--lbg);color:var(--lc)">Government offices & service centres</span>
+      <span class="pill hi" style="background:var(--lbg);color:var(--lc)">Addresses & locations</span>
+      <span class="pill hi" style="background:var(--lbg);color:var(--lc)">Government services (canonical list)</span>
+      <span class="pill hi" style="background:var(--lbg);color:var(--lc)">Government organisations</span>
+      <span class="pill hi" style="background:var(--lbg);color:var(--lc)">Fees & charges</span>
+      <span class="pill hi" style="background:var(--lbg);color:var(--lc)">Legislation & regulations index</span>
+      <span class="pill hi" style="background:var(--lbg);color:var(--lc)">Parishes & constituencies</span>
+      <span class="pill hi" style="background:var(--lbg);color:var(--lc)">Forms & documents register</span>
+      <span class="pill hi" style="background:var(--lbg);color:var(--lc)">Holidays & civic dates</span>
+    </div>
+    <div class="section-head">What likely exists today</div>
+    <p class="note">Scattered spreadsheets, individual ministry websites, civil servant knowledge. Little machine-readable or API-accessible. OpenCRVS may establish some patterns for civil registration.</p>
+    <div class="gap-bar">
+      <strong>Gap:</strong> Register framework & standard · Starter set audit (orgs, offices, services) · Named custodians per register · Publication mechanism (CSV/JSON → API) · Change governance process
+    </div>
+  </div>
+</div>
+
+<!-- Layer 2 -->
+<div class="layer l2">
+  <div class="layer-header" onclick="toggle(this)">
+    <div class="layer-num">2</div>
+    <div class="layer-label">Structured content & knowledge base</div>
+    <div class="layer-tag">Foundation</div>
+    <div class="chevron">▶</div>
+  </div>
+  <div class="layer-body">
+    <div class="section-head">What's needed</div>
+    <p class="note">A curated, authoritative, up-to-date corpus of government service information — the single most important prerequisite. Without good content, even the best AI produces poor answers.</p>
+    <div class="section-head">Includes</div>
+    <div class="pill-row">
+      <span class="pill hi" style="background:var(--lbg);color:var(--lc)">Plain-language service descriptions</span>
+      <span class="pill hi" style="background:var(--lbg);color:var(--lc)">Eligibility criteria as structured data</span>
+      <span class="pill hi" style="background:var(--lbg);color:var(--lc)">Forms & requirements</span>
+      <span class="pill hi" style="background:var(--lbg);color:var(--lc)">Fee schedules</span>
+      <span class="pill hi" style="background:var(--lbg);color:var(--lc)">Contact details & opening hours</span>
+      <span class="pill hi" style="background:var(--lbg);color:var(--lc)">Legislation & policy summaries</span>
+      <span class="pill hi" style="background:var(--lbg);color:var(--lc)">FAQs from actual citizen enquiries</span>
+    </div>
+    <div class="section-head">What likely exists today</div>
+    <p class="note">Some content on ministry websites — fragmented, inconsistently structured, often out of date. alpha.gov.bb has begun establishing patterns but coverage is limited.</p>
+    <div class="gap-bar">
+      <strong>Gap:</strong> Content audit across priority services · Structured content model & schema · Content operations process · Ministry content owners · Central CMS as single source of truth
+    </div>
+  </div>
+</div>
+
+<!-- Layer 3 -->
+<div class="layer l3">
+  <div class="layer-header" onclick="toggle(this)">
+    <div class="layer-num">3</div>
+    <div class="layer-label">Retrieval & AI layer ("the brain")</div>
+    <div class="layer-tag">Intelligence</div>
+    <div class="chevron">▶</div>
+  </div>
+  <div class="layer-body">
+    <div class="section-head">What's needed</div>
+    <p class="note">RAG (Retrieval-Augmented Generation) architecture: combines an LLM with a retrieval system that fetches relevant content before generating a response. Grounded in the knowledge base.</p>
+    <div class="section-head">Key components</div>
+    <div class="pill-row">
+      <span class="pill hi" style="background:var(--lbg);color:var(--lc)">LLM (hosted API or self-hosted)</span>
+      <span class="pill hi" style="background:var(--lbg);color:var(--lc)">Vector database</span>
+      <span class="pill hi" style="background:var(--lbg);color:var(--lc)">Embedding pipeline</span>
+      <span class="pill hi" style="background:var(--lbg);color:var(--lc)">Orchestration layer</span>
+      <span class="pill hi" style="background:var(--lbg);color:var(--lc)">Guardrails & safety systems</span>
+      <span class="pill hi" style="background:var(--lbg);color:var(--lc)">Human-in-the-loop escalation</span>
+    </div>
+    <div class="section-head">What likely exists today</div>
+    <p class="note">Essentially nothing purpose-built. Some ad hoc LLM experimentation possible but no production-grade RAG infrastructure.</p>
+    <div class="gap-bar">
+      <strong>Gap:</strong> LLM strategy (hosted vs self-hosted, data sovereignty) · Vector DB + embedding pipeline · Orchestration with safety guardrails · Prompt engineering for Barbadian context · Evaluation framework
+    </div>
+  </div>
+</div>
+
+<!-- Layer 4 -->
+<div class="layer l4">
+  <div class="layer-header" onclick="toggle(this)">
+    <div class="layer-num">4</div>
+    <div class="layer-label">Identity & authentication</div>
+    <div class="layer-tag">Trust</div>
+    <div class="chevron">▶</div>
+  </div>
+  <div class="layer-body">
+    <div class="section-head">What's needed</div>
+    <p class="note">Tiered identity assurance to enable the chatbot to move beyond information-giving into transactional services with appropriate verification at each risk level.</p>
+    <div class="section-head">Tiers</div>
+    <div class="pill-row">
+      <span class="pill hi" style="background:var(--lbg);color:var(--lc)">Anonymous — general info, Phase 1</span>
+      <span class="pill hi" style="background:var(--lbg);color:var(--lc)">Light verification — status checks</span>
+      <span class="pill hi" style="background:var(--lbg);color:var(--lc)">Authenticated — full transactions</span>
+      <span class="pill hi" style="background:var(--lbg);color:var(--lc)">Consent management</span>
+    </div>
+    <div class="section-head">What likely exists today</div>
+    <p class="note">No national digital identity system in production. Individual ministry systems may have siloed logins.</p>
+    <div class="gap-bar">
+      <strong>Gap:</strong> Identity assurance framework with tiered levels · Phase 1 focus on anonymous tier (no infra needed) · Plan for integration with future national digital identity · Data retention policies for conversation data
+    </div>
+  </div>
+</div>
+
+<!-- Layer 5 -->
+<div class="layer l5">
+  <div class="layer-header" onclick="toggle(this)">
+    <div class="layer-num">5</div>
+    <div class="layer-label">Integration & interoperability layer</div>
+    <div class="layer-tag">Plumbing</div>
+    <div class="chevron">▶</div>
+  </div>
+  <div class="layer-body">
+    <div class="section-head">What's needed</div>
+    <p class="note">Connections to back-end government systems for anything beyond general Q&A — case management, licensing, registration, payments. The most expensive and time-consuming layer.</p>
+    <div class="section-head">Key components</div>
+    <div class="pill-row">
+      <span class="pill hi" style="background:var(--lbg);color:var(--lc)">API gateway</span>
+      <span class="pill hi" style="background:var(--lbg);color:var(--lc)">APIs on existing systems</span>
+      <span class="pill hi" style="background:var(--lbg);color:var(--lc)">Data exchange layer (X-Road model)</span>
+      <span class="pill hi" style="background:var(--lbg);color:var(--lc)">Integration bus / middleware</span>
+    </div>
+    <div class="section-head">What likely exists today</div>
+    <p class="note">Most systems likely siloed with little or no API exposure. Some newer systems (formsflow.ai etc.) may have APIs; legacy systems almost certainly don't.</p>
+    <div class="gap-bar">
+      <strong>Gap:</strong> Audit of priority systems & integration readiness · API gateway deployment · API wrappers/adapters for priority systems · Data exchange standards · Sequence by highest-value integrations first
+    </div>
+  </div>
+</div>
+
+<!-- Layer 6 -->
+<div class="layer l6">
+  <div class="layer-header" onclick="toggle(this)">
+    <div class="layer-num">6</div>
+    <div class="layer-label">Channels & front-end</div>
+    <div class="layer-tag">Interface</div>
+    <div class="chevron">▶</div>
+  </div>
+  <div class="layer-body">
+    <div class="section-head">What's needed</div>
+    <p class="note">Citizen-facing interfaces — separate from the AI "brain" so the same back-end can serve multiple channels simultaneously.</p>
+    <div class="section-head">Key channels</div>
+    <div class="pill-row">
+      <span class="pill hi" style="background:var(--lbg);color:var(--lc)">Web chat widget (alpha.gov.bb)</span>
+      <span class="pill hi" style="background:var(--lbg);color:var(--lc)">WhatsApp (high Caribbean penetration)</span>
+      <span class="pill hi" style="background:var(--lbg);color:var(--lc)">SMS (inclusion fallback)</span>
+      <span class="pill hi" style="background:var(--lbg);color:var(--lc)">Voice (phone-based)</span>
+      <span class="pill hi" style="background:var(--lbg);color:var(--lc)">In-person kiosk</span>
+    </div>
+    <div class="section-head">What likely exists today</div>
+    <p class="note">alpha.gov.bb website. Possibly some ministry social media. No unified conversational channel.</p>
+    <div class="gap-bar">
+      <strong>Gap:</strong> Web chat on alpha.gov.bb as first channel · WhatsApp Business API access & cost assessment · Channel-agnostic architecture · SMS fallback for inclusion · User research on channel preferences
+    </div>
+  </div>
+</div>
+
+<!-- Layer 7 -->
+<div class="layer l7">
+  <div class="layer-header" onclick="toggle(this)">
+    <div class="layer-num">7</div>
+    <div class="layer-label">Payments</div>
+    <div class="layer-tag">Transactions</div>
+    <div class="chevron">▶</div>
+  </div>
+  <div class="layer-body">
+    <div class="section-head">What's needed</div>
+    <p class="note">Payment integration for services involving fees — licence renewals, permits, fines — when the chat interface moves to transactional services. Not a day-one requirement.</p>
+    <div class="section-head">Key components</div>
+    <div class="pill-row">
+      <span class="pill hi" style="background:var(--lbg);color:var(--lc)">Payment gateway (Barbados cards)</span>
+      <span class="pill hi" style="background:var(--lbg);color:var(--lc)">Powertranz / FAC / BiMPay / EZPay</span>
+      <span class="pill hi" style="background:var(--lbg);color:var(--lc)">Payment links in conversation</span>
+      <span class="pill hi" style="background:var(--lbg);color:var(--lc)">Reconciliation & receipt generation</span>
+      <span class="pill hi" style="background:var(--lbg);color:var(--lc)">PCI DSS compliance (hosted pages)</span>
+    </div>
+    <div class="section-head">What likely exists today</div>
+    <p class="note">Some government payment infrastructure exists (Powertranz/FAC in some contexts) but landscape is fragmented.</p>
+    <div class="gap-bar">
+      <strong>Gap:</strong> Not a Phase 1 priority · Simplest approach: payment links → existing hosted pages · Align with GovTech payment infrastructure decisions · Longer term: inline payment within chat
+    </div>
+  </div>
+</div>
+
+<!-- Layer 8 -->
+<div class="layer l8">
+  <div class="layer-header" onclick="toggle(this)">
+    <div class="layer-num">8</div>
+    <div class="layer-label">Analytics, monitoring & continuous improvement</div>
+    <div class="layer-tag">Operations</div>
+    <div class="chevron">▶</div>
+  </div>
+  <div class="layer-body">
+    <div class="section-head">What's needed</div>
+    <p class="note">Without robust analytics you're flying blind. The chat interface generates rich data on citizen needs, pain points, and service gaps — but only if instrumented from day one.</p>
+    <div class="section-head">Key components</div>
+    <div class="pill-row">
+      <span class="pill hi" style="background:var(--lbg);color:var(--lc)">Conversation analytics</span>
+      <span class="pill hi" style="background:var(--lbg);color:var(--lc)">Response quality monitoring</span>
+      <span class="pill hi" style="background:var(--lbg);color:var(--lc)">Performance monitoring (uptime, latency)</span>
+      <span class="pill hi" style="background:var(--lbg);color:var(--lc)">In-conversation feedback (thumbs)</span>
+      <span class="pill hi" style="background:var(--lbg);color:var(--lc)">Reporting dashboards</span>
+      <span class="pill hi" style="background:var(--lbg);color:var(--lc)">Continuous improvement loop</span>
+    </div>
+    <div class="section-head">What likely exists today</div>
+    <p class="note">Basic web analytics on government sites at best. No conversation analytics infrastructure.</p>
+    <div class="gap-bar">
+      <strong>Gap:</strong> Build analytics in from day one (not an afterthought) · Define KPIs before launch · Weekly failed-query review · Monthly content update cycle · Use conversation data to inform broader service design
+    </div>
+  </div>
+</div>
+
+<!-- Team shape -->
+<div class="team-wrap">
+  <div class="team-header" onclick="toggleTeam(this)">
+    <div class="layer-num" style="background:#EEEDFE;color:#3C3489">👥</div>
+    <div class="team-label">Team shape required</div>
+    <div class="chevron">▶</div>
+  </div>
+  <div class="team-body">
+    <p class="note" style="margin-top:12px">This is not a "build it and walk away" product. Ongoing prompt engineering and content curation are permanent operational costs, not one-off project costs.</p>
+    <div class="role-grid">
+      <div class="role-card" style="border-color:#CECBF6">
+        <div class="role-title" style="color:#3C3489">Product manager</div>
+        <div class="role-desc">Owns roadmap, phases, and prioritisation. Single accountable person for the platform.</div>
+      </div>
+      <div class="role-card" style="border-color:#CECBF6">
+        <div class="role-title" style="color:#3C3489">Content designers (×2)</div>
+        <div class="role-desc">Write and maintain plain-language service content. Manage editorial standards and quality assurance.</div>
+      </div>
+      <div class="role-card" style="border-color:#CECBF6">
+        <div class="role-title" style="color:#3C3489">AI/ML engineer</div>
+        <div class="role-desc">RAG architecture, vector DB, embeddings, prompt engineering, guardrails. Or a managed service relationship.</div>
+      </div>
+      <div class="role-card" style="border-color:#CECBF6">
+        <div class="role-title" style="color:#3C3489">Integration developer</div>
+        <div class="role-desc">API gateway, adapters for back-end systems, data exchange standards. Grows as Phase 4 approaches.</div>
+      </div>
+      <div class="role-card" style="border-color:#CECBF6">
+        <div class="role-title" style="color:#3C3489">User researcher</div>
+        <div class="role-desc">Channel preference research, usability testing, feedback loop from citizens back to product and content teams.</div>
+      </div>
+      <div class="role-card" style="border-color:#CECBF6">
+        <div class="role-title" style="color:#3C3489">Register custodians (distributed)</div>
+        <div class="role-desc">Named individuals in each ministry/department responsible for keeping their register accurate and current.</div>
+      </div>
+      <div class="role-card" style="border-color:#CECBF6">
+        <div class="role-title" style="color:#3C3489">Ministry content owners (distributed)</div>
+        <div class="role-desc">Embedded in each department. Own, update, and quality-assure service content for their area.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Phasing -->
+<div style="margin-top:20px">
+  <div class="title" style="margin-bottom:10px">Delivery phasing</div>
+  <div class="phase-strip">
+    <div class="phase-box" style="border-color:#B5D4F4">
+      <div class="phase-title" style="color:#0C447C">Phase 0</div>
+      <div class="phase-desc" style="color:#185FA5">Registers & content foundations<br><span style="color:var(--color-text-tertiary)">3–4 months</span></div>
+    </div>
+    <div class="phase-box" style="border-color:#9FE1CB">
+      <div class="phase-title" style="color:#085041">Phase 1</div>
+      <div class="phase-desc" style="color:#0F6E56">Information chatbot on alpha.gov.bb<br><span style="color:var(--color-text-tertiary)">3–4 months</span></div>
+    </div>
+    <div class="phase-box" style="border-color:#AFA9EC">
+      <div class="phase-title" style="color:#3C3489">Phase 2</div>
+      <div class="phase-desc" style="color:#534AB7">Multi-channel (WhatsApp, SMS)<br><span style="color:var(--color-text-tertiary)">2–3 months</span></div>
+    </div>
+    <div class="phase-box" style="border-color:#FAC775">
+      <div class="phase-title" style="color:#633806">Phase 3</div>
+      <div class="phase-desc" style="color:#854F0B">Guided transactions & form pre-fill<br><span style="color:var(--color-text-tertiary)">4–6 months</span></div>
+    </div>
+    <div class="phase-box" style="border-color:#F5C4B3">
+      <div class="phase-title" style="color:#712B13">Phase 4</div>
+      <div class="phase-desc" style="color:#993C1D">End-to-end apply, pay & track<br><span style="color:var(--color-text-tertiary)">6–12 months</span></div>
+    </div>
+  </div>
+</div>
+</div>
+
+<script>
+function toggle(header) {
+  const body = header.nextElementSibling;
+  const chev = header.querySelector('.chevron');
+  const isOpen = body.classList.contains('open');
+  body.classList.toggle('open', !isOpen);
+  chev.classList.toggle('open', !isOpen);
+}
+function toggleTeam(header) {
+  const body = header.nextElementSibling;
+  const chev = header.querySelector('.chevron');
+  const isOpen = body.classList.contains('open');
+  body.classList.toggle('open', !isOpen);
+  chev.classList.toggle('open', !isOpen);
+}
+</script>
