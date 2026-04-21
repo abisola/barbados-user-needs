@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>GovTech Hiring Dashboard</title>
+<title>GovTech Hiring Dashboard – Outsourced DT</title>
 <style>
   :root {
     --bg: #f8fafc;
@@ -31,380 +31,128 @@
     --shadow-lg: 0 4px 6px rgba(0,0,0,0.05), 0 10px 24px rgba(0,0,0,0.08);
     --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   }
-
   * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: var(--font); background: var(--bg); color: var(--text); line-height: 1.5; -webkit-font-smoothing: antialiased; }
 
-  body {
-    font-family: var(--font);
-    background: var(--bg);
-    color: var(--text);
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-  }
-
-  .app-header {
-    background: var(--surface);
-    border-bottom: 1px solid var(--border);
-    padding: 20px 32px;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-  }
-
-  .header-inner {
-    max-width: 1280px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 16px;
-    flex-wrap: wrap;
-  }
-
+  /* Header */
+  .app-header { background: var(--surface); border-bottom: 1px solid var(--border); padding: 20px 32px; position: sticky; top: 0; z-index: 100; }
+  .header-inner { max-width: 1320px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
   .header-left { display: flex; align-items: center; gap: 12px; }
+  .logo-mark { width: 40px; height: 40px; background: var(--primary); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 18px; letter-spacing: -0.02em; }
+  .header-title { font-size: 20px; font-weight: 700; letter-spacing: -0.02em; }
+  .header-subtitle { font-size: 13px; color: var(--text-muted); }
+  .header-date { font-size: 13px; color: var(--text-muted); background: var(--border-light); padding: 6px 14px; border-radius: 20px; }
+  .main { max-width: 1320px; margin: 0 auto; padding: 24px 32px 64px; }
 
-  .logo-mark {
-    width: 40px; height: 40px;
-    background: var(--primary);
-    border-radius: 10px;
-    display: flex; align-items: center; justify-content: center;
-    color: white; font-weight: 700; font-size: 18px;
-    letter-spacing: -0.02em;
-  }
-
-  .header-title {
-    font-size: 20px;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    color: var(--text);
-  }
-
-  .header-subtitle {
-    font-size: 13px;
-    color: var(--text-muted);
-    font-weight: 400;
-  }
-
-  .header-date {
-    font-size: 13px;
-    color: var(--text-muted);
-    background: var(--border-light);
-    padding: 6px 14px;
-    border-radius: 20px;
-  }
-
-  .main { max-width: 1280px; margin: 0 auto; padding: 24px 32px 64px; }
-
-  /* Nav tabs */
-  .tab-nav {
-    display: flex;
-    gap: 4px;
-    margin-bottom: 28px;
-    background: var(--surface);
-    border-radius: var(--radius);
-    padding: 4px;
-    box-shadow: var(--shadow-sm);
-    border: 1px solid var(--border);
-    width: fit-content;
-  }
-
-  .tab-btn {
-    padding: 10px 20px;
-    border: none;
-    background: transparent;
-    font-family: var(--font);
-    font-size: 14px;
-    font-weight: 500;
-    color: var(--text-secondary);
-    cursor: pointer;
-    border-radius: var(--radius-sm);
-    transition: all 180ms ease;
-    white-space: nowrap;
-  }
-
+  /* Tabs */
+  .tab-nav { display: flex; gap: 4px; margin-bottom: 28px; background: var(--surface); border-radius: var(--radius); padding: 4px; box-shadow: var(--shadow-sm); border: 1px solid var(--border); width: fit-content; }
+  .tab-btn { padding: 10px 20px; border: none; background: transparent; font-family: var(--font); font-size: 14px; font-weight: 500; color: var(--text-secondary); cursor: pointer; border-radius: var(--radius-sm); transition: all 180ms ease; white-space: nowrap; }
   .tab-btn:hover { color: var(--text); background: var(--border-light); }
   .tab-btn.active { background: var(--primary); color: white; box-shadow: var(--shadow-sm); }
-
   .tab-content { display: none; }
   .tab-content.active { display: block; }
 
-  /* Summary cards */
-  .summary-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 16px;
-    margin-bottom: 28px;
-  }
-
-  .stat-card {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 20px 24px;
-    box-shadow: var(--shadow-sm);
-    transition: box-shadow 180ms ease;
-  }
-
+  /* Stat cards */
+  .summary-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 28px; }
+  .stat-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px 24px; box-shadow: var(--shadow-sm); transition: box-shadow 180ms ease; }
   .stat-card:hover { box-shadow: var(--shadow); }
-
-  .stat-label {
-    font-size: 12px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: var(--text-muted);
-    margin-bottom: 6px;
-  }
-
-  .stat-value {
-    font-size: 32px;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    line-height: 1.1;
-  }
-
-  .stat-detail {
-    font-size: 13px;
-    color: var(--text-secondary);
-    margin-top: 4px;
-  }
-
+  .stat-label { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted); margin-bottom: 6px; }
+  .stat-value { font-size: 32px; font-weight: 700; letter-spacing: -0.02em; line-height: 1.1; }
+  .stat-detail { font-size: 13px; color: var(--text-secondary); margin-top: 4px; }
   .stat-card.highlight { border-left: 3px solid var(--primary); }
   .stat-card.success-highlight { border-left: 3px solid var(--success); }
   .stat-card.warning-highlight { border-left: 3px solid var(--warning); }
   .stat-card.danger-highlight { border-left: 3px solid var(--danger); }
 
   /* Progress bar */
-  .progress-bar-bg {
-    width: 100%;
-    height: 6px;
-    background: var(--border-light);
-    border-radius: 3px;
-    margin-top: 10px;
-    overflow: hidden;
-  }
+  .progress-bar-bg { width: 100%; height: 6px; background: var(--border-light); border-radius: 3px; margin-top: 10px; overflow: hidden; }
+  .progress-bar-fill { height: 100%; border-radius: 3px; transition: width 600ms ease; }
 
-  .progress-bar-fill {
-    height: 100%;
-    border-radius: 3px;
-    transition: width 600ms ease;
-  }
-
-  /* Tables */
-  .card {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    box-shadow: var(--shadow-sm);
-    overflow: hidden;
-    margin-bottom: 24px;
-  }
-
-  .card-header {
-    padding: 20px 24px 16px;
-    border-bottom: 1px solid var(--border-light);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 12px;
-    flex-wrap: wrap;
-  }
-
-  .card-title {
-    font-size: 16px;
-    font-weight: 700;
-    letter-spacing: -0.01em;
-  }
-
-  .card-subtitle {
-    font-size: 13px;
-    color: var(--text-secondary);
-    font-weight: 400;
-  }
-
-  table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-
-  thead th {
-    background: var(--border-light);
-    font-size: 11px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    color: var(--text-muted);
-    padding: 10px 16px;
-    text-align: left;
-    border-bottom: 1px solid var(--border);
-    white-space: nowrap;
-  }
-
+  /* Cards & Tables */
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow-sm); overflow: hidden; margin-bottom: 24px; }
+  .card-header { padding: 20px 24px 16px; border-bottom: 1px solid var(--border-light); display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  .card-title { font-size: 16px; font-weight: 700; letter-spacing: -0.01em; }
+  .card-subtitle { font-size: 13px; color: var(--text-secondary); }
+  table { width: 100%; border-collapse: collapse; }
+  thead th { background: var(--border-light); font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-muted); padding: 10px 16px; text-align: left; border-bottom: 1px solid var(--border); white-space: nowrap; }
   thead th.right { text-align: right; }
   thead th.centre { text-align: center; }
-
-  tbody td {
-    padding: 12px 16px;
-    font-size: 14px;
-    border-bottom: 1px solid var(--border-light);
-    vertical-align: middle;
-  }
-
+  tbody td { padding: 12px 16px; font-size: 14px; border-bottom: 1px solid var(--border-light); vertical-align: middle; }
   tbody tr:last-child td { border-bottom: none; }
   tbody tr:hover { background: #f8fafd; }
-
   td.right { text-align: right; }
   td.centre { text-align: center; }
   td.mono { font-variant-numeric: tabular-nums; }
-
+  .table-wrap { overflow-x: auto; }
   .role-name { font-weight: 600; }
   .lead-role { color: var(--primary); }
+  .new-role { color: var(--accent); }
 
   /* Badges */
-  .badge {
-    display: inline-block;
-    padding: 3px 10px;
-    border-radius: 20px;
-    font-size: 12px;
-    font-weight: 600;
-    white-space: nowrap;
-  }
-
+  .badge { display: inline-block; padding: 3px 10px; border-radius: 20px; font-size: 12px; font-weight: 600; white-space: nowrap; }
   .badge-danger { background: var(--danger-light); color: var(--danger); }
   .badge-warning { background: var(--warning-light); color: var(--warning); }
   .badge-success { background: var(--success-light); color: var(--success); }
   .badge-info { background: var(--primary-light); color: var(--primary); }
   .badge-muted { background: var(--border-light); color: var(--text-secondary); }
+  .badge-accent { background: var(--accent-light); color: var(--accent); }
 
-  /* Priority indicator */
-  .priority-bar {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-
-  .priority-fill-bg {
-    flex: 1;
-    height: 8px;
-    background: var(--border-light);
-    border-radius: 4px;
-    overflow: hidden;
-    min-width: 60px;
-  }
-
-  .priority-fill {
-    height: 100%;
-    border-radius: 4px;
-    transition: width 500ms ease;
-  }
+  /* Priority bar */
+  .priority-bar { display: flex; align-items: center; gap: 8px; }
+  .priority-fill-bg { flex: 1; height: 8px; background: var(--border-light); border-radius: 4px; overflow: hidden; min-width: 60px; }
+  .priority-fill { height: 100%; border-radius: 4px; transition: width 500ms ease; }
 
   /* Team cards */
-  .team-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-    gap: 16px;
-  }
-
-  .team-card {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    box-shadow: var(--shadow-sm);
-    overflow: hidden;
-    transition: box-shadow 180ms ease, transform 180ms ease;
-  }
-
+  .team-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 16px; }
+  .team-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow-sm); overflow: hidden; transition: box-shadow 180ms ease, transform 180ms ease; }
   .team-card:hover { box-shadow: var(--shadow); transform: translateY(-1px); }
-
-  .team-card-header {
-    padding: 16px 20px;
-    border-bottom: 1px solid var(--border-light);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 8px;
-  }
-
-  .team-name {
-    font-size: 15px;
-    font-weight: 700;
-    letter-spacing: -0.01em;
-  }
-
-  .team-phase {
-    font-size: 11px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-    padding: 3px 10px;
-    border-radius: 20px;
-  }
-
+  .team-card-header { padding: 16px 20px; border-bottom: 1px solid var(--border-light); display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+  .team-name { font-size: 15px; font-weight: 700; letter-spacing: -0.01em; }
+  .team-phase { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; padding: 3px 10px; border-radius: 20px; }
   .phase-discovery { background: #ede9fe; color: #7c3aed; }
   .phase-deep-trans { background: #fce7f3; color: #db2777; }
   .phase-platform { background: #d1fae5; color: #059669; }
-  .phase-consulting { background: #fef3c7; color: #b45309; }
-
-  .team-date {
-    font-size: 12px;
-    color: var(--text-muted);
-    padding: 0 20px;
-    padding-top: 12px;
-  }
-
+  .team-date { font-size: 12px; color: var(--text-muted); padding: 0 20px; padding-top: 12px; }
   .team-roles-list { padding: 8px 20px 16px; }
-
-  .team-role-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 6px 0;
-    font-size: 13px;
-    border-bottom: 1px solid var(--border-light);
-  }
-
+  .team-role-row { display: flex; align-items: center; justify-content: space-between; padding: 6px 0; font-size: 13px; border-bottom: 1px solid var(--border-light); }
   .team-role-row:last-child { border-bottom: none; }
-
   .team-role-name { color: var(--text-secondary); }
-  .team-role-count {
-    font-weight: 600;
-    font-variant-numeric: tabular-nums;
-    min-width: 20px;
-    text-align: right;
-  }
+  .team-role-count { font-weight: 600; font-variant-numeric: tabular-nums; min-width: 20px; text-align: right; }
+  .team-total { display: flex; align-items: center; justify-content: space-between; padding: 12px 20px; background: var(--border-light); font-weight: 700; font-size: 13px; }
 
-  .team-total {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 12px 20px;
-    background: var(--border-light);
-    font-weight: 700;
-    font-size: 13px;
-  }
-
-  /* Filter chips */
-  .filter-row {
-    display: flex;
-    gap: 6px;
-    flex-wrap: wrap;
-  }
-
-  .filter-chip {
-    padding: 5px 14px;
-    border-radius: 20px;
-    font-size: 12px;
-    font-weight: 500;
-    border: 1px solid var(--border);
-    background: var(--surface);
-    color: var(--text-secondary);
-    cursor: pointer;
-    transition: all 150ms ease;
-    font-family: var(--font);
-  }
-
+  /* Filters */
+  .filter-row { display: flex; gap: 6px; flex-wrap: wrap; }
+  .filter-chip { padding: 5px 14px; border-radius: 20px; font-size: 12px; font-weight: 500; border: 1px solid var(--border); background: var(--surface); color: var(--text-secondary); cursor: pointer; transition: all 150ms ease; font-family: var(--font); }
   .filter-chip:hover { border-color: var(--primary); color: var(--primary); }
   .filter-chip.active { background: var(--primary); color: white; border-color: var(--primary); }
+
+  /* ── Gantt ─────────────────────────────────────────────────── */
+  .gantt-container { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow-sm); overflow: hidden; margin-bottom: 24px; }
+  .gantt-scroll { overflow-x: auto; padding-bottom: 8px; }
+  .gantt-table { width: max-content; min-width: 100%; border-collapse: collapse; }
+  .gantt-table thead th { background: var(--border-light); font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted); padding: 8px 0; text-align: center; border-bottom: 1px solid var(--border); }
+  .gantt-table thead th.gantt-label-col { text-align: left; padding: 8px 16px; position: sticky; left: 0; background: var(--border-light); z-index: 2; min-width: 220px; border-right: 2px solid var(--border); }
+  .gantt-table thead th.gantt-size-col { min-width: 50px; padding: 8px 10px; position: sticky; left: 220px; background: var(--border-light); z-index: 2; border-right: 2px solid var(--border); }
+  .gantt-table thead th.gantt-week-col { min-width: 48px; width: 48px; font-size: 10px; padding: 6px 2px; border-left: 1px solid var(--border-light); }
+  .gantt-month-header th { background: var(--surface) !important; font-size: 12px !important; font-weight: 700 !important; letter-spacing: 0.02em !important; color: var(--text) !important; border-bottom: 1px solid var(--border-light) !important; padding: 10px 0 4px !important; }
+  .gantt-month-header th.gantt-label-col, .gantt-month-header th.gantt-size-col { background: var(--surface) !important; }
+  .gantt-table tbody td { padding: 0; height: 44px; vertical-align: middle; border-bottom: 1px solid var(--border-light); position: relative; }
+  .gantt-table tbody tr:hover td { background: #f8fafd; }
+  .gantt-table tbody tr:hover td.gantt-label-cell, .gantt-table tbody tr:hover td.gantt-size-cell { background: #f0f4f8; }
+  .gantt-label-cell { position: sticky; left: 0; background: var(--surface); z-index: 1; padding: 8px 16px !important; border-right: 2px solid var(--border); white-space: nowrap; }
+  .gantt-size-cell { position: sticky; left: 220px; background: var(--surface); z-index: 1; padding: 8px 10px !important; text-align: center; border-right: 2px solid var(--border); font-size: 13px; font-weight: 600; font-variant-numeric: tabular-nums; color: var(--text-secondary); }
+  .gantt-week-cell { border-left: 1px solid var(--border-light); padding: 4px 2px; }
+  .gantt-bar-wrap { position: absolute; top: 6px; bottom: 6px; display: flex; align-items: center; justify-content: center; border-radius: 6px; transition: opacity 180ms ease; cursor: default; z-index: 1; }
+  .gantt-bar-wrap:hover { opacity: 0.85; z-index: 2; }
+  .gantt-bar-label { font-size: 10px; font-weight: 700; color: white; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; padding: 0 6px; text-shadow: 0 1px 2px rgba(0,0,0,0.2); }
+  .gantt-today-line { position: absolute; top: 0; bottom: 0; width: 2px; background: var(--danger); z-index: 3; pointer-events: none; }
+  .gantt-today-label { position: absolute; top: -20px; left: -14px; font-size: 9px; font-weight: 700; color: var(--danger); white-space: nowrap; }
+  .gantt-phase-row td { background: var(--border-light) !important; font-size: 12px; font-weight: 700; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.04em; padding: 6px 16px !important; height: 32px !important; }
+  .gantt-legend { display: flex; gap: 16px; flex-wrap: wrap; padding: 12px 20px; border-top: 1px solid var(--border-light); font-size: 12px; color: var(--text-secondary); align-items: center; }
+  .gantt-legend-item { display: flex; align-items: center; gap: 6px; }
+  .gantt-legend-dot { width: 12px; height: 12px; border-radius: 4px; }
+  .gantt-tooltip { display: none; position: fixed; background: var(--text); color: white; padding: 10px 14px; border-radius: 8px; font-size: 12px; line-height: 1.5; z-index: 1000; pointer-events: none; box-shadow: var(--shadow-lg); max-width: 280px; }
+  .gantt-tooltip.visible { display: block; }
 
   /* Responsive */
   @media (max-width: 768px) {
@@ -414,238 +162,7 @@
     .team-grid { grid-template-columns: 1fr; }
     .tab-btn { padding: 8px 14px; font-size: 13px; }
   }
-
-  @media (max-width: 480px) {
-    .summary-grid { grid-template-columns: 1fr; }
-  }
-
-  /* Scroll table wrapper */
-  .table-wrap { overflow-x: auto; }
-
-  /* ── Gantt Chart ─────────────────────────────────────────────── */
-  .gantt-container {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    box-shadow: var(--shadow-sm);
-    overflow: hidden;
-    margin-bottom: 24px;
-  }
-
-  .gantt-scroll {
-    overflow-x: auto;
-    overflow-y: visible;
-    padding-bottom: 8px;
-  }
-
-  .gantt-table {
-    width: max-content;
-    min-width: 100%;
-    border-collapse: collapse;
-  }
-
-  .gantt-table thead th {
-    background: var(--border-light);
-    font-size: 11px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: var(--text-muted);
-    padding: 8px 0;
-    text-align: center;
-    border-bottom: 1px solid var(--border);
-    position: relative;
-  }
-
-  .gantt-table thead th.gantt-label-col {
-    text-align: left;
-    padding: 8px 16px;
-    position: sticky;
-    left: 0;
-    background: var(--border-light);
-    z-index: 2;
-    min-width: 200px;
-    border-right: 2px solid var(--border);
-  }
-
-  .gantt-table thead th.gantt-size-col {
-    min-width: 50px;
-    padding: 8px 10px;
-    position: sticky;
-    left: 200px;
-    background: var(--border-light);
-    z-index: 2;
-    border-right: 2px solid var(--border);
-  }
-
-  .gantt-table thead th.gantt-week-col {
-    min-width: 44px;
-    width: 44px;
-    font-size: 10px;
-    padding: 6px 2px;
-    border-left: 1px solid var(--border-light);
-  }
-
-  .gantt-month-header th {
-    background: var(--surface) !important;
-    font-size: 12px !important;
-    font-weight: 700 !important;
-    letter-spacing: 0.02em !important;
-    color: var(--text) !important;
-    border-bottom: 1px solid var(--border-light) !important;
-    padding: 10px 0 4px !important;
-  }
-
-  .gantt-month-header th.gantt-label-col,
-  .gantt-month-header th.gantt-size-col {
-    background: var(--surface) !important;
-  }
-
-  .gantt-table tbody td {
-    padding: 0;
-    height: 40px;
-    vertical-align: middle;
-    border-bottom: 1px solid var(--border-light);
-    position: relative;
-  }
-
-  .gantt-table tbody tr:hover td {
-    background: #f8fafd;
-  }
-
-  .gantt-table tbody tr:hover td.gantt-label-cell,
-  .gantt-table tbody tr:hover td.gantt-size-cell {
-    background: #f0f4f8;
-  }
-
-  .gantt-label-cell {
-    position: sticky;
-    left: 0;
-    background: var(--surface);
-    z-index: 1;
-    padding: 8px 16px !important;
-    border-right: 2px solid var(--border);
-    white-space: nowrap;
-  }
-
-  .gantt-size-cell {
-    position: sticky;
-    left: 200px;
-    background: var(--surface);
-    z-index: 1;
-    padding: 8px 10px !important;
-    text-align: center;
-    border-right: 2px solid var(--border);
-    font-size: 13px;
-    font-weight: 600;
-    font-variant-numeric: tabular-nums;
-    color: var(--text-secondary);
-  }
-
-  .gantt-week-cell {
-    border-left: 1px solid var(--border-light);
-    padding: 4px 2px;
-  }
-
-  .gantt-bar-wrap {
-    position: absolute;
-    top: 6px;
-    bottom: 6px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 6px;
-    transition: opacity 180ms ease;
-    cursor: default;
-    z-index: 1;
-  }
-
-  .gantt-bar-wrap:hover {
-    opacity: 0.85;
-    z-index: 2;
-  }
-
-  .gantt-bar-label {
-    font-size: 10px;
-    font-weight: 700;
-    color: white;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    padding: 0 6px;
-    text-shadow: 0 1px 2px rgba(0,0,0,0.2);
-  }
-
-  .gantt-today-line {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background: var(--danger);
-    z-index: 3;
-    pointer-events: none;
-  }
-
-  .gantt-today-label {
-    position: absolute;
-    top: -20px;
-    left: -14px;
-    font-size: 9px;
-    font-weight: 700;
-    color: var(--danger);
-    white-space: nowrap;
-  }
-
-  .gantt-phase-row td {
-    background: var(--border-light) !important;
-    font-size: 12px;
-    font-weight: 700;
-    color: var(--text-secondary);
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-    padding: 6px 16px !important;
-    height: 32px !important;
-  }
-
-  .gantt-legend {
-    display: flex;
-    gap: 16px;
-    flex-wrap: wrap;
-    padding: 12px 20px;
-    border-top: 1px solid var(--border-light);
-    font-size: 12px;
-    color: var(--text-secondary);
-    align-items: center;
-  }
-
-  .gantt-legend-item {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-  }
-
-  .gantt-legend-dot {
-    width: 12px;
-    height: 12px;
-    border-radius: 4px;
-  }
-
-  .gantt-tooltip {
-    display: none;
-    position: fixed;
-    background: var(--text);
-    color: white;
-    padding: 10px 14px;
-    border-radius: 8px;
-    font-size: 12px;
-    line-height: 1.5;
-    z-index: 1000;
-    pointer-events: none;
-    box-shadow: var(--shadow-lg);
-    max-width: 260px;
-  }
-
-  .gantt-tooltip.visible { display: block; }
+  @media (max-width: 480px) { .summary-grid { grid-template-columns: 1fr; } }
 </style>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 </head>
@@ -657,10 +174,10 @@
       <div class="logo-mark">GT</div>
       <div>
         <div class="header-title">Hiring Dashboard</div>
-        <div class="header-subtitle">GovTech Team Build-Out Tracker</div>
+        <div class="header-subtitle">GovTech &ndash; Outsourced Deeper Transformation Model</div>
       </div>
     </div>
-    <div class="header-date">Data as of 10 Apr 2026</div>
+    <div class="header-date">Data as of 20 Apr 2026</div>
   </div>
 </header>
 
@@ -670,213 +187,125 @@
 // ── DATA ──────────────────────────────────────────────────────────────────────
 
 const roles = [
-  { name: "Product Manager", total: 16, inPlace: 2, remaining: 14, isLead: false, category: "Product" },
-  { name: "Delivery Manager", total: 17, inPlace: 4, remaining: 13, isLead: false, category: "Delivery" },
-  { name: "Team Co-ordinator", total: 3, inPlace: 1, remaining: 2, isLead: false, category: "Delivery" },
-  { name: "Service Designer", total: 15, inPlace: 2, remaining: 13, isLead: false, category: "Design" },
-  { name: "User Researcher", total: 16, inPlace: 0, remaining: 16, isLead: false, category: "Design" },
-  { name: "Interaction Designer", total: 16, inPlace: 3, remaining: 13, isLead: false, category: "Design" },
-  { name: "Content Designer", total: 16, inPlace: 3, remaining: 13, isLead: false, category: "Design" },
-  { name: "Front End Engineer", total: 14, inPlace: 3, remaining: 11, isLead: false, category: "Engineering" },
-  { name: "Full Stack Engineer", total: 22, inPlace: 6, remaining: 16, isLead: false, category: "Engineering" },
-  { name: "Technical Architect", total: 3, inPlace: 0, remaining: 3, isLead: false, category: "Engineering" },
-  { name: "Performance Analyst", total: 4, inPlace: 0, remaining: 4, isLead: false, category: "Data" },
-  { name: "Infrastructure Engineer", total: 10, inPlace: 3, remaining: 7, isLead: false, category: "Engineering" },
-  { name: "Lead Product Manager", total: 2, inPlace: 0, remaining: 2, isLead: true, category: "Product" },
-  { name: "Lead Designer", total: 3, inPlace: 0, remaining: 3, isLead: true, category: "Design" },
-  { name: "Lead Infrastructure Engineer", total: 1, inPlace: 0, remaining: 1, isLead: true, category: "Engineering" },
-  { name: "Lead Full Stack Engineer", total: 2, inPlace: 0, remaining: 2, isLead: true, category: "Engineering" },
-  { name: "Lead Delivery Manager", total: 2, inPlace: 0, remaining: 2, isLead: true, category: "Delivery" },
-  { name: "CDIO", total: 1, inPlace: 0, remaining: 1, isLead: true, category: "Leadership" },
-  { name: "Head of Design", total: 1, inPlace: 0, remaining: 1, isLead: true, category: "Leadership" },
-  { name: "Head of Engineering", total: 1, inPlace: 0, remaining: 1, isLead: true, category: "Leadership" },
+  { name: "Product Manager", total: 7, inPlace: 2, remaining: 5, isLead: false, isNew: false, category: "Product" },
+  { name: "Delivery Manager", total: 8, inPlace: 6, remaining: 2, isLead: false, isNew: false, category: "Delivery" },
+  { name: "Team Co-ordinator", total: 3, inPlace: 1, remaining: 2, isLead: false, isNew: false, category: "Delivery" },
+  { name: "Service Designer", total: 6, inPlace: 2, remaining: 4, isLead: false, isNew: false, category: "Design" },
+  { name: "User Researcher", total: 6, inPlace: 0, remaining: 6, isLead: false, isNew: false, category: "Design" },
+  { name: "Interaction Designer", total: 5, inPlace: 3, remaining: 2, isLead: false, isNew: false, category: "Design" },
+  { name: "Content Designer", total: 5, inPlace: 2, remaining: 3, isLead: false, isNew: false, category: "Design" },
+  { name: "Front End Engineer", total: 5, inPlace: 3, remaining: 2, isLead: false, isNew: false, category: "Engineering" },
+  { name: "Full Stack Engineer", total: 12, inPlace: 6, remaining: 6, isLead: false, isNew: false, category: "Engineering" },
+  { name: "Technical Architect", total: 2, inPlace: 0, remaining: 2, isLead: false, isNew: false, category: "Engineering" },
+  { name: "Infrastructure Engineer", total: 7, inPlace: 3, remaining: 4, isLead: false, isNew: false, category: "Engineering" },
+  { name: "Automated Test Engineer", total: 2, inPlace: 0, remaining: 2, isLead: false, isNew: true, category: "Engineering" },
+  { name: "Performance Analyst", total: 2, inPlace: 0, remaining: 2, isLead: false, isNew: false, category: "Data" },
+  { name: "Data Analyst", total: 2, inPlace: 0, remaining: 2, isLead: false, isNew: true, category: "Data" },
+  { name: "CDIO", total: 1, inPlace: 0, remaining: 1, isLead: true, isNew: false, category: "Leadership" },
+  { name: "Head of Design", total: 1, inPlace: 1, remaining: 0, isLead: true, isNew: false, category: "Leadership" },
+  { name: "Head of Engineering", total: 1, inPlace: 1, remaining: 0, isLead: true, isNew: false, category: "Leadership" },
+  { name: "Head of Product", total: 1, inPlace: 0, remaining: 1, isLead: true, isNew: false, category: "Leadership" },
+  { name: "Head of Delivery", total: 1, inPlace: 1, remaining: 0, isLead: true, isNew: false, category: "Leadership" },
 ];
 
 const teams = [
   {
-    name: "Discovery 1", id: 6, phase: "Discovery",
-    startDate: "2026-04-06",
-    roles: [
-      { name: "Product Manager", count: 1 },
-      { name: "Delivery Manager", count: 1 },
-      { name: "Service Designer", count: 1 },
-      { name: "User Researcher", count: 1 },
-    ]
-  },
-  {
-    name: "Discovery 2", id: 7, phase: "Discovery",
-    startDate: "2026-04-20",
-    roles: [
-      { name: "Product Manager", count: 1 },
-      { name: "Delivery Manager", count: 1 },
-      { name: "Service Designer", count: 1 },
-      { name: "User Researcher", count: 1 },
-      { name: "Interaction Designer", count: 1 },
-      { name: "Content Designer", count: 1 },
-      { name: "Technical Architect", count: 1 },
-      { name: "Infrastructure Engineer", count: 1 },
-    ]
-  },
-  {
-    name: "Discovery 3", id: 8, phase: "Discovery",
+    name: "Discovery 1", phase: "Discovery",
     startDate: "2026-04-27",
     roles: [
       { name: "Product Manager", count: 1 },
       { name: "Delivery Manager", count: 1 },
-      { name: "Team Co-ordinator", count: 1 },
-      { name: "Service Designer", count: 1 },
-      { name: "User Researcher", count: 1 },
-      { name: "Lead Designer", count: 1 },
-    ]
-  },
-  {
-    name: "Discovery 4", id: 9, phase: "Discovery",
-    startDate: "2026-05-18",
-    roles: [
-      { name: "Product Manager", count: 1 },
-      { name: "Delivery Manager", count: 1 },
       { name: "Service Designer", count: 1 },
       { name: "User Researcher", count: 1 },
       { name: "Interaction Designer", count: 1 },
       { name: "Content Designer", count: 1 },
+      { name: "Full Stack Engineer", count: 1 },
+      { name: "CDIO", count: 1 },
+      { name: "Head of Product", count: 1 },
     ]
   },
   {
-    name: "Consulting (IT Advisory)", id: 5, phase: "Consulting",
+    name: "Discovery 2", phase: "Discovery",
     startDate: "2026-05-04",
     roles: [
       { name: "Product Manager", count: 1 },
       { name: "Delivery Manager", count: 1 },
       { name: "Service Designer", count: 1 },
       { name: "User Researcher", count: 1 },
-      { name: "Full Stack Engineer", count: 1 },
-      { name: "Infrastructure Engineer", count: 1 },
-      { name: "Lead Designer", count: 1 },
+      { name: "Interaction Designer", count: 1 },
+      { name: "Content Designer", count: 1 },
     ]
   },
   {
-    name: "Deep Transformation 1", id: 10, phase: "Deep Transformation",
+    name: "Discovery 3", phase: "Discovery",
+    startDate: "2026-06-01",
+    roles: [
+      { name: "Delivery Manager", count: 1 },
+      { name: "Service Designer", count: 1 },
+      { name: "User Researcher", count: 1 },
+      { name: "Interaction Designer", count: 1 },
+      { name: "Content Designer", count: 1 },
+      { name: "Full Stack Engineer", count: 1 },
+      { name: "Technical Architect", count: 1 },
+      { name: "Infrastructure Engineer", count: 1 },
+    ]
+  },
+  {
+    name: "Discovery 4", phase: "Discovery",
+    startDate: "2026-06-08",
+    roles: [
+      { name: "Product Manager", count: 1 },
+      { name: "Team Co-ordinator", count: 1 },
+      { name: "User Researcher", count: 1 },
+      { name: "Full Stack Engineer", count: 1 },
+      { name: "Infrastructure Engineer", count: 1 },
+      { name: "Performance Analyst", count: 1 },
+    ]
+  },
+  {
+    name: "Platform Expansion 1", phase: "Platform",
     startDate: "2026-05-11",
     roles: [
       { name: "Product Manager", count: 1 },
-      { name: "Delivery Manager", count: 1 },
       { name: "Service Designer", count: 1 },
-      { name: "User Researcher", count: 1 },
-      { name: "Interaction Designer", count: 1 },
-      { name: "Content Designer", count: 1 },
-      { name: "Front End Engineer", count: 1 },
       { name: "Full Stack Engineer", count: 2 },
-      { name: "Performance Analyst", count: 1 },
-      { name: "Infrastructure Engineer", count: 1 },
-      { name: "Lead Delivery Manager", count: 1 },
-      { name: "Lead Product Manager", count: 1 },
-      { name: "Lead Designer", count: 1 },
-      { name: "Lead Full Stack Engineer", count: 2 },
+      { name: "Technical Architect", count: 1 },
+      { name: "Automated Test Engineer", count: 1 },
+      { name: "Data Analyst", count: 2 },
     ]
   },
   {
-    name: "Deep Transformation 2", id: 11, phase: "Deep Transformation",
+    name: "Platform Expansion 2", phase: "Platform",
+    startDate: "2026-06-15",
+    roles: [
+      { name: "Front End Engineer", count: 2 },
+      { name: "Full Stack Engineer", count: 2 },
+      { name: "Infrastructure Engineer", count: 1 },
+    ]
+  },
+  {
+    name: "Deeper Transformation 1", phase: "Deeper Transformation",
+    startDate: "2026-05-18",
+    roles: [
+      { name: "Delivery Manager", count: 1 },
+      { name: "Service Designer", count: 1 },
+      { name: "Interaction Designer", count: 1 },
+      { name: "Content Designer", count: 1 },
+      { name: "Full Stack Engineer", count: 1 },
+      { name: "Technical Architect", count: 1 },
+      { name: "Automated Test Engineer", count: 1 },
+      { name: "Performance Analyst", count: 1 },
+    ]
+  },
+  {
+    name: "Deeper Transformation 2", phase: "Deeper Transformation",
     startDate: "2026-05-25",
     roles: [
       { name: "Product Manager", count: 1 },
-      { name: "Delivery Manager", count: 1 },
-      { name: "Service Designer", count: 1 },
-      { name: "User Researcher", count: 1 },
-      { name: "Interaction Designer", count: 1 },
-      { name: "Content Designer", count: 1 },
-      { name: "Front End Engineer", count: 1 },
-      { name: "Full Stack Engineer", count: 2 },
-      { name: "Technical Architect", count: 1 },
-    ]
-  },
-  {
-    name: "Deep Transformation 3", id: 12, phase: "Deep Transformation",
-    startDate: "2026-06-15",
-    roles: [
-      { name: "Product Manager", count: 1 },
-      { name: "Delivery Manager", count: 1 },
       { name: "Team Co-ordinator", count: 1 },
       { name: "Service Designer", count: 1 },
       { name: "User Researcher", count: 1 },
-      { name: "Interaction Designer", count: 1 },
-      { name: "Content Designer", count: 1 },
-      { name: "Front End Engineer", count: 2 },
-      { name: "Full Stack Engineer", count: 2 },
-    ]
-  },
-  {
-    name: "Deep Transformation 4", id: 13, phase: "Deep Transformation",
-    startDate: "2026-07-13",
-    roles: [
-      { name: "Product Manager", count: 1 },
-      { name: "Delivery Manager", count: 1 },
-      { name: "Service Designer", count: 1 },
-      { name: "User Researcher", count: 1 },
-      { name: "Interaction Designer", count: 1 },
-      { name: "Content Designer", count: 1 },
-      { name: "Front End Engineer", count: 2 },
-      { name: "Full Stack Engineer", count: 2 },
-      { name: "Technical Architect", count: 1 },
-    ]
-  },
-  {
-    name: "Deep Transformation 5", id: 14, phase: "Deep Transformation",
-    startDate: "2026-07-27",
-    roles: [
-      { name: "Product Manager", count: 1 },
-      { name: "Delivery Manager", count: 1 },
-      { name: "Service Designer", count: 1 },
-      { name: "User Researcher", count: 1 },
-      { name: "Interaction Designer", count: 1 },
-      { name: "Content Designer", count: 1 },
-      { name: "Front End Engineer", count: 1 },
-      { name: "Full Stack Engineer", count: 2 },
-      { name: "Performance Analyst", count: 1 },
-      { name: "Infrastructure Engineer", count: 1 },
-    ]
-  },
-  {
-    name: "Deep Transformation 6", id: 15, phase: "Deep Transformation",
-    startDate: "2026-08-03",
-    roles: [
-      { name: "Product Manager", count: 1 },
-      { name: "Delivery Manager", count: 1 },
-      { name: "Service Designer", count: 1 },
-      { name: "User Researcher", count: 1 },
-      { name: "Interaction Designer", count: 1 },
-      { name: "Content Designer", count: 1 },
-      { name: "Front End Engineer", count: 1 },
-      { name: "Full Stack Engineer", count: 2 },
-    ]
-  },
-  {
-    name: "Platform Expansion 1", id: 16, phase: "Platform Expansion",
-    startDate: "2026-06-01",
-    roles: [
-      { name: "Product Manager", count: 1 },
-      { name: "Delivery Manager", count: 1 },
-      { name: "User Researcher", count: 1 },
-      { name: "Interaction Designer", count: 1 },
-      { name: "Front End Engineer", count: 1 },
-      { name: "Full Stack Engineer", count: 2 },
-      { name: "Performance Analyst", count: 1 },
-      { name: "Infrastructure Engineer", count: 1 },
-    ]
-  },
-  {
-    name: "Platform Expansion 2", id: 4, phase: "Platform Expansion",
-    startDate: "2026-06-29",
-    roles: [
-      { name: "Product Manager", count: 1 },
-      { name: "Delivery Manager", count: 1 },
-      { name: "Service Designer", count: 1 },
-      { name: "User Researcher", count: 1 },
-      { name: "Interaction Designer", count: 1 },
-      { name: "Content Designer", count: 1 },
-      { name: "Front End Engineer", count: 2 },
-      { name: "Full Stack Engineer", count: 2 },
-      { name: "Performance Analyst", count: 1 },
-      { name: "Infrastructure Engineer", count: 1 },
+      { name: "Full Stack Engineer", count: 1 },
     ]
   },
 ];
@@ -887,31 +316,27 @@ const totalRequired = roles.reduce((s, r) => s + r.total, 0);
 const totalInPlace = roles.reduce((s, r) => s + r.inPlace, 0);
 const totalRemaining = roles.reduce((s, r) => s + r.remaining, 0);
 const pctFilled = Math.round((totalInPlace / totalRequired) * 100);
+const today = new Date("2026-04-21");
 
 function formatDate(iso) {
-  const d = new Date(iso);
-  return d.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" });
+  return new Date(iso).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" });
 }
 
 function daysUntil(iso) {
-  const now = new Date("2026-04-10");
-  const target = new Date(iso);
-  const diff = Math.ceil((target - now) / 86400000);
-  return diff;
+  return Math.ceil((new Date(iso) - today) / 86400000);
 }
 
 function urgencyBadge(days) {
-  if (days <= 0) return `<span class="badge badge-danger">Started</span>`;
-  if (days <= 14) return `<span class="badge badge-danger">${days}d away</span>`;
-  if (days <= 30) return `<span class="badge badge-warning">${days}d away</span>`;
-  return `<span class="badge badge-info">${days}d away</span>`;
+  if (days <= 0) return '<span class="badge badge-danger">Started</span>';
+  if (days <= 7) return '<span class="badge badge-danger">' + days + 'd away</span>';
+  if (days <= 21) return '<span class="badge badge-warning">' + days + 'd away</span>';
+  return '<span class="badge badge-info">' + days + 'd away</span>';
 }
 
 function phaseClass(phase) {
   if (phase === "Discovery") return "phase-discovery";
-  if (phase === "Deep Transformation") return "phase-deep-trans";
-  if (phase === "Platform Expansion") return "phase-platform";
-  return "phase-consulting";
+  if (phase === "Deeper Transformation") return "phase-deep-trans";
+  return "phase-platform";
 }
 
 function priorityColor(pct) {
@@ -924,14 +349,11 @@ function priorityColor(pct) {
 
 function render() {
   const app = document.getElementById("app");
-
-  // Summary stats
-  const teamsStartingSoon = teams.filter(t => daysUntil(t.startDate) <= 30 && daysUntil(t.startDate) > 0).length;
+  const teamsStartingSoon = teams.filter(t => { const d = daysUntil(t.startDate); return d > 0 && d <= 21; }).length;
   const teamsStarted = teams.filter(t => daysUntil(t.startDate) <= 0).length;
   const categories = [...new Set(roles.map(r => r.category))];
 
   app.innerHTML = `
-    <!-- Tabs -->
     <div class="tab-nav">
       <button class="tab-btn active" data-tab="overview" onclick="switchTab('overview')">Overview</button>
       <button class="tab-btn" data-tab="teams" onclick="switchTab('teams')">Team Rosters</button>
@@ -939,7 +361,7 @@ function render() {
       <button class="tab-btn" data-tab="gantt" onclick="switchTab('gantt')">Timeline</button>
     </div>
 
-    <!-- OVERVIEW TAB -->
+    <!-- OVERVIEW -->
     <div class="tab-content active" id="tab-overview">
       <div class="summary-grid">
         <div class="stat-card highlight">
@@ -949,57 +371,47 @@ function render() {
         </div>
         <div class="stat-card success-highlight">
           <div class="stat-label">In Place</div>
-          <div class="stat-value" style="color: var(--success)">${totalInPlace}</div>
+          <div class="stat-value" style="color:var(--success)">${totalInPlace}</div>
           <div class="stat-detail">${pctFilled}% filled</div>
-          <div class="progress-bar-bg">
-            <div class="progress-bar-fill" style="width: ${pctFilled}%; background: var(--success)"></div>
-          </div>
+          <div class="progress-bar-bg"><div class="progress-bar-fill" style="width:${pctFilled}%;background:var(--success)"></div></div>
         </div>
         <div class="stat-card danger-highlight">
           <div class="stat-label">Still to Hire</div>
-          <div class="stat-value" style="color: var(--danger)">${totalRemaining}</div>
+          <div class="stat-value" style="color:var(--danger)">${totalRemaining}</div>
           <div class="stat-detail">${100 - pctFilled}% of workforce</div>
         </div>
         <div class="stat-card warning-highlight">
-          <div class="stat-label">Teams Starting &le; 30 Days</div>
-          <div class="stat-value" style="color: var(--warning)">${teamsStartingSoon}</div>
+          <div class="stat-label">Teams Starting &le; 21 Days</div>
+          <div class="stat-value" style="color:var(--warning)">${teamsStartingSoon}</div>
           <div class="stat-detail">${teamsStarted} already started</div>
         </div>
       </div>
 
-      <!-- Roles overview table -->
       <div class="card">
         <div class="card-header">
           <div>
             <div class="card-title">Roles Overview</div>
-            <div class="card-subtitle">All positions required across the programme</div>
+            <div class="card-subtitle">All positions required across the programme &ndash; <span style="color:var(--accent);font-weight:600">new roles</span> highlighted</div>
           </div>
           <div class="filter-row" id="category-filters">
             <button class="filter-chip active" onclick="filterCategory('All')">All</button>
-            ${categories.map(c => `<button class="filter-chip" onclick="filterCategory('${c}')">${c}</button>`).join("")}
+            ${categories.map(c => '<button class="filter-chip" onclick="filterCategory(\'' + c + '\')">' + c + '</button>').join("")}
           </div>
         </div>
         <div class="table-wrap">
           <table>
-            <thead>
-              <tr>
-                <th>Role</th>
-                <th class="centre">Category</th>
-                <th class="right">Required</th>
-                <th class="right">In Place</th>
-                <th class="right">Remaining</th>
-                <th class="centre" style="min-width:140px">Fill Rate</th>
-              </tr>
-            </thead>
-            <tbody id="roles-tbody">
-              ${renderRolesRows(roles)}
-            </tbody>
+            <thead><tr>
+              <th>Role</th><th class="centre">Category</th>
+              <th class="right">Required</th><th class="right">In Place</th><th class="right">Remaining</th>
+              <th class="centre" style="min-width:140px">Fill Rate</th>
+            </tr></thead>
+            <tbody id="roles-tbody">${renderRolesRows(roles)}</tbody>
           </table>
         </div>
       </div>
     </div>
 
-    <!-- TEAMS TAB -->
+    <!-- TEAMS -->
     <div class="tab-content" id="tab-teams">
       <div class="card-header" style="background:transparent;border:none;padding:0 0 20px;">
         <div>
@@ -1009,33 +421,30 @@ function render() {
         <div class="filter-row" id="phase-filters">
           <button class="filter-chip active" onclick="filterPhase('All')">All phases</button>
           <button class="filter-chip" onclick="filterPhase('Discovery')">Discovery</button>
-          <button class="filter-chip" onclick="filterPhase('Deep Transformation')">Deep Transformation</button>
-          <button class="filter-chip" onclick="filterPhase('Platform Expansion')">Platform Expansion</button>
-          <button class="filter-chip" onclick="filterPhase('Consulting')">Consulting</button>
+          <button class="filter-chip" onclick="filterPhase('Deeper Transformation')">Deeper Transformation</button>
+          <button class="filter-chip" onclick="filterPhase('Platform')">Platform Expansion</button>
         </div>
       </div>
-      <div class="team-grid" id="team-grid">
-        ${renderTeamCards(teams)}
-      </div>
+      <div class="team-grid" id="team-grid">${renderTeamCards(teams)}</div>
     </div>
 
-    <!-- HIRING PRIORITIES TAB -->
+    <!-- HR PRIORITIES -->
     <div class="tab-content" id="tab-hiring">
-      <div class="summary-grid" style="grid-template-columns: repeat(auto-fit, minmax(240px,1fr));">
+      <div class="summary-grid" style="grid-template-columns:repeat(auto-fit,minmax(240px,1fr));">
         <div class="stat-card danger-highlight">
           <div class="stat-label">Highest Urgency Role</div>
-          <div class="stat-value" style="font-size:22px; color:var(--danger)">User Researcher</div>
-          <div class="stat-detail">16 needed &ndash; none in place</div>
+          <div class="stat-value" style="font-size:22px;color:var(--danger)">User Researcher</div>
+          <div class="stat-detail">6 needed &ndash; none in place</div>
         </div>
         <div class="stat-card warning-highlight">
           <div class="stat-label">Largest Hire Volume</div>
-          <div class="stat-value" style="font-size:22px; color:var(--warning)">Full Stack Engineer</div>
-          <div class="stat-detail">16 remaining of 22 required</div>
+          <div class="stat-value" style="font-size:22px;color:var(--warning)">Full Stack Engineer</div>
+          <div class="stat-detail">6 remaining of 12 required</div>
         </div>
         <div class="stat-card highlight">
-          <div class="stat-label">Lead Roles Unfilled</div>
-          <div class="stat-value">${roles.filter(r => r.isLead && r.remaining > 0).length}</div>
-          <div class="stat-detail">${roles.filter(r => r.isLead).reduce((s,r) => s + r.remaining, 0)} positions total</div>
+          <div class="stat-label">New Roles to Fill</div>
+          <div class="stat-value">${roles.filter(r => r.isNew && r.remaining > 0).length}</div>
+          <div class="stat-detail">${roles.filter(r => r.isNew).reduce((s,r) => s + r.remaining, 0)} positions &ndash; Automated Test Eng &amp; Data Analyst</div>
         </div>
       </div>
 
@@ -1043,26 +452,17 @@ function render() {
         <div class="card-header">
           <div>
             <div class="card-title">Hiring Priority List</div>
-            <div class="card-subtitle">Ranked by urgency: roles with 0% fill rate and high volume first, then by remaining count</div>
+            <div class="card-subtitle">Ranked by urgency: 0% fill rate and high volume first, then by remaining count</div>
           </div>
         </div>
         <div class="table-wrap">
           <table>
-            <thead>
-              <tr>
-                <th style="width:40px" class="centre">#</th>
-                <th>Role</th>
-                <th class="centre">Urgency</th>
-                <th class="right">Required</th>
-                <th class="right">In Place</th>
-                <th class="right">To Hire</th>
-                <th style="min-width:150px">Hiring Gap</th>
-                <th>Needed By Teams</th>
-              </tr>
-            </thead>
-            <tbody>
-              ${renderPriorityRows()}
-            </tbody>
+            <thead><tr>
+              <th style="width:40px" class="centre">#</th><th>Role</th><th class="centre">Urgency</th>
+              <th class="right">Required</th><th class="right">In Place</th><th class="right">To Hire</th>
+              <th style="min-width:150px">Hiring Gap</th><th>Needed By Teams</th>
+            </tr></thead>
+            <tbody>${renderPriorityRows()}</tbody>
           </table>
         </div>
       </div>
@@ -1071,285 +471,87 @@ function render() {
         <div class="card-header">
           <div>
             <div class="card-title">Hiring Timeline</div>
-            <div class="card-subtitle">When roles are needed based on team start dates</div>
+            <div class="card-subtitle">Roles needed per month based on team start dates</div>
           </div>
         </div>
         <div class="table-wrap">
           <table>
-            <thead>
-              <tr>
-                <th>Month</th>
-                <th class="right">New Roles Needed</th>
-                <th class="right">Cumulative</th>
-                <th>Teams Starting</th>
-              </tr>
-            </thead>
-            <tbody>
-              ${renderTimelineRows()}
-            </tbody>
+            <thead><tr><th>Month</th><th class="right">New Roles Needed</th><th class="right">Cumulative</th><th>Teams Starting</th></tr></thead>
+            <tbody>${renderTimelineRows()}</tbody>
           </table>
         </div>
       </div>
     </div>
 
-    <!-- GANTT TIMELINE TAB -->
+    <!-- GANTT -->
     <div class="tab-content" id="tab-gantt">
       <div class="card-header" style="background:transparent;border:none;padding:0 0 16px;">
         <div>
           <div class="card-title">Programme Timeline</div>
-          <div class="card-subtitle">When each team is projected to become operational &ndash; scroll horizontally for the full timeline</div>
+          <div class="card-subtitle">When each team is projected to become operational &ndash; scroll horizontally for the full view</div>
         </div>
       </div>
       ${renderGantt()}
       <div id="gantt-tooltip" class="gantt-tooltip"></div>
     </div>
   `;
-
-  // Attach gantt tooltip listeners after render
   setTimeout(initGanttTooltips, 0);
 }
 
-function renderGantt() {
-  const sorted = [...teams].sort((a, b) => new Date(a.startDate) - new Date(b.startDate));
+// ── RENDERERS ─────────────────────────────────────────────────────────────────
 
-  // Timeline range: 2026-03-23 (first week header in spreadsheet) to 2026-10-05
-  const timelineStart = new Date("2026-03-23");
-  const timelineEnd = new Date("2026-10-05");
-  const today = new Date("2026-04-10");
-
-  // Generate weeks
-  const weeks = [];
-  let d = new Date(timelineStart);
-  while (d < timelineEnd) {
-    weeks.push(new Date(d));
-    d.setDate(d.getDate() + 7);
-  }
-
-  // Generate month headers with col spans
-  const months = [];
-  let currentMonth = "";
-  weeks.forEach((w, i) => {
-    const m = w.toLocaleDateString("en-GB", { month: "long" });
-    if (m !== currentMonth) {
-      months.push({ name: m, start: i, span: 1 });
-      currentMonth = m;
-    } else {
-      months[months.length - 1].span++;
-    }
-  });
-
-  // Phase colours for bars
-  const phaseColors = {
-    "Discovery": "#7c3aed",
-    "Deep Transformation": "#db2777",
-    "Platform Expansion": "#059669",
-    "Consulting": "#b45309",
-  };
-
-  // Group teams by phase for display
-  const phaseOrder = ["Discovery", "Consulting", "Deep Transformation", "Platform Expansion"];
-  const grouped = phaseOrder.map(p => ({
-    phase: p,
-    teams: sorted.filter(t => t.phase === p)
-  })).filter(g => g.teams.length > 0);
-
-  // Build header rows
-  let monthHeaderCells = '<th class="gantt-label-col" style="border-bottom:none"></th><th class="gantt-size-col" style="border-bottom:none"></th>';
-  months.forEach(m => {
-    monthHeaderCells += '<th colspan="' + m.span + '" style="border-left:1px solid var(--border)">' + m.name + '</th>';
-  });
-
-  let weekHeaderCells = '<th class="gantt-label-col">Team</th><th class="gantt-size-col">Size</th>';
-  weeks.forEach(w => {
-    const day = w.getDate();
-    const isToday = Math.abs(w - today) < 3.5 * 86400000;
-    weekHeaderCells += '<th class="gantt-week-col' + (isToday ? '" style="color:var(--danger);font-weight:700' : '') + '">' + day + '</th>';
-  });
-
-  // Today line position
-  const todayOffset = (today - timelineStart) / (7 * 86400000);
-  const weekWidth = 44; // matches min-width
-  const todayPx = todayOffset * weekWidth;
-
-  // Build body rows
-  let bodyRows = "";
-  grouped.forEach(g => {
-    // Phase separator row
-    bodyRows += '<tr class="gantt-phase-row"><td class="gantt-label-cell" style="background:var(--border-light) !important">' + g.phase + '</td><td class="gantt-size-cell" style="background:var(--border-light) !important"></td>';
-    weeks.forEach(() => { bodyRows += '<td></td>'; });
-    bodyRows += '</tr>';
-
-    g.teams.forEach(t => {
-      const teamSize = t.roles.reduce((s, r) => s + r.count, 0);
-      const startD = new Date(t.startDate);
-      const barStartWeek = (startD - timelineStart) / (7 * 86400000);
-      // Each team bar spans ~8 weeks as an operational window estimate
-      const barWidthWeeks = 8;
-      const barLeft = barStartWeek * weekWidth;
-      const barWidth = barWidthWeeks * weekWidth;
-      const color = phaseColors[t.phase] || "var(--primary)";
-      const days = daysUntil(t.startDate);
-      const roleList = t.roles.map(r => r.name + (r.count > 1 ? " ×" + r.count : "")).join(", ");
-
-      bodyRows += '<tr>';
-      bodyRows += '<td class="gantt-label-cell"><span style="font-weight:600;font-size:13px">' + t.name + '</span></td>';
-      bodyRows += '<td class="gantt-size-cell">' + teamSize + '</td>';
-
-      // Render cells; the bar is positioned absolutely in the first week cell's row
-      weeks.forEach((w, i) => {
-        if (i === 0) {
-          bodyRows += '<td class="gantt-week-cell" style="position:relative">';
-          bodyRows += '<div class="gantt-bar-wrap" style="left:' + barLeft + 'px;width:' + barWidth + 'px;background:' + color + ';" data-team="' + t.name + '" data-start="' + formatDate(t.startDate) + '" data-size="' + teamSize + '" data-roles="' + roleList.replace(/"/g, "&quot;") + '" data-days="' + days + '">';
-          bodyRows += '<span class="gantt-bar-label">' + t.name + '</span>';
-          bodyRows += '</div>';
-          // Today line
-          bodyRows += '<div class="gantt-today-line" style="left:' + todayPx + 'px"><span class="gantt-today-label">Today</span></div>';
-          bodyRows += '</td>';
-        } else {
-          bodyRows += '<td class="gantt-week-cell"></td>';
-        }
-      });
-      bodyRows += '</tr>';
-    });
-  });
-
-  return '<div class="gantt-container">' +
-    '<div class="gantt-scroll">' +
-    '<table class="gantt-table">' +
-    '<thead>' +
-    '<tr class="gantt-month-header">' + monthHeaderCells + '</tr>' +
-    '<tr>' + weekHeaderCells + '</tr>' +
-    '</thead>' +
-    '<tbody>' + bodyRows + '</tbody>' +
-    '</table>' +
-    '</div>' +
-    '<div class="gantt-legend">' +
-    '<span style="font-weight:600;color:var(--text)">Phases:</span>' +
-    Object.entries(phaseColors).map(([name, color]) =>
-      '<span class="gantt-legend-item"><span class="gantt-legend-dot" style="background:' + color + '"></span>' + name + '</span>'
-    ).join("") +
-    '<span class="gantt-legend-item" style="margin-left:auto"><span style="width:2px;height:12px;background:var(--danger);border-radius:1px;display:inline-block"></span> Today (10 Apr)</span>' +
-    '</div>' +
-    '</div>';
-}
-
-function initGanttTooltips() {
-  const tooltip = document.getElementById("gantt-tooltip");
-  if (!tooltip) return;
-
-  document.querySelectorAll(".gantt-bar-wrap").forEach(bar => {
-    bar.addEventListener("mouseenter", (e) => {
-      const name = bar.dataset.team;
-      const start = bar.dataset.start;
-      const size = bar.dataset.size;
-      const roles = bar.dataset.roles;
-      const days = parseInt(bar.dataset.days);
-      const status = days <= 0 ? "Already started" : days + " days until start";
-
-      tooltip.innerHTML =
-        '<div style="font-weight:700;font-size:13px;margin-bottom:4px">' + name + '</div>' +
-        '<div style="margin-bottom:2px">Start: ' + start + '</div>' +
-        '<div style="margin-bottom:2px">Status: ' + status + '</div>' +
-        '<div style="margin-bottom:2px">Team size: ' + size + ' positions</div>' +
-        '<div style="color:#cbd5e1;margin-top:6px;font-size:11px">Roles: ' + roles + '</div>';
-      tooltip.classList.add("visible");
-    });
-
-    bar.addEventListener("mousemove", (e) => {
-      tooltip.style.left = (e.clientX + 12) + "px";
-      tooltip.style.top = (e.clientY - 10) + "px";
-    });
-
-    bar.addEventListener("mouseleave", () => {
-      tooltip.classList.remove("visible");
-    });
-  });
-}
-
-function renderRolesRows(roleList) {
-  return roleList.map(r => {
+function renderRolesRows(list) {
+  return list.map(r => {
     const pct = r.total > 0 ? Math.round((r.inPlace / r.total) * 100) : 0;
-    const fillColor = pct >= 50 ? "var(--success)" : pct > 0 ? "var(--warning)" : "var(--danger)";
-    return `<tr class="role-row" data-category="${r.category}">
-      <td><span class="role-name ${r.isLead ? 'lead-role' : ''}">${r.name}</span></td>
-      <td class="centre"><span class="badge badge-muted">${r.category}</span></td>
-      <td class="right mono">${r.total}</td>
-      <td class="right mono">${r.inPlace}</td>
-      <td class="right mono" style="font-weight:600; color: ${r.remaining > 0 ? 'var(--danger)' : 'var(--success)'}">${r.remaining}</td>
-      <td>
-        <div class="priority-bar">
-          <div class="priority-fill-bg">
-            <div class="priority-fill" style="width:${pct}%; background:${fillColor}"></div>
-          </div>
-          <span style="font-size:12px;font-weight:600;color:${fillColor};min-width:36px;text-align:right">${pct}%</span>
-        </div>
-      </td>
-    </tr>`;
+    const col = pct >= 50 ? "var(--success)" : pct > 0 ? "var(--warning)" : "var(--danger)";
+    const cls = r.isLead ? "lead-role" : r.isNew ? "new-role" : "";
+    return '<tr class="role-row" data-category="' + r.category + '">' +
+      '<td><span class="role-name ' + cls + '">' + r.name + (r.isNew ? ' <span class="badge badge-accent" style="font-size:10px;padding:1px 7px">New</span>' : '') + '</span></td>' +
+      '<td class="centre"><span class="badge badge-muted">' + r.category + '</span></td>' +
+      '<td class="right mono">' + r.total + '</td>' +
+      '<td class="right mono">' + r.inPlace + '</td>' +
+      '<td class="right mono" style="font-weight:600;color:' + (r.remaining > 0 ? 'var(--danger)' : 'var(--success)') + '">' + r.remaining + '</td>' +
+      '<td><div class="priority-bar"><div class="priority-fill-bg"><div class="priority-fill" style="width:' + pct + '%;background:' + col + '"></div></div><span style="font-size:12px;font-weight:600;color:' + col + ';min-width:36px;text-align:right">' + pct + '%</span></div></td>' +
+      '</tr>';
   }).join("");
 }
 
-function renderTeamCards(teamList) {
-  return teamList.sort((a, b) => new Date(a.startDate) - new Date(b.startDate)).map(t => {
-    const totalRoles = t.roles.reduce((s, r) => s + r.count, 0);
-    const days = daysUntil(t.startDate);
-    return `<div class="team-card" data-phase="${t.phase}">
-      <div class="team-card-header">
-        <span class="team-name">${t.name}</span>
-        <span class="team-phase ${phaseClass(t.phase)}">${t.phase}</span>
-      </div>
-      <div class="team-date">
-        Projected start: <strong>${formatDate(t.startDate)}</strong> &nbsp;${urgencyBadge(days)}
-      </div>
-      <div class="team-roles-list">
-        ${t.roles.map(r => `
-          <div class="team-role-row">
-            <span class="team-role-name">${r.name}</span>
-            <span class="team-role-count">${r.count}</span>
-          </div>
-        `).join("")}
-      </div>
-      <div class="team-total">
-        <span>Total positions</span>
-        <span>${totalRoles}</span>
-      </div>
-    </div>`;
+function renderTeamCards(list) {
+  return [...list].sort((a, b) => new Date(a.startDate) - new Date(b.startDate)).map(t => {
+    const sz = t.roles.reduce((s, r) => s + r.count, 0);
+    const d = daysUntil(t.startDate);
+    return '<div class="team-card" data-phase="' + t.phase + '">' +
+      '<div class="team-card-header"><span class="team-name">' + t.name + '</span><span class="team-phase ' + phaseClass(t.phase) + '">' + t.phase + '</span></div>' +
+      '<div class="team-date">Projected start: <strong>' + formatDate(t.startDate) + '</strong> &nbsp;' + urgencyBadge(d) + '</div>' +
+      '<div class="team-roles-list">' + t.roles.map(r =>
+        '<div class="team-role-row"><span class="team-role-name">' + r.name + '</span><span class="team-role-count">' + r.count + '</span></div>'
+      ).join("") + '</div>' +
+      '<div class="team-total"><span>Total positions</span><span>' + sz + '</span></div></div>';
   }).join("");
 }
 
 function renderPriorityRows() {
   const sorted = [...roles].filter(r => r.remaining > 0).sort((a, b) => {
-    const aPct = a.inPlace / a.total;
-    const bPct = b.inPlace / b.total;
-    if (aPct !== bPct) return aPct - bPct;
+    const ap = a.inPlace / a.total, bp = b.inPlace / b.total;
+    if (ap !== bp) return ap - bp;
     return b.remaining - a.remaining;
   });
-
   return sorted.map((r, i) => {
     const pct = Math.round((r.remaining / r.total) * 100);
-    const urgency = r.inPlace === 0 ? "badge-danger" : (r.inPlace / r.total) < 0.25 ? "badge-warning" : "badge-info";
-    const urgencyLabel = r.inPlace === 0 ? "Critical" : (r.inPlace / r.total) < 0.25 ? "High" : "Medium";
-    const teamsNeeding = teams.filter(t => t.roles.some(tr => tr.name === r.name)).map(t => t.name);
-    const teamStr = teamsNeeding.length > 3
-      ? teamsNeeding.slice(0, 3).join(", ") + ` +${teamsNeeding.length - 3} more`
-      : teamsNeeding.join(", ");
-
-    return `<tr>
-      <td class="centre mono" style="color:var(--text-muted);font-weight:600">${i + 1}</td>
-      <td><span class="role-name ${r.isLead ? 'lead-role' : ''}">${r.name}</span></td>
-      <td class="centre"><span class="badge ${urgency}">${urgencyLabel}</span></td>
-      <td class="right mono">${r.total}</td>
-      <td class="right mono">${r.inPlace}</td>
-      <td class="right mono" style="font-weight:700;color:var(--danger)">${r.remaining}</td>
-      <td>
-        <div class="priority-bar">
-          <div class="priority-fill-bg">
-            <div class="priority-fill" style="width:${pct}%; background:${priorityColor(pct)}"></div>
-          </div>
-          <span style="font-size:12px;font-weight:600;min-width:36px;text-align:right">${pct}%</span>
-        </div>
-      </td>
-      <td style="font-size:12px;color:var(--text-secondary);max-width:200px">${teamStr || "–"}</td>
-    </tr>`;
+    const urg = r.inPlace === 0 ? "badge-danger" : (r.inPlace / r.total) < 0.3 ? "badge-warning" : "badge-info";
+    const urgL = r.inPlace === 0 ? "Critical" : (r.inPlace / r.total) < 0.3 ? "High" : "Medium";
+    const tList = teams.filter(t => t.roles.some(tr => tr.name === r.name)).map(t => t.name);
+    const tStr = tList.length > 3 ? tList.slice(0, 3).join(", ") + " +" + (tList.length - 3) + " more" : tList.join(", ");
+    const cls = r.isLead ? "lead-role" : r.isNew ? "new-role" : "";
+    return '<tr>' +
+      '<td class="centre mono" style="color:var(--text-muted);font-weight:600">' + (i + 1) + '</td>' +
+      '<td><span class="role-name ' + cls + '">' + r.name + '</span></td>' +
+      '<td class="centre"><span class="badge ' + urg + '">' + urgL + '</span></td>' +
+      '<td class="right mono">' + r.total + '</td>' +
+      '<td class="right mono">' + r.inPlace + '</td>' +
+      '<td class="right mono" style="font-weight:700;color:var(--danger)">' + r.remaining + '</td>' +
+      '<td><div class="priority-bar"><div class="priority-fill-bg"><div class="priority-fill" style="width:' + pct + '%;background:' + priorityColor(pct) + '"></div></div><span style="font-size:12px;font-weight:600;min-width:36px;text-align:right">' + pct + '%</span></div></td>' +
+      '<td style="font-size:12px;color:var(--text-secondary);max-width:220px">' + (tStr || "–") + '</td></tr>';
   }).join("");
 }
 
@@ -1359,57 +561,133 @@ function renderTimelineRows() {
     const d = new Date(t.startDate);
     const key = d.toLocaleDateString("en-GB", { month: "long", year: "numeric" });
     if (!months[key]) months[key] = { count: 0, teams: [], date: d };
-    const teamTotal = t.roles.reduce((s, r) => s + r.count, 0);
-    months[key].count += teamTotal;
+    months[key].count += t.roles.reduce((s, r) => s + r.count, 0);
     months[key].teams.push(t.name);
   });
-
-  let cumulative = 0;
-  return Object.entries(months)
-    .sort(([,a], [,b]) => a.date - b.date)
-    .map(([month, data]) => {
-      cumulative += data.count;
-      return `<tr>
-        <td style="font-weight:600">${month}</td>
-        <td class="right mono">${data.count}</td>
-        <td class="right mono" style="font-weight:600">${cumulative}</td>
-        <td style="font-size:13px;color:var(--text-secondary)">${data.teams.join(", ")}</td>
-      </tr>`;
-    }).join("");
+  let cum = 0;
+  return Object.entries(months).sort(([,a],[,b]) => a.date - b.date).map(([m, d]) => {
+    cum += d.count;
+    return '<tr><td style="font-weight:600">' + m + '</td><td class="right mono">' + d.count + '</td><td class="right mono" style="font-weight:600">' + cum + '</td><td style="font-size:13px;color:var(--text-secondary)">' + d.teams.join(", ") + '</td></tr>';
+  }).join("");
 }
 
-// ── INTERACTIONS ───────────────────────────────────────────────────────────────
+// ── GANTT ─────────────────────────────────────────────────────────────────────
 
-function switchTab(tabId) {
+function renderGantt() {
+  const sorted = [...teams].sort((a, b) => new Date(a.startDate) - new Date(b.startDate));
+  const timelineStart = new Date("2026-04-13");
+  const timelineEnd = new Date("2026-08-31");
+  const weekW = 48;
+
+  const weeks = [];
+  let d = new Date(timelineStart);
+  while (d < timelineEnd) { weeks.push(new Date(d)); d.setDate(d.getDate() + 7); }
+
+  const months = [];
+  let cm = "";
+  weeks.forEach((w, i) => {
+    const m = w.toLocaleDateString("en-GB", { month: "long" });
+    if (m !== cm) { months.push({ name: m, start: i, span: 1 }); cm = m; }
+    else months[months.length - 1].span++;
+  });
+
+  const phaseColors = { "Discovery": "#7c3aed", "Deeper Transformation": "#db2777", "Platform": "#059669" };
+  const phaseOrder = ["Discovery", "Platform", "Deeper Transformation"];
+  const grouped = phaseOrder.map(p => ({ phase: p, teams: sorted.filter(t => t.phase === p) })).filter(g => g.teams.length);
+
+  let mhCells = '<th class="gantt-label-col" style="border-bottom:none"></th><th class="gantt-size-col" style="border-bottom:none"></th>';
+  months.forEach(m => { mhCells += '<th colspan="' + m.span + '" style="border-left:1px solid var(--border)">' + m.name + '</th>'; });
+
+  let whCells = '<th class="gantt-label-col">Team</th><th class="gantt-size-col">Size</th>';
+  weeks.forEach(w => {
+    const isT = Math.abs(w - today) < 3.5 * 86400000;
+    whCells += '<th class="gantt-week-col"' + (isT ? ' style="color:var(--danger);font-weight:700"' : '') + '>' + w.getDate() + '</th>';
+  });
+
+  const todayPx = ((today - timelineStart) / (7 * 86400000)) * weekW;
+  let body = "";
+
+  grouped.forEach(g => {
+    body += '<tr class="gantt-phase-row"><td class="gantt-label-cell" style="background:var(--border-light)!important">' + (g.phase === "Platform" ? "Platform Expansion" : g.phase) + '</td><td class="gantt-size-cell" style="background:var(--border-light)!important"></td>';
+    weeks.forEach(() => { body += '<td></td>'; });
+    body += '</tr>';
+
+    g.teams.forEach(t => {
+      const sz = t.roles.reduce((s, r) => s + r.count, 0);
+      const sd = new Date(t.startDate);
+      const barL = ((sd - timelineStart) / (7 * 86400000)) * weekW;
+      const barW = 8 * weekW;
+      const col = phaseColors[t.phase];
+      const dy = daysUntil(t.startDate);
+      const rl = t.roles.map(r => r.name + (r.count > 1 ? " \u00d7" + r.count : "")).join(", ");
+
+      body += '<tr><td class="gantt-label-cell"><span style="font-weight:600;font-size:13px">' + t.name + '</span></td>';
+      body += '<td class="gantt-size-cell">' + sz + '</td>';
+      weeks.forEach((w, i) => {
+        if (i === 0) {
+          body += '<td class="gantt-week-cell" style="position:relative">';
+          body += '<div class="gantt-bar-wrap" style="left:' + barL + 'px;width:' + barW + 'px;background:' + col + ';" data-team="' + t.name + '" data-start="' + formatDate(t.startDate) + '" data-size="' + sz + '" data-roles="' + rl.replace(/"/g, '&quot;') + '" data-days="' + dy + '">';
+          body += '<span class="gantt-bar-label">' + t.name + '</span></div>';
+          body += '<div class="gantt-today-line" style="left:' + todayPx + 'px"><span class="gantt-today-label">Today</span></div>';
+          body += '</td>';
+        } else {
+          body += '<td class="gantt-week-cell"></td>';
+        }
+      });
+      body += '</tr>';
+    });
+  });
+
+  return '<div class="gantt-container"><div class="gantt-scroll"><table class="gantt-table"><thead>' +
+    '<tr class="gantt-month-header">' + mhCells + '</tr><tr>' + whCells + '</tr></thead>' +
+    '<tbody>' + body + '</tbody></table></div>' +
+    '<div class="gantt-legend"><span style="font-weight:600;color:var(--text)">Phases:</span>' +
+    Object.entries(phaseColors).map(([n, c]) =>
+      '<span class="gantt-legend-item"><span class="gantt-legend-dot" style="background:' + c + '"></span>' + (n === "Platform" ? "Platform Expansion" : n) + '</span>'
+    ).join("") +
+    '<span class="gantt-legend-item" style="margin-left:auto"><span style="width:2px;height:12px;background:var(--danger);border-radius:1px;display:inline-block"></span> Today (21 Apr)</span>' +
+    '</div></div>';
+}
+
+function initGanttTooltips() {
+  const tt = document.getElementById("gantt-tooltip");
+  if (!tt) return;
+  document.querySelectorAll(".gantt-bar-wrap").forEach(bar => {
+    bar.addEventListener("mouseenter", () => {
+      const dy = parseInt(bar.dataset.days);
+      tt.innerHTML = '<div style="font-weight:700;font-size:13px;margin-bottom:4px">' + bar.dataset.team + '</div>' +
+        '<div style="margin-bottom:2px">Start: ' + bar.dataset.start + '</div>' +
+        '<div style="margin-bottom:2px">Status: ' + (dy <= 0 ? 'Already started' : dy + ' days until start') + '</div>' +
+        '<div style="margin-bottom:2px">Team size: ' + bar.dataset.size + ' positions</div>' +
+        '<div style="color:#cbd5e1;margin-top:6px;font-size:11px">Roles: ' + bar.dataset.roles + '</div>';
+      tt.classList.add("visible");
+    });
+    bar.addEventListener("mousemove", (e) => { tt.style.left = (e.clientX + 12) + "px"; tt.style.top = (e.clientY - 10) + "px"; });
+    bar.addEventListener("mouseleave", () => { tt.classList.remove("visible"); });
+  });
+}
+
+// ── INTERACTIONS ──────────────────────────────────────────────────────────────
+
+function switchTab(id) {
   document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
-  document.querySelector(`[data-tab="${tabId}"]`).classList.add("active");
+  document.querySelector('[data-tab="' + id + '"]').classList.add("active");
   document.querySelectorAll(".tab-content").forEach(c => c.classList.remove("active"));
-  document.getElementById(`tab-${tabId}`).classList.add("active");
+  document.getElementById("tab-" + id).classList.add("active");
 }
 
 function filterCategory(cat) {
-  const chips = document.querySelectorAll("#category-filters .filter-chip");
-  chips.forEach(c => c.classList.remove("active"));
+  document.querySelectorAll("#category-filters .filter-chip").forEach(c => c.classList.remove("active"));
   event.target.classList.add("active");
-
-  const rows = document.querySelectorAll(".role-row");
-  rows.forEach(r => {
-    r.style.display = (cat === "All" || r.dataset.category === cat) ? "" : "none";
-  });
+  document.querySelectorAll(".role-row").forEach(r => { r.style.display = (cat === "All" || r.dataset.category === cat) ? "" : "none"; });
 }
 
 function filterPhase(phase) {
-  const chips = document.querySelectorAll("#phase-filters .filter-chip");
-  chips.forEach(c => c.classList.remove("active"));
+  document.querySelectorAll("#phase-filters .filter-chip").forEach(c => c.classList.remove("active"));
   event.target.classList.add("active");
-
-  const cards = document.querySelectorAll(".team-card");
-  cards.forEach(c => {
-    c.style.display = (phase === "All" || c.dataset.phase === phase) ? "" : "none";
-  });
+  document.querySelectorAll(".team-card").forEach(c => { c.style.display = (phase === "All" || c.dataset.phase === phase) ? "" : "none"; });
 }
 
-// ── INIT ──────────────────────────────────────────────────────────────────────
 render();
 </script>
 </body>
