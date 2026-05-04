@@ -1,0 +1,1634 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Check what benefits you may be eligible for – The Government of Barbados</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@govtech-bb/styles@1.0.0-alpha.16/dist/styles.css"
+    />
+    <style>
+      /* Page layout */
+      .ec-page {
+        padding-block: var(--spacing-l);
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-xm);
+      }
+      @media (width >= 1024px) {
+        .ec-page {
+          gap: var(--spacing-m);
+        }
+      }
+      .ec-page__service-title {
+        display: inline-flex;
+        align-items: center;
+        align-self: flex-start;
+        padding: var(--spacing-xs) var(--spacing-s);
+        border-left: var(--spacing-xxs) solid var(--color-blue-40);
+        color: var(--color-mid-grey-00);
+      }
+      .ec-page__heading {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-s);
+      }
+      .ec-page__progress {
+        color: var(--color-mid-grey-00);
+      }
+      .ec-back {
+        display: inline-flex;
+        align-items: center;
+        gap: var(--spacing-xs);
+        align-self: flex-start;
+        background: none;
+        border: 0;
+        padding: 0;
+        color: var(--color-blue-100);
+        cursor: pointer;
+      }
+      .ec-back:hover {
+        text-decoration: underline;
+      }
+
+      /* Start page (service guide) */
+      .ec-service {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-m);
+      }
+      .ec-service__cta {
+        align-self: flex-start;
+      }
+
+      /* Check your answers (summary list) */
+      .ec-summary {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        border-top: 1px solid var(--color-grey-00);
+      }
+      .ec-summary__row {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xs);
+        padding: var(--spacing-s) 0;
+        border-bottom: 1px solid var(--color-grey-00);
+      }
+      @media (width >= 768px) {
+        .ec-summary__row {
+          grid-template-columns: 1fr 2fr auto;
+          gap: var(--spacing-m);
+          align-items: baseline;
+        }
+      }
+      .ec-summary__key {
+        font-weight: 600;
+      }
+      .ec-summary__action {
+        justify-self: end;
+      }
+      .ec-summary__group-heading {
+        margin-top: var(--spacing-m);
+      }
+
+      /* Results page */
+      .ec-results {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-l);
+      }
+      .ec-results__intro {
+        background: var(--color-yellow-40);
+        border-left: var(--spacing-xs) solid var(--color-yellow-100);
+        padding: var(--spacing-m);
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-s);
+      }
+      .ec-results__intro--negative {
+        background: var(--color-blue-10);
+        border-left-color: var(--color-mid-grey-00);
+      }
+      .ec-results__group {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-s);
+      }
+      .ec-results__group-title {
+        padding-bottom: var(--spacing-xs);
+        border-bottom: 4px solid var(--color-blue-10);
+      }
+      .ec-benefit {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-xs);
+        padding: var(--spacing-m) 0;
+        border-bottom: 1px solid var(--color-grey-00);
+      }
+      .ec-benefit__meta {
+        color: var(--color-mid-grey-00);
+        font-size: var(--font-size-caption, 0.875rem);
+      }
+      .ec-benefit__why {
+        font-style: italic;
+        color: var(--color-mid-grey-00);
+      }
+      .ec-benefit__cta {
+        align-self: flex-start;
+        margin-top: var(--spacing-xs);
+      }
+      .ec-print-only {
+        display: none;
+      }
+      @media print {
+        .ec-no-print {
+          display: none !important;
+        }
+        .ec-print-only {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body class="govbb-page">
+    <div>
+      <div class="govbb-official-banner">
+        <div class="govbb-container govbb-official-banner__inner">
+          <div class="govbb-official-banner__crest">
+            <img
+              class="govbb-official-banner__icon"
+              src="assets/govbb-creast.svg"
+              alt=""
+            />
+          </div>
+          <div class="govbb-official-banner__text">
+            <span>Official government website</span>
+          </div>
+        </div>
+      </div>
+
+      <header class="govbb-header">
+        <div class="govbb-container govbb-header__inner">
+          <a href="#start" aria-label="Go to the alpha.gov.bb homepage">
+            <img
+              class="govbb-header__logo"
+              src="assets/govbb-logo.svg"
+              alt="GOVBB"
+            />
+          </a>
+        </div>
+      </header>
+    </div>
+
+    <main class="govbb-page__main" id="main">
+      <div
+        class="govbb-status-banner govbb-status-banner--alpha"
+        role="status"
+        aria-label="alpha status banner"
+        aria-live="polite"
+      >
+        <div class="govbb-container">
+          <p>
+            This page is in
+            <a class="govbb-link govbb-link--secondary" href="#start">Alpha</a> – your
+            feedback will help us improve it.
+          </p>
+        </div>
+      </div>
+
+      <div class="govbb-container">
+        <div id="page-content" tabindex="-1"></div>
+      </div>
+    </main>
+
+    <footer class="govbb-footer">
+      <div class="govbb-container govbb-footer__inner">
+        <nav class="govbb-footer__nav" aria-label="Footer">
+          <a class="govbb-footer__link" href="#start">Home</a>
+          <a class="govbb-footer__link" href="#start">Cookie policy</a>
+          <a class="govbb-footer__link" href="#start">Terms and conditions</a>
+          <a class="govbb-footer__link" href="#start">Sitemap</a>
+        </nav>
+        <hr class="govbb-footer__divider" aria-hidden="true" />
+        <div class="govbb-footer__end">
+          <img
+            class="govbb-footer__coat"
+            src="assets/govbb-creast.svg"
+            alt="Government of Barbados Coat of Arms"
+          />
+          <p class="govbb-footer__copy">© 2026 Government of Barbados</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      /* =====================================================================
+         BENEFITS ELIGIBILITY CHECKER – ALPHA.GOV.BB
+         A clickable prototype. State lives in memory only.
+         ===================================================================== */
+
+      const SERVICE_TITLE = "Check what benefits you may be eligible for";
+      const state = {
+        answers: {},
+      };
+
+      /* ---------------------------------------------------------------------
+         STEP DEFINITIONS
+         Each step is one page in the flow. Steps with `when` only appear if
+         the predicate returns true given the current answers.
+         --------------------------------------------------------------------- */
+
+      // Predicates shared by several steps and benefits
+      const isAdult = (a) => a.age && a.age !== "under-18";
+      const isWorkingAge = (a) =>
+        a.age === "18-29" || a.age === "30-59" || a.age === "60-64";
+      const isSixtyPlus = (a) => a.age === "60-64" || a.age === "65-plus";
+
+      const steps = [
+        // ---------- About you ----------
+        {
+          id: "age",
+          section: "About you",
+          question: "What is your age group?",
+          hint: "Choose the option that matches your age today.",
+          type: "radio",
+          options: [
+            { value: "under-18", label: "Under 18" },
+            { value: "18-29", label: "18 to 29" },
+            { value: "30-59", label: "30 to 59" },
+            { value: "60-64", label: "60 to 64" },
+            { value: "65-plus", label: "65 or over" },
+          ],
+        },
+        {
+          id: "children",
+          section: "About you",
+          question: "Are there any children under 16 living in your household?",
+          type: "radio",
+          options: [
+            { value: "yes", label: "Yes" },
+            { value: "no", label: "No" },
+          ],
+        },
+        {
+          id: "income",
+          section: "About you",
+          question: "What is your approximate yearly income?",
+          hint: "Include wages, salary, business income and any other money you earn before tax.",
+          type: "radio",
+          options: [
+            { value: "under-25k", label: "Under $25,000" },
+            { value: "25k-35k", label: "$25,001 to $35,000" },
+            { value: "35k-50k", label: "$35,001 to $50,000" },
+            { value: "over-50k", label: "Over $50,000" },
+            { value: "no-income", label: "I do not have an income" },
+          ],
+        },
+        {
+          id: "disability",
+          section: "About you",
+          question:
+            "Is anyone in your household living with a severe physical, mental or developmental disability?",
+          hint:
+            "For example, Down Syndrome, Cerebral Palsy, Autism, Multiple Sclerosis, or a serious physical impairment.",
+          type: "radio",
+          options: [
+            { value: "yes", label: "Yes" },
+            { value: "no", label: "No" },
+          ],
+        },
+        {
+          id: "welfare",
+          section: "About you",
+          question: "Are you currently receiving welfare assistance?",
+          hint: "This is help you receive from the Welfare Department or the Social Empowerment Agency.",
+          type: "radio",
+          options: [
+            { value: "yes", label: "Yes" },
+            { value: "no", label: "No" },
+          ],
+        },
+
+        // ---------- About your home ----------
+        {
+          id: "owns-home",
+          section: "About your home",
+          when: isAdult,
+          question: "Do you own and live in your home as your main residence?",
+          hint:
+            "Your main home is the place where you live for at least 180 days a year. Tick 'Yes' only if your name is on the title.",
+          type: "radio",
+          options: [
+            { value: "yes", label: "Yes" },
+            { value: "no", label: "No" },
+          ],
+        },
+        {
+          id: "rebate-pension",
+          section: "About your home",
+          when: (a) => a.age === "60-64" && a.ownsHome === "yes",
+          question: "Do you receive a pension – from Barbados or from another country?",
+          hint: "This includes NIS, public sector, and private or foreign pensions.",
+          type: "radio",
+          options: [
+            { value: "yes", label: "Yes" },
+            { value: "no", label: "No" },
+          ],
+        },
+
+        // ---------- Seniors pathway ----------
+        {
+          id: "senior-pension",
+          section: "Your situation",
+          when: (a) => a.age === "65-plus",
+          question: "Do you receive a pension?",
+          type: "radio",
+          options: [
+            {
+              value: "nis-or-public",
+              label: "Yes – from the National Insurance Scheme (NIS) or as a public sector pensioner",
+            },
+            {
+              value: "from-other",
+              label: "Yes – from another source (for example, a private or overseas pension)",
+            },
+            {
+              value: "one-time-grant",
+              label: "No pension, but I previously received a one-time grant from NISSS",
+            },
+            { value: "none", label: "No, I do not receive any pension" },
+          ],
+        },
+        {
+          id: "senior-home-care",
+          section: "Your situation",
+          when: (a) => a.age === "65-plus",
+          question:
+            "Do you need help at home with daily activities, or do you need meals delivered to you?",
+          hint:
+            "For example, help with cooking, cleaning, washing, or getting hot meals delivered.",
+          type: "radio",
+          options: [
+            { value: "yes", label: "Yes" },
+            { value: "no", label: "No" },
+          ],
+        },
+
+        // ---------- Workers pathway ----------
+        {
+          id: "self-employed",
+          section: "Your situation",
+          when: (a) => isWorkingAge(a) && (a.income === "under-25k" || a.income === "25k-35k"),
+          question: "Are you self-employed or a company director?",
+          hint:
+            "Self-employed means you work for yourself. This affects whether you can claim the Reverse Tax Credit.",
+          type: "radio",
+          options: [
+            { value: "yes", label: "Yes" },
+            { value: "no", label: "No, I work for an employer" },
+          ],
+        },
+        {
+          id: "rtc-work-history",
+          section: "Your situation",
+          when: (a) =>
+            isWorkingAge(a) && a.income === "under-25k" && a.selfEmployed === "no",
+          question: "Last year, did you work for at least four months earning $1,000 or more each month?",
+          hint: "Or at least $250 a week.",
+          type: "radio",
+          options: [
+            { value: "yes", label: "Yes" },
+            { value: "no", label: "No" },
+          ],
+        },
+        {
+          id: "job-loss",
+          section: "Your situation",
+          when: isWorkingAge,
+          question: "In the last few months, have you lost your job or fallen ill?",
+          hint:
+            "We are checking whether you may qualify for an Unemployment Benefit or a Sickness Benefit from NIS.",
+          type: "radio",
+          options: [
+            { value: "lost-job", label: "Yes – I lost my job" },
+            { value: "sick", label: "Yes – I am too sick to work" },
+            { value: "no", label: "No, neither" },
+          ],
+        },
+        {
+          id: "nis-contributions",
+          section: "Your situation",
+          when: (a) =>
+            isWorkingAge(a) && (a.jobLoss === "lost-job" || a.jobLoss === "sick"),
+          question:
+            "Were you formally employed and paying NIS contributions for at least one year before this?",
+          hint: "Your employer would have taken NIS contributions out of your wages.",
+          type: "radio",
+          options: [
+            { value: "yes", label: "Yes" },
+            { value: "no", label: "No" },
+            { value: "unsure", label: "I am not sure" },
+          ],
+        },
+
+        // ---------- Family pathway ----------
+        {
+          id: "multiple-births",
+          section: "About your family",
+          when: (a) => a.children === "yes",
+          question:
+            "Do you have twins, triplets or more from a single pregnancy who are under 5 years old?",
+          type: "radio",
+          options: [
+            { value: "twins", label: "Yes – twins" },
+            { value: "triplets-plus", label: "Yes – triplets or more" },
+            { value: "no", label: "No" },
+          ],
+        },
+        {
+          id: "child-since-2021",
+          section: "About your family",
+          when: (a) => a.children === "yes",
+          question: "Was any child in your household born on or after 30 November 2021?",
+          hint:
+            "Children born from this date are eligible for the Barbados Republic Child Wealth Fund.",
+          type: "radio",
+          options: [
+            { value: "yes", label: "Yes" },
+            { value: "no", label: "No" },
+          ],
+        },
+        {
+          id: "paternity",
+          section: "About your family",
+          when: (a) => a.children === "yes" && isWorkingAge(a),
+          question:
+            "Are you the father of a child born on or after 1 June 2025, and were you working at the time?",
+          type: "radio",
+          options: [
+            { value: "yes", label: "Yes" },
+            { value: "no", label: "No" },
+          ],
+        },
+        {
+          id: "primary-school",
+          section: "About your family",
+          when: (a) => a.children === "yes",
+          question: "Do you have any children currently attending primary school?",
+          type: "radio",
+          options: [
+            { value: "yes", label: "Yes" },
+            { value: "no", label: "No" },
+          ],
+        },
+
+        // ---------- Vulnerability pathway ----------
+        {
+          id: "disability-diagnosis",
+          section: "About your situation",
+          when: (a) => a.disability === "yes",
+          question: "Has the disability been formally diagnosed by a doctor?",
+          hint:
+            "For example, you have a medical certificate from a doctor naming the diagnosis.",
+          type: "radio",
+          options: [
+            { value: "yes", label: "Yes" },
+            { value: "no", label: "No, not yet" },
+          ],
+        },
+        {
+          id: "extreme-poverty",
+          section: "About your situation",
+          when: (a) =>
+            a.income === "under-25k" || a.income === "no-income" || a.welfare === "yes",
+          question: "Are you struggling to meet basic daily needs?",
+          hint:
+            "For example, you cannot afford food, you have no working electricity, or you have no internet at home.",
+          type: "radio",
+          options: [
+            { value: "yes", label: "Yes" },
+            { value: "no", label: "No" },
+          ],
+        },
+        {
+          id: "home-repairs",
+          section: "About your situation",
+          when: (a) =>
+            a.income === "under-25k" ||
+            a.income === "25k-35k" ||
+            a.income === "no-income" ||
+            a.welfare === "yes",
+          question: "Does your home need urgent repairs you cannot afford?",
+          hint:
+            "For example, a leaking roof, broken floor, or other serious problems that make the home unsafe.",
+          type: "radio",
+          options: [
+            { value: "yes", label: "Yes" },
+            { value: "no", label: "No" },
+          ],
+        },
+        {
+          id: "water-meter",
+          section: "About your situation",
+          when: (a) => a.welfare === "yes",
+          question:
+            "Do you have your own water meter at the home you live in, and pay the water bill yourself?",
+          hint: "We need this to check if you can get a discount on your Garbage and Sewage Contribution.",
+          type: "radio",
+          options: [
+            { value: "yes", label: "Yes" },
+            { value: "no", label: "No" },
+          ],
+        },
+
+        // ---------- Health (asked of all) ----------
+        {
+          id: "chronic-meds",
+          section: "Health and medication",
+          question:
+            "Do you, or anyone in your household, take prescribed medication for any of these conditions?",
+          hint:
+            "Hypertension (high blood pressure), diabetes, cancer, glaucoma, asthma or epilepsy.",
+          type: "radio",
+          options: [
+            { value: "yes", label: "Yes" },
+            { value: "no", label: "No" },
+          ],
+        },
+
+        // ---------- Other support ----------
+        {
+          id: "education",
+          section: "Other support",
+          question:
+            "Are you, or someone in your household, planning to study at college or university?",
+          hint:
+            "This includes vocational training, undergraduate or graduate study in Barbados or abroad.",
+          type: "radio",
+          options: [
+            { value: "yes", label: "Yes" },
+            { value: "no", label: "No" },
+          ],
+        },
+        {
+          id: "housing",
+          section: "Other support",
+          when: (a) =>
+            isWorkingAge(a) && a.income !== "no-income" && a.ownsHome !== "yes",
+          question:
+            "Are you looking to rent or buy a home through the National Housing Corporation (NHC)?",
+          hint:
+            "You must be a Barbadian citizen, 18 or older, employed for at least two years, earning no more than $6,000 a month after tax, and you must not already own land or property.",
+          type: "radio",
+          options: [
+            { value: "yes", label: "Yes" },
+            { value: "no", label: "No" },
+          ],
+        },
+        {
+          id: "nhc-tenant",
+          section: "Other support",
+          when: (a) => a.ownsHome !== "yes",
+          question: "Are you a long-term NHC tenant who has lived there for 20 years or more?",
+          type: "radio",
+          options: [
+            { value: "yes", label: "Yes" },
+            { value: "no", label: "No" },
+          ],
+        },
+        {
+          id: "energy",
+          section: "Other support",
+          question:
+            "Are you thinking about installing solar panels, energy-efficient lights, or other energy upgrades at your home or business?",
+          type: "radio",
+          options: [
+            { value: "yes", label: "Yes" },
+            { value: "no", label: "No" },
+          ],
+        },
+        {
+          id: "youth-business",
+          section: "Other support",
+          when: (a) => a.age === "18-29",
+          question: "Do you have a business idea you want to start?",
+          hint: "The Youth Entrepreneurship Scheme (YES) is open to people aged 18 to 30.",
+          type: "radio",
+          options: [
+            { value: "yes", label: "Yes" },
+            { value: "no", label: "No" },
+          ],
+        },
+        {
+          id: "farming",
+          section: "Other support",
+          question: "Are you a registered farmer or beekeeper in Barbados?",
+          type: "radio",
+          options: [
+            { value: "yes", label: "Yes" },
+            { value: "no", label: "No" },
+          ],
+        },
+      ];
+
+      /* ---------------------------------------------------------------------
+         BENEFIT DEFINITIONS
+         Each benefit has:
+           - id, name, ministry, summary (what you may get)
+           - eligible(answers): predicate
+           - reason(answers): plain-language sentence explaining the match
+           - next: what to do next (description + CTA label)
+         --------------------------------------------------------------------- */
+
+      const benefits = [
+        // ----- BRA / Ministry of Finance -----
+        {
+          id: "rtc",
+          name: "Reverse Tax Credit",
+          group: "Money and tax",
+          ministry: "Barbados Revenue Authority",
+          summary: "Up to $1,700 paid to you each year if you are a low-income worker.",
+          eligible: (a) =>
+            a.income === "under-25k" &&
+            a.selfEmployed === "no" &&
+            a.rtcWorkHistory === "yes",
+          reason: () =>
+            "You earn under $25,000 a year, you are not self-employed, and you worked for at least four months earning $1,000 or more each month.",
+          nextSteps:
+            "File your Personal Income Tax return through the TAMIS portal so the Barbados Revenue Authority can pay you.",
+          link: "https://tamis.bra.gov.bb",
+          linkLabel: "Go to TAMIS",
+        },
+        {
+          id: "rtc-partial",
+          name: "Reverse Tax Credit (partial)",
+          group: "Money and tax",
+          ministry: "Barbados Revenue Authority",
+          summary: "$750 paid to you each year.",
+          eligible: (a) => a.income === "25k-35k" && a.selfEmployed === "no",
+          reason: () =>
+            "You earn between $25,001 and $35,000 a year and you are not self-employed.",
+          nextSteps:
+            "File your Personal Income Tax return through the TAMIS portal so the Barbados Revenue Authority can pay you.",
+          link: "https://tamis.bra.gov.bb",
+          linkLabel: "Go to TAMIS",
+        },
+        {
+          id: "cic",
+          name: "Compensatory Income Credit",
+          group: "Money and tax",
+          ministry: "Barbados Revenue Authority",
+          summary: "A tax credit that helps you keep more of your wages.",
+          eligible: (a) => a.income === "25k-35k" || a.income === "35k-50k",
+          reason: () => "You earn between $25,001 and $50,000 a year.",
+          nextSteps:
+            "File your Personal Income Tax return through the TAMIS portal to claim the credit.",
+          link: "https://tamis.bra.gov.bb",
+          linkLabel: "Go to TAMIS",
+        },
+        {
+          id: "child-wealth-fund",
+          name: "Barbados Republic Child Wealth Fund",
+          group: "Children and family",
+          ministry: "Ministry of Finance",
+          summary: "A one-time $5,000 investment held in trust for your child.",
+          eligible: (a) => a.children === "yes" && a.childSince2021 === "yes",
+          reason: () =>
+            "You have a child born on or after 30 November 2021. Every Barbadian child born from that date qualifies – there is no income test.",
+          nextSteps:
+            "Make sure your child's birth is registered. The fund will be set up automatically using their birth registration.",
+          link: "https://www.gov.bb/Ministries/finance",
+          linkLabel: "Visit the Ministry of Finance",
+        },
+
+        // ----- BRA – Pensioner's Rebate -----
+        {
+          id: "pensioners-rebate",
+          name: "Pensioner's Rebate (Land Tax)",
+          group: "Older people",
+          ministry: "Barbados Revenue Authority",
+          summary:
+            "A rebate on the land tax for the home you own and live in. The rebate applies to one property only.",
+          eligible: (a) =>
+            a.ownsHome === "yes" &&
+            (
+              (a.age === "65-plus" &&
+                (a.seniorPension === "nis-or-public" ||
+                  a.seniorPension === "from-other")) ||
+              (a.age === "60-64" && a.rebatePension === "yes")
+            ),
+          reason: (a) =>
+            a.age === "65-plus"
+              ? "You are 65 or over, you receive a pension, and you live in the home you own as your main residence."
+              : "You are between 60 and 64, you receive a pension, and you live in the home you own as your main residence.",
+          nextSteps:
+            "Apply through the BRA's Land Tax E-Billing portal. You can only claim the rebate on one property – the home you live in.",
+          link: "https://bill.bra.gov.bb",
+          linkLabel: "Go to Land Tax E-Billing",
+        },
+
+        // ----- NISSS -----
+        {
+          id: "colcc-pensioner",
+          name: "Cost of Living Cash Credit",
+          group: "Older people",
+          ministry: "National Insurance and Social Security Service (NISSS)",
+          summary: "$100 paid to you each month.",
+          eligible: (a) =>
+            a.age === "65-plus" &&
+            a.seniorPension === "nis-or-public" &&
+            a.income !== "over-50k",
+          reason: () =>
+            "You are 65 or over, you receive an NIS or Public Sector pension, and your yearly income is below $50,000.",
+          nextSteps:
+            "Apply through your local NISSS office. You will need your national ID and proof of your pension.",
+          link: "https://www.nis.gov.bb",
+          linkLabel: "Visit NISSS",
+        },
+        {
+          id: "colcc-grant",
+          name: "Cost of Living Cash Credit",
+          group: "Older people",
+          ministry: "National Insurance and Social Security Service (NISSS)",
+          summary: "$100 paid to you each month.",
+          eligible: (a) =>
+            a.age === "65-plus" && a.seniorPension === "one-time-grant",
+          reason: () =>
+            "You are 65 or over, do not receive a regular pension, but previously received a one-time grant from NISSS.",
+          nextSteps:
+            "Apply through your local NISSS office. You will need your national ID and the records from your earlier grant.",
+          link: "https://www.nis.gov.bb",
+          linkLabel: "Visit NISSS",
+        },
+        {
+          id: "colcc-welfare",
+          name: "Cost of Living Cash Credit",
+          group: "Help with the cost of living",
+          ministry: "National Insurance and Social Security Service (NISSS)",
+          summary: "$100 paid to you each month.",
+          eligible: (a) => a.welfare === "yes",
+          reason: () =>
+            "You are receiving welfare assistance, so you automatically qualify for the monthly Cost of Living Cash Credit.",
+          nextSteps:
+            "Confirm with your welfare officer that the credit is being paid to you, or apply at NISSS.",
+          link: "https://www.nis.gov.bb",
+          linkLabel: "Visit NISSS",
+        },
+        {
+          id: "special-needs-grant",
+          name: "Special Needs Grant and Non-Contributory Pension",
+          group: "Disability support",
+          ministry: "National Insurance and Social Security Service (NISSS)",
+          summary: "Regular cash help for people with severe disabilities.",
+          eligible: (a) => a.disability === "yes" && a.disabilityDiagnosis === "yes",
+          reason: () =>
+            "Someone in your household has a severe disability that has been formally diagnosed by a doctor.",
+          nextSteps:
+            "Apply at NISSS. You will need a medical certificate showing the diagnosis, birth certificates, and national ID cards.",
+          link: "https://www.nis.gov.bb",
+          linkLabel: "Visit NISSS",
+        },
+        {
+          id: "paternity-benefit",
+          name: "Paternity Benefit",
+          group: "Children and family",
+          ministry: "National Insurance and Social Security Service (NISSS)",
+          summary: "Paid time off after the birth of your child.",
+          eligible: (a) => a.paternity === "yes",
+          reason: () =>
+            "You are the father of a child born on or after 1 June 2025, and you were working at the time.",
+          nextSteps:
+            "Apply at NISSS. You will need the child's birth certificate (showing your name) and your marriage certificate if you are married.",
+          link: "https://www.nis.gov.bb",
+          linkLabel: "Visit NISSS",
+        },
+        {
+          id: "unemployment",
+          name: "Unemployment Benefit",
+          group: "Help if you have lost your job",
+          ministry: "National Insurance and Social Security Service (NISSS)",
+          summary: "Weekly cash help while you are out of work.",
+          eligible: (a) =>
+            a.jobLoss === "lost-job" && a.nisContributions === "yes",
+          reason: () =>
+            "You recently lost your job and you were paying NIS contributions for at least a year before this.",
+          nextSteps:
+            "Apply at NISSS within four weeks of losing your job. Bring your national ID and a letter from your former employer.",
+          link: "https://www.nis.gov.bb",
+          linkLabel: "Visit NISSS",
+        },
+        {
+          id: "sickness",
+          name: "Sickness Benefit",
+          group: "Help if you have lost your job",
+          ministry: "National Insurance and Social Security Service (NISSS)",
+          summary: "Weekly cash help while you are too sick to work.",
+          eligible: (a) =>
+            a.jobLoss === "sick" && a.nisContributions === "yes",
+          reason: () =>
+            "You are too sick to work and you were paying NIS contributions for at least a year before this.",
+          nextSteps:
+            "Apply at NISSS. Bring a medical certificate from your doctor and your national ID.",
+          link: "https://www.nis.gov.bb",
+          linkLabel: "Visit NISSS",
+        },
+
+        // ----- Social Empowerment Agency -----
+        {
+          id: "multiple-births-twins",
+          name: "Multiple Births Benefit",
+          group: "Children and family",
+          ministry: "Social Empowerment Agency",
+          summary: "$300 paid to you each month until your children turn 5.",
+          eligible: (a) => a.multipleBirths === "twins",
+          reason: () => "You have twins under 5 years old.",
+          nextSteps:
+            "Apply at the Social Empowerment Agency. You will need the children's birth certificates and your bank details.",
+          link: "https://www.gov.bb",
+          linkLabel: "Visit the Social Empowerment Agency",
+        },
+        {
+          id: "multiple-births-triplets",
+          name: "Multiple Births Benefit",
+          group: "Children and family",
+          ministry: "Social Empowerment Agency",
+          summary: "$600 paid to you each month until your children turn 5.",
+          eligible: (a) => a.multipleBirths === "triplets-plus",
+          reason: () => "You have triplets or more under 5 years old.",
+          nextSteps:
+            "Apply at the Social Empowerment Agency. You will need the children's birth certificates and your bank details.",
+          link: "https://www.gov.bb",
+          linkLabel: "Visit the Social Empowerment Agency",
+        },
+        {
+          id: "home-care",
+          name: "Home Care Programme and Meals on Wheels",
+          group: "Older people",
+          ministry: "Social Empowerment Agency",
+          summary: "Free help at home and meals delivered to your door.",
+          eligible: (a) => a.age === "65-plus" && a.seniorHomeCare === "yes",
+          reason: () =>
+            "You are 65 or over and need help with daily activities at home, or hot meals delivered.",
+          nextSteps:
+            "Contact the Social Empowerment Agency to ask for an assessment by a home care officer.",
+          link: "https://www.gov.bb",
+          linkLabel: "Visit the Social Empowerment Agency",
+        },
+        {
+          id: "nap",
+          name: "National Assistance Programme (NAP)",
+          group: "Help with the cost of living",
+          ministry: "Social Empowerment Agency",
+          summary:
+            "Cash grants and in-kind support such as food, clothing, house repairs and burial help.",
+          eligible: (a) => a.extremePoverty === "yes",
+          reason: () =>
+            "You are struggling to meet basic daily needs. A welfare officer can assess what help you can get.",
+          nextSteps:
+            "Visit your local Social Empowerment Agency office to ask for an assessment by a welfare officer.",
+          link: "https://www.gov.bb",
+          linkLabel: "Visit the Social Empowerment Agency",
+        },
+
+        // ----- Ministry of People Empowerment and Elder Affairs -----
+        {
+          id: "one-family",
+          name: "One Family Programme",
+          group: "Help with the cost of living",
+          ministry: "Ministry of People Empowerment and Elder Affairs",
+          summary:
+            "Wrap-around family support, including financial training and help with utilities.",
+          eligible: (a) => a.extremePoverty === "yes",
+          reason: () =>
+            "You said your family is struggling with basic needs such as electricity, internet or food.",
+          nextSteps:
+            "Ask your welfare officer to refer you to the One Family Programme, or apply through MPEA.",
+          link: "https://www.gov.bb",
+          linkLabel: "Visit MPEA",
+        },
+        {
+          id: "ndu",
+          name: "National Disabilities Unit registration and ID",
+          group: "Disability support",
+          ministry: "Ministry of People Empowerment and Elder Affairs",
+          summary:
+            "A Certificate of Disability and a 'Disability' designation on your Trident ID card.",
+          eligible: (a) => a.disability === "yes" && a.disabilityDiagnosis === "yes",
+          reason: () =>
+            "Someone in your household has a disability that has been formally diagnosed by a doctor.",
+          nextSteps:
+            "Ask your doctor to fill out a Medical Registration Form, then submit it to the National Disabilities Unit.",
+          link: "https://www.gov.bb",
+          linkLabel: "Visit the National Disabilities Unit",
+        },
+
+        // ----- Health -----
+        {
+          id: "category-a-age-senior",
+          name: "Category A free prescriptions",
+          group: "Health and medication",
+          ministry: "Barbados Drug Service",
+          summary: "Free prescription medicines on the government formulary.",
+          eligible: (a) => a.age === "65-plus",
+          reason: () => "You are 65 or over.",
+          nextSteps:
+            "Take your prescription and your national ID to any approved pharmacy.",
+          link: "https://www.gov.bb",
+          linkLabel: "Visit the Barbados Drug Service",
+        },
+        {
+          id: "category-a-age-child",
+          name: "Category A free prescriptions",
+          group: "Health and medication",
+          ministry: "Barbados Drug Service",
+          summary: "Free prescription medicines on the government formulary for children.",
+          eligible: (a) => a.age === "under-18" || a.children === "yes",
+          reason: () =>
+            "Children under 16 in Barbados receive free formulary medicines, regardless of family income.",
+          nextSteps:
+            "Take the child's prescription and ID to any approved pharmacy.",
+          link: "https://www.gov.bb",
+          linkLabel: "Visit the Barbados Drug Service",
+        },
+        {
+          id: "category-a-chronic",
+          name: "Category A free prescriptions for chronic conditions",
+          group: "Health and medication",
+          ministry: "Barbados Drug Service",
+          summary:
+            "Free prescription medicines for hypertension, diabetes, cancer, glaucoma, asthma and epilepsy.",
+          eligible: (a) =>
+            a.chronicMeds === "yes" && a.age !== "65-plus" && a.age !== "under-18",
+          reason: () =>
+            "You take prescribed medication for one or more covered chronic conditions.",
+          nextSteps:
+            "Take your prescription and your national ID to any approved pharmacy.",
+          link: "https://www.gov.bb",
+          linkLabel: "Visit the Barbados Drug Service",
+        },
+
+        // ----- Education -----
+        {
+          id: "srlf",
+          name: "Student Revolving Loan Fund and grants",
+          group: "Education",
+          ministry: "Ministry of Education, Technological and Vocational Training",
+          summary:
+            "Loans and grants to help pay for tertiary or vocational study in Barbados or abroad.",
+          eligible: (a) => a.education === "yes",
+          reason: () =>
+            "You said someone in your household is planning to study at college or university.",
+          nextSteps:
+            "Apply through the Ministry of Education. You will need an offer letter from your chosen institution.",
+          link: "https://www.mes.gov.bb",
+          linkLabel: "Visit the Ministry of Education",
+        },
+        {
+          id: "primary-textbook",
+          name: "Primary School Textbook Grant",
+          group: "Education",
+          ministry: "Ministry of Education, Technological and Vocational Training",
+          summary: "Up to $100 per primary school pupil to help cover textbook costs.",
+          eligible: (a) => a.primarySchool === "yes" && a.welfare !== "yes",
+          reason: () =>
+            "You have children in primary school and you do not already get textbook help through welfare.",
+          nextSteps:
+            "Keep your textbook receipts and submit them to the Ministry of Education.",
+          link: "https://www.mes.gov.bb",
+          linkLabel: "Visit the Ministry of Education",
+        },
+
+        // ----- Housing -----
+        {
+          id: "nhc-housing",
+          name: "NHC housing rental, purchase or social mortgage",
+          group: "Housing",
+          ministry: "National Housing Corporation",
+          summary: "Subsidised rental, purchase or mortgage for a home through NHC.",
+          eligible: (a) => a.housing === "yes",
+          reason: () =>
+            "You said you are looking to rent or buy a home through the NHC.",
+          nextSteps:
+            "Apply through the National Housing Corporation. You will need proof of income, your national ID, and proof you are employed.",
+          link: "https://www.nhc.gov.bb",
+          linkLabel: "Visit the NHC",
+        },
+        {
+          id: "nhc-title",
+          name: "NHC housing title transfer",
+          group: "Housing",
+          ministry: "National Housing Corporation",
+          summary:
+            "Direct transfer of your home from the state to you, after 20 years as an NHC tenant in good standing.",
+          eligible: (a) => a.nhcTenant === "yes",
+          reason: () => "You have lived in your NHC home for 20 years or more.",
+          nextSteps:
+            "Speak to the National Housing Corporation about starting the title transfer process.",
+          link: "https://www.nhc.gov.bb",
+          linkLabel: "Visit the NHC",
+        },
+        {
+          id: "home-repairs",
+          name: "Home repair assistance",
+          group: "Housing",
+          ministry: "Rural and Urban Development Commissions",
+          summary:
+            "Help with critical repairs for vulnerable households, the elderly, and families with children.",
+          eligible: (a) => a.homeRepairs === "yes",
+          reason: () =>
+            "You said your home needs urgent repairs you cannot afford.",
+          nextSteps:
+            "Contact the Rural Development Commission (for rural homes) or Urban Development Commission (for urban homes) for an assessment.",
+          link: "https://www.gov.bb",
+          linkLabel: "Find your local commission",
+        },
+
+        // ----- Water / utilities -----
+        {
+          id: "gsc",
+          name: "Garbage and Sewage Contribution exemption",
+          group: "Help with the cost of living",
+          ministry: "Barbados Water Authority",
+          summary: "A waiver or reduction on your water and sewage bill.",
+          eligible: (a) => a.welfare === "yes" && a.waterMeter === "yes",
+          reason: () =>
+            "You are receiving welfare assistance, you live in your home as your main residence, and you have your own water meter.",
+          nextSteps:
+            "Apply at the Barbados Water Authority. Bring proof of welfare and your most recent water bill.",
+          link: "https://www.bwa.bb",
+          linkLabel: "Visit the BWA",
+        },
+
+        // ----- Energy -----
+        {
+          id: "energy-smart",
+          name: "Energy Smart Fund",
+          group: "Energy and the environment",
+          ministry: "Enterprise Growth Fund Limited (Ministry of Energy)",
+          summary:
+            "Subsidised loans up to $2 million and technical grants up to $50,000 for renewable energy and efficiency upgrades.",
+          eligible: (a) => a.energy === "yes",
+          reason: () =>
+            "You said you are thinking about installing solar panels or other energy upgrades.",
+          nextSteps:
+            "Apply through the Enterprise Growth Fund. You will need quotes for the work you want to do.",
+          link: "https://www.egfl.bb",
+          linkLabel: "Visit the Enterprise Growth Fund",
+        },
+
+        // ----- Youth and business -----
+        {
+          id: "yes",
+          name: "Youth Entrepreneurship Scheme (YES)",
+          group: "Work and business",
+          ministry: "Ministry of Youth, Sports and Community Empowerment",
+          summary: "Funding, mentoring and training for young entrepreneurs.",
+          eligible: (a) => a.youthBusiness === "yes",
+          reason: () =>
+            "You are between 18 and 30, and you have a business idea you want to start.",
+          nextSteps:
+            "Apply through the Ministry of Youth. You will need a short business idea or plan.",
+          link: "https://www.gov.bb",
+          linkLabel: "Visit the Ministry of Youth",
+        },
+
+        // ----- Agriculture -----
+        {
+          id: "farm-rebate",
+          name: "Farm Security and Apiculture Rebates",
+          group: "Work and business",
+          ministry: "Ministry of Agriculture, Food and Nutritional Security",
+          summary:
+            "50% rebate on security systems (up to $15,000) and on apiary inputs (up to $5,000 a year).",
+          eligible: (a) => a.farming === "yes",
+          reason: () =>
+            "You are a registered farmer or beekeeper.",
+          nextSteps:
+            "Apply through the Ministry of Agriculture. Keep your receipts for any equipment you have bought.",
+          link: "https://www.agriculture.gov.bb",
+          linkLabel: "Visit the Ministry of Agriculture",
+        },
+      ];
+
+      /* ---------------------------------------------------------------------
+         RENDERING
+         --------------------------------------------------------------------- */
+
+      const root = document.getElementById("page-content");
+
+      // Helpers ----------------------------------------------------------------
+      function escape(str) {
+        return String(str).replace(/[&<>"']/g, (c) => ({
+          "&": "&amp;",
+          "<": "&lt;",
+          ">": "&gt;",
+          '"': "&quot;",
+          "'": "&#39;",
+        }[c]));
+      }
+
+      // Translate a step.id into the matching state key (camelCase)
+      function answerKey(id) {
+        return id.replace(/-([a-z])/g, (_, c) => c.toUpperCase());
+      }
+
+      function activeSteps() {
+        return steps.filter((s) => !s.when || s.when(state.answers));
+      }
+
+      function stepIndex(id) {
+        const list = activeSteps();
+        return list.findIndex((s) => s.id === id);
+      }
+
+      function nextStepId(currentId) {
+        const list = activeSteps();
+        const i = list.findIndex((s) => s.id === currentId);
+        if (i === -1 || i + 1 >= list.length) return "check";
+        return list[i + 1].id;
+      }
+
+      function prevStepId(currentId) {
+        const list = activeSteps();
+        const i = list.findIndex((s) => s.id === currentId);
+        if (i <= 0) return "start";
+        return list[i - 1].id;
+      }
+
+      // Set the page title (with optional Error: prefix for screen readers)
+      function setTitle(text, isError) {
+        document.title =
+          (isError ? "Error: " : "") +
+          text +
+          " – " +
+          SERVICE_TITLE +
+          " – The Government of Barbados";
+      }
+
+      // After render, move focus and scroll to top
+      function focusContent() {
+        root.focus();
+        window.scrollTo({ top: 0, behavior: "instant" });
+      }
+
+      // Routing ----------------------------------------------------------------
+      function go(hash) {
+        if (window.location.hash === "#" + hash) {
+          render();
+        } else {
+          window.location.hash = hash;
+        }
+      }
+
+      function parseHash() {
+        const h = (window.location.hash || "#start").replace(/^#/, "");
+        return h || "start";
+      }
+
+      function render() {
+        const route = parseHash();
+        if (route === "start") return renderStart();
+        if (route === "check") return renderCheck();
+        if (route === "results") return renderResults();
+        const step = steps.find((s) => s.id === route);
+        if (!step) return renderStart();
+        // If the step is no longer active (because answers changed), skip forward
+        if (step.when && !step.when(state.answers)) {
+          return go(nextStepId(route));
+        }
+        renderQuestion(step);
+      }
+
+      window.addEventListener("hashchange", render);
+
+      // Pages ------------------------------------------------------------------
+
+      function renderStart() {
+        setTitle(SERVICE_TITLE);
+        root.innerHTML = `
+          <section class="ec-page ec-service" aria-labelledby="start-h1">
+            <div class="ec-page__heading">
+              <span class="ec-page__service-title govbb-text-body">Help and benefits</span>
+              <h1 class="govbb-text-display" id="start-h1">${SERVICE_TITLE}</h1>
+              <p class="govbb-text-body">
+                Use this service to find out which government benefits and services
+                you may be able to claim. Answer a few questions about your
+                household, your income and your circumstances, and we will show you
+                a personalised list at the end.
+              </p>
+            </div>
+
+            <section>
+              <h2 class="govbb-text-h2">Before you start</h2>
+              <p class="govbb-text-body">It will help to have:</p>
+              <ul class="govbb-list govbb-list--bullet">
+                <li>your approximate yearly income</li>
+                <li>some basic details about anyone living in your home</li>
+                <li>any medical or pension details, if these apply to you</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2 class="govbb-text-h2">How long it takes</h2>
+              <p class="govbb-text-body">About 5 minutes.</p>
+            </section>
+
+            <section>
+              <h2 class="govbb-text-h2">What you will get at the end</h2>
+              <p class="govbb-text-body">
+                A list of benefits and services you may be eligible for, with
+                guidance on what to do next. This is a guide only – it does not
+                guarantee approval. The relevant government department will make
+                the final decision when you apply.
+              </p>
+            </section>
+
+            <a class="govbb-btn ec-service__cta" href="#${steps[0].id}">Start now</a>
+
+            <p class="govbb-text-caption" style="color: var(--color-mid-grey-00);">
+              We will not save anything you tell us. You can stop and start again
+              at any time.
+            </p>
+          </section>
+        `;
+        focusContent();
+      }
+
+      function renderQuestion(step, opts = {}) {
+        const list = activeSteps();
+        const i = list.findIndex((s) => s.id === step.id);
+        const total = list.length;
+        const key = answerKey(step.id);
+        const current = state.answers[key];
+        const error = opts.error;
+        setTitle(step.question, !!error);
+
+        const errorSummary = error
+          ? `
+            <div
+              class="govbb-error-summary"
+              role="alert"
+              aria-labelledby="error-summary-title"
+              tabindex="-1"
+              id="error-summary"
+            >
+              <h2 id="error-summary-title" class="govbb-error-summary__title">
+                There is a problem
+              </h2>
+              <ul class="govbb-error-summary__list">
+                <li>
+                  <a class="govbb-error-summary__link" href="#${step.id}-input-0">
+                    ${escape(error)}
+                  </a>
+                </li>
+              </ul>
+            </div>
+          `
+          : "";
+
+        const optionsHtml = step.options
+          .map((opt, idx) => {
+            const id = `${step.id}-input-${idx}`;
+            const checked = current === opt.value ? "checked" : "";
+            return `
+              <div class="govbb-radio-item">
+                <input
+                  class="govbb-radio"
+                  id="${id}"
+                  type="radio"
+                  name="${step.id}"
+                  value="${escape(opt.value)}"
+                  ${checked}
+                  ${error ? 'aria-invalid="true" aria-describedby="' + step.id + '-error"' : ""}
+                />
+                <label class="govbb-radio-item__label" for="${id}">
+                  ${escape(opt.label)}
+                </label>
+              </div>
+            `;
+          })
+          .join("");
+
+        root.innerHTML = `
+          <section class="ec-page" aria-labelledby="step-h1">
+            <button class="ec-back" type="button" data-back>
+              <span aria-hidden="true">‹</span> Back
+            </button>
+
+            ${errorSummary}
+
+            <div class="ec-page__heading">
+              <span class="ec-page__service-title govbb-text-body">
+                ${escape(step.section || SERVICE_TITLE)}
+              </span>
+              <p class="ec-page__progress govbb-text-caption">
+                Question ${i + 1} of ${total}
+              </p>
+              <h1 class="govbb-text-display" id="step-h1">
+                ${escape(step.question)}
+              </h1>
+              ${step.hint ? `<p class="govbb-text-body">${escape(step.hint)}</p>` : ""}
+            </div>
+
+            <form class="govbb-form-group" novalidate data-step-form>
+              <fieldset class="govbb-fieldset">
+                <legend class="govbb-fieldset__legend govbb-visually-hidden">
+                  ${escape(step.question)}
+                </legend>
+                ${
+                  error
+                    ? `<p class="govbb-error-message" id="${step.id}-error">
+                        <span class="govbb-visually-hidden">Error:</span> ${escape(error)}
+                      </p>`
+                    : ""
+                }
+                ${optionsHtml}
+              </fieldset>
+
+              <div class="govbb-btn-group" style="margin-top: var(--spacing-m);">
+                <button class="govbb-btn" type="submit">Continue</button>
+              </div>
+            </form>
+          </section>
+        `;
+
+        // Wire up Back
+        root.querySelector("[data-back]").addEventListener("click", () => {
+          const prev = prevStepId(step.id);
+          go(prev);
+        });
+
+        // Wire up form submit
+        const form = root.querySelector("[data-step-form]");
+        form.addEventListener("submit", (ev) => {
+          ev.preventDefault();
+          const selected = form.querySelector(`input[name="${step.id}"]:checked`);
+          if (!selected) {
+            return renderQuestion(step, {
+              error: "Choose one option to continue.",
+            });
+          }
+          state.answers[key] = selected.value;
+          // If we just changed an answer that affects later branches, drop any
+          // answers that are no longer reachable.
+          pruneOrphanedAnswers();
+          // If we came here from check-your-answers, return there
+          if (state.returnToCheck) {
+            state.returnToCheck = false;
+            return go("check");
+          }
+          go(nextStepId(step.id));
+        });
+
+        if (error) {
+          const summary = document.getElementById("error-summary");
+          if (summary) summary.focus();
+        } else {
+          focusContent();
+        }
+      }
+
+      function pruneOrphanedAnswers() {
+        steps.forEach((s) => {
+          if (s.when && !s.when(state.answers)) {
+            delete state.answers[answerKey(s.id)];
+          }
+        });
+      }
+
+      function renderCheck() {
+        setTitle("Check your answers");
+        const list = activeSteps();
+        // Group by section
+        const grouped = {};
+        list.forEach((s) => {
+          const sec = s.section || "Your answers";
+          (grouped[sec] = grouped[sec] || []).push(s);
+        });
+
+        const sectionsHtml = Object.entries(grouped)
+          .map(([section, items]) => {
+            const rows = items
+              .map((s) => {
+                const key = answerKey(s.id);
+                const value = state.answers[key];
+                const opt = s.options.find((o) => o.value === value);
+                const display = opt ? opt.label : "Not answered";
+                return `
+                  <div class="ec-summary__row">
+                    <div class="ec-summary__key govbb-text-body">
+                      ${escape(s.question)}
+                    </div>
+                    <div class="govbb-text-body">${escape(display)}</div>
+                    <div class="ec-summary__action">
+                      <a class="govbb-link" href="#${s.id}" data-change="${s.id}">
+                        Change<span class="govbb-visually-hidden">
+                          your answer to "${escape(s.question)}"
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                `;
+              })
+              .join("");
+            return `
+              <h2 class="govbb-text-h2 ec-summary__group-heading">${escape(section)}</h2>
+              <dl class="ec-summary">${rows}</dl>
+            `;
+          })
+          .join("");
+
+        root.innerHTML = `
+          <section class="ec-page" aria-labelledby="check-h1">
+            <button class="ec-back" type="button" data-back>
+              <span aria-hidden="true">‹</span> Back
+            </button>
+            <div class="ec-page__heading">
+              <span class="ec-page__service-title govbb-text-body">${SERVICE_TITLE}</span>
+              <h1 class="govbb-text-display" id="check-h1">Check your answers</h1>
+              <p class="govbb-text-body">
+                Look over your answers below. If anything is wrong, choose
+                <strong>Change</strong> and we will take you back to that question.
+              </p>
+            </div>
+
+            ${sectionsHtml}
+
+            <div class="govbb-btn-group" style="margin-top: var(--spacing-m);">
+              <a class="govbb-btn" href="#results">See my results</a>
+            </div>
+          </section>
+        `;
+
+        root.querySelector("[data-back]").addEventListener("click", () => {
+          const last = list[list.length - 1];
+          go(last ? last.id : "start");
+        });
+
+        root.querySelectorAll("[data-change]").forEach((el) => {
+          el.addEventListener("click", () => {
+            state.returnToCheck = true;
+          });
+        });
+
+        focusContent();
+      }
+
+      function renderResults() {
+        setTitle("Your results");
+        const matched = benefits.filter((b) => {
+          try {
+            return b.eligible(state.answers);
+          } catch (e) {
+            return false;
+          }
+        });
+
+        // Deduplicate when more than one rule matches the same benefit name
+        const seen = new Set();
+        const unique = [];
+        matched.forEach((b) => {
+          if (seen.has(b.name)) return;
+          seen.add(b.name);
+          unique.push(b);
+        });
+
+        // Group by category
+        const grouped = {};
+        unique.forEach((b) => {
+          (grouped[b.group] = grouped[b.group] || []).push(b);
+        });
+
+        const intro =
+          unique.length > 0
+            ? `
+              <div class="ec-results__intro">
+                <h2 class="govbb-text-h2" style="margin: 0;">
+                  You may be eligible for ${unique.length}
+                  ${unique.length === 1 ? "benefit or service" : "benefits and services"}
+                </h2>
+                <p class="govbb-text-body" style="margin: 0;">
+                  This is a guide based on the answers you gave us. The relevant
+                  government department will make the final decision when you apply.
+                </p>
+              </div>
+            `
+            : `
+              <div class="ec-results__intro ec-results__intro--negative">
+                <h2 class="govbb-text-h2" style="margin: 0;">
+                  Based on your answers, we did not find a benefit you qualify for
+                </h2>
+                <p class="govbb-text-body" style="margin: 0;">
+                  This does not mean you cannot get help. Speak to the Social
+                  Empowerment Agency or your local Constituency Council if your
+                  situation changes or you need support.
+                </p>
+              </div>
+            `;
+
+        const groupOrder = [
+          "Money and tax",
+          "Older people",
+          "Children and family",
+          "Health and medication",
+          "Help with the cost of living",
+          "Disability support",
+          "Help if you have lost your job",
+          "Education",
+          "Housing",
+          "Work and business",
+          "Energy and the environment",
+        ];
+        const orderedGroups = groupOrder
+          .filter((g) => grouped[g])
+          .concat(Object.keys(grouped).filter((g) => !groupOrder.includes(g)));
+
+        const groupsHtml = orderedGroups
+          .map((group) => {
+            const cards = grouped[group]
+              .map(
+                (b) => `
+                  <article class="ec-benefit">
+                    <h3 class="govbb-text-h3" style="margin: 0;">${escape(b.name)}</h3>
+                    <p class="ec-benefit__meta govbb-text-caption">
+                      Run by ${escape(b.ministry)}
+                    </p>
+                    <p class="govbb-text-body">${escape(b.summary)}</p>
+                    <p class="ec-benefit__why govbb-text-body">
+                      <strong>Why we think you qualify:</strong> ${escape(b.reason(state.answers))}
+                    </p>
+                    <p class="govbb-text-body">
+                      <strong>What to do next:</strong> ${escape(b.nextSteps)}
+                    </p>
+                    <a
+                      class="govbb-btn--secondary ec-benefit__cta"
+                      href="${escape(b.link)}"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      ${escape(b.linkLabel)}
+                    </a>
+                  </article>
+                `
+              )
+              .join("");
+            return `
+              <section class="ec-results__group">
+                <h2 class="govbb-text-h2 ec-results__group-title">${escape(group)}</h2>
+                ${cards}
+              </section>
+            `;
+          })
+          .join("");
+
+        root.innerHTML = `
+          <section class="ec-page ec-results" aria-labelledby="results-h1">
+            <button class="ec-back ec-no-print" type="button" data-back>
+              <span aria-hidden="true">‹</span> Back to my answers
+            </button>
+            <div class="ec-page__heading">
+              <span class="ec-page__service-title govbb-text-body">${SERVICE_TITLE}</span>
+              <h1 class="govbb-text-display" id="results-h1">Your results</h1>
+            </div>
+
+            ${intro}
+            ${groupsHtml}
+
+            <div class="govbb-btn-group ec-no-print" style="margin-top: var(--spacing-l);">
+              <button class="govbb-btn--secondary" type="button" data-print>
+                Print my results
+              </button>
+              <a class="govbb-btn--tertiary" href="#start" data-restart>
+                Start again
+              </a>
+            </div>
+
+            <section class="ec-no-print" style="margin-top: var(--spacing-l);">
+              <h2 class="govbb-text-h3">Need help applying?</h2>
+              <p class="govbb-text-body">
+                If you are not sure where to start, the Social Empowerment Agency
+                can help you work out which benefits to apply for and what
+                paperwork you need. Visit your nearest office or call them.
+              </p>
+            </section>
+          </section>
+        `;
+
+        root.querySelector("[data-back]").addEventListener("click", () => go("check"));
+        root.querySelector("[data-print]").addEventListener("click", () => window.print());
+        root.querySelector("[data-restart]").addEventListener("click", () => {
+          state.answers = {};
+        });
+
+        focusContent();
+      }
+
+      // Bootstrap --------------------------------------------------------------
+      render();
+    </script>
+  </body>
+</html>
