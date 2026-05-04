@@ -22,6 +22,21 @@
           gap: var(--spacing-m);
         }
       }
+      /* Scale down display headings on narrow viewports.
+         The design system's --font-size-display is sized for desktop,
+         so on phones the H1 wraps to one word per line. */
+      @media (max-width: 640px) {
+        .ec-page__heading .govbb-text-display {
+          font-size: 2rem;
+          line-height: 1.15;
+        }
+        .ec-page .govbb-text-h2 {
+          font-size: 1.375rem;
+        }
+        .ec-page .govbb-text-h3 {
+          font-size: 1.125rem;
+        }
+      }
       .ec-page__service-title {
         display: inline-flex;
         align-items: center;
