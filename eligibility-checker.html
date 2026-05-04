@@ -22,6 +22,15 @@
           gap: var(--spacing-m);
         }
       }
+      /* Suppress the focus ring on the page-content container. We give it
+         tabindex="-1" so screen readers can land on each new page after
+         navigation, but the visual outline isn't useful for sighted users
+         (they never tabbed to it). Real interactive controls keep their rings. */
+      #page-content:focus,
+      #page-content:focus-visible {
+        outline: none;
+      }
+
       /* Breathing room between radio options. The design system stacks them
          flush by default; that's hard to scan when there are five options. */
       .ec-page .govbb-radio-item + .govbb-radio-item,
