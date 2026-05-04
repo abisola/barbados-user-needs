@@ -22,6 +22,13 @@
           gap: var(--spacing-m);
         }
       }
+      /* Breathing room between radio options. The design system stacks them
+         flush by default; that's hard to scan when there are five options. */
+      .ec-page .govbb-radio-item + .govbb-radio-item,
+      .ec-page .govbb-checkbox-item + .govbb-checkbox-item {
+        margin-top: var(--spacing-s);
+      }
+
       /* Scale down display headings on narrow viewports.
          The design system's --font-size-display is sized for desktop,
          so on phones the H1 wraps to one word per line. */
