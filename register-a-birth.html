@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register a birth — The Government of Barbados</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@govtech-bb/styles@1.0.0-alpha.16/dist/styles.css"
+    />
+    <style>
+      /* Page-specific layout — small additions on top of GovBB tokens. */
+      .service-page {
+        padding-block: var(--spacing-m);
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-m);
+      }
+      .service__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: var(--spacing-m);
+      }
+      .service__main {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-m);
+      }
+      .service__meta {
+        padding-bottom: var(--spacing-s);
+        border-bottom: 4px solid var(--color-blue-10);
+        color: var(--color-mid-grey-00);
+      }
+      .service__sections {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-m);
+      }
+      .service__section {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-s);
+      }
+      .service__feedback {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-xs);
+        border: 4px solid var(--color-yellow-100, #ffd900);
+        background: var(--color-yellow-40, #fff4a3);
+        padding: var(--spacing-xm) var(--spacing-s);
+      }
+      @media (width >= 1024px) {
+        .service__grid {
+          grid-template-columns: repeat(3, 1fr);
+          gap: var(--spacing-xl);
+        }
+        .service__main {
+          grid-column: span 2;
+        }
+      }
+
+      /* ─────────────────────────────────────────────────────────────
+         AI summary block
+         Distinct from page content so citizens can tell at a glance:
+           – this is a quick skim
+           – it was generated, not written by a human editor
+           – the full page below is the source of truth
+         ───────────────────────────────────────────────────────────── */
+      .ai-summary {
+        background: var(--color-teal-10);
+        border-left: 6px solid var(--color-teal-100);
+        padding: var(--spacing-m);
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-s);
+      }
+      .ai-summary__header {
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-xs);
+        font-family: inherit;
+        font-size: var(--font-size-caption);
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: var(--color-teal-100);
+      }
+      .ai-summary__icon {
+        width: 1.25rem;
+        height: 1.25rem;
+        flex: 0 0 auto;
+      }
+      .ai-summary__tldr {
+        font-size: var(--font-size-body-lg);
+        line-height: 1.5;
+        color: var(--color-text);
+        margin: 0;
+      }
+      .ai-summary__facts {
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0;
+      }
+      .ai-summary__row {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xxs);
+        padding-block: var(--spacing-s);
+        border-top: 1px solid var(--color-teal-40);
+      }
+      .ai-summary__row:first-child {
+        border-top: 0;
+        padding-top: 0;
+      }
+      .ai-summary__row:last-child {
+        padding-bottom: 0;
+      }
+      .ai-summary__label {
+        font-weight: 700;
+        color: var(--color-blue-100);
+        font-size: var(--font-size-body);
+      }
+      .ai-summary__value {
+        margin: 0;
+        font-size: var(--font-size-body);
+        line-height: 1.5;
+        color: var(--color-text);
+      }
+      .ai-summary__skip {
+        align-self: flex-start;
+      }
+      .ai-summary__provenance {
+        font-size: var(--font-size-caption);
+        color: var(--color-text-muted);
+        margin: 0;
+        padding-top: var(--spacing-xs);
+        border-top: 1px solid var(--color-teal-40);
+      }
+      @media (width >= 700px) {
+        .ai-summary__row {
+          grid-template-columns: 8rem 1fr;
+          gap: var(--spacing-s);
+          align-items: baseline;
+        }
+      }
+    </style>
+  </head>
+  <body class="govbb-page">
+    <div>
+      <div class="govbb-official-banner">
+        <div class="govbb-container govbb-official-banner__inner">
+          <div class="govbb-official-banner__crest">
+            <img
+              class="govbb-official-banner__icon"
+              src="https://unpkg.com/@govtech-bb/styles@1.0.0-alpha.16/assets/images/govbb-creast.svg"
+              alt=""
+            />
+          </div>
+          <div class="govbb-official-banner__text">
+            <span>Official government website</span>
+          </div>
+        </div>
+      </div>
+
+      <header class="govbb-header">
+        <div class="govbb-container govbb-header__inner">
+          <a href="/" aria-label="Go to the alpha.gov.bb homepage">
+            <img
+              class="govbb-header__logo"
+              src="https://unpkg.com/@govtech-bb/styles@1.0.0-alpha.16/assets/images/govbb-logo.svg"
+              alt="GOVBB"
+            />
+          </a>
+        </div>
+      </header>
+    </div>
+
+    <main class="govbb-page__main">
+      <div
+        class="govbb-status-banner govbb-status-banner--alpha"
+        role="status"
+        aria-label="alpha status banner"
+        aria-live="polite"
+      >
+        <div class="govbb-container">
+          <p>
+            This page is in
+            <a class="govbb-link govbb-link--secondary" href="/what-we-mean-by-alpha">Alpha</a>.
+          </p>
+        </div>
+      </div>
+
+      <div class="govbb-container service-page">
+        <nav class="govbb-breadcrumbs" aria-label="Breadcrumb">
+          <ol class="govbb-breadcrumbs__list">
+            <li class="govbb-breadcrumbs__item">
+              <a class="govbb-breadcrumbs__link" href="/">Home</a>
+            </li>
+            <li class="govbb-breadcrumbs__item">
+              <a class="govbb-breadcrumbs__link" href="/family-birth-relationships"
+                >Family, birth and relationships</a
+              >
+            </li>
+            <li class="govbb-breadcrumbs__item" aria-current="page">Register a birth</li>
+          </ol>
+        </nav>
+
+        <div class="service__grid">
+          <div class="service__main">
+            <h1 class="govbb-text-display">Register a birth</h1>
+
+            <div class="service__meta">
+              <p class="govbb-text-caption">Last updated on November 14th, 2025</p>
+            </div>
+
+            <!-- ─────────────────────────────────────────────────────────
+                 AI summary block
+                 Sits above the full page content. Citizens can skim
+                 the key facts; the full page below remains the source
+                 of truth for decisions.
+                 ───────────────────────────────────────────────────── -->
+            <aside
+              class="ai-summary"
+              aria-labelledby="ai-summary-heading"
+            >
+              <div class="ai-summary__header" id="ai-summary-heading">
+                <svg
+                  class="ai-summary__icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M12 3 L13.5 9 L19.5 10.5 L13.5 12 L12 18 L10.5 12 L4.5 10.5 L10.5 9 Z" />
+                  <path d="M19 16 L19.7 18.3 L22 19 L19.7 19.7 L19 22 L18.3 19.7 L16 19 L18.3 18.3 Z" />
+                </svg>
+                <span>Quick summary</span>
+              </div>
+
+              <p class="ai-summary__tldr">
+                You must register your baby's birth in person within 28 days at the registry
+                office in the district where the child was born. After 1 year, late fees apply.
+              </p>
+
+              <dl class="ai-summary__facts">
+                <div class="ai-summary__row">
+                  <dt class="ai-summary__label">Deadline</dt>
+                  <dd class="ai-summary__value">
+                    Within 28 days of the birth. There's a 1-year grace period before a BDS $20
+                    late fee applies.
+                  </dd>
+                </div>
+
+                <div class="ai-summary__row">
+                  <dt class="ai-summary__label">Who registers</dt>
+                  <dd class="ai-summary__value">
+                    If parents are <strong>married</strong>, the father registers. If
+                    <strong>not married</strong>, the mother registers. Both must attend if you
+                    want the father named on the birth record.
+                  </dd>
+                </div>
+
+                <div class="ai-summary__row">
+                  <dt class="ai-summary__label">Where</dt>
+                  <dd class="ai-summary__value">
+                    In person at the magistrate's court for the district where the child was
+                    born – not the closest one to where you live.
+                  </dd>
+                </div>
+
+                <div class="ai-summary__row">
+                  <dt class="ai-summary__label">What to bring</dt>
+                  <dd class="ai-summary__value">
+                    Your child's Personal Child Health Record, a valid photo ID for each parent
+                    being named, and your marriage certificate if you're married.
+                  </dd>
+                </div>
+
+                <div class="ai-summary__row">
+                  <dt class="ai-summary__label">Cost</dt>
+                  <dd class="ai-summary__value">
+                    Registration is free. A certified copy of the birth certificate costs BDS
+                    $5.00 each and is ready in 2-3 days.
+                  </dd>
+                </div>
+              </dl>
+
+              <a class="govbb-link govbb-link--secondary ai-summary__skip" href="#how-to-register"
+                >Read the full page below for details and exceptions →</a
+              >
+
+              <p class="ai-summary__provenance">
+                Generated by AI from the content on this page. For decisions, read the full page
+                below or contact the Registration Department.
+              </p>
+            </aside>
+
+            <div class="service__sections">
+              <section class="service__section" id="how-to-register">
+                <h2 class="govbb-text-h2">How to register a birth</h2>
+                <ol class="govbb-list govbb-list--number">
+                  <li>
+                    Take your documents (listed below) to the registry office in the district
+                    where the child was born. You cannot book an appointment but lunchtime is
+                    typically busy.
+                  </li>
+                  <li>
+                    A registration clerk will use your documents to verify your identity. They
+                    will then record the baby's full name, date and place of birth, parents'
+                    details, for example, their name, occupations and address.
+                  </li>
+                  <li>
+                    When you have reviewed and confirmed the details, the registration clerk
+                    will ask you to sign the official register.
+                  </li>
+                  <li>
+                    The clerk will begin the process of issuing a birth certificate which will
+                    be ready to collect in 2 to 3 days. Each certified copy costs BDS $5.00.
+                  </li>
+                </ol>
+              </section>
+
+              <section class="service__section">
+                <h2 class="govbb-text-h2">Who should register a birth?</h2>
+                <p class="govbb-text-body">
+                  You cannot register a birth online yet, so you need to do it in person in the
+                  district where the child was born.
+                </p>
+                <p class="govbb-text-body">If the parents are:</p>
+                <ul class="govbb-list govbb-list--bullet">
+                  <li>married to each other, the father must register and the mother can attend</li>
+                  <li>
+                    not married to each other, the mother must register the birth but it is not
+                    necessary for the father to attend
+                  </li>
+                  <li>
+                    not married to each other but the father wants to be named on the birth
+                    record, both parents must register the birth together
+                  </li>
+                </ul>
+                <p class="govbb-text-body">You do not need to take the baby.</p>
+              </section>
+
+              <section class="service__section">
+                <h2 class="govbb-text-h2">What to bring</h2>
+                <p class="govbb-text-body">You need to show:</p>
+                <ul class="govbb-list govbb-list--bullet">
+                  <li>
+                    Your child's Personal Child Health Record from the hospital or birthing
+                    centre (sometimes called the immunisation book or birth notification).
+                  </li>
+                  <li>
+                    A valid form of photo identification for each parent who will be named on
+                    the birth record. For Barbadian citizens, your Barbados National ID card,
+                    valid passport or other government-issued ID is acceptable. Non-Barbadian
+                    nationals must show their valid passport.
+                  </li>
+                  <li>
+                    Your original marriage certificate if you are married to the child's other
+                    parent.
+                  </li>
+                </ul>
+
+                <h3 class="govbb-text-h3">Parents who are minors</h3>
+                <p class="govbb-text-body">
+                  If you are a mother or a father and you are under 16 years old, you are
+                  considered a minor.
+                </p>
+                <p class="govbb-text-body">If you have a valid passport, you must bring:</p>
+                <ul class="govbb-list govbb-list--bullet">
+                  <li>your valid passport</li>
+                  <li>your original birth certificate</li>
+                  <li>the child's medical book (green book)</li>
+                </ul>
+                <p class="govbb-text-body">
+                  You must be accompanied by your parent(s) or guardian(s).
+                </p>
+                <p class="govbb-text-body">If you do not have a valid passport, you must bring:</p>
+                <ul class="govbb-list govbb-list--bullet">
+                  <li>your minor's identification card</li>
+                  <li>your original birth certificate</li>
+                  <li>the child's medical book (green book)</li>
+                  <li>an identification letter signed by a Justice of the Peace</li>
+                </ul>
+                <p class="govbb-text-body">
+                  You must be accompanied by your parent(s) or guardian(s).
+                </p>
+                <p class="govbb-text-body">
+                  If you don't meet these criteria, contact the Registrations Department.
+                </p>
+              </section>
+
+              <section class="service__section">
+                <h2 class="govbb-text-h2">If you are unable to register the birth in person</h2>
+                <p class="govbb-text-body">
+                  If you are unable to attend in person, contact the Registration Department in
+                  Bridgetown as soon as possible after the child is born.
+                </p>
+                <p class="govbb-text-body">
+                  Registration Department<br />
+                  Supreme Court Complex<br />
+                  Whitepark Road<br />
+                  St. Michael<br />
+                  (246) 535-9700
+                </p>
+              </section>
+
+              <section class="service__section">
+                <h2 class="govbb-text-h2">Late registrations</h2>
+                <p class="govbb-text-body">
+                  Births must be registered within 28 days of the child being born. There is a
+                  grace period of 1 year but after this point, the parent or guardian must engage
+                  a legal assistant from the Registrations Department to help with the late
+                  registration process. You will need to pay a late registration fee of BDS
+                  $20.00.
+                </p>
+              </section>
+
+              <section class="service__section">
+                <h2 class="govbb-text-h2">Where to register</h2>
+                <p class="govbb-text-body">
+                  You cannot register a birth online yet, so you need to do it in person in the
+                  district where the child was born. Even if this is not the closest magistrate's
+                  court to where you live.
+                </p>
+
+                <h3 class="govbb-text-h3">Born in St. Michael (District A)</h3>
+                <p class="govbb-text-body">
+                  Go to the Registration Department (Records Branch), in the Supreme Court
+                  Complex, Whitepark Road, St. Michael
+                </p>
+
+                <h3 class="govbb-text-h3">Born in Christ Church or St. George</h3>
+                <p class="govbb-text-body">
+                  Go to the District B Magistrate's Court, currently located at the Eric Holder
+                  Municipal Complex, Blackmans, St. Joseph
+                </p>
+
+                <h3 class="govbb-text-h3">Born in St. Philip or St. John</h3>
+                <p class="govbb-text-body">
+                  Normally located at the District C Magistrate's Court, St. Matthias, Christ
+                  Church, currently located at the Registration Department, in the Supreme Court
+                  Complex, Whitepark Road, St. Michael
+                </p>
+
+                <h3 class="govbb-text-h3">Born in St. Thomas</h3>
+                <p class="govbb-text-body">
+                  Go to the District D Magistrate's Court, Cane Garden, St. Thomas
+                </p>
+
+                <h3 class="govbb-text-h3">Born in St. Peter, St. James, or St. Lucy</h3>
+                <p class="govbb-text-body">
+                  Go to the District E Magistrate's Court, Holetown, St. James
+                </p>
+
+                <h3 class="govbb-text-h3">Born in St. Joseph or St. Andrew</h3>
+                <p class="govbb-text-body">
+                  Go to the District F Magistrate's Court, Eric Holder Municipal Complex,
+                  Blackmans, Saint Joseph
+                </p>
+
+                <p class="govbb-text-body">
+                  If you are unsure of your district please contact the Registration Department
+                  at the Supreme Court.
+                </p>
+              </section>
+            </div>
+
+            <div class="service__feedback">
+              <h3 class="govbb-text-h3">Was this helpful?</h3>
+              <p class="govbb-text-body">Give us your feedback about this page.</p>
+              <a class="govbb-link govbb-link--secondary govbb-font-body" href="/feedback"
+                >Help us improve alpha.gov.bb</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="govbb-footer">
+      <div class="govbb-container govbb-footer__inner">
+        <nav class="govbb-footer__nav" aria-label="Footer">
+          <a class="govbb-footer__link" href="/">Home</a>
+          <a class="govbb-footer__link" href="/terms-conditions">Terms &amp; Conditions</a>
+          <a
+            class="govbb-footer__link"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://job-boards.greenhouse.io/govtechbarbados"
+            >Careers</a
+          >
+        </nav>
+        <hr class="govbb-footer__divider" aria-hidden="true" />
+        <div class="govbb-footer__end">
+          <img
+            class="govbb-footer__coat"
+            src="https://unpkg.com/@govtech-bb/styles@1.0.0-alpha.16/assets/images/govbb-creast.svg"
+            alt="Government of Barbados Coat of Arms"
+          />
+          <p class="govbb-footer__copy">© 2026 Government of Barbados</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
