@@ -1,0 +1,58 @@
+{
+  "slug": "caricom-dominican-republic-certificate",
+  "title": "Apply for a CARICOM–Dominican Republic certificate of origin",
+  "category": "trade-exports-and-imports",
+  "description": "Get a certificate of origin under the CARICOM–Dominican Republic Free Trade Agreement.",
+  "summary": [
+    "Use this certificate of origin if you are exporting goods to the Dominican Republic under the Free Trade Agreement between the Caribbean Community (CARICOM) and the Dominican Republic.",
+    "The form is bilingual – the Spanish version says ‘Certificado de Origen’."
+  ],
+  "before_you_start": {
+    "intro": "You will need to know:",
+    "items": [
+      "the exporter’s name and address",
+      "the importer or consignee’s name and address",
+      "the goods description, HS code, value, quantity and country of origin",
+      "transport information",
+      "the period the certificate covers"
+    ]
+  },
+  "documents": {
+    "intro": "Bring with you:",
+    "items": [
+      {
+        "name": "Commercial invoice"
+      },
+      {
+        "name": "Bill of lading or airway bill"
+      },
+      {
+        "name": "Packing list"
+      },
+      {
+        "name": "Proof that the goods meet the CARICOM–Dominican Republic rules of origin"
+      }
+    ]
+  },
+  "fees": "Confirm fees with BIDC.",
+  "how_long": "Certificates are usually issued within 3 to 5 working days.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "In person",
+        "content": [
+          "Take the completed CARICOM–Dominican Republic certificate of origin (Certificado de Origen) to BIDC at Pelican House."
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "agency": "Barbados Investment and Development Corporation (BIDC)",
+    "address": "Pelican House, Princess Alice Highway\nSt. Michael",
+    "phone": [
+      "(246) 427-5350"
+    ],
+    "email": "info@bidc.com",
+    "hours": "Open Monday to Friday: 8:30am to 4:30pm"
+  }
+}

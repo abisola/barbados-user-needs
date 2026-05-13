@@ -1,0 +1,69 @@
+{
+  "slug": "police-accident-report",
+  "title": "Get a police accident report",
+  "category": "safety-and-public-events",
+  "description": "Get a copy of the police report for a road traffic accident.",
+  "summary": [
+    "If you were involved in a road traffic accident in Barbados, you can ask for a copy of the police report. You will usually need it for an insurance claim."
+  ],
+  "who_can_apply": [
+    "the driver, owner or named insured of a vehicle involved in the accident",
+    "an insurance company or attorney acting for someone involved"
+  ],
+  "before_you_start": {
+    "intro": "You will need to know:",
+    "items": [
+      "your name, address, phone number and email",
+      "the date and time of the accident",
+      "the place of the accident",
+      "the registration numbers of the vehicles involved",
+      "your reason for asking for the report"
+    ]
+  },
+  "documents": {
+    "intro": "Bring with you:",
+    "items": [
+      {
+        "name": "Photo ID"
+      },
+      {
+        "name": "Proof of relationship",
+        "note": "For example, the registration card if you are the owner, or a letter of authority if you are acting for someone else."
+      },
+      {
+        "name": "Receipt of payment of the fee"
+      }
+    ]
+  },
+  "fees": {
+    "items": [
+      {
+        "label": "Police accident report fee",
+        "amount": "$50 BBD"
+      }
+    ],
+    "notes": [
+      "Pay at the Barbados Revenue Authority before you apply."
+    ]
+  },
+  "how_long": "Reports are usually ready within 4 to 6 weeks.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "In person",
+        "content": [
+          "Hand the completed Application for Police Accident Report form in to Police Headquarters, James Street, St. Michael."
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "agency": "The Royal Barbados Police Force",
+    "address": "Police Headquarters\nRoebuck Street\nSt. Michael",
+    "phone": [
+      "(246) 430-7100"
+    ],
+    "email": "police@barbados.gov.bb",
+    "hours": "Open Monday to Friday: 8:30am to 4:30pm"
+  }
+}

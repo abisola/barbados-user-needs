@@ -1,0 +1,62 @@
+{
+  "slug": "nis-online-employee",
+  "title": "Register for Online Social Security (employee)",
+  "category": "national-insurance-and-benefits",
+  "description": "Open an online account with the NIS so you can check your record, change your details and apply for benefits.",
+  "summary": [
+    "The NIS Online Social Security Service is the National Insurance Office’s online portal for individuals. Once you have an account, you can check your contribution record, update your details and apply for some benefits online instead of at the office.",
+    "You only need to register once. After that, you log in with your details whenever you need to use the service.",
+    "Registration is in person. You take a completed registration form and a valid photo ID to the National Insurance Office, and they activate the account for you.",
+    "There is no fee. If you change employer or move address, log in and update your account so the Office always has your current details."
+  ],
+  "before_you_start": {
+    "intro": "You will need to know:",
+    "items": [
+      "your full name and date of birth",
+      "your National Insurance Number",
+      "your National Registration Number",
+      "your home address and parish",
+      "an email address and phone number"
+    ]
+  },
+  "documents": {
+    "intro": "Bring with you:",
+    "items": [
+      {
+        "name": "Valid photo ID",
+        "note": "Barbados ID card or passport."
+      }
+    ]
+  },
+  "fees": "There is no fee.",
+  "how_long": "Your account is usually active within 5 working days.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "In person",
+        "content": [
+          "Take the completed Online Social Security Service Registration form and your ID to the National Insurance Office."
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "agency": "National Insurance Office",
+    "address": "Culloden Road\nSt. Michael",
+    "phone": [
+      "(246) 467-4000"
+    ],
+    "email": "nationalinsurance@nis.gov.bb",
+    "hours": "Open Monday to Friday: 8:30am to 4:30pm"
+  },
+  "related": [
+    {
+      "slug": "nis-online-employer",
+      "title": "Register for Online Social Security (employer)"
+    }
+  ],
+  "assumptions": [
+    "‘Account is usually active within 5 working days’ is an estimate.",
+    "‘There is no fee’ is inferred."
+  ]
+}

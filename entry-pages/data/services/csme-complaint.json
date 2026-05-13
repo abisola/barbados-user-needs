@@ -1,0 +1,67 @@
+{
+  "slug": "csme-complaint",
+  "title": "Make a CSME point of entry complaint",
+  "category": "trade-exports-and-imports",
+  "description": "Tell CARICOM if you were treated unfairly at a port of entry or departure under the CSME.",
+  "summary": [
+    "Under the Caribbean Single Market and Economy (CSME), CARICOM nationals have the right to move freely across member states. If you are denied that right at a port – for example, you are refused entry, asked irrelevant questions, or treated rudely – you can make a formal complaint.",
+    "The complaint form covers ports of entry, ports of departure and inland posts in any CARICOM country. The CSME Unit reviews complaints and follows up with the country involved.",
+    "Try to capture as much detail as you can while it is still fresh – the date, the time, the place, the names or badge numbers of officials, and the boarding pass or ticket details. The more specific your complaint, the easier it is to follow up.",
+    "There is no fee. You should get an acknowledgement within 10 working days. A full investigation can take longer, especially if the CSME Unit needs to follow up with another country."
+  ],
+  "who_can_apply": [
+    "a CARICOM national who was treated unfairly at a port",
+    "someone acting on behalf of a CARICOM national"
+  ],
+  "before_you_start": {
+    "intro": "You will need to know:",
+    "items": [
+      "your full name, nationality and passport number",
+      "your address, telephone, email and sex",
+      "the date and place of the incident",
+      "a short, plain-language account of what happened",
+      "the names or badge numbers of any officials, if you have them"
+    ]
+  },
+  "documents": {
+    "intro": "Bring with you:",
+    "items": [
+      {
+        "name": "Photo ID or passport"
+      },
+      {
+        "name": "Boarding pass or ticket",
+        "note": "If you have one."
+      },
+      {
+        "name": "Any other supporting documents",
+        "note": "Photos, statements from witnesses, etc."
+      }
+    ]
+  },
+  "fees": "There is no fee.",
+  "how_long": "An acknowledgement is sent within 10 working days. A full response may take longer if the CSME Unit needs to investigate.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "By post or in person",
+        "content": [
+          "Send the completed CARICOM Point of Entry/Departure/Inland Complaints Form to the CSME Unit, or hand it to an immigration officer at a port."
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "agency": "CSME Unit, CARICOM",
+    "address": "Tom Adams Financial Centre, Church Village\nSt. Michael",
+    "phone": [
+      "(246) 622-0150"
+    ],
+    "email": "csme@caricom.org",
+    "hours": "Open Monday to Friday: 8:30am to 4:30pm"
+  },
+  "assumptions": [
+    "Contact details for the CSME Unit at the Tom Adams Financial Centre are illustrative and should be confirmed.",
+    "‘Acknowledgement within 10 working days’ is an estimate."
+  ]
+}

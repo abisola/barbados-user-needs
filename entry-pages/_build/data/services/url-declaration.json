@@ -1,0 +1,52 @@
+{
+  "slug": "url-declaration",
+  "title": "Make a URL ownership declaration",
+  "category": "business-and-companies",
+  "description": "Declare that you legally own a website domain (URL) registered to your company.",
+  "summary": [
+    "If your business owns a website domain (URL) and you need to prove it, you can make a URL declaration before an attorney-at-law.",
+    "The declaration shows that the URL is registered to your business and is legally and beneficially owned by it."
+  ],
+  "before_you_start": {
+    "intro": "You will need to know:",
+    "items": [
+      "your full name and address",
+      "the URL you are declaring (for example, www.yourbusiness.bb)",
+      "the legal name of the company that owns the URL",
+      "the date the URL was registered"
+    ]
+  },
+  "documents": {
+    "intro": "Bring with you:",
+    "items": [
+      {
+        "name": "Photo ID"
+      },
+      {
+        "name": "Proof of URL registration",
+        "note": "A WHOIS print-out or registrar receipt."
+      }
+    ]
+  },
+  "fees": "No government fee. Your attorney-at-law may charge for witnessing the declaration.",
+  "how_long": "Same day with your attorney-at-law.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "With an attorney-at-law",
+        "content": [
+          "Make the declaration before a Barbadian attorney-at-law, who will witness your signature and stamp the document."
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "agency": "Corporate Affairs and Intellectual Property Office (CAIPO)",
+    "address": "Baobab Tower, Ground Floor\nWarrens\nSt. Michael",
+    "phone": [
+      "(246) 535-2401"
+    ],
+    "email": "caipo@caipo.gov.bb",
+    "hours": "Open Monday to Friday: 8:30am to 4:30pm"
+  }
+}

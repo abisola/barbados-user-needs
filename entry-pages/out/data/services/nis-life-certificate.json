@@ -1,0 +1,49 @@
+{
+  "slug": "nis-life-certificate",
+  "title": "Send a life certificate",
+  "category": "national-insurance-and-benefits",
+  "description": "People claiming an NIS pension must confirm they are alive every six months.",
+  "summary": [
+    "If you are claiming a pension from the National Insurance Office, you must send a Life Certificate every June and December.",
+    "This is how the National Insurance Office knows to keep paying you."
+  ],
+  "before_you_start": {
+    "intro": "You will need:",
+    "items": [
+      "your full name and NIS number",
+      "your address",
+      "an approved witness who can confirm you are alive"
+    ]
+  },
+  "documents": {
+    "intro": "The form must be signed by you and stamped or signed by an approved witness, for example:",
+    "items": [
+      "a Justice of the Peace",
+      "a Notary Public",
+      "a Minister of Religion",
+      "a Permanent Secretary",
+      "an officer at the Barbados Consulate or High Commission"
+    ]
+  },
+  "fees": "There is no fee.",
+  "how_long": "Send the certificate by 30 June and 31 December each year. Payments may pause if it does not arrive in time.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "By post or in person",
+        "content": [
+          "Take or send the completed Life Certificate to the National Insurance Office, Culloden Road, St. Michael."
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "agency": "National Insurance Office",
+    "address": "Culloden Road\nSt. Michael",
+    "phone": [
+      "(246) 467-4000"
+    ],
+    "email": "nationalinsurance@nis.gov.bb",
+    "hours": "Open Monday to Friday: 8:30am to 4:30pm"
+  }
+}

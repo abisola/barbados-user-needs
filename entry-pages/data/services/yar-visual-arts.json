@@ -1,0 +1,72 @@
+{
+  "slug": "yar-visual-arts",
+  "title": "Register for Youth Achieving Results (Visual Arts)",
+  "category": "youth-and-community",
+  "description": "Register a young visual artist for the Youth Achieving Results visual arts programme.",
+  "summary": [
+    "Youth Achieving Results (YAR) supports young Barbadians in the arts. The Visual Arts strand is for people working in painting, drawing, photography, sculpture and digital art.",
+    "You get classes with experienced practitioners, mentoring from established artists, and a chance to show your work at end-of-programme exhibitions.",
+    "The programme is open to people aged 12 to 30. If you are under 16, a parent or guardian needs to register you.",
+    "There is no fee. You can include a portfolio or sample of recent work with your application if you have one – it helps the team understand where you are and how the programme can support you."
+  ],
+  "who_can_apply": [
+    "Barbadian nationals aged 12 to 30",
+    "parents or guardians registering a child under 16"
+  ],
+  "before_you_start": {
+    "intro": "You will need to know:",
+    "items": [
+      "the participant’s full name, address and date of birth",
+      "their National Registration Number",
+      "their phone number and email",
+      "the visual art they want to focus on (painting, drawing, photography, sculpture, digital art)",
+      "their level of experience",
+      "for under-16s, the parent or guardian’s details"
+    ]
+  },
+  "documents": {
+    "intro": "Bring with you (or upload):",
+    "items": [
+      {
+        "name": "Photo ID"
+      },
+      {
+        "name": "Birth certificate",
+        "note": "For participants under 18."
+      },
+      {
+        "name": "Parental consent form",
+        "note": "For participants under 16."
+      },
+      {
+        "name": "Portfolio or sample of recent work",
+        "note": "Optional but helpful."
+      }
+    ]
+  },
+  "fees": "There is no fee.",
+  "how_long": "Places are usually confirmed within 2 weeks of the closing date.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "Online",
+        "content": [
+          "Complete the Youth Achieving Results (Visual Arts): Registration Form on the Ministry website."
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "agency": "Ministry of Youth, Sports and Community Empowerment",
+    "address": "Sky Mall, Haggatt Hall\nSt. Michael",
+    "phone": [
+      "(246) 535-3700"
+    ],
+    "email": "youth@barbados.gov.bb",
+    "hours": "Open Monday to Friday: 8:30am to 4:30pm"
+  },
+  "assumptions": [
+    "‘Aged 12 to 30’ is the commonly-quoted eligibility range.",
+    "‘Places are usually confirmed within 2 weeks’ is an estimate."
+  ]
+}

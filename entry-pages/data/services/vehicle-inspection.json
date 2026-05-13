@@ -1,0 +1,88 @@
+{
+  "slug": "vehicle-inspection",
+  "title": "Get a vehicle inspection",
+  "category": "driving-and-transport",
+  "description": "Book a Barbados Licensing Authority inspection to check that a vehicle is roadworthy.",
+  "summary": [
+    "You must have your vehicle inspected by the Barbados Licensing Authority before it can be registered, and from time to time after that. The inspection checks that the vehicle is safe to drive.",
+    "Inspectors look at the lights, brakes, tyres, body, chassis number, engine number and other key items. They also confirm the make, model and year so the registration record matches the vehicle.",
+    "If the vehicle passes, you get a certificate on the same day. If it fails, you get a list of the problems that need to be fixed before you can come back for another inspection.",
+    "The form is the LA.36R Application for Inspection of a Motor Vehicle. You can also be asked to bring your vehicle in for a re-inspection after major changes – for example, a new engine or a change from private to commercial use."
+  ],
+  "who_can_apply": [
+    "the registered owner of the vehicle",
+    "an authorised agent acting on behalf of the owner"
+  ],
+  "before_you_start": {
+    "intro": "You will need to know:",
+    "items": [
+      "the registration number of the vehicle",
+      "your full name and address",
+      "the manufacturer, model and year of the vehicle",
+      "the primary and secondary colours",
+      "the engine number, chassis number, engine capacity and number of cylinders",
+      "the number of axles and the type of body"
+    ]
+  },
+  "documents": {
+    "intro": "Bring with you:",
+    "items": [
+      {
+        "name": "Photo ID"
+      },
+      {
+        "name": "Proof of vehicle ownership",
+        "note": "Bill of sale or current registration card."
+      },
+      {
+        "name": "Proof of insurance"
+      }
+    ]
+  },
+  "fees": {
+    "items": [
+      {
+        "label": "Inspection fee",
+        "amount": "From $50 BBD"
+      }
+    ],
+    "notes": [
+      "Pay at the Barbados Revenue Authority before you are inspected."
+    ]
+  },
+  "how_long": "Inspections normally take less than an hour. You will get the certificate the same day if your vehicle passes.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "In person",
+        "content": [
+          "Take the completed LA.36R form and your vehicle to the Barbados Licensing Authority."
+        ]
+      }
+    ]
+  },
+  "edge_cases": [
+    {
+      "heading": "If your vehicle fails",
+      "content": [
+        "You will get a list of the problems that need to be fixed. Once you have done the repairs, book another inspection."
+      ]
+    }
+  ],
+  "contact": {
+    "agency": "Barbados Licensing Authority",
+    "address": "The Pine, East–West Boulevard\nSt. Michael\nBB11000",
+    "phone": [
+      "Pine: (246) 536-0264 or (246) 536-0278",
+      "Holetown: (246) 535-8168 or (246) 535-5169",
+      "Oistins: (246) 535-8147 or (246) 536-8148"
+    ],
+    "email": "BLASupport@barbados.gov.bb",
+    "hours": "Open Monday to Friday: 8:15am to 3:30pm"
+  },
+  "assumptions": [
+    "Inspection fee ‘from $50 BBD’ is illustrative. The current fee is set by the Barbados Revenue Authority.",
+    "‘Inspections normally take less than an hour’ is an estimate based on common BLA practice.",
+    "The list of items inspectors look at (lights, brakes, tyres etc.) is based on general motor-vehicle inspection practice, not the form itself."
+  ]
+}

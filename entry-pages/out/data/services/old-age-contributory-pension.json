@@ -1,0 +1,97 @@
+{
+  "slug": "old-age-contributory-pension",
+  "title": "Claim Old Age Contributory Pension",
+  "category": "national-insurance-and-benefits",
+  "description": "Claim a pension from the National Insurance Office once you reach pension age.",
+  "summary": [
+    "If you are 67 or over and have paid enough National Insurance contributions, you can claim the Old Age Contributory Pension.",
+    "You can also claim from age 60 at a reduced rate, if you have stopped working."
+  ],
+  "who_can_apply": {
+    "intro": "You can claim if:",
+    "items": [
+      "you are 67 or over (full rate)",
+      "you are between 60 and 66, are no longer working and choose to claim early at a reduced rate",
+      "you have paid the minimum number of NIS contributions"
+    ]
+  },
+  "before_you_start": {
+    "intro": "You will need to know:",
+    "items": [
+      "your National Insurance Number",
+      "your National Registration Number",
+      "your date of birth and address",
+      "details of your work history",
+      "the bank or credit union account where you want your pension paid"
+    ]
+  },
+  "documents": {
+    "intro": "Bring with you:",
+    "items": [
+      {
+        "name": "National ID card or passport"
+      },
+      {
+        "name": "Birth certificate"
+      },
+      {
+        "name": "Marriage certificate",
+        "note": "Only if your surname is different from your birth certificate."
+      },
+      {
+        "name": "Bank or credit union account header",
+        "note": "So payments can be deposited."
+      },
+      {
+        "name": "Most recent payslips",
+        "note": "If you are still working."
+      }
+    ]
+  },
+  "fees": "There is no fee to claim.",
+  "how_long": "A first decision usually takes 6 to 12 weeks. Payments are then made every month.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "In person",
+        "content": [
+          "Take the completed Claim for Old Age Contributory Pension form to the National Insurance Office on Culloden Road."
+        ]
+      },
+      {
+        "heading": "If you live overseas",
+        "content": [
+          "Contact the National Insurance Office. They will tell you how to claim from where you live."
+        ]
+      }
+    ]
+  },
+  "edge_cases": [
+    {
+      "heading": "If your claim is approved",
+      "content": [
+        "You will get a letter telling you how much you will be paid and when. Most people are paid by direct deposit – see ‘Set up direct deposit for NIS payments’.",
+        "You will also need to send a Life Certificate every June and December to keep your pension active."
+      ]
+    }
+  ],
+  "contact": {
+    "agency": "National Insurance Office",
+    "address": "Culloden Road\nSt. Michael",
+    "phone": [
+      "(246) 467-4000"
+    ],
+    "email": "nationalinsurance@nis.gov.bb",
+    "hours": "Open Monday to Friday: 8:30am to 4:30pm"
+  },
+  "related": [
+    {
+      "slug": "nis-direct-deposit",
+      "title": "Set up direct deposit for NIS payments"
+    },
+    {
+      "slug": "nis-life-certificate",
+      "title": "Send a life certificate"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "slug": "register-an-ibc",
+  "title": "Register an International Business Company",
+  "category": "business-and-companies",
+  "description": "Set up an International Business Company (IBC) in Barbados.",
+  "summary": [
+    "An International Business Company (IBC) does its business outside Barbados. To register one, you need both a declaration from a Barbadian attorney-at-law and a Government Form 1 application.",
+    "An IBC must keep its records in Barbados, hold board meetings here and have a local registered office."
+  ],
+  "who_can_apply": [
+    "anyone who wants to set up an International Business Company in Barbados",
+    "a Barbadian attorney-at-law acting on behalf of the applicant"
+  ],
+  "before_you_start": {
+    "intro": "You will need to know:",
+    "items": [
+      "the proposed name of the company (and alternatives)",
+      "the type of international business it will do",
+      "the name and address of the proposed registered office in Barbados",
+      "the names, addresses and nationalities of every director",
+      "the names and addresses of every shareholder",
+      "the share structure"
+    ]
+  },
+  "documents": {
+    "intro": "Bring with you:",
+    "items": [
+      {
+        "name": "Form 1 Application for a Licence as an International Business Company"
+      },
+      {
+        "name": "Articles of incorporation"
+      },
+      {
+        "name": "Declaration form signed by your attorney-at-law"
+      },
+      {
+        "name": "Police record certificates for every director and shareholder"
+      },
+      {
+        "name": "Business plan",
+        "note": "A short summary of the planned activities."
+      },
+      {
+        "name": "Photo ID for every director and shareholder"
+      },
+      {
+        "name": "Proof of payment of the application fee"
+      }
+    ]
+  },
+  "fees": {
+    "items": [
+      {
+        "label": "Incorporation",
+        "amount": "$750 BBD"
+      },
+      {
+        "label": "Annual IBC licence",
+        "amount": "$1,000 BBD"
+      }
+    ]
+  },
+  "how_long": "A decision usually takes 4 to 8 weeks.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "Through an attorney-at-law",
+        "content": [
+          "A Barbadian attorney-at-law will file the documents with the International Business Unit and the Corporate Affairs and Intellectual Property Office."
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "agency": "Corporate Affairs and Intellectual Property Office (CAIPO)",
+    "address": "Baobab Tower, Ground Floor\nWarrens\nSt. Michael",
+    "phone": [
+      "(246) 535-2401"
+    ],
+    "email": "caipo@caipo.gov.bb",
+    "hours": "Open Monday to Friday: 8:30am to 4:30pm"
+  }
+}

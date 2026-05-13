@@ -1,0 +1,64 @@
+{
+  "slug": "shooting-club-licence",
+  "title": "Apply for a shooting club licence",
+  "category": "firearms",
+  "description": "Apply for a licence so a shooting club can operate in Barbados.",
+  "summary": [
+    "Under Section 12 of the Firearms Act, every shooting club must hold a current licence."
+  ],
+  "who_can_apply": [
+    "a registered shooting club with at least one approved range",
+    "the secretary or chairperson of the club"
+  ],
+  "before_you_start": {
+    "intro": "You will need to know:",
+    "items": [
+      "the full name of the club",
+      "the address of the club and every range",
+      "the names of every officer and committee member",
+      "the names of every member who will use firearms at the club",
+      "the types of firearms the club uses"
+    ]
+  },
+  "documents": {
+    "intro": "Bring with you:",
+    "items": [
+      {
+        "name": "Club constitution"
+      },
+      {
+        "name": "List of members with their firearm licence details"
+      },
+      {
+        "name": "Range safety plan and inspection report"
+      },
+      {
+        "name": "Two passport-size photographs of the club secretary"
+      },
+      {
+        "name": "Proof of payment of the application fee"
+      }
+    ]
+  },
+  "fees": "Pay the licence fee at the Barbados Revenue Authority before you apply.",
+  "how_long": "A decision usually takes 10 to 14 weeks.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "In person",
+        "content": [
+          "Hand the completed Form D Application for a Shooting Club Licence in to Police Headquarters, Roebuck Street, St. Michael."
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "agency": "The Royal Barbados Police Force",
+    "address": "Police Headquarters\nRoebuck Street\nSt. Michael",
+    "phone": [
+      "(246) 430-7100"
+    ],
+    "email": "police@barbados.gov.bb",
+    "hours": "Open Monday to Friday: 8:30am to 4:30pm"
+  }
+}

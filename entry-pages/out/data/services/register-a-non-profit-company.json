@@ -1,0 +1,61 @@
+{
+  "slug": "register-a-non-profit-company",
+  "title": "Register a non-profit company",
+  "category": "business-and-companies",
+  "description": "Set up a Barbadian non-profit company under the Companies Act, Cap. 308.",
+  "summary": [
+    "A non-profit company exists for a charitable, religious, educational or other public good purpose. You must register it with the Corporate Affairs and Intellectual Property Office.",
+    "Any income or assets a non-profit company has must be used for its stated purpose, not paid out to members."
+  ],
+  "before_you_start": {
+    "intro": "You will need to know:",
+    "items": [
+      "the proposed name of the company",
+      "the charitable or public-good purpose of the company",
+      "the address of the registered office",
+      "the names, addresses and dates of birth of every director",
+      "the names of every founding member"
+    ]
+  },
+  "documents": {
+    "intro": "Bring with you:",
+    "items": [
+      {
+        "name": "Articles of incorporation for a non-profit company"
+      },
+      {
+        "name": "Declaration form signed by your attorney-at-law"
+      },
+      {
+        "name": "Notice of directors and registered office"
+      },
+      {
+        "name": "Photo ID for every director"
+      },
+      {
+        "name": "Proof of payment of the registration fee"
+      }
+    ]
+  },
+  "fees": "There is a reduced incorporation fee for non-profit companies. Confirm at CAIPO.",
+  "how_long": "A decision usually takes 5 to 10 working days.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "Through an attorney-at-law",
+        "content": [
+          "A Barbadian attorney-at-law will prepare the documents and file them with CAIPO."
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "agency": "Corporate Affairs and Intellectual Property Office (CAIPO)",
+    "address": "Baobab Tower, Ground Floor\nWarrens\nSt. Michael",
+    "phone": [
+      "(246) 535-2401"
+    ],
+    "email": "caipo@caipo.gov.bb",
+    "hours": "Open Monday to Friday: 8:30am to 4:30pm"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "slug": "unemployment-benefit",
+  "title": "Claim unemployment benefit",
+  "category": "national-insurance-and-benefits",
+  "description": "Claim a weekly payment from the National Insurance Office while you look for work.",
+  "summary": [
+    "Unemployment benefit is a weekly payment from the National Insurance Office for people who have stopped working through no fault of their own. It runs for up to 26 weeks while you look for a new job.",
+    "To claim, you must have made at least 20 weeks of contributions in the 3 years before you stopped working. You must also be willing and able to take a suitable new job – the benefit is meant to support you while you look, not while you wait.",
+    "You should apply within 21 days of your last day at work. If you wait longer, you may lose some of your benefit. Bring the Termination of Services or Layoff Certificate your employer gave you, your last payslip and your bank account details.",
+    "The benefit cannot be paid at the same time as another NIS benefit. If you find work while claiming, you must tell the National Insurance Office straight away."
+  ],
+  "who_can_apply": {
+    "intro": "You can claim if:",
+    "items": [
+      "you have stopped working for reasons other than misconduct or your own choice",
+      "you have made at least 20 weeks of contributions in the 3 years before you stopped working",
+      "you are willing and able to take a suitable new job",
+      "you are not getting another NIS benefit at the same time"
+    ]
+  },
+  "before_you_start": {
+    "intro": "You will need to know:",
+    "items": [
+      "your National Insurance Number and National Registration Number",
+      "your last day of work and the reason you stopped working",
+      "the name and address of your last employer",
+      "your bank or credit union account details"
+    ]
+  },
+  "documents": {
+    "intro": "Bring with you:",
+    "items": [
+      {
+        "name": "National ID card or passport"
+      },
+      {
+        "name": "Termination of Services or Layoff Certificate",
+        "note": "Your former employer will give you this. See ‘Get a termination of services or layoff certificate’."
+      },
+      {
+        "name": "Your last payslip"
+      },
+      {
+        "name": "Bank or credit union account header"
+      }
+    ]
+  },
+  "fees": "There is no fee to claim.",
+  "how_long": "A first decision usually takes 4 to 6 weeks. Payments are weekly while you are unemployed, for up to 26 weeks.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "In person",
+        "content": [
+          "Take the completed Claim for Unemployment Benefit form to the Unemployment Section at the National Insurance Office."
+        ]
+      }
+    ]
+  },
+  "edge_cases": [
+    {
+      "heading": "If you find work while claiming",
+      "content": [
+        "You must tell the National Insurance Office straight away. Payments will stop on the day you start working."
+      ]
+    }
+  ],
+  "contact": {
+    "agency": "National Insurance Office",
+    "address": "Culloden Road\nSt. Michael",
+    "phone": [
+      "(246) 467-4000"
+    ],
+    "email": "nationalinsurance@nis.gov.bb",
+    "hours": "Open Monday to Friday: 8:30am to 4:30pm"
+  },
+  "related": [
+    {
+      "slug": "termination-of-services-certificate",
+      "title": "Get a termination of services or layoff certificate"
+    },
+    {
+      "slug": "nis-direct-deposit",
+      "title": "Set up direct deposit for NIS payments"
+    }
+  ],
+  "assumptions": [
+    "‘At least 20 weeks of contributions in the 3 years before you stopped working’ is the long-standing eligibility rule. It is not stated on the form itself.",
+    "The 21-day application window is general practice. The form does not state a deadline.",
+    "‘Up to 26 weeks’ duration is the standard maximum. The form does not state the duration.",
+    "‘A first decision usually takes 4 to 6 weeks’ is an estimate."
+  ]
+}

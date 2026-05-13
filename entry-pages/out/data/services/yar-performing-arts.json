@@ -1,0 +1,72 @@
+{
+  "slug": "yar-performing-arts",
+  "title": "Register for Youth Achieving Results (Performing Arts)",
+  "category": "youth-and-community",
+  "description": "Register a young performer for the Youth Achieving Results performing arts programme.",
+  "summary": [
+    "Youth Achieving Results (Performing Arts) is a Ministry of Youth programme that supports young Barbadians in music, dance, theatre and spoken word.",
+    "You will get classes, mentoring and performance opportunities."
+  ],
+  "who_can_apply": [
+    "Barbadian nationals aged 12 to 30",
+    "parents or guardians registering a child under 16"
+  ],
+  "before_you_start": {
+    "intro": "You will need to know:",
+    "items": [
+      "the participant’s full name, address and date of birth",
+      "their National Registration Number",
+      "their phone number and email",
+      "the performing art they want to focus on (music, dance, theatre, spoken word)",
+      "their level of experience and any past performances",
+      "for under-16s, the parent or guardian’s details"
+    ]
+  },
+  "documents": {
+    "intro": "Bring with you (or upload):",
+    "items": [
+      {
+        "name": "Photo ID"
+      },
+      {
+        "name": "Birth certificate",
+        "note": "For participants under 18."
+      },
+      {
+        "name": "Parental consent form",
+        "note": "For participants under 16."
+      },
+      {
+        "name": "Performance reel or sample",
+        "note": "Optional but helpful."
+      }
+    ]
+  },
+  "fees": "There is no fee.",
+  "how_long": "Places are usually confirmed within 2 weeks of the closing date.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "Online",
+        "content": [
+          "Complete the Youth Achieving Results (Performing Arts): Registration Form on the Ministry website."
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "agency": "Ministry of Youth, Sports and Community Empowerment",
+    "address": "Sky Mall, Haggatt Hall\nSt. Michael",
+    "phone": [
+      "(246) 535-3700"
+    ],
+    "email": "youth@barbados.gov.bb",
+    "hours": "Open Monday to Friday: 8:30am to 4:30pm"
+  },
+  "related": [
+    {
+      "slug": "yar-visual-arts",
+      "title": "Register for Youth Achieving Results (Visual Arts)"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "slug": "pathways-employability-programme",
+  "title": "Apply for the Pathways Employability Programme",
+  "category": "youth-and-community",
+  "description": "Apply for the 2026 Pathways Employability Programme – a Ministry of Youth scheme that helps young people get ready for work.",
+  "summary": [
+    "Pathways is a Ministry of Youth, Sports and Community Empowerment programme that helps young Barbadians build the skills, confidence and contacts they need to find work.",
+    "You will take part in classroom training, a work placement and mentoring."
+  ],
+  "who_can_apply": [
+    "Barbadian nationals aged 17 to 30",
+    "people who are not in school, training or full-time work"
+  ],
+  "before_you_start": {
+    "intro": "You will need to know:",
+    "items": [
+      "your full name, address and date of birth",
+      "your National Registration Number",
+      "your email address and phone number",
+      "your highest level of education",
+      "your work history, if any",
+      "the type of training or work you are interested in"
+    ]
+  },
+  "documents": {
+    "intro": "Bring with you (or upload):",
+    "items": [
+      {
+        "name": "National ID card"
+      },
+      {
+        "name": "Birth certificate"
+      },
+      {
+        "name": "Most recent school report or certificates"
+      },
+      {
+        "name": "CV",
+        "note": "If you have one."
+      },
+      {
+        "name": "Recent passport-size photograph"
+      }
+    ]
+  },
+  "fees": "There is no fee.",
+  "how_long": "You will get a reply within 4 to 6 weeks of the closing date.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "Online",
+        "content": [
+          "Complete the Pathways Employability Programme: Application Form (2026) on the Ministry website."
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "agency": "Ministry of Youth, Sports and Community Empowerment",
+    "address": "Sky Mall, Haggatt Hall\nSt. Michael",
+    "phone": [
+      "(246) 535-3700"
+    ],
+    "email": "youth@barbados.gov.bb",
+    "hours": "Open Monday to Friday: 8:30am to 4:30pm"
+  }
+}

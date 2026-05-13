@@ -1,0 +1,57 @@
+{
+  "slug": "dp10-contributions-certificate",
+  "title": "Get a DP-10 contributions certificate",
+  "category": "national-insurance-and-benefits",
+  "description": "A summary of the National Insurance contributions paid for an employee during a tax year.",
+  "summary": [
+    "The DP-10 is a National Insurance Contributions Certificate. Employers issue one to each employee at the end of the tax year so the employee can use it for their tax return.",
+    "If you have lost a DP-10, you can ask your employer or the NIS for a replacement."
+  ],
+  "before_you_start": {
+    "intro": "You will need to know:",
+    "items": [
+      "the employer’s registration number and business name",
+      "the employee’s National Insurance Number",
+      "the tax year the certificate covers"
+    ]
+  },
+  "documents": {
+    "intro": "Bring with you:",
+    "items": [
+      {
+        "name": "Photo ID"
+      },
+      {
+        "name": "Your last payslip",
+        "note": "If you have one."
+      }
+    ]
+  },
+  "fees": "There is no fee.",
+  "how_long": "Replacements are usually ready within 10 working days.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "Through your employer",
+        "content": [
+          "Ask your employer for a DP-10. Employers must issue one for each employee every tax year."
+        ]
+      },
+      {
+        "heading": "Directly from the NIS",
+        "content": [
+          "If you cannot get a copy from your employer, ask the National Insurance Office for a replacement."
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "agency": "National Insurance Office",
+    "address": "Culloden Road\nSt. Michael",
+    "phone": [
+      "(246) 467-4000"
+    ],
+    "email": "nationalinsurance@nis.gov.bb",
+    "hours": "Open Monday to Friday: 8:30am to 4:30pm"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "slug": "transfer-a-vehicle",
+  "title": "Transfer a vehicle (no money exchanged)",
+  "category": "driving-and-transport",
+  "description": "Tell the Barbados Licensing Authority you have transferred ownership of a vehicle without money changing hands.",
+  "summary": [
+    "Use this service if you are giving a vehicle to someone, for example a family member, with no money exchanged.",
+    "There is one form for a single owner and one for joint owners."
+  ],
+  "before_you_start": {
+    "intro": "You will need to know:",
+    "items": [
+      "your full name, address, ID number, telephone number and email",
+      "if there is more than one owner, the details of every owner",
+      "the registration number, engine number and chassis number",
+      "the full name and address of the person taking the vehicle",
+      "whether you want to keep your registration number"
+    ]
+  },
+  "documents": {
+    "intro": "Bring with you:",
+    "items": [
+      {
+        "name": "Registration card or disc"
+      },
+      {
+        "name": "Photo ID for each owner"
+      }
+    ]
+  },
+  "fees": "There is no fee.",
+  "how_long": "The transfer is recorded the same day.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "In person",
+        "content": [
+          "Take the completed Transfer of Vehicle form (single owner or joint owner version) to the Barbados Licensing Authority."
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "agency": "Barbados Licensing Authority",
+    "address": "The Pine, East–West Boulevard\nSt. Michael\nBB11000",
+    "phone": [
+      "Pine: (246) 536-0264 or (246) 536-0278",
+      "Holetown: (246) 535-8168 or (246) 535-5169",
+      "Oistins: (246) 535-8147 or (246) 536-8148"
+    ],
+    "email": "BLASupport@barbados.gov.bb",
+    "hours": "Open Monday to Friday: 8:15am to 3:30pm"
+  },
+  "related": [
+    {
+      "slug": "sell-a-vehicle",
+      "title": "Tell us you have sold a vehicle"
+    }
+  ]
+}

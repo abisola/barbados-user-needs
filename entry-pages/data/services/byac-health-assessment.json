@@ -1,0 +1,77 @@
+{
+  "slug": "byac-health-assessment",
+  "title": "Submit a BYAC health assessment",
+  "category": "youth-and-community",
+  "description": "A doctor must complete a health assessment for everyone applying to BYAC.",
+  "summary": [
+    "BYAC members take part in physical training and community service work. The Ministry needs to know each applicant is healthy enough to do that safely. That is the purpose of the Health Assessment Form.",
+    "You fill in the top of the form yourself with your name, contact details, allergies, conditions and any medications you take. Your doctor fills in the rest after examining you.",
+    "Take the form with you to your appointment. The doctor will check the usual things – height, weight, blood pressure, eyes, ears, heart and lungs – and confirm whether you are fit to take part.",
+    "Once your doctor has signed and stamped the form, send it back to BYAC. Your application will not move forward without it."
+  ],
+  "who_can_apply": [
+    "anyone applying to BYAC"
+  ],
+  "before_you_start": {
+    "intro": "Before you see your doctor, fill in:",
+    "items": [
+      "your last name, first and middle names",
+      "your address and date of birth",
+      "your phone number and email",
+      "any allergies or long-term conditions you have",
+      "any medication you take"
+    ]
+  },
+  "documents": {
+    "intro": "Bring to your appointment:",
+    "items": [
+      {
+        "name": "The Health Assessment Form"
+      },
+      {
+        "name": "Photo ID"
+      },
+      {
+        "name": "Health card or polyclinic record",
+        "note": "If you have one."
+      }
+    ]
+  },
+  "fees": "Your doctor may charge a fee for the assessment. The Ministry does not charge.",
+  "how_long": "Most assessments are completed in one appointment.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "Through your doctor",
+        "content": [
+          "Make an appointment, take the form with you and ask your doctor to complete and stamp it."
+        ]
+      },
+      {
+        "heading": "Return the completed form to BYAC",
+        "content": [
+          "Once your doctor has signed and stamped it, send the form to BYAC by post or by email, or hand it in at #33 Warrens Industrial Park."
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "agency": "Barbados YouthADVANCE Corps (BYAC), Ministry of Youth, Sports and Community Empowerment",
+    "address": "#33 Warrens Industrial Park\nWarrens, St. Michael",
+    "phone": [
+      "(246) 535-0180"
+    ],
+    "email": "info@byac.gov.bb",
+    "hours": "Open Monday to Friday: 8:30am to 4:30pm"
+  },
+  "related": [
+    {
+      "slug": "byac-recruitment",
+      "title": "Apply for the Barbados YouthADVANCE Corps"
+    }
+  ],
+  "assumptions": [
+    "‘Your doctor may charge a fee’ is a common reality but not stated on the form.",
+    "The list of things a doctor checks is general medical practice, not specified on the form."
+  ]
+}

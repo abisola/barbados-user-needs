@@ -1,0 +1,71 @@
+{
+  "slug": "duty-free-vehicle-concession",
+  "title": "Apply for a duty-free vehicle concession",
+  "category": "driving-and-transport",
+  "description": "Ask to bring in a vehicle without paying customs duty. Available for some individuals and businesses.",
+  "summary": [
+    "Some people and businesses can bring in a vehicle without paying customs duty. This is called a duty-free concession. Returning nationals, people with disabilities, government employees, diplomats and certain authorised businesses are common categories.",
+    "There are two versions of the application: one for individuals and one for businesses. Both ask for the same vehicle details – registration, engine and chassis numbers, year and vehicle type.",
+    "Before you apply to the Barbados Licensing Authority, you usually need a letter of approval from the relevant ministry or agency. That letter is what tells the Licensing Authority you are eligible for a concession.",
+    "Once your concession is processed, the Licensing Authority will phone or email you to collect the document. The duty-free status only removes customs duty – other fees, like the licence fee, may still apply."
+  ],
+  "who_can_apply": [
+    "an individual who meets the conditions for a duty-free concession (for example, returning national, government employee, person with a disability)",
+    "a business authorised by the Government to receive a duty-free concession"
+  ],
+  "before_you_start": {
+    "intro": "You will need to know:",
+    "items": [
+      "your name and ID number (or your business name)",
+      "your address, phone number and email",
+      "the registration number, engine number and chassis number of the vehicle",
+      "the year and vehicle type"
+    ]
+  },
+  "documents": {
+    "intro": "Bring with you:",
+    "items": [
+      {
+        "name": "Photo ID"
+      },
+      {
+        "name": "Approval letter from the relevant ministry or authority"
+      },
+      {
+        "name": "Bill of sale for the vehicle"
+      },
+      {
+        "name": "Business stamp",
+        "note": "Businesses only."
+      }
+    ]
+  },
+  "fees": "There is no application fee. Duty-free status removes customs duties; other fees may still apply.",
+  "how_long": "You will receive a phone call or email when your document is ready to collect.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "In person",
+        "content": [
+          "Take the completed Request for Duty Free Concession letter (individual or business version) to the Barbados Licensing Authority."
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "agency": "Barbados Licensing Authority",
+    "address": "The Pine, East–West Boulevard\nSt. Michael\nBB11000",
+    "phone": [
+      "Pine: (246) 536-0264 or (246) 536-0278",
+      "Holetown: (246) 535-8168 or (246) 535-5169",
+      "Oistins: (246) 535-8147 or (246) 536-8148"
+    ],
+    "email": "BLASupport@barbados.gov.bb",
+    "hours": "Open Monday to Friday: 8:15am to 3:30pm"
+  },
+  "assumptions": [
+    "We have merged the individual and business versions of the form onto one entry page.",
+    "‘A letter of approval from the relevant ministry or authority’ requirement is general practice. The form itself just asks for the vehicle details.",
+    "The categories of people who can apply (returning national, disability, government employee, etc.) are inferred from common Barbadian practice, not listed on the form."
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "slug": "nis-educational-status",
+  "title": "Confirm a student’s educational status for NIS",
+  "category": "national-insurance-and-benefits",
+  "description": "Used to keep paying a Survivors’ or Death Benefit to a student aged 16 to 25.",
+  "summary": [
+    "If a child or young adult is receiving a Survivors’ Benefit or a Death Benefit and they are still in full-time education between the ages of 16 and 25, the benefit can continue. The National Insurance Office needs proof of their student status to keep paying.",
+    "The Educational Status Form is that proof. It is completed and stamped by the school, college or university, then sent to the National Insurance Office.",
+    "You will normally need a new form every academic year. The Office will pause payments if a form has not come in.",
+    "If the student takes a break from study, finishes their course, or starts working full-time, the benefit ends. Tell the National Insurance Office promptly."
+  ],
+  "before_you_start": {
+    "intro": "You will need:",
+    "items": [
+      "the student’s name, NIS number and date of birth",
+      "the name and address of the school, college or university",
+      "the course the student is on and when it ends"
+    ]
+  },
+  "documents": {
+    "intro": "Bring with you:",
+    "items": [
+      {
+        "name": "A signed and stamped letter from the school",
+        "note": "Confirming the student is enrolled in full-time education."
+      },
+      {
+        "name": "National ID for the parent or guardian"
+      }
+    ]
+  },
+  "fees": "There is no fee.",
+  "how_long": "Confirmation is recorded within 2 weeks. You should send a new form for each new academic year.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "In person or by post",
+        "content": [
+          "Take or send the completed Educational Status Form to the National Insurance Office."
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "agency": "National Insurance Office",
+    "address": "Culloden Road\nSt. Michael",
+    "phone": [
+      "(246) 467-4000"
+    ],
+    "email": "nationalinsurance@nis.gov.bb",
+    "hours": "Open Monday to Friday: 8:30am to 4:30pm"
+  },
+  "assumptions": [
+    "‘Aged 16 to 25’ is the typical range for student survivors’ benefit eligibility. The form does not state the age range.",
+    "‘Confirmation is recorded within 2 weeks’ is an estimate.",
+    "‘New form for each new academic year’ is general practice, not explicit on the form."
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "slug": "caricom-dominican-republic-certificate",
+  "title": "Apply for a CARICOM–Dominican Republic certificate of origin",
+  "category": "trade-exports-and-imports",
+  "description": "Get a certificate of origin under the CARICOM–Dominican Republic Free Trade Agreement.",
+  "summary": [
+    "The Free Trade Agreement between CARICOM and the Dominican Republic gives qualifying goods preferential customs treatment. The Certificate of Origin is the proof.",
+    "The form is bilingual – the same fields appear in English and in Spanish, so the certificate is recognised on both sides of the agreement. The Spanish heading is ‘Certificado de Origen’.",
+    "You will need to confirm the country of origin, the HS code, the value, the quantity, and how the goods qualify under the rules of origin. BIDC reviews the application and issues the certificate.",
+    "If you are exporting regularly under this agreement, keep good records – the Dominican Republic customs authority can ask for evidence supporting any certificate."
+  ],
+  "before_you_start": {
+    "intro": "You will need to know:",
+    "items": [
+      "the exporter’s name and address",
+      "the importer or consignee’s name and address",
+      "the goods description, HS code, value, quantity and country of origin",
+      "transport information",
+      "the period the certificate covers"
+    ]
+  },
+  "documents": {
+    "intro": "Bring with you:",
+    "items": [
+      {
+        "name": "Commercial invoice"
+      },
+      {
+        "name": "Bill of lading or airway bill"
+      },
+      {
+        "name": "Packing list"
+      },
+      {
+        "name": "Proof that the goods meet the CARICOM–Dominican Republic rules of origin"
+      }
+    ]
+  },
+  "fees": "Confirm fees with BIDC.",
+  "how_long": "Certificates are usually issued within 3 to 5 working days.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "In person",
+        "content": [
+          "Take the completed CARICOM–Dominican Republic certificate of origin (Certificado de Origen) to BIDC at Pelican House."
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "agency": "Barbados Investment and Development Corporation (BIDC)",
+    "address": "Pelican House, Princess Alice Highway\nSt. Michael",
+    "phone": [
+      "(246) 427-5350"
+    ],
+    "email": "info@bidc.com",
+    "hours": "Open Monday to Friday: 8:30am to 4:30pm"
+  },
+  "assumptions": [
+    "‘Certificates are usually issued within 3 to 5 working days’ is an estimate."
+  ]
+}

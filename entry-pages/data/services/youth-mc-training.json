@@ -1,0 +1,72 @@
+{
+  "slug": "youth-mc-training",
+  "title": "Register for the Youth MC Training Programme",
+  "category": "youth-and-community",
+  "description": "Apply to train as an MC, presenter or radio host on the Youth MC Training Programme.",
+  "summary": [
+    "The Youth MC Training Programme trains young Barbadians to MC, present and host – on stage, on radio, and online. It is run by the Ministry of Youth, Sports and Community Empowerment.",
+    "Training covers the basics of stage presence, scriptwriting, voice control, audience interaction and working with a production team. Participants get coaching from established MCs and presenters.",
+    "The 2025 form is currently not open. Check back when registration opens.",
+    "The programme is open to people aged 14 to 25. If you are under 16, a parent or guardian needs to register you and give their consent."
+  ],
+  "who_can_apply": [
+    "Barbadian nationals aged 14 to 25",
+    "parents or guardians registering a young person under 16"
+  ],
+  "before_you_start": {
+    "intro": "You will need to know:",
+    "items": [
+      "the participant’s full name, address and date of birth",
+      "their National Registration Number",
+      "their phone number and email",
+      "their level of experience with public speaking or hosting",
+      "for under-16s, the parent or guardian’s details"
+    ]
+  },
+  "documents": {
+    "intro": "Bring with you (or upload):",
+    "items": [
+      {
+        "name": "Photo ID"
+      },
+      {
+        "name": "Birth certificate",
+        "note": "For participants under 18."
+      },
+      {
+        "name": "Parental consent form",
+        "note": "For participants under 16."
+      },
+      {
+        "name": "Short voice or video clip",
+        "note": "Optional – introducing yourself."
+      }
+    ]
+  },
+  "fees": "There is no fee.",
+  "how_long": "Places are usually confirmed within 2 weeks of the closing date.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "Online when registration opens",
+        "content": [
+          "Complete the Youth MC Training Programme Registration Form on the Ministry website during the registration window."
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "agency": "Ministry of Youth, Sports and Community Empowerment",
+    "address": "Sky Mall, Haggatt Hall\nSt. Michael",
+    "phone": [
+      "(246) 535-3700"
+    ],
+    "email": "youth@barbados.gov.bb",
+    "hours": "Open Monday to Friday: 8:30am to 4:30pm"
+  },
+  "assumptions": [
+    "‘Aged 14 to 25’ is the commonly-quoted eligibility range.",
+    "‘Places are usually confirmed within 2 weeks’ is an estimate.",
+    "List of training topics is based on common MC training, not the form."
+  ]
+}

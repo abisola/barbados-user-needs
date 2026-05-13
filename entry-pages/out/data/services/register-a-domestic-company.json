@@ -1,0 +1,95 @@
+{
+  "slug": "register-a-domestic-company",
+  "title": "Register a domestic company",
+  "category": "business-and-companies",
+  "description": "Set up a Barbadian company under the Companies Act, Cap. 308.",
+  "summary": [
+    "If you want to set up a company that operates in Barbados, you must register it with the Corporate Affairs and Intellectual Property Office (CAIPO).",
+    "A Barbadian attorney-at-law will need to sign the declaration form on your behalf."
+  ],
+  "who_can_apply": [
+    "anyone over 18 who wants to set up a company in Barbados",
+    "a Barbadian attorney-at-law acting on behalf of the applicant"
+  ],
+  "before_you_start": {
+    "intro": "You will need to know:",
+    "items": [
+      "the name of the company (and one or two alternatives in case it is taken)",
+      "the type of business the company will do",
+      "the address of the registered office",
+      "the names, addresses and dates of birth of every director",
+      "the names and addresses of every shareholder",
+      "the share structure of the company"
+    ]
+  },
+  "documents": {
+    "intro": "Bring with you:",
+    "items": [
+      {
+        "name": "Articles of incorporation",
+        "note": "Signed by your attorney-at-law."
+      },
+      {
+        "name": "Notice of address of registered office (Form 4)"
+      },
+      {
+        "name": "Notice of directors (Form 9)"
+      },
+      {
+        "name": "Declaration form signed by your attorney-at-law"
+      },
+      {
+        "name": "Photo ID for every director"
+      },
+      {
+        "name": "Name reservation slip",
+        "note": "Get this first from CAIPO."
+      },
+      {
+        "name": "Proof of payment of the registration fee"
+      }
+    ]
+  },
+  "fees": {
+    "items": [
+      {
+        "label": "Name reservation",
+        "amount": "$25 BBD"
+      },
+      {
+        "label": "Incorporation",
+        "amount": "$750 BBD"
+      }
+    ]
+  },
+  "how_long": "A decision usually takes 5 to 10 working days.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "Through an attorney-at-law",
+        "content": [
+          "A Barbadian attorney-at-law will prepare the documents and file them with the Corporate Affairs and Intellectual Property Office."
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "agency": "Corporate Affairs and Intellectual Property Office (CAIPO)",
+    "address": "Baobab Tower, Ground Floor\nWarrens\nSt. Michael",
+    "phone": [
+      "(246) 535-2401"
+    ],
+    "email": "caipo@caipo.gov.bb",
+    "hours": "Open Monday to Friday: 8:30am to 4:30pm"
+  },
+  "related": [
+    {
+      "slug": "register-an-ibc",
+      "title": "Register an International Business Company"
+    },
+    {
+      "slug": "register-a-non-profit-company",
+      "title": "Register a non-profit company"
+    }
+  ]
+}

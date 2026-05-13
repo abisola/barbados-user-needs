@@ -1,0 +1,63 @@
+{
+  "slug": "byac-reference-form",
+  "title": "Submit a BYAC reference form",
+  "category": "youth-and-community",
+  "description": "Referees complete a reference form for someone applying to BYAC.",
+  "summary": [
+    "Every BYAC applicant needs two referees. The referees are people who know the applicant well and can speak honestly about their character, attitude and how they are likely to do in the programme.",
+    "Good referees include teachers, employers, pastors, coaches and youth leaders. The form asks them to say how long they have known the applicant and in what capacity.",
+    "Referees should not be relatives. The Ministry wants an independent view, not a family endorsement.",
+    "The referee can send the completed form straight to BYAC, or give it back to the applicant in a sealed envelope to submit with their other documents."
+  ],
+  "who_can_apply": [
+    "people who have known the applicant for at least 2 years",
+    "you should not be a relative of the applicant"
+  ],
+  "before_you_start": {
+    "intro": "You will need to know:",
+    "items": [
+      "the applicant’s full name",
+      "how long you have known the applicant",
+      "in what capacity you have known them (for example, teacher, employer, pastor)",
+      "your honest view of their character, attitude and ability",
+      "your full name, address, phone number and email"
+    ]
+  },
+  "documents": {
+    "intro": "You will need:",
+    "items": [
+      {
+        "name": "Your own photo ID"
+      },
+      {
+        "name": "Letterhead",
+        "note": "If you are giving the reference in your professional capacity."
+      }
+    ]
+  },
+  "fees": "There is no fee.",
+  "how_long": "Fill in the form as soon as possible so the applicant’s application is not held up.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "Return the completed form to BYAC",
+        "content": [
+          "Send the completed Reference Form to BYAC by post or email, or give it to the applicant in a sealed envelope to hand in."
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "agency": "Barbados YouthADVANCE Corps (BYAC), Ministry of Youth, Sports and Community Empowerment",
+    "address": "#33 Warrens Industrial Park\nWarrens, St. Michael",
+    "phone": [
+      "(246) 535-0180"
+    ],
+    "email": "info@byac.gov.bb",
+    "hours": "Open Monday to Friday: 8:30am to 4:30pm"
+  },
+  "assumptions": [
+    "‘Should have known the applicant for at least 2 years’ is a common reference requirement. The form may have different wording.",
+    "‘Should not be a relative’ is a common rule but should be confirmed against the current form."
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "slug": "yes-first-contact",
+  "title": "Make first contact with the Youth Entrepreneurship Scheme",
+  "category": "youth-and-community",
+  "description": "Tell the Youth Entrepreneurship Scheme (YES) about your business idea so they can offer support.",
+  "summary": [
+    "The Youth Entrepreneurship Scheme (YES) helps young Barbadians turn ideas into businesses. It is run by the Division of Youth and Culture in the Office of the Prime Minister.",
+    "The First Contact form is the starting point. You tell YES about yourself, your business idea (or your existing business), and what kind of support you are looking for – training, funding, mentoring, or just someone to talk through your plans with.",
+    "Once your form is in, a YES officer will get in touch within two weeks to arrange a meeting. The meeting is usually one-to-one and runs for about an hour.",
+    "The First Contact form is not an application for funding. It is the start of a conversation. Funding, training and mentoring all come later, once YES understands what you need."
+  ],
+  "who_can_apply": [
+    "Barbadian nationals aged 18 to 35",
+    "people with a business idea, or an existing business that is under 3 years old"
+  ],
+  "before_you_start": {
+    "intro": "You will need to know:",
+    "items": [
+      "your full name, address and date of birth",
+      "your contact details",
+      "a short summary of your business idea or current business",
+      "what stage your idea is at",
+      "the kind of support you are looking for (training, funding, mentoring)"
+    ]
+  },
+  "documents": {
+    "intro": "Bring with you:",
+    "items": [
+      {
+        "name": "Photo ID"
+      },
+      {
+        "name": "Business plan or pitch deck",
+        "note": "If you already have one."
+      }
+    ]
+  },
+  "fees": "There is no fee.",
+  "how_long": "You will be contacted within 2 weeks to arrange your first meeting.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "In person",
+        "content": [
+          "Take the completed Youth Entrepreneurship Scheme First Contact Form to the Division of Youth and Culture, Prime Minister’s Office."
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "agency": "Division of Youth and Culture, Office of the Prime Minister",
+    "address": "Sky Mall, Haggatt Hall\nSt. Michael",
+    "phone": [
+      "(246) 535-3700"
+    ],
+    "email": "yes@barbados.gov.bb",
+    "hours": "Open Monday to Friday: 8:30am to 4:30pm"
+  },
+  "assumptions": [
+    "‘Aged 18 to 35’ eligibility is the commonly-quoted YES range.",
+    "‘An existing business that is under 3 years old’ is commonly used. The form may use different wording.",
+    "‘You will be contacted within 2 weeks’ is an estimate.",
+    "Contact details for the Division of Youth and Culture are illustrative."
+  ]
+}

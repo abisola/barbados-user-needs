@@ -1,0 +1,61 @@
+{
+  "slug": "csme-complaint",
+  "title": "Make a CSME point of entry complaint",
+  "category": "trade-exports-and-imports",
+  "description": "Tell CARICOM if you were treated unfairly at a port of entry or departure under the CSME.",
+  "summary": [
+    "If you are a CARICOM national and you were treated unfairly at a port of entry, departure or inland post in any CARICOM country, you can make a complaint under the Caribbean Single Market and Economy (CSME).",
+    "The complaint is reviewed by the CSME Unit."
+  ],
+  "who_can_apply": [
+    "a CARICOM national who was treated unfairly at a port",
+    "someone acting on behalf of a CARICOM national"
+  ],
+  "before_you_start": {
+    "intro": "You will need to know:",
+    "items": [
+      "your full name, nationality and passport number",
+      "your address, telephone, email and sex",
+      "the date and place of the incident",
+      "a short, plain-language account of what happened",
+      "the names or badge numbers of any officials, if you have them"
+    ]
+  },
+  "documents": {
+    "intro": "Bring with you:",
+    "items": [
+      {
+        "name": "Photo ID or passport"
+      },
+      {
+        "name": "Boarding pass or ticket",
+        "note": "If you have one."
+      },
+      {
+        "name": "Any other supporting documents",
+        "note": "Photos, statements from witnesses, etc."
+      }
+    ]
+  },
+  "fees": "There is no fee.",
+  "how_long": "An acknowledgement is sent within 10 working days. A full response may take longer if the CSME Unit needs to investigate.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "By post or in person",
+        "content": [
+          "Send the completed CARICOM Point of Entry/Departure/Inland Complaints Form to the CSME Unit, or hand it to an immigration officer at a port."
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "agency": "CSME Unit, CARICOM",
+    "address": "Tom Adams Financial Centre, Church Village\nSt. Michael",
+    "phone": [
+      "(246) 622-0150"
+    ],
+    "email": "csme@caricom.org",
+    "hours": "Open Monday to Friday: 8:30am to 4:30pm"
+  }
+}

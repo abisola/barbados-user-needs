@@ -1,0 +1,65 @@
+{
+  "slug": "caricom-costa-rica-certificate",
+  "title": "Apply for a CARICOM–Costa Rica certificate of origin",
+  "category": "trade-exports-and-imports",
+  "description": "Get a certificate of origin under the CARICOM–Costa Rica Free Trade Agreement.",
+  "summary": [
+    "The Free Trade Agreement between CARICOM and Costa Rica gives qualifying goods preferential customs treatment when they move between the two markets. The Certificate of Origin is the proof that your goods qualify.",
+    "Unlike a single-shipment certificate, this one can cover a period of time. You set the period on the form, and the certificate covers every shipment of the listed goods during that period.",
+    "You need to identify the producer of the goods, if it is not the same as the exporter. You also need to give the HS tariff code for each item and confirm which origin criterion applies to it.",
+    "BIDC reviews and issues the certificate. If a customs authority in Costa Rica later queries the origin of the goods, BIDC may be asked to confirm what they certified."
+  ],
+  "before_you_start": {
+    "intro": "You will need to know:",
+    "items": [
+      "the exporter’s name and address",
+      "the producer’s name and address, if different",
+      "the consignee’s name and address",
+      "the period the certificate will cover",
+      "transport information and route",
+      "the goods description, HS tariff code, origin criterion and value"
+    ]
+  },
+  "documents": {
+    "intro": "Bring with you:",
+    "items": [
+      {
+        "name": "Commercial invoice"
+      },
+      {
+        "name": "Bill of lading or airway bill"
+      },
+      {
+        "name": "Packing list"
+      },
+      {
+        "name": "Proof that the goods meet the CARICOM–Costa Rica rules of origin"
+      }
+    ]
+  },
+  "fees": "Confirm fees with BIDC.",
+  "how_long": "Certificates are usually issued within 3 to 5 working days.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "In person",
+        "content": [
+          "Take the completed CARICOM–Costa Rica certificate of origin to BIDC at Pelican House."
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "agency": "Barbados Investment and Development Corporation (BIDC)",
+    "address": "Pelican House, Princess Alice Highway\nSt. Michael",
+    "phone": [
+      "(246) 427-5350"
+    ],
+    "email": "info@bidc.com",
+    "hours": "Open Monday to Friday: 8:30am to 4:30pm"
+  },
+  "assumptions": [
+    "‘Certificates are usually issued within 3 to 5 working days’ is an estimate.",
+    "‘Covers a period of time’ is a common feature of free-trade-agreement certificates; confirm the exact wording on the current form."
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "slug": "nscp-camper-registration",
+  "title": "Register a camper for the National Summer Camp Programme",
+  "category": "youth-and-community",
+  "description": "Register a child aged 7 to 12 for the National Summer Camp Programme.",
+  "summary": [
+    "The National Summer Camp Programme (NSCP) is the Ministry of Youth, Sports and Community Empowerment’s annual summer camp. It runs across parishes during the school holidays.",
+    "The 2025 programme is not currently open – check back when registration opens."
+  ],
+  "who_can_apply": [
+    "parents and guardians of children aged 7 to 12"
+  ],
+  "before_you_start": {
+    "intro": "You will need to know:",
+    "items": [
+      "the child’s full name, date of birth and age",
+      "the child’s school and parish",
+      "the parent or guardian’s name, address, phone and email",
+      "the camp location you prefer",
+      "the child’s emergency contact",
+      "any allergies, medical conditions or dietary needs"
+    ]
+  },
+  "documents": {
+    "intro": "Bring with you (or upload):",
+    "items": [
+      {
+        "name": "The child’s birth certificate"
+      },
+      {
+        "name": "Photo ID for the parent or guardian"
+      },
+      {
+        "name": "The child’s most recent school report"
+      },
+      {
+        "name": "A recent passport-size photograph of the child"
+      }
+    ]
+  },
+  "fees": "Confirm fees when registration opens. The Ministry tries to keep costs low so every child can take part.",
+  "how_long": "Places are usually offered within 2 to 4 weeks of the closing date.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "Online when registration opens",
+        "content": [
+          "Complete the NSCP Camper Registration form on the Ministry website during the registration window."
+        ]
+      }
+    ]
+  },
+  "edge_cases": [
+    {
+      "heading": "If the programme is full",
+      "content": [
+        "You will be put on a waiting list. The Ministry will let you know if a place opens up."
+      ]
+    }
+  ],
+  "contact": {
+    "agency": "Ministry of Youth, Sports and Community Empowerment",
+    "address": "Sky Mall, Haggatt Hall\nSt. Michael",
+    "phone": [
+      "(246) 535-3700"
+    ],
+    "email": "youth@barbados.gov.bb",
+    "hours": "Open Monday to Friday: 8:30am to 4:30pm"
+  }
+}

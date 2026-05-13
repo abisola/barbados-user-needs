@@ -1,0 +1,56 @@
+{
+  "slug": "change-vehicle-engine",
+  "title": "Change the engine in your vehicle",
+  "category": "driving-and-transport",
+  "description": "Tell the Barbados Licensing Authority after you change the engine in your vehicle.",
+  "summary": [
+    "You must tell the Barbados Licensing Authority within 30 days of changing the engine in your vehicle."
+  ],
+  "before_you_start": {
+    "intro": "You will need to know:",
+    "items": [
+      "your full name, address, phone number and date of the change",
+      "the registration number, chassis number and old engine number",
+      "the new engine number",
+      "where you got the new engine from",
+      "what happened to the old engine (sold, transferred, disposed of, or kept by you)"
+    ]
+  },
+  "documents": {
+    "intro": "Bring with you:",
+    "items": [
+      {
+        "name": "Photo ID"
+      },
+      {
+        "name": "Receipt or proof of where the new engine came from"
+      },
+      {
+        "name": "Registration card or disc"
+      }
+    ]
+  },
+  "fees": "There is no fee.",
+  "how_long": "Approval is given the same day.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "In person",
+        "content": [
+          "Take the completed Change of Engine form to the Barbados Licensing Authority."
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "agency": "Barbados Licensing Authority",
+    "address": "The Pine, East–West Boulevard\nSt. Michael\nBB11000",
+    "phone": [
+      "Pine: (246) 536-0264 or (246) 536-0278",
+      "Holetown: (246) 535-8168 or (246) 535-5169",
+      "Oistins: (246) 535-8147 or (246) 536-8148"
+    ],
+    "email": "BLASupport@barbados.gov.bb",
+    "hours": "Open Monday to Friday: 8:15am to 3:30pm"
+  }
+}

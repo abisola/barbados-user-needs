@@ -1,0 +1,51 @@
+{
+  "slug": "alternate-fuel-levy",
+  "title": "Pay the Alternate Fuel Levy",
+  "category": "driving-and-transport",
+  "description": "Pay the monthly or annual levy for vehicles that are not powered by petrol or diesel.",
+  "summary": [
+    "If your vehicle is not powered by petrol or diesel – for example, an electric or hybrid car – you must pay the Alternate Fuel Levy.",
+    "The levy is $25 BBD per month or $300 BBD per year. It has been in place since April 2023."
+  ],
+  "before_you_start": {
+    "intro": "You will need to know:",
+    "items": [
+      "your vehicle’s registration number",
+      "whether you want to pay monthly or annually"
+    ]
+  },
+  "fees": {
+    "items": [
+      {
+        "label": "Monthly",
+        "amount": "$25 BBD"
+      },
+      {
+        "label": "Annually",
+        "amount": "$300 BBD"
+      }
+    ]
+  },
+  "how_long": "Payment is processed the same day.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "In person",
+        "content": [
+          "Pay at the Barbados Revenue Authority. The Licensing Authority will record the payment against your vehicle."
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "agency": "Barbados Licensing Authority",
+    "address": "The Pine, East–West Boulevard\nSt. Michael\nBB11000",
+    "phone": [
+      "Pine: (246) 536-0264 or (246) 536-0278",
+      "Holetown: (246) 535-8168 or (246) 535-5169",
+      "Oistins: (246) 535-8147 or (246) 536-8148"
+    ],
+    "email": "BLASupport@barbados.gov.bb",
+    "hours": "Open Monday to Friday: 8:15am to 3:30pm"
+  }
+}

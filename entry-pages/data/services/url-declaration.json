@@ -1,0 +1,58 @@
+{
+  "slug": "url-declaration",
+  "title": "Make a URL ownership declaration",
+  "category": "business-and-companies",
+  "description": "Declare that you legally own a website domain (URL) registered to your company.",
+  "summary": [
+    "Sometimes a business needs to prove that it legally owns a particular website domain – for example, when it is being sold, when it is acquired, or when it is used as a trademark.",
+    "The URL declaration is a sworn statement made before an attorney-at-law. The declarant confirms that the URL is registered to and beneficially owned by the company.",
+    "Bring a WHOIS print-out or registrar receipt as proof of the URL’s registration. The attorney-at-law witnesses your signature and stamps the document.",
+    "There is no government fee. Your attorney-at-law may charge their normal fee for preparing and witnessing the declaration."
+  ],
+  "before_you_start": {
+    "intro": "You will need to know:",
+    "items": [
+      "your full name and address",
+      "the URL you are declaring (for example, www.yourbusiness.bb)",
+      "the legal name of the company that owns the URL",
+      "the date the URL was registered"
+    ]
+  },
+  "documents": {
+    "intro": "Bring with you:",
+    "items": [
+      {
+        "name": "Photo ID"
+      },
+      {
+        "name": "Proof of URL registration",
+        "note": "A WHOIS print-out or registrar receipt."
+      }
+    ]
+  },
+  "fees": "No government fee. Your attorney-at-law may charge for witnessing the declaration.",
+  "how_long": "Same day with your attorney-at-law.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "With an attorney-at-law",
+        "content": [
+          "Make the declaration before a Barbadian attorney-at-law, who will witness your signature and stamp the document."
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "agency": "Corporate Affairs and Intellectual Property Office (CAIPO)",
+    "address": "Baobab Tower, Ground Floor\nWarrens\nSt. Michael",
+    "phone": [
+      "(246) 535-2401"
+    ],
+    "email": "caipo@caipo.gov.bb",
+    "hours": "Open Monday to Friday: 8:30am to 4:30pm"
+  },
+  "assumptions": [
+    "‘No government fee’ is inferred – URL declarations are not usually filed with a public authority.",
+    "‘Same day with your attorney-at-law’ is an estimate based on common practice."
+  ]
+}

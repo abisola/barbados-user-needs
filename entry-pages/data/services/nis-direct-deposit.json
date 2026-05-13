@@ -1,0 +1,59 @@
+{
+  "slug": "nis-direct-deposit",
+  "title": "Set up direct deposit for NIS payments",
+  "category": "national-insurance-and-benefits",
+  "description": "Have your National Insurance benefit paid directly into your bank or credit union account.",
+  "summary": [
+    "Most NIS benefits and pensions can be paid by direct deposit into your bank or credit union account. This is faster, safer and means you do not have to collect a paper cheque.",
+    "To set it up, you need to give the National Insurance Office the details of your account. The simplest way is to bring a copy of the header from your account – the document that shows your name, your account number and the branch.",
+    "Most banks and credit unions can print this header for you on request. Some online banking apps let you download it as a PDF.",
+    "Once your form is processed, the next payment will normally go straight to your account. If you change banks or accounts later, submit a new Direct Deposit Form to update the record."
+  ],
+  "before_you_start": {
+    "intro": "You will need to know:",
+    "items": [
+      "your National Insurance Number and claim number (if you have one)",
+      "your full name, address and phone number",
+      "the name of your bank or credit union",
+      "your account number and branch"
+    ]
+  },
+  "documents": {
+    "intro": "Bring with you:",
+    "items": [
+      {
+        "name": "National ID card or passport"
+      },
+      {
+        "name": "Bank or credit union account header",
+        "note": "Showing your name and account number. You can usually get this from your branch or from online banking."
+      }
+    ]
+  },
+  "fees": "There is no fee.",
+  "how_long": "Direct deposit is usually active within 1 to 2 payment cycles.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "In person",
+        "content": [
+          "Take the completed Direct Deposit Form to the National Insurance Office."
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "agency": "National Insurance Office",
+    "address": "Culloden Road\nSt. Michael",
+    "phone": [
+      "(246) 467-4000"
+    ],
+    "email": "nationalinsurance@nis.gov.bb",
+    "hours": "Open Monday to Friday: 8:30am to 4:30pm"
+  },
+  "assumptions": [
+    "‘Direct deposit is usually active within 1 to 2 payment cycles’ is an estimate.",
+    "‘There is no fee’ is inferred.",
+    "Description of how to get an account header (banking app, branch) is general guidance, not specific to any one Barbadian bank."
+  ]
+}

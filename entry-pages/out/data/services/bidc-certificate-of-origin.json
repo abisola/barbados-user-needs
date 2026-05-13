@@ -1,0 +1,59 @@
+{
+  "slug": "bidc-certificate-of-origin",
+  "title": "Apply for a BIDC certificate of origin",
+  "category": "trade-exports-and-imports",
+  "description": "Apply for a Barbados Investment and Development Corporation certificate of origin for any export.",
+  "summary": [
+    "The BIDC certificate of origin is the general form for goods exported from Barbados where there is no specific trade-agreement certificate.",
+    "Use this form if no other certificate of origin (CARICOM, CARICOM–Colombia, CARICOM–Costa Rica, CARICOM–Dominican Republic, EUR.1) fits."
+  ],
+  "before_you_start": {
+    "intro": "You will need to know:",
+    "items": [
+      "the manufacturer’s name, address, phone and email",
+      "the exporter’s details, if different",
+      "the consignee’s name and address",
+      "details of the goods (description, packages, weight, value)",
+      "the country of origin and destination",
+      "transport information"
+    ]
+  },
+  "documents": {
+    "intro": "Bring with you:",
+    "items": [
+      {
+        "name": "Commercial invoice"
+      },
+      {
+        "name": "Bill of lading or airway bill"
+      },
+      {
+        "name": "Packing list"
+      },
+      {
+        "name": "Proof that the goods were made in Barbados"
+      }
+    ]
+  },
+  "fees": "Confirm fees with BIDC.",
+  "how_long": "Certificates are usually issued within 3 to 5 working days.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "In person",
+        "content": [
+          "Take the completed Application for Certificate of Origin (Part A: Manufacturer Information) to BIDC at Pelican House."
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "agency": "Barbados Investment and Development Corporation (BIDC)",
+    "address": "Pelican House, Princess Alice Highway\nSt. Michael",
+    "phone": [
+      "(246) 427-5350"
+    ],
+    "email": "info@bidc.com",
+    "hours": "Open Monday to Friday: 8:30am to 4:30pm"
+  }
+}

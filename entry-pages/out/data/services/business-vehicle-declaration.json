@@ -1,0 +1,67 @@
+{
+  "slug": "business-vehicle-declaration",
+  "title": "Make a business declaration for vehicle ownership",
+  "category": "driving-and-transport",
+  "description": "Companies, partnerships and sole traders must declare who controls a business-owned vehicle.",
+  "summary": [
+    "Under Section 2 of the Road Traffic (Amendment) Act, 2018-31, every business that owns a vehicle must complete a Barbados Licensing Authority declaration form.",
+    "There is one version for each type of business: sole trader, partnership and company."
+  ],
+  "who_can_apply": [
+    "a sole trader who owns one or more vehicles in the name of the business",
+    "a partnership where one or more partners own a vehicle",
+    "a company that owns one or more vehicles"
+  ],
+  "before_you_start": {
+    "intro": "You will need to know:",
+    "items": [
+      "the legal name of the business",
+      "the names, addresses and ID numbers of every owner, partner or director",
+      "the registration numbers of every vehicle covered",
+      "the date of declaration"
+    ]
+  },
+  "documents": {
+    "intro": "Bring with you:",
+    "items": [
+      {
+        "name": "Certificate of incorporation or business registration"
+      },
+      {
+        "name": "Photo ID for every signatory"
+      },
+      {
+        "name": "Business stamp or seal"
+      }
+    ]
+  },
+  "fees": "There is no fee.",
+  "how_long": "The declaration is recorded the same day.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "In person",
+        "content": [
+          "Take the completed Declaration Form (sole trader, partnership or company version) to the Barbados Licensing Authority."
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "agency": "Barbados Licensing Authority",
+    "address": "The Pine, East–West Boulevard\nSt. Michael\nBB11000",
+    "phone": [
+      "Pine: (246) 536-0264 or (246) 536-0278",
+      "Holetown: (246) 535-8168 or (246) 535-5169",
+      "Oistins: (246) 535-8147 or (246) 536-8148"
+    ],
+    "email": "BLASupport@barbados.gov.bb",
+    "hours": "Open Monday to Friday: 8:15am to 3:30pm"
+  },
+  "related": [
+    {
+      "slug": "register-or-renew-a-vehicle",
+      "title": "Register or renew a vehicle"
+    }
+  ]
+}

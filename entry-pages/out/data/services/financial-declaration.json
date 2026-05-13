@@ -1,0 +1,77 @@
+{
+  "slug": "financial-declaration",
+  "title": "Make a financial declaration",
+  "category": "business-and-companies",
+  "description": "Public officials and other named people must declare their assets, liabilities and income every year.",
+  "summary": [
+    "Some public officials, directors and senior officers must make a financial declaration each year.",
+    "Your declaration covers your assets, your liabilities, your income, the same for your spouse and minor children, and any gifts you received."
+  ],
+  "who_can_apply": [
+    "people in public office named under the Prevention of Corruption Act",
+    "directors and senior officers of state-owned enterprises",
+    "other people the law says must declare"
+  ],
+  "before_you_start": {
+    "intro": "You will need to know:",
+    "items": [
+      "your full name, address and the parish you live in",
+      "details of every property you own, in Barbados and overseas",
+      "the value and account numbers of your bank, credit union and investment accounts",
+      "details of your vehicles and other valuable property",
+      "every loan, mortgage and debt you have",
+      "your income from every source",
+      "the same details for your spouse and any minor children",
+      "any gifts of $500 BBD or more you received in the year"
+    ]
+  },
+  "documents": {
+    "intro": "Bring with you:",
+    "items": [
+      {
+        "name": "Bank, credit union and investment statements"
+      },
+      {
+        "name": "Loan and mortgage statements"
+      },
+      {
+        "name": "Payslips or tax records"
+      },
+      {
+        "name": "Property valuations or title deeds"
+      },
+      {
+        "name": "Photo ID"
+      }
+    ]
+  },
+  "fees": "There is no fee.",
+  "how_long": "Submit your declaration by the date in the notice you received.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "In person",
+        "content": [
+          "Take your sworn declaration to the Integrity Commission or other office named in the law you are declaring under."
+        ]
+      }
+    ]
+  },
+  "edge_cases": [
+    {
+      "heading": "If you cannot get all the details in time",
+      "content": [
+        "Tell the Commission in writing. Late or incomplete declarations may be referred for investigation."
+      ]
+    }
+  ],
+  "contact": {
+    "agency": "Corporate Affairs and Intellectual Property Office (CAIPO)",
+    "address": "Baobab Tower, Ground Floor\nWarrens\nSt. Michael",
+    "phone": [
+      "(246) 535-2401"
+    ],
+    "email": "caipo@caipo.gov.bb",
+    "hours": "Open Monday to Friday: 8:30am to 4:30pm"
+  }
+}

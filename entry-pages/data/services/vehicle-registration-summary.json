@@ -1,0 +1,46 @@
+{
+  "slug": "vehicle-registration-summary",
+  "title": "Get a vehicle registration summary",
+  "category": "driving-and-transport",
+  "description": "Get a one-page summary of a vehicle’s registration status for a sale or import.",
+  "summary": [
+    "The Vehicle Registration Summary Sheet is a one-page document the Barbados Licensing Authority uses to capture the key facts about a newly-imported, newly-registered or re-registered vehicle.",
+    "It is normally completed alongside the main registration form. The Licensing Authority uses the summary sheet to confirm the registration type – for example, ‘new import with new registration number’ or ‘transfer’ – and to record the chassis and engine numbers in one place.",
+    "Citizens rarely fill this in on their own. Most people will see it as part of the bundle of paperwork their dealership or shipping agent submits on their behalf.",
+    "If you are managing the import yourself, complete it together with the LA.33 registration form and the Application for the Importation of Vehicles into Barbados form."
+  ],
+  "before_you_start": {
+    "intro": "You will need to know:",
+    "items": [
+      "the registration type (new import with new number, new or used import with existing number, transfer or other change)",
+      "your full name, address and contact details",
+      "the make, model, year, chassis number and engine number"
+    ]
+  },
+  "fees": "There is no separate fee, but you may need to pay related registration or import fees.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "In person",
+        "content": [
+          "Take the completed Vehicle Registration Summary Sheet to the Barbados Licensing Authority along with your other registration documents."
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "agency": "Barbados Licensing Authority",
+    "address": "The Pine, East–West Boulevard\nSt. Michael\nBB11000",
+    "phone": [
+      "Pine: (246) 536-0264 or (246) 536-0278",
+      "Holetown: (246) 535-8168 or (246) 535-5169",
+      "Oistins: (246) 535-8147 or (246) 536-8148"
+    ],
+    "email": "BLASupport@barbados.gov.bb",
+    "hours": "Open Monday to Friday: 8:15am to 3:30pm"
+  },
+  "assumptions": [
+    "Because the summary sheet is normally completed alongside other registration forms, fees and processing times are tied to those forms rather than to this one. The entry page reflects that.",
+    "‘Citizens rarely fill this in on their own’ is a working assumption – it could be that more individuals than I expect do submit it directly."
+  ]
+}

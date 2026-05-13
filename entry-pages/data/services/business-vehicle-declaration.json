@@ -1,0 +1,73 @@
+{
+  "slug": "business-vehicle-declaration",
+  "title": "Make a business declaration for vehicle ownership",
+  "category": "driving-and-transport",
+  "description": "Companies, partnerships and sole traders must declare who controls a business-owned vehicle.",
+  "summary": [
+    "Section 2 of the Road Traffic (Amendment) Act, 2018-31 says that any business that owns a vehicle must declare who is behind that business. The declaration tells the Barbados Licensing Authority who the owners, partners or directors are.",
+    "There is one version of the form for a sole trader, one for a partnership and one for a company. They all ask for the same things, just in slightly different layouts.",
+    "Make the declaration when you first register a business-owned vehicle, and update it whenever the ownership, partners or directors change. The Licensing Authority keeps the declaration on file alongside the vehicle’s registration.",
+    "You will need to bring your certificate of incorporation or business registration, photo ID for every signatory, and your business stamp or seal."
+  ],
+  "who_can_apply": [
+    "a sole trader who owns one or more vehicles in the name of the business",
+    "a partnership where one or more partners own a vehicle",
+    "a company that owns one or more vehicles"
+  ],
+  "before_you_start": {
+    "intro": "You will need to know:",
+    "items": [
+      "the legal name of the business",
+      "the names, addresses and ID numbers of every owner, partner or director",
+      "the registration numbers of every vehicle covered",
+      "the date of declaration"
+    ]
+  },
+  "documents": {
+    "intro": "Bring with you:",
+    "items": [
+      {
+        "name": "Certificate of incorporation or business registration"
+      },
+      {
+        "name": "Photo ID for every signatory"
+      },
+      {
+        "name": "Business stamp or seal"
+      }
+    ]
+  },
+  "fees": "There is no fee.",
+  "how_long": "The declaration is recorded the same day.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "In person",
+        "content": [
+          "Take the completed Declaration Form (sole trader, partnership or company version) to the Barbados Licensing Authority."
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "agency": "Barbados Licensing Authority",
+    "address": "The Pine, East–West Boulevard\nSt. Michael\nBB11000",
+    "phone": [
+      "Pine: (246) 536-0264 or (246) 536-0278",
+      "Holetown: (246) 535-8168 or (246) 535-5169",
+      "Oistins: (246) 535-8147 or (246) 536-8148"
+    ],
+    "email": "BLASupport@barbados.gov.bb",
+    "hours": "Open Monday to Friday: 8:15am to 3:30pm"
+  },
+  "related": [
+    {
+      "slug": "register-or-renew-a-vehicle",
+      "title": "Register or renew a vehicle"
+    }
+  ],
+  "assumptions": [
+    "We have merged the sole trader, partnership and company versions of the declaration onto one entry page.",
+    "‘Recorded the same day’ and ‘there is no fee’ are inferred from the form not stating either."
+  ]
+}

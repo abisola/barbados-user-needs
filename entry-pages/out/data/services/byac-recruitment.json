@@ -1,0 +1,90 @@
+{
+  "slug": "byac-recruitment",
+  "title": "Apply for the Barbados YouthADVANCE Corps (BYAC)",
+  "category": "youth-and-community",
+  "description": "Apply to join the Barbados YouthADVANCE Corps, a Ministry of Youth training and service programme.",
+  "summary": [
+    "The Barbados YouthADVANCE Corps (BYAC) is a Ministry of Youth, Sports and Community Empowerment programme that gives young people training, work experience and community service.",
+    "Apply, send in a health assessment and have two referees send in their forms. You will then be invited to an interview."
+  ],
+  "who_can_apply": [
+    "Barbadian nationals aged 16 to 30",
+    "people in good health who can take part in physical training and community work"
+  ],
+  "before_you_start": {
+    "intro": "You will need to know:",
+    "items": [
+      "your full name, address and date of birth",
+      "your National Registration Number",
+      "your phone number and email address",
+      "the highest level of education you have completed",
+      "your work history, if any",
+      "your areas of interest (for example, the trade you want training in)",
+      "the names and contact details of two referees"
+    ]
+  },
+  "documents": {
+    "intro": "Bring with you:",
+    "items": [
+      {
+        "name": "National ID card or passport"
+      },
+      {
+        "name": "Birth certificate"
+      },
+      {
+        "name": "Most recent school report or certificates"
+      },
+      {
+        "name": "Health Assessment Form",
+        "note": "Completed and stamped by a doctor – see ‘Submit a BYAC health assessment’."
+      },
+      {
+        "name": "Two completed Reference Forms",
+        "note": "One from each of your referees – see ‘Submit a BYAC reference form’."
+      },
+      {
+        "name": "Recent passport-size photograph"
+      }
+    ]
+  },
+  "fees": "There is no fee.",
+  "how_long": "Recruitment intakes happen at set times each year. You will get a reply within 6 to 8 weeks of the closing date.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "By email or in person",
+        "content": [
+          "Send the completed Recruitment Form and your supporting documents to BYAC at #33 Warrens Industrial Park, Warrens, St. Michael. You can also email it."
+        ]
+      }
+    ]
+  },
+  "edge_cases": [
+    {
+      "heading": "If you are under 18",
+      "content": [
+        "You will need a parent or guardian to sign your application and your health assessment form."
+      ]
+    }
+  ],
+  "contact": {
+    "agency": "Barbados YouthADVANCE Corps (BYAC), Ministry of Youth, Sports and Community Empowerment",
+    "address": "#33 Warrens Industrial Park\nWarrens, St. Michael",
+    "phone": [
+      "(246) 535-0180"
+    ],
+    "email": "info@byac.gov.bb",
+    "hours": "Open Monday to Friday: 8:30am to 4:30pm"
+  },
+  "related": [
+    {
+      "slug": "byac-health-assessment",
+      "title": "Submit a BYAC health assessment"
+    },
+    {
+      "slug": "byac-reference-form",
+      "title": "Submit a BYAC reference form"
+    }
+  ]
+}

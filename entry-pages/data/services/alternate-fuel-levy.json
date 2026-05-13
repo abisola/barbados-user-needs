@@ -1,0 +1,57 @@
+{
+  "slug": "alternate-fuel-levy",
+  "title": "Pay the Alternate Fuel Levy",
+  "category": "driving-and-transport",
+  "description": "Pay the monthly or annual levy for vehicles that are not powered by petrol or diesel.",
+  "summary": [
+    "Since April 2023, the Government of Barbados has charged an Alternate Fuel Levy on vehicles that are not powered by petrol or diesel. This mainly affects electric vehicles and some hybrids.",
+    "The levy is $25 BBD per month or $300 BBD per year. You choose which option you prefer. These figures come directly from the Barbados Licensing Authority’s explanatory document.",
+    "The levy is collected by the Barbados Revenue Authority. The Licensing Authority records the payment against your vehicle so that, at renewal, your record shows you have paid the levy.",
+    "If your vehicle is not on the road – for example, it has been written off or is being repaired – you do not need to pay the levy for that period. Tell the Licensing Authority so they can update your record."
+  ],
+  "before_you_start": {
+    "intro": "You will need to know:",
+    "items": [
+      "your vehicle’s registration number",
+      "whether you want to pay monthly or annually"
+    ]
+  },
+  "fees": {
+    "items": [
+      {
+        "label": "Monthly",
+        "amount": "$25 BBD"
+      },
+      {
+        "label": "Annually",
+        "amount": "$300 BBD"
+      }
+    ]
+  },
+  "how_long": "Payment is processed the same day.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "In person",
+        "content": [
+          "Pay at the Barbados Revenue Authority. The Licensing Authority will record the payment against your vehicle."
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "agency": "Barbados Licensing Authority",
+    "address": "The Pine, East–West Boulevard\nSt. Michael\nBB11000",
+    "phone": [
+      "Pine: (246) 536-0264 or (246) 536-0278",
+      "Holetown: (246) 535-8168 or (246) 535-5169",
+      "Oistins: (246) 535-8147 or (246) 536-8148"
+    ],
+    "email": "BLASupport@barbados.gov.bb",
+    "hours": "Open Monday to Friday: 8:15am to 3:30pm"
+  },
+  "assumptions": [
+    "The fees ($25 BBD monthly, $300 BBD annually) come from the form. Everything else (where to pay, what happens if a vehicle is off the road) is inferred.",
+    "‘Payment is processed the same day’ is an estimate."
+  ]
+}

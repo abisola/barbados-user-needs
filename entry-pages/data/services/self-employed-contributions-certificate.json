@@ -1,0 +1,58 @@
+{
+  "slug": "self-employed-contributions-certificate",
+  "title": "Get a Contributions Payment Certificate (self-employed)",
+  "category": "national-insurance-and-benefits",
+  "description": "Self-employed people can ask for a certificate showing the NIS contributions they have paid.",
+  "summary": [
+    "If you are self-employed in Barbados, you pay your own National Insurance contributions. Sometimes you need formal proof that you have done so – for example, when applying for a loan, a visa or filing your tax return.",
+    "The Contributions Payment Certificate is that proof. It is an official statement from the National Insurance Office showing what you have paid, and for which periods.",
+    "On the form, you tell the Office your details, the period the certificate should cover and what you need it for. The wording on the certificate is sometimes tailored to the purpose, so it helps to be specific.",
+    "Bring any past payment receipts you have. They make it easier for the Office to match your records and avoid delays."
+  ],
+  "before_you_start": {
+    "intro": "You will need to know:",
+    "items": [
+      "your National Insurance Number and National Registration Number",
+      "your full name and address",
+      "the period the certificate should cover",
+      "what you need it for (so the right wording is used)"
+    ]
+  },
+  "documents": {
+    "intro": "Bring with you:",
+    "items": [
+      {
+        "name": "Photo ID"
+      },
+      {
+        "name": "Past NIS payment receipts",
+        "note": "If you have them, to help us match your records."
+      }
+    ]
+  },
+  "fees": "There is no fee.",
+  "how_long": "Certificates are usually ready within 10 working days.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "In person or by post",
+        "content": [
+          "Take or send the completed Contributions Payment Certificate form to the National Insurance Office."
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "agency": "National Insurance Office",
+    "address": "Culloden Road\nSt. Michael",
+    "phone": [
+      "(246) 467-4000"
+    ],
+    "email": "nationalinsurance@nis.gov.bb",
+    "hours": "Open Monday to Friday: 8:30am to 4:30pm"
+  },
+  "assumptions": [
+    "‘Certificates are usually ready within 10 working days’ is an estimate.",
+    "‘There is no fee’ is inferred."
+  ]
+}

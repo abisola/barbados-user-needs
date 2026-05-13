@@ -1,0 +1,67 @@
+{
+  "slug": "register-a-non-profit-company",
+  "title": "Register a non-profit company",
+  "category": "business-and-companies",
+  "description": "Set up a Barbadian non-profit company under the Companies Act, Cap. 308.",
+  "summary": [
+    "A non-profit company is a company that exists for a charitable, religious, educational or other public-good purpose. It is registered under the Companies Act, Cap. 308, but a different declaration form is used.",
+    "The key difference between a non-profit and a regular company is what happens with any money or assets it has. A non-profit must use them for its stated purpose – they cannot be paid out to members as profit.",
+    "Common examples include charities, religious organisations, sports clubs, professional associations and community groups. If your activity is for a public good and you do not plan to distribute profits, this is usually the right structure.",
+    "Like other companies, a non-profit needs a Barbadian attorney-at-law to sign the declaration. The fees are usually lower than for a regular for-profit company."
+  ],
+  "before_you_start": {
+    "intro": "You will need to know:",
+    "items": [
+      "the proposed name of the company",
+      "the charitable or public-good purpose of the company",
+      "the address of the registered office",
+      "the names, addresses and dates of birth of every director",
+      "the names of every founding member"
+    ]
+  },
+  "documents": {
+    "intro": "Bring with you:",
+    "items": [
+      {
+        "name": "Articles of incorporation for a non-profit company"
+      },
+      {
+        "name": "Declaration form signed by your attorney-at-law"
+      },
+      {
+        "name": "Notice of directors and registered office"
+      },
+      {
+        "name": "Photo ID for every director"
+      },
+      {
+        "name": "Proof of payment of the registration fee"
+      }
+    ]
+  },
+  "fees": "There is a reduced incorporation fee for non-profit companies. Confirm at CAIPO.",
+  "how_long": "A decision usually takes 5 to 10 working days.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "Through an attorney-at-law",
+        "content": [
+          "A Barbadian attorney-at-law will prepare the documents and file them with CAIPO."
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "agency": "Corporate Affairs and Intellectual Property Office (CAIPO)",
+    "address": "Baobab Tower, Ground Floor\nWarrens\nSt. Michael",
+    "phone": [
+      "(246) 535-2401"
+    ],
+    "email": "caipo@caipo.gov.bb",
+    "hours": "Open Monday to Friday: 8:30am to 4:30pm"
+  },
+  "assumptions": [
+    "‘A reduced incorporation fee for non-profit companies’ is a common practice in Caribbean company registries. Exact fees should be confirmed with CAIPO.",
+    "‘A decision usually takes 5 to 10 working days’ is an estimate."
+  ]
+}

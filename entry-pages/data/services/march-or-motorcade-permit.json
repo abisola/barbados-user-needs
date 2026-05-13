@@ -1,0 +1,73 @@
+{
+  "slug": "march-or-motorcade-permit",
+  "title": "Apply for a march, walk, run or motorcade permit",
+  "category": "safety-and-public-events",
+  "description": "Get police permission to hold a march, walk, run or motorcade on public roads.",
+  "summary": [
+    "If you want to hold a march, walk, run or motorcade on public roads, you need permission from The Royal Barbados Police Force. The Police review the planned route and manage traffic on the day.",
+    "The form asks for the date, the times, the route, and the expected number of participants and vehicles. You also need to name the marshals or organisers and say what the event is for.",
+    "Apply as far ahead as you can – at least four weeks. Late applications make it harder for the Police to plan and may be refused. The Police will let you know if they need to change the route, the times or the number of marshals.",
+    "If anything changes after you have applied – for example, the route or the start time – tell the Police Headquarters straight away. A new approval may be needed."
+  ],
+  "before_you_start": {
+    "intro": "You will need to know:",
+    "items": [
+      "the name and address of the applicant or organisation",
+      "the type of event (march, walk, run or motorcade)",
+      "the date and start and end times",
+      "the planned route, including assembly and dispersal points",
+      "the expected number of participants and vehicles",
+      "the names of the marshals or organisers",
+      "the reason for the event"
+    ]
+  },
+  "documents": {
+    "intro": "Bring with you:",
+    "items": [
+      {
+        "name": "Photo ID for the lead applicant"
+      },
+      {
+        "name": "A map of the route"
+      },
+      {
+        "name": "Letter of support from the organising body",
+        "note": "If the applicant is acting on behalf of an organisation."
+      }
+    ]
+  },
+  "fees": "There is no application fee.",
+  "how_long": "A decision usually takes 2 to 3 weeks. Apply at least 4 weeks before the event.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "In person",
+        "content": [
+          "Hand the completed Application for March, Walk, Run or Motorcade form in to Police Headquarters, Roebuck Street, St. Michael."
+        ]
+      }
+    ]
+  },
+  "edge_cases": [
+    {
+      "heading": "If your route changes",
+      "content": [
+        "Tell the Police Headquarters as soon as you know. A new approval may be needed."
+      ]
+    }
+  ],
+  "contact": {
+    "agency": "The Royal Barbados Police Force",
+    "address": "Police Headquarters\nRoebuck Street\nSt. Michael",
+    "phone": [
+      "(246) 430-7100"
+    ],
+    "email": "police@barbados.gov.bb",
+    "hours": "Open Monday to Friday: 8:30am to 4:30pm"
+  },
+  "assumptions": [
+    "‘At least 4 weeks’ lead time is general practice. The form does not state a lead time.",
+    "‘There is no application fee’ is inferred from the form.",
+    "Document list (route map, letter of support) is inferred from common practice."
+  ]
+}

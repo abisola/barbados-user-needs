@@ -1,0 +1,64 @@
+{
+  "slug": "duty-free-vehicle-concession",
+  "title": "Apply for a duty-free vehicle concession",
+  "category": "driving-and-transport",
+  "description": "Ask to bring in a vehicle without paying customs duty. Available for some individuals and businesses.",
+  "summary": [
+    "Some people and businesses can bring in a vehicle without paying customs duty. There is one form for individuals and one for businesses.",
+    "The Barbados Licensing Authority will let you know once your concession is ready."
+  ],
+  "who_can_apply": [
+    "an individual who meets the conditions for a duty-free concession (for example, returning national, government employee, person with a disability)",
+    "a business authorised by the Government to receive a duty-free concession"
+  ],
+  "before_you_start": {
+    "intro": "You will need to know:",
+    "items": [
+      "your name and ID number (or your business name)",
+      "your address, phone number and email",
+      "the registration number, engine number and chassis number of the vehicle",
+      "the year and vehicle type"
+    ]
+  },
+  "documents": {
+    "intro": "Bring with you:",
+    "items": [
+      {
+        "name": "Photo ID"
+      },
+      {
+        "name": "Approval letter from the relevant ministry or authority"
+      },
+      {
+        "name": "Bill of sale for the vehicle"
+      },
+      {
+        "name": "Business stamp",
+        "note": "Businesses only."
+      }
+    ]
+  },
+  "fees": "There is no application fee. Duty-free status removes customs duties; other fees may still apply.",
+  "how_long": "You will receive a phone call or email when your document is ready to collect.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "In person",
+        "content": [
+          "Take the completed Request for Duty Free Concession letter (individual or business version) to the Barbados Licensing Authority."
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "agency": "Barbados Licensing Authority",
+    "address": "The Pine, East–West Boulevard\nSt. Michael\nBB11000",
+    "phone": [
+      "Pine: (246) 536-0264 or (246) 536-0278",
+      "Holetown: (246) 535-8168 or (246) 535-5169",
+      "Oistins: (246) 535-8147 or (246) 536-8148"
+    ],
+    "email": "BLASupport@barbados.gov.bb",
+    "hours": "Open Monday to Friday: 8:15am to 3:30pm"
+  }
+}

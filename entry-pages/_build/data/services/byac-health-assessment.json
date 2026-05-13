@@ -1,0 +1,71 @@
+{
+  "slug": "byac-health-assessment",
+  "title": "Submit a BYAC health assessment",
+  "category": "youth-and-community",
+  "description": "A doctor must complete a health assessment for everyone applying to BYAC.",
+  "summary": [
+    "Everyone applying to the Barbados YouthADVANCE Corps must have a doctor confirm that they are in good enough health to take part in the programme.",
+    "You will need to make an appointment with a doctor and take the form with you."
+  ],
+  "who_can_apply": [
+    "anyone applying to BYAC"
+  ],
+  "before_you_start": {
+    "intro": "Before you see your doctor, fill in:",
+    "items": [
+      "your last name, first and middle names",
+      "your address and date of birth",
+      "your phone number and email",
+      "any allergies or long-term conditions you have",
+      "any medication you take"
+    ]
+  },
+  "documents": {
+    "intro": "Bring to your appointment:",
+    "items": [
+      {
+        "name": "The Health Assessment Form"
+      },
+      {
+        "name": "Photo ID"
+      },
+      {
+        "name": "Health card or polyclinic record",
+        "note": "If you have one."
+      }
+    ]
+  },
+  "fees": "Your doctor may charge a fee for the assessment. The Ministry does not charge.",
+  "how_long": "Most assessments are completed in one appointment.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "Through your doctor",
+        "content": [
+          "Make an appointment, take the form with you and ask your doctor to complete and stamp it."
+        ]
+      },
+      {
+        "heading": "Return the completed form to BYAC",
+        "content": [
+          "Once your doctor has signed and stamped it, send the form to BYAC by post or by email, or hand it in at #33 Warrens Industrial Park."
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "agency": "Barbados YouthADVANCE Corps (BYAC), Ministry of Youth, Sports and Community Empowerment",
+    "address": "#33 Warrens Industrial Park\nWarrens, St. Michael",
+    "phone": [
+      "(246) 535-0180"
+    ],
+    "email": "info@byac.gov.bb",
+    "hours": "Open Monday to Friday: 8:30am to 4:30pm"
+  },
+  "related": [
+    {
+      "slug": "byac-recruitment",
+      "title": "Apply for the Barbados YouthADVANCE Corps"
+    }
+  ]
+}

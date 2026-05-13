@@ -1,0 +1,52 @@
+{
+  "slug": "retain-registration-number",
+  "title": "Keep your registration number",
+  "category": "driving-and-transport",
+  "description": "Ask to keep your vehicle’s registration number after the vehicle is off the road.",
+  "summary": [
+    "You can ask to keep your registration number for up to one year after the expiry date if your vehicle has been written off, is being repaired or has changed from private to commercial use."
+  ],
+  "before_you_start": {
+    "intro": "You will need to know:",
+    "items": [
+      "your full name, address, phone numbers and email",
+      "the registration number you want to keep",
+      "the reason: total loss, under repair, or changed from private to commercial"
+    ]
+  },
+  "documents": {
+    "intro": "Bring with you:",
+    "items": [
+      {
+        "name": "Photo ID"
+      },
+      {
+        "name": "Proof of the reason",
+        "note": "For example, an insurance write-off letter or a workshop estimate."
+      }
+    ]
+  },
+  "fees": "There is no fee.",
+  "how_long": "Approval is usually given within 5 working days.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "In person or by post",
+        "content": [
+          "Take the completed Retention of Vehicle Registration Number letter to the Barbados Licensing Authority, or send it to The Pine, East–West Boulevard, St. Michael."
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "agency": "Barbados Licensing Authority",
+    "address": "The Pine, East–West Boulevard\nSt. Michael\nBB11000",
+    "phone": [
+      "Pine: (246) 536-0264 or (246) 536-0278",
+      "Holetown: (246) 535-8168 or (246) 535-5169",
+      "Oistins: (246) 535-8147 or (246) 536-8148"
+    ],
+    "email": "BLASupport@barbados.gov.bb",
+    "hours": "Open Monday to Friday: 8:15am to 3:30pm"
+  }
+}

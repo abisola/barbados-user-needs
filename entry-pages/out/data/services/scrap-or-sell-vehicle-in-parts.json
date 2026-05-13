@@ -1,0 +1,53 @@
+{
+  "slug": "scrap-or-sell-vehicle-in-parts",
+  "title": "Scrap or sell a vehicle in parts",
+  "category": "driving-and-transport",
+  "description": "Tell the Barbados Licensing Authority that your vehicle has been permanently taken off the road.",
+  "summary": [
+    "If your vehicle is no longer roadworthy and you plan to scrap it or sell it in parts, you must tell the Barbados Licensing Authority.",
+    "Scrapping a vehicle means it has been permanently taken off the road."
+  ],
+  "before_you_start": {
+    "intro": "You will need to know:",
+    "items": [
+      "your full name, address, phone number and email",
+      "a short description of the vehicle",
+      "the chassis number, engine number and registration number",
+      "whether the vehicle will be scrapped or sold in parts"
+    ]
+  },
+  "documents": {
+    "intro": "Bring with you:",
+    "items": [
+      {
+        "name": "Photo ID"
+      },
+      {
+        "name": "Registration card or disc"
+      }
+    ]
+  },
+  "fees": "There is no fee.",
+  "how_long": "Confirmation is usually given within 5 working days.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "In person or by post",
+        "content": [
+          "Take the completed Scrapping of Vehicle / Selling Vehicle in Parts letter to the Barbados Licensing Authority, or send it to The Pine, East–West Boulevard, St. Michael."
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "agency": "Barbados Licensing Authority",
+    "address": "The Pine, East–West Boulevard\nSt. Michael\nBB11000",
+    "phone": [
+      "Pine: (246) 536-0264 or (246) 536-0278",
+      "Holetown: (246) 535-8168 or (246) 535-5169",
+      "Oistins: (246) 535-8147 or (246) 536-8148"
+    ],
+    "email": "BLASupport@barbados.gov.bb",
+    "hours": "Open Monday to Friday: 8:15am to 3:30pm"
+  }
+}

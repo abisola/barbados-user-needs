@@ -1,0 +1,58 @@
+{
+  "slug": "change-vehicle-colour",
+  "title": "Change the colour of your vehicle",
+  "category": "driving-and-transport",
+  "description": "Tell the Barbados Licensing Authority before you change the colour of your vehicle.",
+  "summary": [
+    "Your registration record includes the colour of your vehicle. If you respray it or wrap it in a different colour, you must tell the Barbados Licensing Authority so the record matches the vehicle.",
+    "This is a short form. You confirm who you are, the registration number, the current colour and the new colour. The Licensing Authority updates the record and approves the change.",
+    "It matters because traffic enforcement and the police rely on the registration record. If your vehicle is stopped or stolen, the colour on file needs to match what the vehicle actually looks like now."
+  ],
+  "before_you_start": {
+    "intro": "You will need to know:",
+    "items": [
+      "your full name and address",
+      "the registration number of the vehicle",
+      "the current colour and the new colour",
+      "the date you plan to make the change"
+    ]
+  },
+  "documents": {
+    "intro": "Bring with you:",
+    "items": [
+      {
+        "name": "Photo ID"
+      },
+      {
+        "name": "Registration card or disc"
+      }
+    ]
+  },
+  "fees": "There is no fee.",
+  "how_long": "Approval is given the same day.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "In person",
+        "content": [
+          "Take the completed Request to Change the Colour of Vehicle form to the Barbados Licensing Authority."
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "agency": "Barbados Licensing Authority",
+    "address": "The Pine, East–West Boulevard\nSt. Michael\nBB11000",
+    "phone": [
+      "Pine: (246) 536-0264 or (246) 536-0278",
+      "Holetown: (246) 535-8168 or (246) 535-5169",
+      "Oistins: (246) 535-8147 or (246) 536-8148"
+    ],
+    "email": "BLASupport@barbados.gov.bb",
+    "hours": "Open Monday to Friday: 8:15am to 3:30pm"
+  },
+  "assumptions": [
+    "‘Approval given the same day’ is based on common BLA practice. The form does not state a processing time.",
+    "‘There is no fee’ is inferred – the form does not state a fee."
+  ]
+}

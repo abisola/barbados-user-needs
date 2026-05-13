@@ -1,0 +1,406 @@
+{
+  "categories": {
+    "driving-and-transport": {
+      "name": "Driving and transport",
+      "description": "Register, transfer or change a vehicle, import a car, get a vehicle inspection, and other things you do with the Barbados Licensing Authority."
+    },
+    "national-insurance-and-benefits": {
+      "name": "National Insurance and benefits",
+      "description": "Apply for pensions and benefits, register with the NIS, set up direct deposit and prove your status to keep payments coming."
+    },
+    "firearms": {
+      "name": "Firearms",
+      "description": "Apply for a firearm licence, a dealer or gunsmith licence, a shooting club licence, or to import or export a firearm."
+    },
+    "safety-and-public-events": {
+      "name": "Safety and public events",
+      "description": "Get a police accident report, a permit for a march or motorcade, or a loud music permit for an event."
+    },
+    "business-and-companies": {
+      "name": "Business and companies",
+      "description": "Register a company, file company changes with Corporate Affairs, appoint a registered agent and other company services."
+    },
+    "trade-exports-and-imports": {
+      "name": "Trade, exports and imports",
+      "description": "Apply for a certificate of origin to export goods under a trade agreement, or make a complaint about your treatment at a Caribbean port of entry."
+    },
+    "youth-and-community": {
+      "name": "Youth and community programmes",
+      "description": "Apply to a Ministry of Youth programme – BYAC, Get Hired, Pathways, Youth Entrepreneurship Scheme, summer camp and arts programmes."
+    }
+  },
+  "services": [
+    {
+      "slug": "register-or-renew-a-vehicle",
+      "title": "Register or renew a vehicle",
+      "category": "driving-and-transport",
+      "description": "Register a vehicle for the first time, or renew its registration each year."
+    },
+    {
+      "slug": "import-a-vehicle",
+      "title": "Apply to import a vehicle",
+      "category": "driving-and-transport",
+      "description": "Get permission to bring a car, truck or motorcycle into Barbados."
+    },
+    {
+      "slug": "vehicle-inspection",
+      "title": "Get a vehicle inspection",
+      "category": "driving-and-transport",
+      "description": "Book a Barbados Licensing Authority inspection to check that a vehicle is roadworthy."
+    },
+    {
+      "slug": "sell-a-vehicle",
+      "title": "Tell us you have sold a vehicle",
+      "category": "driving-and-transport",
+      "description": "Inform the Barbados Licensing Authority when you sell a vehicle, on your own or with co-owners."
+    },
+    {
+      "slug": "transfer-a-vehicle",
+      "title": "Transfer a vehicle (no money exchanged)",
+      "category": "driving-and-transport",
+      "description": "Tell the Barbados Licensing Authority you have transferred ownership of a vehicle without money changing hands."
+    },
+    {
+      "slug": "change-vehicle-colour",
+      "title": "Change the colour of your vehicle",
+      "category": "driving-and-transport",
+      "description": "Tell the Barbados Licensing Authority before you change the colour of your vehicle."
+    },
+    {
+      "slug": "change-vehicle-engine",
+      "title": "Change the engine in your vehicle",
+      "category": "driving-and-transport",
+      "description": "Tell the Barbados Licensing Authority after you change the engine in your vehicle."
+    },
+    {
+      "slug": "change-vehicle-use",
+      "title": "Change how you use your vehicle",
+      "category": "driving-and-transport",
+      "description": "Tell the Barbados Licensing Authority if you change how your vehicle is used – for example, from private to commercial."
+    },
+    {
+      "slug": "vehicle-investigation",
+      "title": "Apply for a vehicle investigation",
+      "category": "driving-and-transport",
+      "description": "Ask the Barbados Licensing Authority to investigate a vehicle that is off the road."
+    },
+    {
+      "slug": "vanity-plate",
+      "title": "Apply for a vanity plate",
+      "category": "driving-and-transport",
+      "description": "Apply for a personalised vanity number plate for your vehicle."
+    },
+    {
+      "slug": "retain-registration-number",
+      "title": "Keep your registration number",
+      "category": "driving-and-transport",
+      "description": "Ask to keep your vehicle’s registration number after the vehicle is off the road."
+    },
+    {
+      "slug": "scrap-or-sell-vehicle-in-parts",
+      "title": "Scrap or sell a vehicle in parts",
+      "category": "driving-and-transport",
+      "description": "Tell the Barbados Licensing Authority that your vehicle has been permanently taken off the road."
+    },
+    {
+      "slug": "graphics-on-vehicle",
+      "title": "Request graphics or lettering on a vehicle",
+      "category": "driving-and-transport",
+      "description": "Get permission before you put graphics or lettering on a vehicle."
+    },
+    {
+      "slug": "duty-free-vehicle-concession",
+      "title": "Apply for a duty-free vehicle concession",
+      "category": "driving-and-transport",
+      "description": "Ask to bring in a vehicle without paying customs duty. Available for some individuals and businesses."
+    },
+    {
+      "slug": "alternate-fuel-levy",
+      "title": "Pay the Alternate Fuel Levy",
+      "category": "driving-and-transport",
+      "description": "Pay the monthly or annual levy for vehicles that are not powered by petrol or diesel."
+    },
+    {
+      "slug": "international-circulation-permit",
+      "title": "Register a vehicle for a temporary stay in Barbados",
+      "category": "driving-and-transport",
+      "description": "Apply for an International Circulation Permit if you are bringing a vehicle into Barbados for a short stay."
+    },
+    {
+      "slug": "business-vehicle-declaration",
+      "title": "Make a business declaration for vehicle ownership",
+      "category": "driving-and-transport",
+      "description": "Companies, partnerships and sole traders must declare who controls a business-owned vehicle."
+    },
+    {
+      "slug": "vehicle-registration-summary",
+      "title": "Get a vehicle registration summary",
+      "category": "driving-and-transport",
+      "description": "Get a one-page summary of a vehicle’s registration status for a sale or import."
+    },
+    {
+      "slug": "old-age-contributory-pension",
+      "title": "Claim Old Age Contributory Pension",
+      "category": "national-insurance-and-benefits",
+      "description": "Claim a pension from the National Insurance Office once you reach pension age."
+    },
+    {
+      "slug": "unemployment-benefit",
+      "title": "Claim unemployment benefit",
+      "category": "national-insurance-and-benefits",
+      "description": "Claim a weekly payment from the National Insurance Office while you look for work."
+    },
+    {
+      "slug": "termination-of-services-certificate",
+      "title": "Get a termination of services or layoff certificate",
+      "category": "national-insurance-and-benefits",
+      "description": "Employers complete this form to give to a worker who has stopped working."
+    },
+    {
+      "slug": "nis-direct-deposit",
+      "title": "Set up direct deposit for NIS payments",
+      "category": "national-insurance-and-benefits",
+      "description": "Have your National Insurance benefit paid directly into your bank or credit union account."
+    },
+    {
+      "slug": "nis-educational-status",
+      "title": "Confirm a student’s educational status for NIS",
+      "category": "national-insurance-and-benefits",
+      "description": "Used to keep paying a Survivors’ or Death Benefit to a student aged 16 to 25."
+    },
+    {
+      "slug": "nis-life-certificate",
+      "title": "Send a life certificate",
+      "category": "national-insurance-and-benefits",
+      "description": "People claiming an NIS pension must confirm they are alive every six months."
+    },
+    {
+      "slug": "self-employed-contributions-certificate",
+      "title": "Get a Contributions Payment Certificate (self-employed)",
+      "category": "national-insurance-and-benefits",
+      "description": "Self-employed people can ask for a certificate showing the NIS contributions they have paid."
+    },
+    {
+      "slug": "nis-online-employee",
+      "title": "Register for Online Social Security (employee)",
+      "category": "national-insurance-and-benefits",
+      "description": "Open an online account with the NIS so you can check your record, change your details and apply for benefits."
+    },
+    {
+      "slug": "nis-online-employer",
+      "title": "Register for Online Social Security (employer)",
+      "category": "national-insurance-and-benefits",
+      "description": "Open an online employer account with the NIS so you can pay contributions and report new hires."
+    },
+    {
+      "slug": "dp10-contributions-certificate",
+      "title": "Get a DP-10 contributions certificate",
+      "category": "national-insurance-and-benefits",
+      "description": "A summary of the National Insurance contributions paid for an employee during a tax year."
+    },
+    {
+      "slug": "firearm-licence",
+      "title": "Apply for a firearm licence",
+      "category": "firearms",
+      "description": "Apply for a licence to have, use or carry a firearm in Barbados."
+    },
+    {
+      "slug": "firearm-import-export-licence",
+      "title": "Apply for a licence to import or export a firearm",
+      "category": "firearms",
+      "description": "Apply to bring a firearm into Barbados or send one out of the country."
+    },
+    {
+      "slug": "firearms-dealer-licence",
+      "title": "Apply for a firearms dealer, gunsmith or collector’s licence",
+      "category": "firearms",
+      "description": "Apply for a licence to operate as a firearms dealer, a gunsmith or a collector."
+    },
+    {
+      "slug": "shooting-club-licence",
+      "title": "Apply for a shooting club licence",
+      "category": "firearms",
+      "description": "Apply for a licence so a shooting club can operate in Barbados."
+    },
+    {
+      "slug": "march-or-motorcade-permit",
+      "title": "Apply for a march, walk, run or motorcade permit",
+      "category": "safety-and-public-events",
+      "description": "Get police permission to hold a march, walk, run or motorcade on public roads."
+    },
+    {
+      "slug": "police-accident-report",
+      "title": "Get a police accident report",
+      "category": "safety-and-public-events",
+      "description": "Get a copy of the police report for a road traffic accident."
+    },
+    {
+      "slug": "loud-music-permit",
+      "title": "Apply for a loud music permit",
+      "category": "safety-and-public-events",
+      "description": "Get police permission to play loud music at an event or in a public place."
+    },
+    {
+      "slug": "register-a-domestic-company",
+      "title": "Register a domestic company",
+      "category": "business-and-companies",
+      "description": "Set up a Barbadian company under the Companies Act, Cap. 308."
+    },
+    {
+      "slug": "register-an-ibc",
+      "title": "Register an International Business Company",
+      "category": "business-and-companies",
+      "description": "Set up an International Business Company (IBC) in Barbados."
+    },
+    {
+      "slug": "register-a-non-profit-company",
+      "title": "Register a non-profit company",
+      "category": "business-and-companies",
+      "description": "Set up a Barbadian non-profit company under the Companies Act, Cap. 308."
+    },
+    {
+      "slug": "articles-of-reincorporation",
+      "title": "File articles of reincorporation",
+      "category": "business-and-companies",
+      "description": "Re-state a company under the current Companies Act of Barbados."
+    },
+    {
+      "slug": "external-company-cancellation",
+      "title": "Cancel an external company",
+      "category": "business-and-companies",
+      "description": "Tell CAIPO that an external (foreign) company is no longer doing business in Barbados."
+    },
+    {
+      "slug": "register-an-agent",
+      "title": "Register a corporate agent",
+      "category": "business-and-companies",
+      "description": "Register or update the details of an agent acting for a Barbadian company."
+    },
+    {
+      "slug": "geographical-indications-agent",
+      "title": "Authorise a geographical indications agent",
+      "category": "business-and-companies",
+      "description": "Appoint an agent to act for you in a geographical indications matter under Cap. 320."
+    },
+    {
+      "slug": "url-declaration",
+      "title": "Make a URL ownership declaration",
+      "category": "business-and-companies",
+      "description": "Declare that you legally own a website domain (URL) registered to your company."
+    },
+    {
+      "slug": "financial-declaration",
+      "title": "Make a financial declaration",
+      "category": "business-and-companies",
+      "description": "Public officials and other named people must declare their assets, liabilities and income every year."
+    },
+    {
+      "slug": "caricom-certificate-of-origin",
+      "title": "Apply for a CARICOM certificate of origin",
+      "category": "trade-exports-and-imports",
+      "description": "Get a certificate showing that your goods qualify for CARICOM Single Market preferential treatment."
+    },
+    {
+      "slug": "caricom-colombia-certificate",
+      "title": "Apply for a CARICOM–Colombia certificate of origin",
+      "category": "trade-exports-and-imports",
+      "description": "Get a certificate of origin under the CARICOM–Colombia trade agreement."
+    },
+    {
+      "slug": "caricom-costa-rica-certificate",
+      "title": "Apply for a CARICOM–Costa Rica certificate of origin",
+      "category": "trade-exports-and-imports",
+      "description": "Get a certificate of origin under the CARICOM–Costa Rica Free Trade Agreement."
+    },
+    {
+      "slug": "caricom-dominican-republic-certificate",
+      "title": "Apply for a CARICOM–Dominican Republic certificate of origin",
+      "category": "trade-exports-and-imports",
+      "description": "Get a certificate of origin under the CARICOM–Dominican Republic Free Trade Agreement."
+    },
+    {
+      "slug": "eur1-movement-certificate",
+      "title": "Apply for an EUR.1 movement certificate",
+      "category": "trade-exports-and-imports",
+      "description": "Get an EUR.1 certificate to claim preferential treatment when exporting to the European Union."
+    },
+    {
+      "slug": "bidc-certificate-of-origin",
+      "title": "Apply for a BIDC certificate of origin",
+      "category": "trade-exports-and-imports",
+      "description": "Apply for a Barbados Investment and Development Corporation certificate of origin for any export."
+    },
+    {
+      "slug": "csme-complaint",
+      "title": "Make a CSME point of entry complaint",
+      "category": "trade-exports-and-imports",
+      "description": "Tell CARICOM if you were treated unfairly at a port of entry or departure under the CSME."
+    },
+    {
+      "slug": "byac-recruitment",
+      "title": "Apply for the Barbados YouthADVANCE Corps (BYAC)",
+      "category": "youth-and-community",
+      "description": "Apply to join the Barbados YouthADVANCE Corps, a Ministry of Youth training and service programme."
+    },
+    {
+      "slug": "byac-health-assessment",
+      "title": "Submit a BYAC health assessment",
+      "category": "youth-and-community",
+      "description": "A doctor must complete a health assessment for everyone applying to BYAC."
+    },
+    {
+      "slug": "byac-reference-form",
+      "title": "Submit a BYAC reference form",
+      "category": "youth-and-community",
+      "description": "Referees complete a reference form for someone applying to BYAC."
+    },
+    {
+      "slug": "get-hired-programme",
+      "title": "Apply for the Get Hired Programme",
+      "category": "youth-and-community",
+      "description": "Apply for the 2026 Get Hired Programme – a Ministry of Youth jobs and employability programme."
+    },
+    {
+      "slug": "pathways-employability-programme",
+      "title": "Apply for the Pathways Employability Programme",
+      "category": "youth-and-community",
+      "description": "Apply for the 2026 Pathways Employability Programme – a Ministry of Youth scheme that helps young people get ready for work."
+    },
+    {
+      "slug": "yes-first-contact",
+      "title": "Make first contact with the Youth Entrepreneurship Scheme",
+      "category": "youth-and-community",
+      "description": "Tell the Youth Entrepreneurship Scheme (YES) about your business idea so they can offer support."
+    },
+    {
+      "slug": "nscp-camper-registration",
+      "title": "Register a camper for the National Summer Camp Programme",
+      "category": "youth-and-community",
+      "description": "Register a child aged 7 to 12 for the National Summer Camp Programme."
+    },
+    {
+      "slug": "national-community-cultural-training",
+      "title": "Register for the National Community Cultural Training Programme",
+      "category": "youth-and-community",
+      "description": "Register for a 2025 community-based cultural training course."
+    },
+    {
+      "slug": "yar-performing-arts",
+      "title": "Register for Youth Achieving Results (Performing Arts)",
+      "category": "youth-and-community",
+      "description": "Register a young performer for the Youth Achieving Results performing arts programme."
+    },
+    {
+      "slug": "yar-visual-arts",
+      "title": "Register for Youth Achieving Results (Visual Arts)",
+      "category": "youth-and-community",
+      "description": "Register a young visual artist for the Youth Achieving Results visual arts programme."
+    },
+    {
+      "slug": "youth-mc-training",
+      "title": "Register for the Youth MC Training Programme",
+      "category": "youth-and-community",
+      "description": "Apply to train as an MC, presenter or radio host on the Youth MC Training Programme."
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "slug": "register-or-renew-a-vehicle",
+  "title": "Register or renew a vehicle",
+  "category": "driving-and-transport",
+  "description": "Register a vehicle for the first time, or renew its registration each year.",
+  "summary": [
+    "You must register your vehicle with the Barbados Licensing Authority before you can use it on the road. After that, you renew the registration every year so you can keep driving it.",
+    "First-time registration happens when a vehicle is brand new, when it has just been imported, or when it has changed owner. The Licensing Authority records who owns the vehicle, what it looks like, the engine and chassis numbers, what you will use it for, and where it is normally kept.",
+    "If you are renewing an existing registration, you only need to fill in the first two lines of the form and anything that has changed since last year – for example, a new address or a change of insurer.",
+    "The form is officially called the LA.33 Application for Registration or Renewal of Licence for Motor Vehicle. There are separate paths if your vehicle is owned by a company, a partnership or a sole trader – see the related declaration form."
+  ],
+  "who_can_apply": [
+    "the registered owner of the vehicle",
+    "a partnership, company or sole trader that owns the vehicle (you will need to bring a Barbados Licensing Authority declaration form)"
+  ],
+  "before_you_start": {
+    "intro": "You will need to know:",
+    "items": [
+      "your full name, address and parish",
+      "your National Registration Number",
+      "the vehicle’s registration number (or previous registration if it has one)",
+      "the make, model, year, colour, body type and seating capacity of the vehicle",
+      "the chassis number and engine number",
+      "where the vehicle is normally kept",
+      "what you will use the vehicle for (private, hire, goods, etc.)"
+    ]
+  },
+  "documents": {
+    "intro": "Bring with you:",
+    "items": [
+      {
+        "name": "Photo ID",
+        "note": "Barbados ID card or passport."
+      },
+      {
+        "name": "Proof of insurance",
+        "note": "A current certificate of insurance from a Barbados-registered insurer."
+      },
+      {
+        "name": "Bill of sale or proof of ownership",
+        "note": "Needed for first-time registration."
+      },
+      {
+        "name": "Vehicle inspection certificate",
+        "note": "Needed for vehicles over a certain age – see ‘Get a vehicle inspection’."
+      },
+      {
+        "name": "Previous registration card or disc",
+        "note": "Needed if you are renewing."
+      }
+    ]
+  },
+  "fees": {
+    "summary": [
+      "Fees depend on the class and weight of the vehicle. Pay at the Barbados Revenue Authority."
+    ],
+    "items": [
+      {
+        "label": "Private car (annual)",
+        "amount": "From $400 BBD"
+      },
+      {
+        "label": "Goods or commercial vehicle",
+        "amount": "From $1,000 BBD"
+      },
+      {
+        "label": "Motorcycle",
+        "amount": "From $200 BBD"
+      }
+    ],
+    "notes": [
+      "Final fees are confirmed at the Licensing Authority."
+    ]
+  },
+  "how_long": "Registration is usually issued the same day if all your documents are in order.",
+  "how_to_apply": {
+    "intro": "Complete the LA.33 Application for Registration or Renewal of Licence for Motor Vehicle form.",
+    "options": [
+      {
+        "heading": "In person",
+        "content": [
+          "Go to the Barbados Licensing Authority in the Pine, Holetown or Oistins.",
+          "Hand in your completed form and supporting documents at the front desk."
+        ]
+      }
+    ]
+  },
+  "edge_cases": [
+    {
+      "heading": "If your vehicle is owned by a business",
+      "content": [
+        "A sole trader, partnership or company must also submit a Barbados Licensing Authority declaration form for that business type. See ‘Make a business declaration for vehicle ownership’ for the form you need."
+      ]
+    }
+  ],
+  "contact": {
+    "agency": "Barbados Licensing Authority",
+    "address": "The Pine, East–West Boulevard\nSt. Michael\nBB11000",
+    "phone": [
+      "Pine: (246) 536-0264 or (246) 536-0278",
+      "Holetown: (246) 535-8168 or (246) 535-5169",
+      "Oistins: (246) 535-8147 or (246) 536-8148"
+    ],
+    "email": "BLASupport@barbados.gov.bb",
+    "hours": "Open Monday to Friday: 8:15am to 3:30pm"
+  },
+  "assumptions": [
+    "The annual fees shown (from $400 BBD for a private car, $1,000 BBD for goods or commercial, $200 BBD for a motorcycle) are illustrative. Actual fees are set by the Barbados Revenue Authority and may have changed.",
+    "‘Issued the same day if all your documents are in order’ is based on common BLA practice, not stated on the form.",
+    "Vehicle inspection requirement (‘needed for vehicles over a certain age’) is general practice. The exact threshold should be confirmed with the BLA.",
+    "Hours of opening (8:15am to 3:30pm, Monday to Friday) and the BLASupport@barbados.gov.bb email need to be confirmed with the BLA."
+  ]
+}

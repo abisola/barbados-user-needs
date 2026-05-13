@@ -1,0 +1,57 @@
+{
+  "slug": "byac-reference-form",
+  "title": "Submit a BYAC reference form",
+  "category": "youth-and-community",
+  "description": "Referees complete a reference form for someone applying to BYAC.",
+  "summary": [
+    "If a friend, mentor or former teacher has asked you to be their referee for the Barbados YouthADVANCE Corps, you will need to fill in a reference form for them.",
+    "You should know the applicant well enough to comment on their character and suitability for the programme."
+  ],
+  "who_can_apply": [
+    "people who have known the applicant for at least 2 years",
+    "you should not be a relative of the applicant"
+  ],
+  "before_you_start": {
+    "intro": "You will need to know:",
+    "items": [
+      "the applicant’s full name",
+      "how long you have known the applicant",
+      "in what capacity you have known them (for example, teacher, employer, pastor)",
+      "your honest view of their character, attitude and ability",
+      "your full name, address, phone number and email"
+    ]
+  },
+  "documents": {
+    "intro": "You will need:",
+    "items": [
+      {
+        "name": "Your own photo ID"
+      },
+      {
+        "name": "Letterhead",
+        "note": "If you are giving the reference in your professional capacity."
+      }
+    ]
+  },
+  "fees": "There is no fee.",
+  "how_long": "Fill in the form as soon as possible so the applicant’s application is not held up.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "Return the completed form to BYAC",
+        "content": [
+          "Send the completed Reference Form to BYAC by post or email, or give it to the applicant in a sealed envelope to hand in."
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "agency": "Barbados YouthADVANCE Corps (BYAC), Ministry of Youth, Sports and Community Empowerment",
+    "address": "#33 Warrens Industrial Park\nWarrens, St. Michael",
+    "phone": [
+      "(246) 535-0180"
+    ],
+    "email": "info@byac.gov.bb",
+    "hours": "Open Monday to Friday: 8:30am to 4:30pm"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "slug": "termination-of-services-certificate",
+  "title": "Get a termination of services or layoff certificate",
+  "category": "national-insurance-and-benefits",
+  "description": "Employers complete this form to give to a worker who has stopped working.",
+  "summary": [
+    "Employers must complete a Termination of Services or Layoff Certificate when an employee stops working, under Regulation 47 of the National Insurance and Social Security Act.",
+    "The worker uses this certificate to claim unemployment benefit."
+  ],
+  "who_can_apply": [
+    "the employer of someone who has stopped working",
+    "a worker can ask their former employer for the certificate"
+  ],
+  "before_you_start": {
+    "intro": "The employer will need:",
+    "items": [
+      "the worker’s name, address, National Insurance Number and National Registration Number",
+      "the worker’s date of birth",
+      "the dates of employment",
+      "the reason the worker stopped working",
+      "the worker’s earnings for the last 12 weeks of work"
+    ]
+  },
+  "documents": {
+    "intro": "The employer will need to provide:",
+    "items": [
+      {
+        "name": "Employer’s NIS registration number"
+      },
+      {
+        "name": "Payroll records for the last 12 weeks"
+      }
+    ]
+  },
+  "fees": "There is no fee.",
+  "how_long": "Most employers can complete the certificate within a week.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "By post or in person",
+        "content": [
+          "The completed certificate must be returned to the National Insurance Office, or given to the worker to take with them."
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "agency": "National Insurance Office",
+    "address": "Culloden Road\nSt. Michael",
+    "phone": [
+      "(246) 467-4000"
+    ],
+    "email": "nationalinsurance@nis.gov.bb",
+    "hours": "Open Monday to Friday: 8:30am to 4:30pm"
+  },
+  "related": [
+    {
+      "slug": "unemployment-benefit",
+      "title": "Claim unemployment benefit"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "slug": "articles-of-reincorporation",
+  "title": "File articles of reincorporation",
+  "category": "business-and-companies",
+  "description": "Re-state a company under the current Companies Act of Barbados.",
+  "summary": [
+    "Some Barbadian companies were originally set up under the older Companies Act. If your company needs to be brought under the current Act, you file Articles of Reincorporation under Section 355.5.",
+    "Reincorporation is not a fresh start. The company keeps the same company number and continues its existing contracts, debts and assets. What changes is the legal framework it sits under.",
+    "Articles of Reincorporation set out the modern equivalents of the old company’s constitution – the maximum number of shares, restrictions on share issues or transfers, the size of the board, and any limits on what the company can do.",
+    "Most companies file Articles of Reincorporation through their attorney-at-law, alongside an updated set of by-laws and a resolution of directors approving the change."
+  ],
+  "before_you_start": {
+    "intro": "You will need to know:",
+    "items": [
+      "the current name and company number",
+      "the maximum number of shares the company can issue",
+      "any restrictions on issuing or transferring shares",
+      "the minimum and maximum number of directors",
+      "any restrictions on the business the company can do"
+    ]
+  },
+  "documents": {
+    "intro": "Bring with you:",
+    "items": [
+      {
+        "name": "Resolution of directors approving the reincorporation"
+      },
+      {
+        "name": "Notice of registered office and directors"
+      },
+      {
+        "name": "Updated by-laws"
+      },
+      {
+        "name": "Photo ID for the signing officer"
+      },
+      {
+        "name": "Proof of payment of the filing fee"
+      }
+    ]
+  },
+  "fees": "Filing fees are set by CAIPO. Confirm before you submit.",
+  "how_long": "A decision usually takes 4 to 6 weeks.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "Through an attorney-at-law",
+        "content": [
+          "A Barbadian attorney-at-law will file the articles with CAIPO."
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "agency": "Corporate Affairs and Intellectual Property Office (CAIPO)",
+    "address": "Baobab Tower, Ground Floor\nWarrens\nSt. Michael",
+    "phone": [
+      "(246) 535-2401"
+    ],
+    "email": "caipo@caipo.gov.bb",
+    "hours": "Open Monday to Friday: 8:30am to 4:30pm"
+  },
+  "assumptions": [
+    "‘Filing fees are set by CAIPO’ – we have not named a figure because the form does not include one.",
+    "‘A decision usually takes 4 to 6 weeks’ is an estimate.",
+    "Document list (resolution, notice of registered office and directors, updated by-laws) is based on common CAIPO practice."
+  ]
+}

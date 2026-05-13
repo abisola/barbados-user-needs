@@ -1,0 +1,69 @@
+{
+  "slug": "loud-music-permit",
+  "title": "Apply for a loud music permit",
+  "category": "safety-and-public-events",
+  "description": "Get police permission to play loud music at an event or in a public place.",
+  "summary": [
+    "If you are planning an event with loud music – for example, a fete, a wedding reception or a religious event – you must apply to The Royal Barbados Police Force for a permit.",
+    "The form asks for the date, the start and end times, the address, the type of event and how many people you expect. You also need to say what you have done to limit the noise reaching neighbours.",
+    "Apply at least two weeks before the event. If the event runs past midnight, you will need to give more detail about how you will manage noise and when the music will end.",
+    "You will need permission from the property owner if you do not own the venue yourself."
+  ],
+  "before_you_start": {
+    "intro": "You will need to know:",
+    "items": [
+      "your name, address and phone number",
+      "the date and start and end times of the event",
+      "the address where the music will be played",
+      "the type of event",
+      "the expected number of people",
+      "what you have done to limit noise to neighbours"
+    ]
+  },
+  "documents": {
+    "intro": "Bring with you:",
+    "items": [
+      {
+        "name": "Photo ID"
+      },
+      {
+        "name": "Proof of permission from the property owner",
+        "note": "If you do not own the property."
+      }
+    ]
+  },
+  "fees": "Fees may apply. Confirm at the Police Headquarters.",
+  "how_long": "A decision usually takes 5 to 10 working days.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "In person",
+        "content": [
+          "Hand the completed Application for Police Loud Music Permit in to Police Headquarters, Roebuck Street, St. Michael."
+        ]
+      }
+    ]
+  },
+  "edge_cases": [
+    {
+      "heading": "If your event runs after midnight",
+      "content": [
+        "You will need to say what time the music will end and how you will let your neighbours know about the event."
+      ]
+    }
+  ],
+  "contact": {
+    "agency": "The Royal Barbados Police Force",
+    "address": "Police Headquarters\nRoebuck Street\nSt. Michael",
+    "phone": [
+      "(246) 430-7100"
+    ],
+    "email": "police@barbados.gov.bb",
+    "hours": "Open Monday to Friday: 8:30am to 4:30pm"
+  },
+  "assumptions": [
+    "‘At least 2 weeks’ lead time is general practice. The form does not state a lead time.",
+    "‘Fees may apply’ is hedged because the form does not state a fee.",
+    "‘A decision usually takes 5 to 10 working days’ is an estimate."
+  ]
+}

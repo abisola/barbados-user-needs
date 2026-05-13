@@ -1,0 +1,52 @@
+{
+  "slug": "self-employed-contributions-certificate",
+  "title": "Get a Contributions Payment Certificate (self-employed)",
+  "category": "national-insurance-and-benefits",
+  "description": "Self-employed people can ask for a certificate showing the NIS contributions they have paid.",
+  "summary": [
+    "If you are self-employed and you need proof of the National Insurance contributions you have paid, you can ask for a Contributions Payment Certificate.",
+    "You might need it for a loan, a visa or a tax return."
+  ],
+  "before_you_start": {
+    "intro": "You will need to know:",
+    "items": [
+      "your National Insurance Number and National Registration Number",
+      "your full name and address",
+      "the period the certificate should cover",
+      "what you need it for (so the right wording is used)"
+    ]
+  },
+  "documents": {
+    "intro": "Bring with you:",
+    "items": [
+      {
+        "name": "Photo ID"
+      },
+      {
+        "name": "Past NIS payment receipts",
+        "note": "If you have them, to help us match your records."
+      }
+    ]
+  },
+  "fees": "There is no fee.",
+  "how_long": "Certificates are usually ready within 10 working days.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "In person or by post",
+        "content": [
+          "Take or send the completed Contributions Payment Certificate form to the National Insurance Office."
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "agency": "National Insurance Office",
+    "address": "Culloden Road\nSt. Michael",
+    "phone": [
+      "(246) 467-4000"
+    ],
+    "email": "nationalinsurance@nis.gov.bb",
+    "hours": "Open Monday to Friday: 8:30am to 4:30pm"
+  }
+}

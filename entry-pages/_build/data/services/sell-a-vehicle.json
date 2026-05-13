@@ -1,0 +1,69 @@
+{
+  "slug": "sell-a-vehicle",
+  "title": "Tell us you have sold a vehicle",
+  "category": "driving-and-transport",
+  "description": "Inform the Barbados Licensing Authority when you sell a vehicle, on your own or with co-owners.",
+  "summary": [
+    "If you sell a vehicle (where money is exchanged), the Road Traffic Act says you must tell the Barbados Licensing Authority.",
+    "There is one form for a single owner and one for joint owners. You will choose the right one at the Licensing Authority."
+  ],
+  "before_you_start": {
+    "intro": "You will need to know:",
+    "items": [
+      "your full name, address, ID number, telephone number and email",
+      "if there is more than one owner, the names and details of every owner",
+      "the registration number, engine number and chassis number of the vehicle",
+      "the make and model of the vehicle",
+      "the full name and address of the person you sold it to",
+      "whether you want to keep your registration number"
+    ]
+  },
+  "documents": {
+    "intro": "Bring with you:",
+    "items": [
+      {
+        "name": "Registration card or disc",
+        "note": "From the vehicle you have sold."
+      },
+      {
+        "name": "Receipt of sale or bill of sale"
+      },
+      {
+        "name": "Photo ID for each owner"
+      }
+    ]
+  },
+  "fees": "There is no fee for telling the Licensing Authority you have sold a vehicle.",
+  "how_long": "The change is recorded the same day.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "In person",
+        "content": [
+          "Take the completed Sale of Vehicle form (single owner or joint owner version) to the Barbados Licensing Authority."
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "agency": "Barbados Licensing Authority",
+    "address": "The Pine, East–West Boulevard\nSt. Michael\nBB11000",
+    "phone": [
+      "Pine: (246) 536-0264 or (246) 536-0278",
+      "Holetown: (246) 535-8168 or (246) 535-5169",
+      "Oistins: (246) 535-8147 or (246) 536-8148"
+    ],
+    "email": "BLASupport@barbados.gov.bb",
+    "hours": "Open Monday to Friday: 8:15am to 3:30pm"
+  },
+  "related": [
+    {
+      "slug": "transfer-a-vehicle",
+      "title": "Transfer a vehicle (no money exchanged)"
+    },
+    {
+      "slug": "retain-registration-number",
+      "title": "Keep your registration number"
+    }
+  ]
+}

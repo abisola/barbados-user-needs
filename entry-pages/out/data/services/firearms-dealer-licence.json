@@ -1,0 +1,69 @@
+{
+  "slug": "firearms-dealer-licence",
+  "title": "Apply for a firearms dealer, gunsmith or collector’s licence",
+  "category": "firearms",
+  "description": "Apply for a licence to operate as a firearms dealer, a gunsmith or a collector.",
+  "summary": [
+    "Under the Firearms Act, you must have a special licence to sell firearms, repair them as a gunsmith or hold a collection.",
+    "There are different parts of the form for individuals and companies."
+  ],
+  "who_can_apply": [
+    "an individual over 21 who wants to be a registered dealer, gunsmith or collector",
+    "a company that wants to deal in firearms"
+  ],
+  "before_you_start": {
+    "intro": "You will need to know:",
+    "items": [
+      "your full name (or the company’s name)",
+      "your business address and storage location",
+      "the type of activity (dealer, gunsmith or collector)",
+      "the names of every director or partner of the company",
+      "the address of every place you will store firearms"
+    ]
+  },
+  "documents": {
+    "intro": "Bring with you:",
+    "items": [
+      {
+        "name": "Two passport-size photographs of every applicant"
+      },
+      {
+        "name": "Photo ID for every applicant"
+      },
+      {
+        "name": "Police record certificate for every applicant"
+      },
+      {
+        "name": "Certificate of incorporation",
+        "note": "For company applications."
+      },
+      {
+        "name": "Proof of approved storage"
+      },
+      {
+        "name": "Proof of payment of the application fee"
+      }
+    ]
+  },
+  "fees": "Fees vary by category. Pay at the Barbados Revenue Authority.",
+  "how_long": "A decision usually takes 10 to 14 weeks.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "In person",
+        "content": [
+          "Hand the completed Form C Application for a Firearms Dealer, Gunsmith or Collector’s Licence in to Police Headquarters, Roebuck Street, St. Michael."
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "agency": "The Royal Barbados Police Force",
+    "address": "Police Headquarters\nRoebuck Street\nSt. Michael",
+    "phone": [
+      "(246) 430-7100"
+    ],
+    "email": "police@barbados.gov.bb",
+    "hours": "Open Monday to Friday: 8:30am to 4:30pm"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "slug": "nis-online-employer",
+  "title": "Register for Online Social Security (employer)",
+  "category": "national-insurance-and-benefits",
+  "description": "Open an online employer account with the NIS so you can pay contributions and report new hires.",
+  "summary": [
+    "The NIS Online Social Security Service has a separate area for employers. With an account, you can submit your monthly contribution returns, pay contributions and register new hires without coming into the office.",
+    "You need to register your business once. The authorised contact named on the form will be the person who logs in and runs the account.",
+    "Bring your certificate of incorporation or business registration, plus photo ID for the authorised contact. If the contact changes later, send a new registration form to update the record.",
+    "Most active employers in Barbados now manage their NIS obligations through this portal."
+  ],
+  "before_you_start": {
+    "intro": "You will need to know:",
+    "items": [
+      "your business name",
+      "your employer’s NIS number",
+      "your business registration number",
+      "the address and parish of the business",
+      "an email address and phone number for an authorised contact"
+    ]
+  },
+  "documents": {
+    "intro": "Bring with you:",
+    "items": [
+      {
+        "name": "Certificate of incorporation or business registration"
+      },
+      {
+        "name": "Photo ID for the authorised contact"
+      }
+    ]
+  },
+  "fees": "There is no fee.",
+  "how_long": "Your account is usually active within 5 working days.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "In person",
+        "content": [
+          "Take the completed Online Social Security Service Registration (Employer) form to the National Insurance Office."
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "agency": "National Insurance Office",
+    "address": "Culloden Road\nSt. Michael",
+    "phone": [
+      "(246) 467-4000"
+    ],
+    "email": "nationalinsurance@nis.gov.bb",
+    "hours": "Open Monday to Friday: 8:30am to 4:30pm"
+  },
+  "assumptions": [
+    "‘Account is usually active within 5 working days’ is an estimate.",
+    "‘There is no fee’ is inferred.",
+    "‘Most active employers now manage their NIS obligations through this portal’ is a working assumption."
+  ]
+}

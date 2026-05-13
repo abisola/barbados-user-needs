@@ -1,0 +1,74 @@
+{
+  "slug": "vehicle-investigation",
+  "title": "Apply for a vehicle investigation",
+  "category": "driving-and-transport",
+  "description": "Ask the Barbados Licensing Authority to investigate a vehicle that is off the road.",
+  "summary": [
+    "If a vehicle is off the road, you can ask the Barbados Licensing Authority to investigate it. The investigation confirms key details like the registration number, chassis number, engine number, make, model and condition.",
+    "People usually ask for an investigation when they need to clear up the record on a vehicle – for example, to settle an insurance claim, to support a sale, or to write the vehicle off.",
+    "The Licensing Authority will go to where the vehicle is being kept. You will need to give them the name and phone number of a contact at that location so they can arrange access.",
+    "The fee is currently $50 BBD. Pay it at the Barbados Revenue Authority before you apply, and bring the receipt with you."
+  ],
+  "before_you_start": {
+    "intro": "You will need to know:",
+    "items": [
+      "your full name, address, parish and phone numbers",
+      "the registration number, make, model, engine number and chassis number",
+      "where the vehicle is being kept",
+      "the name and phone numbers of the person to contact at that location",
+      "your reason for the investigation"
+    ]
+  },
+  "documents": {
+    "intro": "Bring with you:",
+    "items": [
+      {
+        "name": "Photo ID"
+      },
+      {
+        "name": "Proof of ownership",
+        "note": "Registration card or bill of sale."
+      },
+      {
+        "name": "Receipt of payment for the investigation fee"
+      }
+    ]
+  },
+  "fees": {
+    "items": [
+      {
+        "label": "Investigation fee",
+        "amount": "$50 BBD"
+      }
+    ],
+    "notes": [
+      "Pay at the Barbados Revenue Authority before you apply."
+    ]
+  },
+  "how_long": "An investigation is usually completed within 10 working days.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "In person",
+        "content": [
+          "Take the completed Application for Vehicle Investigation form to the Barbados Licensing Authority."
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "agency": "Barbados Licensing Authority",
+    "address": "The Pine, East–West Boulevard\nSt. Michael\nBB11000",
+    "phone": [
+      "Pine: (246) 536-0264 or (246) 536-0278",
+      "Holetown: (246) 535-8168 or (246) 535-5169",
+      "Oistins: (246) 535-8147 or (246) 536-8148"
+    ],
+    "email": "BLASupport@barbados.gov.bb",
+    "hours": "Open Monday to Friday: 8:15am to 3:30pm"
+  },
+  "assumptions": [
+    "Although the form states a $50 BBD fee, it does not mention how long the investigation usually takes. ‘Within 10 working days’ is an estimate.",
+    "Document list (photo ID, proof of ownership) is inferred from standard practice. The form itself does not specify what to bring."
+  ]
+}

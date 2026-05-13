@@ -1,0 +1,50 @@
+{
+  "slug": "register-an-agent",
+  "title": "Register a corporate agent",
+  "category": "business-and-companies",
+  "description": "Register or update the details of an agent acting for a Barbadian company.",
+  "summary": [
+    "Companies can register an agent who will act on their behalf with the Corporate Affairs and Intellectual Property Office.",
+    "Use this form to register a new agent, change the details of an existing agent, or update the agent’s address or contact information."
+  ],
+  "before_you_start": {
+    "intro": "You will need to know:",
+    "items": [
+      "the agent number, if you have one",
+      "the agent’s name, address, phone number, fax and email",
+      "the name and number of the company the agent is acting for"
+    ]
+  },
+  "documents": {
+    "intro": "Bring with you:",
+    "items": [
+      {
+        "name": "Letter of authority from the company"
+      },
+      {
+        "name": "Photo ID for the agent"
+      }
+    ]
+  },
+  "fees": "There is no fee.",
+  "how_long": "Updates are usually recorded within 5 working days.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "In person",
+        "content": [
+          "Take the completed Registered Agent Application Form to the Corporate Affairs and Intellectual Property Office at Baobab Tower, Warrens."
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "agency": "Corporate Affairs and Intellectual Property Office (CAIPO)",
+    "address": "Baobab Tower, Ground Floor\nWarrens\nSt. Michael",
+    "phone": [
+      "(246) 535-2401"
+    ],
+    "email": "caipo@caipo.gov.bb",
+    "hours": "Open Monday to Friday: 8:30am to 4:30pm"
+  }
+}

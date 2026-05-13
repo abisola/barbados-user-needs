@@ -1,0 +1,87 @@
+{
+  "slug": "firearm-licence",
+  "title": "Apply for a firearm licence",
+  "category": "firearms",
+  "description": "Apply for a licence to have, use or carry a firearm in Barbados.",
+  "summary": [
+    "Under the Firearms Act, you must have a licence before you can have, use or carry a firearm in Barbados.",
+    "Applications are reviewed by the Commissioner of Police."
+  ],
+  "who_can_apply": [
+    "anyone over 18 who is not legally barred from holding a firearm licence",
+    "people who can show a clear reason for needing a firearm – for example, sport, hunting, or work"
+  ],
+  "before_you_start": {
+    "intro": "You will need to know:",
+    "items": [
+      "your full name, address, date of birth and place of birth",
+      "your nationality and occupation",
+      "your reason for needing a firearm",
+      "the type of firearm you want, including make, model and calibre",
+      "where you will store the firearm",
+      "the names and addresses of two referees"
+    ]
+  },
+  "documents": {
+    "intro": "Bring with you:",
+    "items": [
+      {
+        "name": "Two passport-size photographs"
+      },
+      {
+        "name": "Photo ID",
+        "note": "Barbados ID card or passport."
+      },
+      {
+        "name": "Police record certificate",
+        "note": "Recent (within 6 months)."
+      },
+      {
+        "name": "Proof of safe storage",
+        "note": "For example, a photograph of an approved gun safe."
+      },
+      {
+        "name": "Two character references",
+        "note": "From people who have known you for at least 5 years."
+      },
+      {
+        "name": "Proof of payment of the application fee"
+      }
+    ]
+  },
+  "fees": "Fees vary by firearm type. Pay at the Barbados Revenue Authority before you apply.",
+  "how_long": "A decision usually takes 8 to 12 weeks.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "In person",
+        "content": [
+          "Hand the completed Form A Application for a Licence to Have, Use or Carry a Firearm in to Police Headquarters, Roebuck Street, St. Michael."
+        ]
+      }
+    ]
+  },
+  "edge_cases": [
+    {
+      "heading": "If you have a criminal record",
+      "content": [
+        "The Commissioner of Police will consider every application on its merits. A criminal record does not always mean your application will be refused."
+      ]
+    },
+    {
+      "heading": "Renewals",
+      "content": [
+        "A firearm licence is valid for one year. You will need to renew it before the expiry date."
+      ]
+    }
+  ],
+  "contact": {
+    "agency": "The Royal Barbados Police Force",
+    "address": "Police Headquarters\nRoebuck Street\nSt. Michael",
+    "phone": [
+      "(246) 430-7100"
+    ],
+    "email": "police@barbados.gov.bb",
+    "hours": "Open Monday to Friday: 8:30am to 4:30pm"
+  }
+}

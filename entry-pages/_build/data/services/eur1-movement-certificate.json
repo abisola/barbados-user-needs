@@ -1,0 +1,61 @@
+{
+  "slug": "eur1-movement-certificate",
+  "title": "Apply for an EUR.1 movement certificate",
+  "category": "trade-exports-and-imports",
+  "description": "Get an EUR.1 certificate to claim preferential treatment when exporting to the European Union.",
+  "summary": [
+    "An EUR.1 movement certificate proves that goods you are exporting to the European Union (or other partner countries) qualify for preferential customs treatment under a trade agreement.",
+    "Certificates are issued by the Barbados Customs and Excise Department."
+  ],
+  "before_you_start": {
+    "intro": "You will need to know:",
+    "items": [
+      "the exporter’s and consignee’s name, full address and country",
+      "the country, group of countries or territory of origin",
+      "the country, group of countries or territory of destination",
+      "transport details and the route",
+      "marks and numbers, description of the goods, packages and HS tariff code",
+      "gross weight or other quantity",
+      "invoice number and the basis for claiming origin"
+    ]
+  },
+  "documents": {
+    "intro": "Bring with you:",
+    "items": [
+      {
+        "name": "Commercial invoice"
+      },
+      {
+        "name": "Bill of lading or airway bill"
+      },
+      {
+        "name": "Packing list"
+      },
+      {
+        "name": "Supplier’s declaration or proof of origin",
+        "note": "Showing that the goods meet the rules of origin."
+      }
+    ]
+  },
+  "fees": "Confirm fees with the Customs and Excise Department.",
+  "how_long": "Certificates are usually issued within 3 to 5 working days.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "In person",
+        "content": [
+          "Take the completed EUR.1 movement certificate to the Customs and Excise Department in Bridgetown."
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "agency": "Barbados Customs and Excise Department",
+    "address": "Customs House, Bridge Street\nBridgetown, St. Michael",
+    "phone": [
+      "(246) 535-1300"
+    ],
+    "email": "customs@barbados.gov.bb",
+    "hours": "Open Monday to Friday: 8:15am to 4:30pm"
+  }
+}

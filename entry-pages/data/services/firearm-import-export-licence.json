@@ -1,0 +1,75 @@
+{
+  "slug": "firearm-import-export-licence",
+  "title": "Apply for a licence to import or export a firearm",
+  "category": "firearms",
+  "description": "Apply to bring a firearm into Barbados or send one out of the country.",
+  "summary": [
+    "If you want to bring a firearm into Barbados, or send one out of the country, you need a separate licence from your individual firearm licence. The form for this is Form B under the Firearms Act.",
+    "You can apply if you have a current firearm licence yourself, or if you are a registered dealer, gunsmith, collector or shooting club.",
+    "You need to give the make, model, calibre and serial number of the firearm, plus where it is coming from or going to. The Commissioner of Police reviews every application.",
+    "Customs at the port of arrival or departure will check the licence. Travelling with a firearm without one is a serious offence."
+  ],
+  "who_can_apply": [
+    "an individual with a current firearm licence",
+    "a registered firearms dealer or gunsmith",
+    "a shooting club with a club licence"
+  ],
+  "before_you_start": {
+    "intro": "You will need to know:",
+    "items": [
+      "your full name and address",
+      "the firearm’s make, model, calibre and serial number",
+      "the country it is coming from or going to",
+      "the name and address of the supplier or receiver",
+      "the date you plan to bring it in or send it out"
+    ]
+  },
+  "documents": {
+    "intro": "Bring with you:",
+    "items": [
+      {
+        "name": "Your existing firearm licence"
+      },
+      {
+        "name": "Bill of sale or invoice for the firearm"
+      },
+      {
+        "name": "Two passport-size photographs"
+      },
+      {
+        "name": "Proof of payment of the application fee"
+      }
+    ]
+  },
+  "fees": "Fees depend on the firearm type. Pay at the Barbados Revenue Authority.",
+  "how_long": "A decision usually takes 6 to 10 weeks.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "In person",
+        "content": [
+          "Hand the completed Form B Application for a Licence to Import or Export a Firearm in to Police Headquarters, Roebuck Street, St. Michael."
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "agency": "The Royal Barbados Police Force",
+    "address": "Police Headquarters\nRoebuck Street\nSt. Michael",
+    "phone": [
+      "(246) 430-7100"
+    ],
+    "email": "police@barbados.gov.bb",
+    "hours": "Open Monday to Friday: 8:30am to 4:30pm"
+  },
+  "related": [
+    {
+      "slug": "firearm-licence",
+      "title": "Apply for a firearm licence"
+    }
+  ],
+  "assumptions": [
+    "‘A decision usually takes 6 to 10 weeks’ is an estimate.",
+    "Document list is inferred from common firearms law practice – the form itself does not provide a checklist."
+  ]
+}

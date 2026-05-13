@@ -1,0 +1,83 @@
+{
+  "slug": "import-a-vehicle",
+  "title": "Apply to import a vehicle",
+  "category": "driving-and-transport",
+  "description": "Get permission to bring a car, truck or motorcycle into Barbados.",
+  "summary": [
+    "You must get permission from the Barbados Licensing Authority before you bring a vehicle into Barbados. The Licensing Authority needs to know about you, the vehicle, where it is coming from and how it will be used.",
+    "An import permit is separate from the customs duty you pay when the vehicle actually arrives. The Barbados Revenue Authority handles the duty. The Licensing Authority handles the permit.",
+    "If you qualify for a duty-free concession – for example, as a returning national or a person with a disability – you can apply for that as well so you do not pay customs duty. See ‘Apply for a duty-free vehicle concession’.",
+    "The form is called the Application for the Importation of Vehicles into Barbados. You need it whether the vehicle is new or used, and whether it is coming by sea or by air."
+  ],
+  "before_you_start": {
+    "intro": "You will need to know:",
+    "items": [
+      "your full name, address and contact details",
+      "your National Registration Number",
+      "the country the vehicle is coming from",
+      "the make, model and year of the vehicle",
+      "the chassis number, engine number and cubic capacity",
+      "the body type, colour and seating capacity",
+      "how you will use the vehicle (private, public service, goods, etc.)",
+      "the name of the shipping company and the expected date of arrival"
+    ]
+  },
+  "documents": {
+    "intro": "Bring with you:",
+    "items": [
+      {
+        "name": "Bill of sale",
+        "note": "From the seller or dealership."
+      },
+      {
+        "name": "Export certificate from the country of origin"
+      },
+      {
+        "name": "Bill of lading",
+        "note": "From the shipping company."
+      },
+      {
+        "name": "Photo ID",
+        "note": "Barbados ID card or passport."
+      }
+    ]
+  },
+  "fees": "An import permit application fee is payable to the Barbados Licensing Authority. You will also need to pay customs duties to the Barbados Revenue Authority when the vehicle arrives.",
+  "how_long": "An import permit decision takes around 2 to 4 weeks.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "In person",
+        "content": [
+          "Take the Application for the Importation of Vehicles into Barbados form, plus your supporting documents, to the Barbados Licensing Authority."
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "agency": "Barbados Licensing Authority",
+    "address": "The Pine, East–West Boulevard\nSt. Michael\nBB11000",
+    "phone": [
+      "Pine: (246) 536-0264 or (246) 536-0278",
+      "Holetown: (246) 535-8168 or (246) 535-5169",
+      "Oistins: (246) 535-8147 or (246) 536-8148"
+    ],
+    "email": "BLASupport@barbados.gov.bb",
+    "hours": "Open Monday to Friday: 8:15am to 3:30pm"
+  },
+  "related": [
+    {
+      "slug": "vehicle-inspection",
+      "title": "Get a vehicle inspection"
+    },
+    {
+      "slug": "register-or-renew-a-vehicle",
+      "title": "Register or renew a vehicle"
+    }
+  ],
+  "assumptions": [
+    "Processing time of ‘2 to 4 weeks’ is an estimate. The form does not state how long a decision takes.",
+    "‘An import permit application fee is payable’ is inferred – the form does not state a fee.",
+    "Document list (bill of sale, export certificate, bill of lading, photo ID) is the common BLA practice. The form itself does not enumerate the documents you must attach."
+  ]
+}

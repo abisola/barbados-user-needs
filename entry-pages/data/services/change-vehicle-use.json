@@ -1,0 +1,65 @@
+{
+  "slug": "change-vehicle-use",
+  "title": "Change how you use your vehicle",
+  "category": "driving-and-transport",
+  "description": "Tell the Barbados Licensing Authority if you change how your vehicle is used – for example, from private to commercial.",
+  "summary": [
+    "Your registration record says what the vehicle is used for – for example, private use, hire, goods or public service. The fees and the insurance you need depend on that classification.",
+    "If you change how you use the vehicle, you must apply to the Barbados Licensing Authority for the change to be approved. This is especially important if you are moving from private to commercial use, because commercial use carries different fees and stricter insurance requirements.",
+    "The Licensing Authority may need to inspect the vehicle again before approving the change. Your insurance must also be updated to match the new use before you drive the vehicle commercially.",
+    "The form is a short letter to the Chief Licensing Officer. You confirm the vehicle, the current use and what you want to change it to."
+  ],
+  "before_you_start": {
+    "intro": "You will need to know:",
+    "items": [
+      "your full name and address",
+      "the registration number",
+      "the chassis and engine numbers",
+      "what the vehicle is being used for now and what it will be used for",
+      "a short description of the vehicle"
+    ]
+  },
+  "documents": {
+    "intro": "Bring with you:",
+    "items": [
+      {
+        "name": "Photo ID"
+      },
+      {
+        "name": "Registration card or disc"
+      },
+      {
+        "name": "Updated insurance certificate",
+        "note": "Your insurance must match the new use."
+      }
+    ]
+  },
+  "fees": "A fee may apply depending on the new vehicle class. Confirm at the Licensing Authority.",
+  "how_long": "A decision is usually given within 5 working days.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "In person or by post",
+        "content": [
+          "Take the completed Change of Use of Vehicle letter to the Barbados Licensing Authority, or send it to The Pine, East–West Boulevard, St. Michael."
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "agency": "Barbados Licensing Authority",
+    "address": "The Pine, East–West Boulevard\nSt. Michael\nBB11000",
+    "phone": [
+      "Pine: (246) 536-0264 or (246) 536-0278",
+      "Holetown: (246) 535-8168 or (246) 535-5169",
+      "Oistins: (246) 535-8147 or (246) 536-8148"
+    ],
+    "email": "BLASupport@barbados.gov.bb",
+    "hours": "Open Monday to Friday: 8:15am to 3:30pm"
+  },
+  "assumptions": [
+    "‘A decision is usually given within 5 working days’ is an estimate. The form does not state a processing time.",
+    "‘A fee may apply depending on the new vehicle class’ is inferred from how vehicle classification fees normally work.",
+    "Document list (photo ID, registration card, updated insurance) is inferred from standard practice."
+  ]
+}

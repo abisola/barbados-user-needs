@@ -1,0 +1,52 @@
+{
+  "slug": "nis-direct-deposit",
+  "title": "Set up direct deposit for NIS payments",
+  "category": "national-insurance-and-benefits",
+  "description": "Have your National Insurance benefit paid directly into your bank or credit union account.",
+  "summary": [
+    "You can have your National Insurance benefit paid directly into your bank or credit union account.",
+    "You will need to give us a copy of the header from your account so we know your account number and name match."
+  ],
+  "before_you_start": {
+    "intro": "You will need to know:",
+    "items": [
+      "your National Insurance Number and claim number (if you have one)",
+      "your full name, address and phone number",
+      "the name of your bank or credit union",
+      "your account number and branch"
+    ]
+  },
+  "documents": {
+    "intro": "Bring with you:",
+    "items": [
+      {
+        "name": "National ID card or passport"
+      },
+      {
+        "name": "Bank or credit union account header",
+        "note": "Showing your name and account number. You can usually get this from your branch or from online banking."
+      }
+    ]
+  },
+  "fees": "There is no fee.",
+  "how_long": "Direct deposit is usually active within 1 to 2 payment cycles.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "In person",
+        "content": [
+          "Take the completed Direct Deposit Form to the National Insurance Office."
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "agency": "National Insurance Office",
+    "address": "Culloden Road\nSt. Michael",
+    "phone": [
+      "(246) 467-4000"
+    ],
+    "email": "nationalinsurance@nis.gov.bb",
+    "hours": "Open Monday to Friday: 8:30am to 4:30pm"
+  }
+}

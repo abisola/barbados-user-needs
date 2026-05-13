@@ -1,0 +1,58 @@
+{
+  "slug": "external-company-cancellation",
+  "title": "Cancel an external company",
+  "category": "business-and-companies",
+  "description": "Tell CAIPO that an external (foreign) company is no longer doing business in Barbados.",
+  "summary": [
+    "Under Section 338 of the Companies Act, an external company must tell the Corporate Affairs and Intellectual Property Office when it stops doing business in Barbados.",
+    "The notice of cancellation removes the company from the register of external companies."
+  ],
+  "before_you_start": {
+    "intro": "You will need to know:",
+    "items": [
+      "the name and company number",
+      "the address of the registered office in Barbados",
+      "the names and addresses of the directors",
+      "the date the company stopped doing business in Barbados",
+      "the reason for cancellation"
+    ]
+  },
+  "documents": {
+    "intro": "Bring with you:",
+    "items": [
+      {
+        "name": "Resolution of directors approving cancellation"
+      },
+      {
+        "name": "Statement of accounts up to the cancellation date"
+      },
+      {
+        "name": "Photo ID for the signing officer"
+      },
+      {
+        "name": "Proof of payment of the filing fee"
+      }
+    ]
+  },
+  "fees": "Filing fees are set by CAIPO. Confirm before you submit.",
+  "how_long": "A decision usually takes 4 to 6 weeks.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "Through an attorney-at-law",
+        "content": [
+          "A Barbadian attorney-at-law will file the notice with CAIPO."
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "agency": "Corporate Affairs and Intellectual Property Office (CAIPO)",
+    "address": "Baobab Tower, Ground Floor\nWarrens\nSt. Michael",
+    "phone": [
+      "(246) 535-2401"
+    ],
+    "email": "caipo@caipo.gov.bb",
+    "hours": "Open Monday to Friday: 8:30am to 4:30pm"
+  }
+}

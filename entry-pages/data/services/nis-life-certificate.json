@@ -1,0 +1,55 @@
+{
+  "slug": "nis-life-certificate",
+  "title": "Send a life certificate",
+  "category": "national-insurance-and-benefits",
+  "description": "People claiming an NIS pension must confirm they are alive every six months.",
+  "summary": [
+    "Every six months, the National Insurance Office needs to confirm that someone receiving a pension is still alive. This is the purpose of the Life Certificate.",
+    "You sign the certificate, and an approved witness – for example, a Justice of the Peace, a Notary Public, a Minister of Religion, a Permanent Secretary, or an officer at a Barbadian Consulate or High Commission – signs and stamps it to confirm they have seen you in person.",
+    "Send the completed certificate to the National Insurance Office by 30 June and 31 December every year. If it does not arrive in time, payments may pause until the Office can confirm you are still alive.",
+    "If you are living overseas, the Barbadian Consulate or High Commission near you can act as the witness so you do not have to travel back to Barbados to keep your pension active."
+  ],
+  "before_you_start": {
+    "intro": "You will need:",
+    "items": [
+      "your full name and NIS number",
+      "your address",
+      "an approved witness who can confirm you are alive"
+    ]
+  },
+  "documents": {
+    "intro": "The form must be signed by you and stamped or signed by an approved witness, for example:",
+    "items": [
+      "a Justice of the Peace",
+      "a Notary Public",
+      "a Minister of Religion",
+      "a Permanent Secretary",
+      "an officer at the Barbados Consulate or High Commission"
+    ]
+  },
+  "fees": "There is no fee.",
+  "how_long": "Send the certificate by 30 June and 31 December each year. Payments may pause if it does not arrive in time.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "By post or in person",
+        "content": [
+          "Take or send the completed Life Certificate to the National Insurance Office, Culloden Road, St. Michael."
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "agency": "National Insurance Office",
+    "address": "Culloden Road\nSt. Michael",
+    "phone": [
+      "(246) 467-4000"
+    ],
+    "email": "nationalinsurance@nis.gov.bb",
+    "hours": "Open Monday to Friday: 8:30am to 4:30pm"
+  },
+  "assumptions": [
+    "The deadlines of 30 June and 31 December are inferred from the ‘June and December’ instruction on the form. The form does not state exact dates.",
+    "List of approved witnesses is based on common Barbadian practice. The form itself may list a different set."
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "slug": "get-hired-programme",
+  "title": "Apply for the Get Hired Programme",
+  "category": "youth-and-community",
+  "description": "Apply for the 2026 Get Hired Programme – a Ministry of Youth jobs and employability programme.",
+  "summary": [
+    "Get Hired is a Ministry of Youth, Sports and Community Empowerment programme that helps young Barbadians prepare for and find work.",
+    "You will get training in workplace skills, help with your CV and an interview, and a placement with an employer."
+  ],
+  "who_can_apply": [
+    "Barbadian nationals aged 18 to 35",
+    "people who are out of work or looking to change careers"
+  ],
+  "before_you_start": {
+    "intro": "You will need to know:",
+    "items": [
+      "your full name, address and date of birth",
+      "your National Registration Number",
+      "your email address and phone number",
+      "your highest level of education and any qualifications",
+      "your work history, including dates and roles",
+      "the area of work you want to go into"
+    ]
+  },
+  "documents": {
+    "intro": "Bring with you (or upload):",
+    "items": [
+      {
+        "name": "National ID card"
+      },
+      {
+        "name": "Birth certificate"
+      },
+      {
+        "name": "Most recent CV"
+      },
+      {
+        "name": "Certificates for your qualifications"
+      },
+      {
+        "name": "Recent passport-size photograph"
+      }
+    ]
+  },
+  "fees": "There is no fee.",
+  "how_long": "Applications are usually open for several weeks. You will get a reply within 4 to 6 weeks of the closing date.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "Online",
+        "content": [
+          "Complete the Get Hired Programme: Application Form (2026) on the Ministry website."
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "agency": "Ministry of Youth, Sports and Community Empowerment",
+    "address": "Sky Mall, Haggatt Hall\nSt. Michael",
+    "phone": [
+      "(246) 535-3700"
+    ],
+    "email": "youth@barbados.gov.bb",
+    "hours": "Open Monday to Friday: 8:30am to 4:30pm"
+  }
+}

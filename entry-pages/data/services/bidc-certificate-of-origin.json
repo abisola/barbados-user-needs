@@ -1,0 +1,65 @@
+{
+  "slug": "bidc-certificate-of-origin",
+  "title": "Apply for a BIDC certificate of origin",
+  "category": "trade-exports-and-imports",
+  "description": "Apply for a Barbados Investment and Development Corporation certificate of origin for any export.",
+  "summary": [
+    "Some exports do not fit under one of the CARICOM trade agreements – for example, sales to countries with no specific trade agreement, or sales of products that are not covered by an agreement. For these, the Barbados Investment and Development Corporation issues a general certificate of origin.",
+    "The certificate confirms that the goods were made in Barbados. It can be useful for customs in the destination country, for the buyer’s records, or to claim that goods are eligible for general-system-of-preferences (GSP) rates.",
+    "Manufacturer details go in Part A. Exporter details follow if the exporter is not the same as the manufacturer. You will also need to confirm the goods, the consignee, the country of destination and the transport route.",
+    "Bring an invoice and a packing list, plus proof that the goods were actually made in Barbados (for example, a manufacturer’s declaration or a list of materials and processes)."
+  ],
+  "before_you_start": {
+    "intro": "You will need to know:",
+    "items": [
+      "the manufacturer’s name, address, phone and email",
+      "the exporter’s details, if different",
+      "the consignee’s name and address",
+      "details of the goods (description, packages, weight, value)",
+      "the country of origin and destination",
+      "transport information"
+    ]
+  },
+  "documents": {
+    "intro": "Bring with you:",
+    "items": [
+      {
+        "name": "Commercial invoice"
+      },
+      {
+        "name": "Bill of lading or airway bill"
+      },
+      {
+        "name": "Packing list"
+      },
+      {
+        "name": "Proof that the goods were made in Barbados"
+      }
+    ]
+  },
+  "fees": "Confirm fees with BIDC.",
+  "how_long": "Certificates are usually issued within 3 to 5 working days.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "In person",
+        "content": [
+          "Take the completed Application for Certificate of Origin (Part A: Manufacturer Information) to BIDC at Pelican House."
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "agency": "Barbados Investment and Development Corporation (BIDC)",
+    "address": "Pelican House, Princess Alice Highway\nSt. Michael",
+    "phone": [
+      "(246) 427-5350"
+    ],
+    "email": "info@bidc.com",
+    "hours": "Open Monday to Friday: 8:30am to 4:30pm"
+  },
+  "assumptions": [
+    "‘Certificates are usually issued within 3 to 5 working days’ is an estimate.",
+    "‘Eligible for GSP rates’ is one possible use but not the only one. The certificate is general-purpose."
+  ]
+}

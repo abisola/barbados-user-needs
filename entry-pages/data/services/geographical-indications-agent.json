@@ -1,0 +1,57 @@
+{
+  "slug": "geographical-indications-agent",
+  "title": "Authorise a geographical indications agent",
+  "category": "business-and-companies",
+  "description": "Appoint an agent to act for you in a geographical indications matter under Cap. 320.",
+  "summary": [
+    "Geographical indications protect product names that come from a specific place – for example, ‘Champagne’ or ‘Scotch whisky’. The Geographical Indications Act, Cap. 320 sets out how these protections work in Barbados.",
+    "If you are bringing or responding to a geographical indications matter under the Act, you can appoint an agent – usually an attorney-at-law – to handle the case on your behalf.",
+    "Once the authorisation is filed, CAIPO will send all correspondence about the matter to the agent rather than to you directly. This makes the process simpler if you do not have time to manage it yourself or if you are based overseas.",
+    "The form is the same whether the appointer is an individual or a company. Companies will need a board resolution confirming the appointment."
+  ],
+  "before_you_start": {
+    "intro": "You will need to know:",
+    "items": [
+      "your full name and address (or the name and address of the appointing company)",
+      "the name and address of the agent",
+      "the matter or proceeding being authorised"
+    ]
+  },
+  "documents": {
+    "intro": "Bring with you:",
+    "items": [
+      {
+        "name": "Photo ID for the signing party"
+      },
+      {
+        "name": "Board resolution",
+        "note": "If the appointing party is a company."
+      }
+    ]
+  },
+  "fees": "There is no fee.",
+  "how_long": "Authorisations are recorded within 5 working days.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "In person or by post",
+        "content": [
+          "Take or send the completed Form of Authorisation of Agent to the Corporate Affairs and Intellectual Property Office."
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "agency": "Corporate Affairs and Intellectual Property Office (CAIPO)",
+    "address": "Baobab Tower, Ground Floor\nWarrens\nSt. Michael",
+    "phone": [
+      "(246) 535-2401"
+    ],
+    "email": "caipo@caipo.gov.bb",
+    "hours": "Open Monday to Friday: 8:30am to 4:30pm"
+  },
+  "assumptions": [
+    "‘Authorisations are recorded within 5 working days’ is an estimate.",
+    "‘There is no fee’ is inferred."
+  ]
+}

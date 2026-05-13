@@ -1,0 +1,60 @@
+{
+  "slug": "international-circulation-permit",
+  "title": "Register a vehicle for a temporary stay in Barbados",
+  "category": "driving-and-transport",
+  "description": "Apply for an International Circulation Permit if you are bringing a vehicle into Barbados for a short stay.",
+  "summary": [
+    "If you are bringing a vehicle into Barbados temporarily, you must register it for the length of your stay. The Licensing Authority will issue an International Circulation Permit."
+  ],
+  "before_you_start": {
+    "intro": "You will need to know:",
+    "items": [
+      "your full name, address, phone number and email",
+      "the length of your planned stay",
+      "the registration number, make, model and year of the vehicle",
+      "the engine number and chassis number",
+      "details of your overseas insurance"
+    ]
+  },
+  "documents": {
+    "intro": "Bring with you:",
+    "items": [
+      {
+        "name": "Photo ID or passport"
+      },
+      {
+        "name": "Overseas registration document for the vehicle"
+      },
+      {
+        "name": "Overseas insurance certificate"
+      },
+      {
+        "name": "Carnet de Passage or shipping documents",
+        "note": "If applicable."
+      }
+    ]
+  },
+  "fees": "Fees depend on the length of stay and the vehicle class. Confirm at the Licensing Authority.",
+  "how_long": "Permits are usually issued within 5 working days.",
+  "how_to_apply": {
+    "options": [
+      {
+        "heading": "In person",
+        "content": [
+          "Take the completed Registration of Vehicle for Temporary Stay form and your documents to the Barbados Licensing Authority."
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "agency": "Barbados Licensing Authority",
+    "address": "The Pine, East–West Boulevard\nSt. Michael\nBB11000",
+    "phone": [
+      "Pine: (246) 536-0264 or (246) 536-0278",
+      "Holetown: (246) 535-8168 or (246) 535-5169",
+      "Oistins: (246) 535-8147 or (246) 536-8148"
+    ],
+    "email": "BLASupport@barbados.gov.bb",
+    "hours": "Open Monday to Friday: 8:15am to 3:30pm"
+  }
+}
