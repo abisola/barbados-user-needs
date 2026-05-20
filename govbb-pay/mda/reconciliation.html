@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TSA reconciliation – gov.bb Pay Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300..900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../assets/govbb-config.js"></script>
+  <link rel="stylesheet" href="../assets/govbb-base.css">
+  <link rel="stylesheet" href="../assets/govbb-admin.css">
+</head>
+<body class="font-sans admin-shell" data-active="reconciliation">
+<main class="admin-main">
+
+  <header class="admin-topbar">
+    <div>
+      <h1 class="section-h">Treasury Single Account reconciliation</h1>
+      <p class="section-sub">Daily settlement of gov.bb Pay collections into Barbados Licensing Authority sub-account &hellip;4421.</p>
+    </div>
+    <div class="flex gap-2">
+      <button class="btn btn-secondary">Download statement (PDF)</button>
+      <button class="btn btn-secondary">Export CSV</button>
+    </div>
+  </header>
+
+  <!-- TSA summary -->
+  <section class="grid md:grid-cols-4 gap-3 mb-m">
+    <div class="metric-card"><p class="metric-label">Settled this month</p><p class="metric-value">BDS$642,180</p><p class="metric-delta up">19 settlement batches</p></div>
+    <div class="metric-card"><p class="metric-label">Pending (next settlement)</p><p class="metric-value">BDS$48,120</p><p class="metric-delta flat">21 May, 09:00 AST</p></div>
+    <div class="metric-card"><p class="metric-label">In-flight (today)</p><p class="metric-value">BDS$24,840</p><p class="metric-delta flat">187 payments so far</p></div>
+    <div class="metric-card" style="border-left:4px solid #a42c2c;"><p class="metric-label">Open discrepancies</p><p class="metric-value" style="color:#a42c2c;">1</p><p class="metric-delta down">BDS$320.00 unreconciled</p></div>
+  </section>
+
+  <!-- Discrepancy alert -->
+  <section class="admin-card mb-m" style="border-left:4px solid #a42c2c;">
+    <div class="flex gap-3 items-start flex-wrap">
+      <span class="pill pill-danger">Discrepancy</span>
+      <div class="flex-1 min-w-[16rem]">
+        <p class="font-bold">Settlement batch TSA-2026-05-19-001 is short by BDS$320.00</p>
+        <p class="text-[0.9375rem] text-bb-mid-grey-00 mt-0.5">Gov.bb Pay reported gross of BDS$41,580.00 for 19 May. The TSA bank statement credit to sub-account 4421 was BDS$41,260.00. One in-flight payment (<span class="mono">GP-26-05130-184121</span>) appears to have been authorised but not captured before the cut-off.</p>
+      </div>
+      <button class="btn">Open investigation</button>
+    </div>
+  </section>
+
+  <div class="grid lg:grid-cols-3 gap-3 mb-m">
+    <!-- Settlement waterfall -->
+    <section class="admin-card lg:col-span-2">
+      <h2 class="font-bold text-[1.25rem] mb-s">Next settlement &middot; 21 May 2026</h2>
+      <table class="table" style="border:none;">
+        <tbody>
+          <tr><td>Gross collected (20 May)</td><td class="text-right font-bold">BDS$48,260.00</td></tr>
+          <tr><td>&nbsp;&nbsp;Card (87%)</td><td class="text-right text-bb-mid-grey-00">BDS$41,986.00</td></tr>
+          <tr><td>&nbsp;&nbsp;BimPay (13%)</td><td class="text-right text-bb-mid-grey-00">BDS$6,274.00</td></tr>
+          <tr><td>Less refunds processed today</td><td class="text-right" style="color:#a42c2c;">&ndash; BDS$140.00</td></tr>
+          <tr><td>Less acquirer fees (1.3%)</td><td class="text-right" style="color:#a42c2c;">&ndash; BDS$626.78</td></tr>
+          <tr><td>Less gov.bb Pay platform fee (0% &mdash; absorbed by Treasury)</td><td class="text-right text-bb-mid-grey-00">BDS$0.00</td></tr>
+          <tr style="border-top:2px solid #000;"><td class="font-bold">Net to TSA sub-account 4421</td><td class="text-right font-bold text-[1.25rem]">BDS$47,493.22</td></tr>
+        </tbody>
+      </table>
+      <p class="text-[0.875rem] text-bb-mid-grey-00 mt-s">Funds clear at 09:00 AST the working day after collection.</p>
+    </section>
+
+    <!-- TSA account info -->
+    <aside class="admin-card">
+      <h2 class="font-bold text-[1.25rem] mb-s">Your TSA sub-account</h2>
+      <dl class="kv">
+        <dt>MDA</dt><dd>Barbados Licensing Authority</dd>
+        <dt>Sub-account</dt><dd class="mono">110-4421-001</dd>
+        <dt>Bank</dt><dd>Central Bank of Barbados</dd>
+        <dt>Account type</dt><dd>TSA collection</dd>
+        <dt>Available balance</dt><dd class="font-bold">BDS$96,420.13</dd>
+        <dt>Hold</dt><dd>BDS$1,860.00 (disputes)</dd>
+      </dl>
+      <a class="btn btn-secondary w-full mt-s" href="#">Request transfer to operating account</a>
+    </aside>
+  </div>
+
+  <!-- Settlement batches table -->
+  <section class="admin-card" style="padding:0;">
+    <div style="padding:1rem 1.25rem; border-bottom:1px solid #e0e4e9;" class="flex items-center justify-between flex-wrap gap-2">
+      <h2 class="font-bold text-[1.25rem]">Settlement batches</h2>
+      <div class="flex gap-2 items-center">
+        <select class="input"><option>Last 30 days</option><option>This month</option><option>This quarter</option></select>
+        <select class="input"><option>All states</option><option>Settled</option><option>Pending</option><option>Discrepancy</option></select>
+      </div>
+    </div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Batch ID</th>
+          <th>Collection date</th>
+          <th>Settlement date</th>
+          <th>Payments</th>
+          <th class="text-right">Gross</th>
+          <th class="text-right">Refunds</th>
+          <th class="text-right">Net to TSA</th>
+          <th>State</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="mono"><a class="admin-link" href="#">TSA-2026-05-20-001</a></td>
+          <td>20 May 2026</td>
+          <td>21 May 2026</td>
+          <td>187</td>
+          <td class="text-right">BDS$48,260.00</td>
+          <td class="text-right">&ndash; BDS$140.00</td>
+          <td class="text-right font-bold">BDS$47,493.22</td>
+          <td><span class="pill pill-warn">Pending</span></td>
+        </tr>
+        <tr>
+          <td class="mono"><a class="admin-link" href="#">TSA-2026-05-19-001</a></td>
+          <td>19 May 2026</td>
+          <td>20 May 2026</td>
+          <td>164</td>
+          <td class="text-right">BDS$41,580.00</td>
+          <td class="text-right">&ndash; BDS$320.00</td>
+          <td class="text-right font-bold">BDS$40,723.46</td>
+          <td><span class="diff-flag">Discrepancy &middot; &minus;BDS$320.00</span></td>
+        </tr>
+        <tr>
+          <td class="mono"><a class="admin-link" href="#">TSA-2026-05-18-001</a></td>
+          <td>18 May 2026</td>
+          <td>19 May 2026</td>
+          <td>198</td>
+          <td class="text-right">BDS$52,210.00</td>
+          <td class="text-right">&ndash; BDS$80.00</td>
+          <td class="text-right font-bold">BDS$51,452.27</td>
+          <td><span class="pill pill-success">Settled</span></td>
+        </tr>
+        <tr>
+          <td class="mono"><a class="admin-link" href="#">TSA-2026-05-15-001</a></td>
+          <td>15 May 2026</td>
+          <td>18 May 2026</td>
+          <td>241</td>
+          <td class="text-right">BDS$63,720.00</td>
+          <td class="text-right">&ndash; BDS$400.00</td>
+          <td class="text-right font-bold">BDS$62,496.50</td>
+          <td><span class="pill pill-success">Settled</span></td>
+        </tr>
+        <tr>
+          <td class="mono"><a class="admin-link" href="#">TSA-2026-05-14-001</a></td>
+          <td>14 May 2026</td>
+          <td>15 May 2026</td>
+          <td>222</td>
+          <td class="text-right">BDS$57,180.00</td>
+          <td class="text-right">&ndash; BDS$200.00</td>
+          <td class="text-right font-bold">BDS$56,239.66</td>
+          <td><span class="pill pill-success">Settled</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+</main>
+
+<script src="../assets/govbb-admin-sidebar.js"></script>
+</body>
+</html>

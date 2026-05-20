@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Treasury dashboard – gov.bb Pay</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300..900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../assets/govbb-config.js"></script>
+  <link rel="stylesheet" href="../assets/govbb-base.css">
+  <link rel="stylesheet" href="../assets/govbb-admin.css">
+</head>
+<body class="font-sans admin-shell" data-active="dashboard">
+<main class="admin-main">
+
+  <header class="admin-topbar">
+    <div>
+      <h1 class="section-h">Government-wide collections</h1>
+      <p class="section-sub">Wednesday 20 May 2026 &middot; Good afternoon, Dr. Sealy.</p>
+    </div>
+    <div class="flex gap-2">
+      <select class="input"><option>Last 30 days</option><option>This month to date</option><option>This quarter</option><option>Year to date</option></select>
+      <button class="btn btn-secondary">Download Treasury pack (PDF)</button>
+    </div>
+  </header>
+
+  <!-- Hero metrics -->
+  <section class="grid md:grid-cols-2 lg:grid-cols-4 gap-3 mb-l">
+    <div class="metric-card" style="border-top:3px solid #ffc726;">
+      <p class="metric-label">Collected today</p>
+      <p class="metric-value">BDS$487,240</p>
+      <p class="metric-delta up">&uarr; 11% vs. avg Wed &middot; 3,184 payments</p>
+    </div>
+    <div class="metric-card" style="border-top:3px solid #ffc726;">
+      <p class="metric-label">This month to date</p>
+      <p class="metric-value">BDS$12.4M</p>
+      <p class="metric-delta up">&uarr; 18% vs. May 2025</p>
+    </div>
+    <div class="metric-card" style="border-top:3px solid #ffc726;">
+      <p class="metric-label">Year to date</p>
+      <p class="metric-value">BDS$58.7M</p>
+      <p class="metric-delta up">&uarr; 23% vs. Jan&ndash;May 2025</p>
+    </div>
+    <div class="metric-card" style="border-top:3px solid #ffc726;">
+      <p class="metric-label">TSA balance</p>
+      <p class="metric-value">BDS$8.21M</p>
+      <p class="metric-delta flat">14 active MDA sub-accounts</p>
+    </div>
+  </section>
+
+  <!-- Alert strip -->
+  <section class="admin-card mb-m" style="border-left:4px solid #a42c2c;">
+    <div class="flex items-start gap-3 flex-wrap">
+      <span class="pill pill-danger">Needs review</span>
+      <div class="flex-1 min-w-[16rem]">
+        <p class="font-bold">2 reconciliation discrepancies open across government</p>
+        <p class="text-[0.9375rem] text-bb-mid-grey-00 mt-0.5">
+          Barbados Licensing Authority (BDS$320 short, 19 May) &middot; Royal Barbados Police Force (BDS$50 short, 18 May).
+          Both are in-flight captures that missed the cut-off &mdash; expected to clear on the next settlement, but worth flagging.
+        </p>
+      </div>
+      <a href="reconciliation.html" class="btn">Open reconciliation</a>
+    </div>
+  </section>
+
+  <div class="grid lg:grid-cols-3 gap-3 mb-m">
+
+    <!-- Government revenue trend -->
+    <section class="admin-card lg:col-span-2">
+      <div class="flex items-baseline justify-between mb-s">
+        <div>
+          <h2 class="font-bold text-[1.25rem]">All-government collections, last 30 days</h2>
+          <p class="text-[0.875rem] text-bb-mid-grey-00">Net of refunds &middot; All MDAs combined</p>
+        </div>
+        <div class="text-right">
+          <p class="font-bold text-[1.5rem]">BDS$12.4M</p>
+          <p class="metric-delta up">&uarr; 8.4% vs. previous 30 days</p>
+        </div>
+      </div>
+      <svg viewBox="0 0 600 200" class="w-full h-44" preserveAspectRatio="none" role="img" aria-label="Daily collections trend">
+        <g fill="#00164a">
+          <rect x="6"   y="120" width="14" height="60"/>
+          <rect x="26"  y="95"  width="14" height="85"/>
+          <rect x="46"  y="105" width="14" height="75"/>
+          <rect x="66"  y="78"  width="14" height="102"/>
+          <rect x="86"  y="88"  width="14" height="92"/>
+          <rect x="106" y="135" width="14" height="45"/>
+          <rect x="126" y="150" width="14" height="30"/>
+          <rect x="146" y="90"  width="14" height="90"/>
+          <rect x="166" y="74"  width="14" height="106"/>
+          <rect x="186" y="92"  width="14" height="88"/>
+          <rect x="206" y="68"  width="14" height="112"/>
+          <rect x="226" y="55"  width="14" height="125"/>
+          <rect x="246" y="125" width="14" height="55"/>
+          <rect x="266" y="140" width="14" height="40"/>
+          <rect x="286" y="82"  width="14" height="98"/>
+          <rect x="306" y="64"  width="14" height="116"/>
+          <rect x="326" y="60"  width="14" height="120"/>
+          <rect x="346" y="48"  width="14" height="132"/>
+          <rect x="366" y="72"  width="14" height="108"/>
+          <rect x="386" y="118" width="14" height="62"/>
+          <rect x="406" y="132" width="14" height="48"/>
+          <rect x="426" y="58"  width="14" height="122"/>
+          <rect x="446" y="44"  width="14" height="136"/>
+          <rect x="466" y="50"  width="14" height="130"/>
+          <rect x="486" y="62"  width="14" height="118"/>
+          <rect x="506" y="100" width="14" height="80"/>
+          <rect x="526" y="115" width="14" height="65"/>
+          <rect x="546" y="36"  width="14" height="144"/>
+          <rect x="566" y="40"  width="14" height="140"/>
+        </g>
+        <rect x="586" y="32" width="14" height="148" fill="#ffc726"/>
+        <line x1="0" y1="180" x2="600" y2="180" stroke="#e0e4e9"/>
+        <g font-family="Figtree" font-size="10" fill="#595959">
+          <text x="6" y="196">21 Apr</text>
+          <text x="556" y="196">Today</text>
+        </g>
+      </svg>
+    </section>
+
+    <!-- Channel mix -->
+    <aside class="admin-card">
+      <h2 class="font-bold text-[1.25rem]">Channel mix (today)</h2>
+      <p class="text-[0.875rem] text-bb-mid-grey-00 mb-s">Card vs. BimPay across all MDAs.</p>
+
+      <div class="space-y-2 text-[0.9375rem]">
+        <div class="flex items-center gap-2">
+          <span class="w-3 h-3" style="background:#0e5f64;"></span>
+          <span class="flex-1">Debit/credit card</span>
+          <span class="font-bold">82%</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="w-3 h-3" style="background:#ffc726;"></span>
+          <span class="flex-1">BimPay</span>
+          <span class="font-bold">18%</span>
+        </div>
+      </div>
+      <div class="h-3 mt-s flex overflow-hidden rounded-sm">
+        <div style="width:82%; background:#0e5f64;"></div>
+        <div style="width:18%; background:#ffc726;"></div>
+      </div>
+
+      <hr class="my-s border-bb-grey-00">
+
+      <p class="text-[0.875rem] text-bb-mid-grey-00 mb-xs">BimPay share is growing</p>
+      <dl class="space-y-1 text-[0.9375rem]">
+        <div class="flex justify-between"><dt>Jan 2026</dt><dd>9%</dd></div>
+        <div class="flex justify-between"><dt>Mar 2026</dt><dd>13%</dd></div>
+        <div class="flex justify-between font-bold"><dt>May 2026</dt><dd>18%</dd></div>
+      </dl>
+    </aside>
+  </div>
+
+  <!-- Top MDAs + pending settlement -->
+  <div class="grid lg:grid-cols-3 gap-3 mb-m">
+    <section class="admin-card lg:col-span-2">
+      <div class="flex items-baseline justify-between mb-s">
+        <h2 class="font-bold text-[1.25rem]">Top MDAs by collection (this month)</h2>
+        <a href="mdas.html" class="admin-link text-[0.9375rem]">See all 14 &rarr;</a>
+      </div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>MDA</th>
+            <th class="text-right">Payments</th>
+            <th class="text-right">Gross MTD</th>
+            <th class="text-right">vs. last month</th>
+            <th>Health</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="mdas.html" class="admin-link font-bold">Barbados Revenue Authority</a><br><span class="text-bb-mid-grey-00 text-[0.8125rem]">Land tax, income tax, VAT</span></td>
+            <td class="text-right">12,418</td>
+            <td class="text-right font-bold">BDS$4.82M</td>
+            <td class="text-right" style="color:#00654a;">&uarr; 14%</td>
+            <td><span class="pill pill-success">Healthy</span></td>
+          </tr>
+          <tr>
+            <td><a href="mdas.html" class="admin-link font-bold">Customs and Excise Department</a><br><span class="text-bb-mid-grey-00 text-[0.8125rem]">Duties, import processing</span></td>
+            <td class="text-right">8,204</td>
+            <td class="text-right font-bold">BDS$2.91M</td>
+            <td class="text-right" style="color:#00654a;">&uarr; 22%</td>
+            <td><span class="pill pill-success">Healthy</span></td>
+          </tr>
+          <tr>
+            <td><a href="mdas.html" class="admin-link font-bold">Barbados Immigration Department</a><br><span class="text-bb-mid-grey-00 text-[0.8125rem]">Passports, visas, work permits</span></td>
+            <td class="text-right">4,128</td>
+            <td class="text-right font-bold">BDS$1.64M</td>
+            <td class="text-right" style="color:#00654a;">&uarr; 9%</td>
+            <td><span class="pill pill-success">Healthy</span></td>
+          </tr>
+          <tr>
+            <td><a href="mdas.html" class="admin-link font-bold">Barbados Licensing Authority</a><br><span class="text-bb-mid-grey-00 text-[0.8125rem]">Driver, vehicle, theory test</span></td>
+            <td class="text-right">3,962</td>
+            <td class="text-right font-bold">BDS$1.11M</td>
+            <td class="text-right" style="color:#00654a;">&uarr; 6%</td>
+            <td><span class="diff-flag">1 discrepancy</span></td>
+          </tr>
+          <tr>
+            <td><a href="mdas.html" class="admin-link font-bold">CAIPO</a><br><span class="text-bb-mid-grey-00 text-[0.8125rem]">Company registration, annual returns</span></td>
+            <td class="text-right">2,841</td>
+            <td class="text-right font-bold">BDS$0.84M</td>
+            <td class="text-right" style="color:#a42c2c;">&darr; 3%</td>
+            <td><span class="pill pill-success">Healthy</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Settlement -->
+    <aside class="admin-card">
+      <h2 class="font-bold text-[1.25rem]">Next TSA settlement</h2>
+      <p class="text-[0.875rem] text-bb-mid-grey-00 mb-s">21 May 2026, 09:00 AST.</p>
+      <dl class="space-y-2 text-[0.9375rem]">
+        <div class="flex justify-between"><dt class="text-bb-mid-grey-00">Pending (gross)</dt><dd>BDS$612,420</dd></div>
+        <div class="flex justify-between"><dt class="text-bb-mid-grey-00">Refunds</dt><dd>&ndash; BDS$1,840</dd></div>
+        <div class="flex justify-between"><dt class="text-bb-mid-grey-00">Acquirer fees</dt><dd>&ndash; BDS$7,945</dd></div>
+        <div class="flex justify-between font-bold text-[1.125rem] pt-2 border-t border-bb-grey-00"><dt>Net to TSA</dt><dd>BDS$602,635</dd></div>
+        <div class="flex justify-between"><dt class="text-bb-mid-grey-00">Across</dt><dd>14 sub-accounts</dd></div>
+      </dl>
+      <a href="reconciliation.html" class="btn w-full mt-s">View settlement detail</a>
+    </aside>
+  </div>
+
+  <!-- Approvals snapshot -->
+  <section class="admin-card">
+    <div class="flex items-baseline justify-between mb-s">
+      <div>
+        <h2 class="font-bold text-[1.25rem]">Awaiting your approval</h2>
+        <p class="text-[0.875rem] text-bb-mid-grey-00">Fee changes and new services proposed by MDAs.</p>
+      </div>
+      <a href="approvals.html" class="admin-link text-[0.9375rem]">Open queue &rarr;</a>
+    </div>
+    <table class="table" style="border:none;">
+      <thead>
+        <tr>
+          <th>Request</th>
+          <th>MDA</th>
+          <th>Submitted</th>
+          <th>State</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>New service &middot; Provisional licence application (BDS$60)</td>
+          <td>Barbados Licensing Authority</td>
+          <td>18 May 2026</td>
+          <td><span class="pill pill-warn">Awaiting approval</span></td>
+          <td><a href="approvals.html" class="admin-link">Review</a></td>
+        </tr>
+        <tr>
+          <td>Fee change &middot; Police certificate BDS$50 &rarr; BDS$75</td>
+          <td>Royal Barbados Police Force</td>
+          <td>17 May 2026</td>
+          <td><span class="pill pill-warn">Awaiting approval</span></td>
+          <td><a href="approvals.html" class="admin-link">Review</a></td>
+        </tr>
+        <tr>
+          <td>New MDA &middot; Onboarding for Barbados Drug Service</td>
+          <td>Ministry of Health</td>
+          <td>15 May 2026</td>
+          <td><span class="pill pill-info">In review</span></td>
+          <td><a href="approvals.html" class="admin-link">Review</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+</main>
+
+<script src="../assets/govbb-treasury-sidebar.js"></script>
+</body>
+</html>

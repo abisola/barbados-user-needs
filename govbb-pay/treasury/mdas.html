@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ministries &amp; departments – Treasury – gov.bb Pay</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300..900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../assets/govbb-config.js"></script>
+  <link rel="stylesheet" href="../assets/govbb-base.css">
+  <link rel="stylesheet" href="../assets/govbb-admin.css">
+</head>
+<body class="font-sans admin-shell" data-active="mdas">
+<main class="admin-main">
+
+  <header class="admin-topbar">
+    <div>
+      <h1 class="section-h">Ministries, departments &amp; agencies</h1>
+      <p class="section-sub">Every MDA collecting through gov.bb Pay, with sub-account balances and reconciliation health.</p>
+    </div>
+    <div class="flex gap-2">
+      <button class="btn btn-secondary">Export CSV</button>
+      <button class="btn">Onboard an MDA</button>
+    </div>
+  </header>
+
+  <!-- Filters -->
+  <section class="admin-card mb-m">
+    <div class="grid md:grid-cols-[1fr_10rem_10rem_10rem_auto] gap-2 items-end">
+      <div>
+        <label class="text-[0.8125rem] font-bold text-bb-mid-grey-00 uppercase tracking-wide block mb-1">Search</label>
+        <input class="input w-full" placeholder="MDA name, sub-account, ministry">
+      </div>
+      <div>
+        <label class="text-[0.8125rem] font-bold text-bb-mid-grey-00 uppercase tracking-wide block mb-1">Ministry</label>
+        <select class="input w-full"><option>All ministries</option><option>Finance</option><option>Home Affairs</option><option>Transport</option><option>Health</option><option>Tourism</option></select>
+      </div>
+      <div>
+        <label class="text-[0.8125rem] font-bold text-bb-mid-grey-00 uppercase tracking-wide block mb-1">State</label>
+        <select class="input w-full"><option>All</option><option>Live</option><option>Onboarding</option><option>Paused</option></select>
+      </div>
+      <div>
+        <label class="text-[0.8125rem] font-bold text-bb-mid-grey-00 uppercase tracking-wide block mb-1">Health</label>
+        <select class="input w-full"><option>Any</option><option>Healthy</option><option>Discrepancy</option><option>At risk</option></select>
+      </div>
+      <button class="btn">Apply</button>
+    </div>
+  </section>
+
+  <section class="admin-card" style="padding:0;">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>MDA</th>
+          <th>Sub-account</th>
+          <th>Services</th>
+          <th class="text-right">MTD gross</th>
+          <th class="text-right">TSA balance</th>
+          <th>Health</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <p class="font-bold">Barbados Revenue Authority</p>
+            <p class="text-[0.8125rem] text-bb-mid-grey-00">Ministry of Finance</p>
+          </td>
+          <td class="mono">…2210</td>
+          <td>9 live</td>
+          <td class="text-right font-bold">BDS$4.82M</td>
+          <td class="text-right">BDS$2.91M</td>
+          <td><span class="pill pill-success">Healthy</span></td>
+          <td><a class="admin-link" href="../mda/dashboard.html">Open</a></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="font-bold">Customs and Excise Department</p>
+            <p class="text-[0.8125rem] text-bb-mid-grey-00">Ministry of Finance</p>
+          </td>
+          <td class="mono">…1108</td>
+          <td>6 live</td>
+          <td class="text-right font-bold">BDS$2.91M</td>
+          <td class="text-right">BDS$1.42M</td>
+          <td><span class="pill pill-success">Healthy</span></td>
+          <td><a class="admin-link" href="../mda/dashboard.html">Open</a></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="font-bold">Barbados Immigration Department</p>
+            <p class="text-[0.8125rem] text-bb-mid-grey-00">Ministry of Home Affairs</p>
+          </td>
+          <td class="mono">…3344</td>
+          <td>11 live</td>
+          <td class="text-right font-bold">BDS$1.64M</td>
+          <td class="text-right">BDS$748K</td>
+          <td><span class="pill pill-success">Healthy</span></td>
+          <td><a class="admin-link" href="../mda/dashboard.html">Open</a></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="font-bold">Barbados Licensing Authority</p>
+            <p class="text-[0.8125rem] text-bb-mid-grey-00">Ministry of Transport, Works and Water Resources</p>
+          </td>
+          <td class="mono">…4421</td>
+          <td>5 live &middot; 1 pending</td>
+          <td class="text-right font-bold">BDS$1.11M</td>
+          <td class="text-right">BDS$96K</td>
+          <td><span class="diff-flag">1 discrepancy &middot; &minus;BDS$320</span></td>
+          <td><a class="admin-link" href="../mda/dashboard.html">Open</a></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="font-bold">Corporate Affairs and Intellectual Property Office</p>
+            <p class="text-[0.8125rem] text-bb-mid-grey-00">Ministry of Industry, Innovation &amp; Investment</p>
+          </td>
+          <td class="mono">…5582</td>
+          <td>7 live</td>
+          <td class="text-right font-bold">BDS$842K</td>
+          <td class="text-right">BDS$412K</td>
+          <td><span class="pill pill-success">Healthy</span></td>
+          <td><a class="admin-link" href="../mda/dashboard.html">Open</a></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="font-bold">Royal Barbados Police Force</p>
+            <p class="text-[0.8125rem] text-bb-mid-grey-00">Ministry of Home Affairs</p>
+          </td>
+          <td class="mono">…6190</td>
+          <td>3 live</td>
+          <td class="text-right font-bold">BDS$418K</td>
+          <td class="text-right">BDS$162K</td>
+          <td><span class="diff-flag">1 discrepancy &middot; &minus;BDS$50</span></td>
+          <td><a class="admin-link" href="../mda/dashboard.html">Open</a></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="font-bold">Town and Country Planning Department</p>
+            <p class="text-[0.8125rem] text-bb-mid-grey-00">Ministry of Housing and Lands</p>
+          </td>
+          <td class="mono">…7029</td>
+          <td>4 live</td>
+          <td class="text-right font-bold">BDS$312K</td>
+          <td class="text-right">BDS$96K</td>
+          <td><span class="pill pill-success">Healthy</span></td>
+          <td><a class="admin-link" href="../mda/dashboard.html">Open</a></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="font-bold">Registration Department</p>
+            <p class="text-[0.8125rem] text-bb-mid-grey-00">Ministry of Home Affairs</p>
+          </td>
+          <td class="mono">…8841</td>
+          <td>6 live</td>
+          <td class="text-right font-bold">BDS$184K</td>
+          <td class="text-right">BDS$58K</td>
+          <td><span class="pill pill-success">Healthy</span></td>
+          <td><a class="admin-link" href="../mda/dashboard.html">Open</a></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="font-bold">Barbados Tourism Investment Inc.</p>
+            <p class="text-[0.8125rem] text-bb-mid-grey-00">Ministry of Tourism</p>
+          </td>
+          <td class="mono">…9012</td>
+          <td>2 live</td>
+          <td class="text-right font-bold">BDS$92K</td>
+          <td class="text-right">BDS$41K</td>
+          <td><span class="pill pill-success">Healthy</span></td>
+          <td><a class="admin-link" href="../mda/dashboard.html">Open</a></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="font-bold">Ministry of Labour</p>
+            <p class="text-[0.8125rem] text-bb-mid-grey-00">Work permits, employment services</p>
+          </td>
+          <td class="mono">…1377</td>
+          <td>3 live</td>
+          <td class="text-right font-bold">BDS$78K</td>
+          <td class="text-right">BDS$24K</td>
+          <td><span class="pill pill-success">Healthy</span></td>
+          <td><a class="admin-link" href="../mda/dashboard.html">Open</a></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="font-bold">Barbados Fire Service</p>
+            <p class="text-[0.8125rem] text-bb-mid-grey-00">Ministry of Home Affairs</p>
+          </td>
+          <td class="mono">…2418</td>
+          <td>2 live</td>
+          <td class="text-right font-bold">BDS$54K</td>
+          <td class="text-right">BDS$18K</td>
+          <td><span class="pill pill-success">Healthy</span></td>
+          <td><a class="admin-link" href="../mda/dashboard.html">Open</a></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="font-bold">Ministry of Education</p>
+            <p class="text-[0.8125rem] text-bb-mid-grey-00">Exam fees, school applications</p>
+          </td>
+          <td class="mono">…3554</td>
+          <td>5 live</td>
+          <td class="text-right font-bold">BDS$48K</td>
+          <td class="text-right">BDS$12K</td>
+          <td><span class="pill pill-success">Healthy</span></td>
+          <td><a class="admin-link" href="../mda/dashboard.html">Open</a></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="font-bold">Ministry of Health and Wellness</p>
+            <p class="text-[0.8125rem] text-bb-mid-grey-00">Medical certificates, food handler permits</p>
+          </td>
+          <td class="mono">…4670</td>
+          <td>4 live</td>
+          <td class="text-right font-bold">BDS$36K</td>
+          <td class="text-right">BDS$11K</td>
+          <td><span class="pill pill-success">Healthy</span></td>
+          <td><a class="admin-link" href="../mda/dashboard.html">Open</a></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="font-bold">Barbados Drug Service</p>
+            <p class="text-[0.8125rem] text-bb-mid-grey-00">Pharmacy licences, controlled substances</p>
+          </td>
+          <td class="mono">&mdash;</td>
+          <td>Onboarding</td>
+          <td class="text-right">&mdash;</td>
+          <td class="text-right">&mdash;</td>
+          <td><span class="pill pill-info">Onboarding</span></td>
+          <td><a class="admin-link" href="approvals.html">Review</a></td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr style="background:#f4f6f8;">
+          <td colspan="3" class="font-bold">Total &middot; 14 MDAs</td>
+          <td class="text-right font-bold">BDS$12.4M</td>
+          <td class="text-right font-bold">BDS$8.21M</td>
+          <td colspan="2"><span class="diff-flag">2 open</span></td>
+        </tr>
+      </tfoot>
+    </table>
+  </section>
+
+</main>
+
+<script src="../assets/govbb-treasury-sidebar.js"></script>
+</body>
+</html>

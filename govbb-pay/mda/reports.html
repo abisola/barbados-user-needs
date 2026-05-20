@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reports – gov.bb Pay Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300..900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../assets/govbb-config.js"></script>
+  <link rel="stylesheet" href="../assets/govbb-base.css">
+  <link rel="stylesheet" href="../assets/govbb-admin.css">
+</head>
+<body class="font-sans admin-shell" data-active="reports">
+<main class="admin-main">
+
+  <header class="admin-topbar">
+    <div>
+      <h1 class="section-h">Reports &amp; exports</h1>
+      <p class="section-sub">Pre-built reports for finance and management. Export as CSV, PDF, or schedule for delivery to your inbox.</p>
+    </div>
+    <button class="btn">Build custom report</button>
+  </header>
+
+  <!-- Report cards -->
+  <section class="grid md:grid-cols-2 lg:grid-cols-3 gap-3 mb-m">
+    <div class="admin-card">
+      <p class="pill pill-info">Finance</p>
+      <h2 class="font-bold text-[1.125rem] mt-2">Monthly revenue summary</h2>
+      <p class="text-[0.875rem] text-bb-mid-grey-00 mt-1">Gross, refunds, fees, and net to TSA by service for the calendar month.</p>
+      <div class="flex gap-2 mt-s">
+        <button class="btn btn-secondary">Run for May 2026</button>
+        <button class="btn btn-secondary">CSV</button>
+      </div>
+    </div>
+    <div class="admin-card">
+      <p class="pill pill-info">Finance</p>
+      <h2 class="font-bold text-[1.125rem] mt-2">TSA reconciliation pack</h2>
+      <p class="text-[0.875rem] text-bb-mid-grey-00 mt-1">PDF pack of settlement batches, bank statement match, and any discrepancies for sign-off by the Accountant General.</p>
+      <div class="flex gap-2 mt-s">
+        <button class="btn btn-secondary">Generate for May 2026</button>
+      </div>
+    </div>
+    <div class="admin-card">
+      <p class="pill pill-info">Operations</p>
+      <h2 class="font-bold text-[1.125rem] mt-2">Payments by service</h2>
+      <p class="text-[0.875rem] text-bb-mid-grey-00 mt-1">Volume, value, refund rate, decline rate, and average ticket size per service.</p>
+      <div class="flex gap-2 mt-s">
+        <button class="btn btn-secondary">Last 30 days</button>
+        <button class="btn btn-secondary">CSV</button>
+      </div>
+    </div>
+    <div class="admin-card">
+      <p class="pill pill-info">Operations</p>
+      <h2 class="font-bold text-[1.125rem] mt-2">Channel mix</h2>
+      <p class="text-[0.875rem] text-bb-mid-grey-00 mt-1">Card vs. BimPay split by service and by day of week. Useful for understanding citizen behaviour.</p>
+      <div class="flex gap-2 mt-s">
+        <button class="btn btn-secondary">Last 90 days</button>
+        <button class="btn btn-secondary">CSV</button>
+      </div>
+    </div>
+    <div class="admin-card">
+      <p class="pill pill-info">Risk</p>
+      <h2 class="font-bold text-[1.125rem] mt-2">Decline &amp; fraud report</h2>
+      <p class="text-[0.875rem] text-bb-mid-grey-00 mt-1">Declined payments, fraud rules triggered, and chargeback win rate.</p>
+      <div class="flex gap-2 mt-s">
+        <button class="btn btn-secondary">Last 30 days</button>
+        <button class="btn btn-secondary">PDF</button>
+      </div>
+    </div>
+    <div class="admin-card">
+      <p class="pill pill-info">Audit</p>
+      <h2 class="font-bold text-[1.125rem] mt-2">User activity log</h2>
+      <p class="text-[0.875rem] text-bb-mid-grey-00 mt-1">Every user action over a selected period, suitable for internal audit.</p>
+      <div class="flex gap-2 mt-s">
+        <button class="btn btn-secondary">Last 30 days</button>
+        <button class="btn btn-secondary">CSV</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scheduled exports -->
+  <section class="admin-card" style="padding:0;">
+    <div style="padding:1rem 1.25rem; border-bottom:1px solid #e0e4e9;" class="flex items-center justify-between flex-wrap gap-2">
+      <h2 class="font-bold text-[1.25rem]">Scheduled exports</h2>
+      <button class="btn btn-secondary">+ Schedule a report</button>
+    </div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Report</th>
+          <th>Schedule</th>
+          <th>Recipients</th>
+          <th>Format</th>
+          <th>Next run</th>
+          <th>State</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Monthly revenue summary</td>
+          <td>1st of each month, 09:00 AST</td>
+          <td>3 people</td>
+          <td>CSV + PDF</td>
+          <td>1 Jun 2026</td>
+          <td><span class="pill pill-success">Active</span></td>
+        </tr>
+        <tr>
+          <td>TSA reconciliation pack</td>
+          <td>1st of each month, 09:00 AST</td>
+          <td>Accountant General's Office, 2 people</td>
+          <td>PDF</td>
+          <td>1 Jun 2026</td>
+          <td><span class="pill pill-success">Active</span></td>
+        </tr>
+        <tr>
+          <td>Daily payments summary</td>
+          <td>Mon–Fri, 18:00 AST</td>
+          <td>finance@bla.gov.bb</td>
+          <td>CSV</td>
+          <td>Tomorrow, 18:00</td>
+          <td><span class="pill pill-success">Active</span></td>
+        </tr>
+        <tr>
+          <td>Decline &amp; fraud report</td>
+          <td>Weekly, Mondays 08:00 AST</td>
+          <td>2 people</td>
+          <td>PDF</td>
+          <td>25 May 2026</td>
+          <td><span class="pill pill-neutral">Paused</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+</main>
+
+<script src="../assets/govbb-admin-sidebar.js"></script>
+</body>
+</html>

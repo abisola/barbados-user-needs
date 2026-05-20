@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Approvals queue – Treasury – gov.bb Pay</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300..900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../assets/govbb-config.js"></script>
+  <link rel="stylesheet" href="../assets/govbb-base.css">
+  <link rel="stylesheet" href="../assets/govbb-admin.css">
+</head>
+<body class="font-sans admin-shell" data-active="approvals">
+<main class="admin-main">
+
+  <header class="admin-topbar">
+    <div>
+      <h1 class="section-h">Approvals queue</h1>
+      <p class="section-sub">MDA-submitted fee changes, new services and onboarding requests that need your sign-off.</p>
+    </div>
+    <div class="flex gap-2">
+      <button class="btn btn-secondary">Decision history</button>
+    </div>
+  </header>
+
+  <!-- Summary -->
+  <section class="grid md:grid-cols-4 gap-3 mb-m">
+    <div class="metric-card"><p class="metric-label">Awaiting decision</p><p class="metric-value">5</p><p class="metric-delta flat">Oldest 5 days</p></div>
+    <div class="metric-card"><p class="metric-label">Approved (May)</p><p class="metric-value">11</p><p class="metric-delta up">Avg 1.8 days to decision</p></div>
+    <div class="metric-card"><p class="metric-label">Rejected (May)</p><p class="metric-value">2</p><p class="metric-delta flat">Both fee increases</p></div>
+    <div class="metric-card"><p class="metric-label">Onboarding MDAs</p><p class="metric-value">1</p><p class="metric-delta flat">Barbados Drug Service</p></div>
+  </section>
+
+  <!-- Inline review panel -->
+  <section class="admin-card mb-m">
+    <div class="flex items-start gap-3 flex-wrap">
+      <span class="pill pill-warn">Awaiting your decision</span>
+      <div class="flex-1 min-w-[16rem]">
+        <h2 class="font-bold text-[1.25rem]">Police certificate of character &middot; fee change</h2>
+        <p class="text-[0.9375rem] text-bb-mid-grey-00">Royal Barbados Police Force is proposing to increase the fee from <strong>BDS$50</strong> to <strong>BDS$75</strong>, effective 1 June 2026.</p>
+      </div>
+    </div>
+    <div class="grid md:grid-cols-2 gap-m mt-s">
+      <div>
+        <h3 class="font-bold text-[1.0625rem] mb-xs">Justification provided</h3>
+        <p class="text-[0.9375rem] text-bb-mid-grey-00">
+          Last fee review in 2017. Operating costs for fingerprinting equipment and database access have increased materially. Even at BDS$75 the fee remains below cost recovery. Submitted by Tariq Belgrave, Asst. Commissioner.
+        </p>
+      </div>
+      <div>
+        <h3 class="font-bold text-[1.0625rem] mb-xs">Forecast impact</h3>
+        <dl class="kv">
+          <dt>Volume (12 mo)</dt><dd>~24,000 applications/year</dd>
+          <dt>Current revenue</dt><dd>BDS$1.20M/year</dd>
+          <dt>Forecast revenue</dt><dd>BDS$1.80M/year (+ BDS$600K)</dd>
+          <dt>Citizen impact</dt><dd>Avg cost per applicant up BDS$25</dd>
+          <dt>Comms plan</dt><dd>14-day notice on alpha.gov.bb &amp; press</dd>
+        </dl>
+      </div>
+    </div>
+    <div class="flex flex-wrap gap-2 mt-s items-center">
+      <button class="btn">Approve</button>
+      <button class="btn btn-secondary">Approve with conditions</button>
+      <button class="btn btn-danger">Reject</button>
+      <button class="btn btn-secondary">Request more information</button>
+      <a class="admin-link ml-auto self-center" href="#">View full submission &rarr;</a>
+    </div>
+  </section>
+
+  <!-- Other items -->
+  <section class="admin-card" style="padding:0;">
+    <div style="padding:1rem 1.25rem; border-bottom:1px solid #e0e4e9;" class="flex items-center justify-between flex-wrap gap-2">
+      <h2 class="font-bold text-[1.25rem]">Other items awaiting decision</h2>
+      <select class="input"><option>All types</option><option>Fee change</option><option>New service</option><option>Onboarding</option></select>
+    </div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Request</th>
+          <th>Type</th>
+          <th>MDA</th>
+          <th>Submitted</th>
+          <th>Days waiting</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>New service &middot; Provisional licence application (BDS$60)</td>
+          <td>New service</td>
+          <td>Barbados Licensing Authority</td>
+          <td>18 May 2026</td>
+          <td>2</td>
+          <td><a class="admin-link" href="#">Review</a></td>
+        </tr>
+        <tr>
+          <td>New MDA &middot; Onboarding for Barbados Drug Service</td>
+          <td>Onboarding</td>
+          <td>Ministry of Health</td>
+          <td>15 May 2026</td>
+          <td>5</td>
+          <td><a class="admin-link" href="#">Review</a></td>
+        </tr>
+        <tr>
+          <td>New service &middot; Heavy vehicle inspection fee (BDS$150)</td>
+          <td>New service</td>
+          <td>Barbados Licensing Authority</td>
+          <td>16 May 2026</td>
+          <td>4</td>
+          <td><a class="admin-link" href="#">Review</a></td>
+        </tr>
+        <tr>
+          <td>Fee change &middot; Birth certificate copy BDS$15 &rarr; BDS$20</td>
+          <td>Fee change</td>
+          <td>Registration Department</td>
+          <td>17 May 2026</td>
+          <td>3</td>
+          <td><a class="admin-link" href="#">Review</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Recent decisions -->
+  <section class="admin-card mt-m" style="padding:0;">
+    <div style="padding:1rem 1.25rem; border-bottom:1px solid #e0e4e9;" class="font-bold">Recent decisions</div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Request</th>
+          <th>MDA</th>
+          <th>Decision</th>
+          <th>Decided by</th>
+          <th>Decided</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Fee change &middot; Building permit BDS$120 &rarr; BDS$150</td>
+          <td>Town &amp; Country Planning</td>
+          <td><span class="pill pill-success">Approved</span></td>
+          <td>Dr. Yvette Sealy</td>
+          <td>14 May 2026</td>
+        </tr>
+        <tr>
+          <td>Fee change &middot; Passport renewal BDS$150 &rarr; BDS$200</td>
+          <td>Immigration</td>
+          <td><span class="pill pill-danger">Rejected</span></td>
+          <td>Dr. Yvette Sealy</td>
+          <td>12 May 2026</td>
+        </tr>
+        <tr>
+          <td>New service &middot; Pharmacy licence renewal</td>
+          <td>Ministry of Health</td>
+          <td><span class="pill pill-success">Approved</span></td>
+          <td>Dr. Yvette Sealy</td>
+          <td>9 May 2026</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+</main>
+
+<script src="../assets/govbb-treasury-sidebar.js"></script>
+</body>
+</html>

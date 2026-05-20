@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Licence details – Renew your driver's licence</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300..900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="assets/govbb-config.js"></script>
+  <link rel="stylesheet" href="assets/govbb-base.css">
+</head>
+<body data-govbb-chrome="citizen" class="font-sans">
+
+<main>
+  <div class="container py-l max-w-2xl">
+
+    <a href="application-id.html" class="govbb-link inline-flex items-center gap-xs mb-s">&larr; Back</a>
+
+    <form novalidate onsubmit="event.preventDefault(); window.location.href='application-check.html';">
+      <p class="govbb-caption">Renew your driver's licence</p>
+      <h1 class="font-bold text-[3.5rem] leading-[1.1] mt-xs mb-s">Your current licence</h1>
+
+      <div class="space-y-m">
+        <div class="space-y-xs">
+          <label for="licence-no" class="govbb-label block">Licence number</label>
+          <p class="govbb-hint">8 characters, on the front of your licence</p>
+          <div class="govbb-input-wrap" style="max-width: 16rem;">
+            <input id="licence-no" name="licence-no" class="govbb-input" value="BB-294817">
+          </div>
+        </div>
+
+        <fieldset class="space-y-s">
+          <legend class="govbb-label">How long do you want to renew for?</legend>
+          <p class="govbb-hint">You can change this later.</p>
+          <div class="space-y-2">
+            <label class="flex items-center gap-s p-s border-2 border-bb-grey-00 cursor-pointer hover:bg-bb-teal-10" data-radio="1">
+              <span class="govbb-radio" aria-checked="false" role="radio"></span>
+              <span class="flex-1">
+                <span class="block font-bold text-[1.125rem]">1 year</span>
+                <span class="block text-[1rem] text-bb-mid-grey-00">BDS$80.00</span>
+              </span>
+            </label>
+            <label class="flex items-center gap-s p-s border-2 border-bb-teal-00 cursor-pointer bg-bb-teal-10" data-radio="3">
+              <span class="govbb-radio" aria-checked="true" role="radio"></span>
+              <span class="flex-1">
+                <span class="block font-bold text-[1.125rem]">3 years</span>
+                <span class="block text-[1rem] text-bb-mid-grey-00">BDS$200.00 &middot; Recommended</span>
+              </span>
+            </label>
+            <label class="flex items-center gap-s p-s border-2 border-bb-grey-00 cursor-pointer hover:bg-bb-teal-10" data-radio="5">
+              <span class="govbb-radio" aria-checked="false" role="radio"></span>
+              <span class="flex-1">
+                <span class="block font-bold text-[1.125rem]">5 years</span>
+                <span class="block text-[1rem] text-bb-mid-grey-00">BDS$320.00</span>
+              </span>
+            </label>
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="mt-m">
+        <button type="submit" class="govbb-btn">Continue</button>
+      </div>
+    </form>
+  </div>
+</main>
+
+<script>
+  // Toggle radio selection
+  document.querySelectorAll('[data-radio]').forEach(el => {
+    el.addEventListener('click', () => {
+      document.querySelectorAll('[data-radio]').forEach(other => {
+        other.querySelector('.govbb-radio').setAttribute('aria-checked', 'false');
+        other.classList.remove('border-bb-teal-00','bg-bb-teal-10');
+        other.classList.add('border-bb-grey-00');
+      });
+      el.querySelector('.govbb-radio').setAttribute('aria-checked', 'true');
+      el.classList.remove('border-bb-grey-00');
+      el.classList.add('border-bb-teal-00','bg-bb-teal-10');
+    });
+  });
+</script>
+
+<script src="assets/govbb-chrome.js"></script>
+</body>
+</html>

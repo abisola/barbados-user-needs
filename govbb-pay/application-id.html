@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verify your identity – Renew your driver's licence</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300..900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="assets/govbb-config.js"></script>
+  <link rel="stylesheet" href="assets/govbb-base.css">
+</head>
+<body data-govbb-chrome="citizen" class="font-sans">
+
+<main>
+  <div class="container py-l max-w-2xl">
+
+    <a href="licence-renewal.html" class="govbb-link inline-flex items-center gap-xs mb-s">&larr; Back</a>
+
+    <form novalidate onsubmit="event.preventDefault(); window.location.href='application-licence.html';">
+      <p class="govbb-caption">Renew your driver's licence</p>
+      <h1 class="font-bold text-[3.5rem] leading-[1.1] mt-xs mb-s">Verify your identity</h1>
+      <p class="text-[1.125rem] text-bb-mid-grey-00 mb-m">
+        We use Trident ID to confirm who you are. Enter your National Registration Number and we'll find your details.
+      </p>
+
+      <div class="space-y-s">
+        <label for="national-id" class="govbb-label block">National Registration Number</label>
+        <p class="govbb-hint">For example, 870315-1234</p>
+        <div class="govbb-input-wrap" style="max-width: 18rem;">
+          <input id="national-id" name="national-id" class="govbb-input" inputmode="numeric" placeholder="000000-0000" value="000101-0001">
+        </div>
+      </div>
+
+      <!-- Mocked confirmed identity panel -->
+      <div class="govbb-card mt-m p-s bg-bb-green-10 border-bb-green-100">
+        <p class="govbb-tag govbb-tag--success">Identity confirmed</p>
+        <dl class="mt-s grid grid-cols-[8rem_1fr] gap-y-2 text-[1.0625rem]">
+          <dt class="font-bold">Name</dt><dd>Abisola Fatokun</dd>
+          <dt class="font-bold">Date of birth</dt><dd>01 January 2000</dd>
+          <dt class="font-bold">Email</dt><dd>abisola@fatokun.com</dd>
+          <dt class="font-bold">Mobile</dt><dd>+1 246 555 0182</dd>
+        </dl>
+      </div>
+
+      <div class="mt-m">
+        <button type="submit" class="govbb-btn">Continue</button>
+      </div>
+    </form>
+
+  </div>
+</main>
+
+<script src="assets/govbb-chrome.js"></script>
+</body>
+</html>

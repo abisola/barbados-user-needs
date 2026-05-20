@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payments – gov.bb Pay Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300..900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../assets/govbb-config.js"></script>
+  <link rel="stylesheet" href="../assets/govbb-base.css">
+  <link rel="stylesheet" href="../assets/govbb-admin.css">
+</head>
+<body class="font-sans admin-shell" data-active="payments">
+<main class="admin-main">
+
+  <header class="admin-topbar">
+    <div>
+      <h1 class="section-h">Payments</h1>
+      <p class="section-sub">Every payment received through gov.bb Pay for your MDA.</p>
+    </div>
+    <div class="flex gap-2">
+      <button class="btn btn-secondary">Export CSV</button>
+      <button class="btn btn-secondary">Export PDF</button>
+    </div>
+  </header>
+
+  <!-- Filter bar -->
+  <section class="admin-card mb-m">
+    <div class="grid md:grid-cols-[1fr_12rem_12rem_10rem_10rem_auto] gap-2 items-end">
+      <div>
+        <label class="text-[0.8125rem] font-bold text-bb-mid-grey-00 uppercase tracking-wide block mb-1">Search</label>
+        <input class="input w-full" placeholder="Reference, name, last 4 digits, NRN" value="">
+      </div>
+      <div>
+        <label class="text-[0.8125rem] font-bold text-bb-mid-grey-00 uppercase tracking-wide block mb-1">Date range</label>
+        <select class="input w-full"><option>Last 7 days</option><option>Today</option><option>Yesterday</option><option>Last 30 days</option><option>Custom &hellip;</option></select>
+      </div>
+      <div>
+        <label class="text-[0.8125rem] font-bold text-bb-mid-grey-00 uppercase tracking-wide block mb-1">Service</label>
+        <select class="input w-full"><option>All services</option><option>Driver's licence renewal</option><option>Vehicle reg transfer</option><option>Driving theory test</option></select>
+      </div>
+      <div>
+        <label class="text-[0.8125rem] font-bold text-bb-mid-grey-00 uppercase tracking-wide block mb-1">Status</label>
+        <select class="input w-full"><option>Any status</option><option>Success</option><option>Declined</option><option>Refunded</option><option>3DS pending</option><option>Disputed</option></select>
+      </div>
+      <div>
+        <label class="text-[0.8125rem] font-bold text-bb-mid-grey-00 uppercase tracking-wide block mb-1">Method</label>
+        <select class="input w-full"><option>Any method</option><option>Card</option><option>BimPay</option></select>
+      </div>
+      <button class="btn">Apply</button>
+    </div>
+    <div class="flex flex-wrap gap-2 mt-s">
+      <span class="pill pill-info">Date: Last 7 days</span>
+      <span class="pill pill-info">Service: Driver's licence renewal</span>
+      <a class="admin-link text-[0.875rem]" href="#">Clear all</a>
+    </div>
+  </section>
+
+  <!-- Totals -->
+  <section class="grid md:grid-cols-4 gap-3 mb-m">
+    <div class="metric-card"><p class="metric-label">Matching payments</p><p class="metric-value">1,284</p></div>
+    <div class="metric-card"><p class="metric-label">Gross</p><p class="metric-value">BDS$317,420</p></div>
+    <div class="metric-card"><p class="metric-label">Refunds</p><p class="metric-value">BDS$1,860</p></div>
+    <div class="metric-card"><p class="metric-label">Net</p><p class="metric-value">BDS$315,560</p></div>
+  </section>
+
+  <section class="admin-card" style="padding:0;">
+    <table class="table">
+      <thead>
+        <tr>
+          <th><input type="checkbox"></th>
+          <th>Reference</th>
+          <th>Date &amp; time</th>
+          <th>Applicant</th>
+          <th>Service</th>
+          <th>Method</th>
+          <th class="text-right">Amount</th>
+          <th>Status</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="checkbox"></td>
+          <td class="mono"><a href="payment-detail.html" class="admin-link">GP-26-05140-184392</a></td>
+          <td>20 May, 14:32</td>
+          <td>Abisola Fatokun<br><span class="mono text-bb-mid-grey-00 text-[0.8125rem]">000101-0001</span></td>
+          <td>Driver's licence renewal &middot; 3y</td>
+          <td>Visa &middot; 4242</td>
+          <td class="text-right font-bold">BDS$200.00</td>
+          <td><span class="pill pill-success">Success</span></td>
+          <td><a class="admin-link" href="payment-detail.html">View</a></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox"></td>
+          <td class="mono"><a href="payment-detail.html" class="admin-link">GP-26-05140-184388</a></td>
+          <td>20 May, 14:28</td>
+          <td>Dwayne Alleyne<br><span class="mono text-bb-mid-grey-00 text-[0.8125rem]">910822-5678</span></td>
+          <td>Driving theory test</td>
+          <td>BimPay &middot; 4193</td>
+          <td class="text-right font-bold">BDS$40.00</td>
+          <td><span class="pill pill-success">Success</span></td>
+          <td><a class="admin-link" href="payment-detail.html">View</a></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox"></td>
+          <td class="mono"><a href="payment-detail.html" class="admin-link">GP-26-05140-184377</a></td>
+          <td>20 May, 14:21</td>
+          <td>Keisha Brathwaite<br><span class="mono text-bb-mid-grey-00 text-[0.8125rem]">870315-1234</span></td>
+          <td>Vehicle reg transfer</td>
+          <td>Mastercard &middot; 1182</td>
+          <td class="text-right font-bold">BDS$320.00</td>
+          <td><span class="pill pill-warn">3DS pending</span></td>
+          <td><a class="admin-link" href="payment-detail.html">View</a></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox"></td>
+          <td class="mono"><a href="payment-detail.html" class="admin-link">GP-26-05140-184365</a></td>
+          <td>20 May, 14:09</td>
+          <td>Sandra Cumberbatch<br><span class="mono text-bb-mid-grey-00 text-[0.8125rem]">760510-9012</span></td>
+          <td>Driver's licence renewal &middot; 5y</td>
+          <td>Visa &middot; 7710</td>
+          <td class="text-right font-bold">BDS$320.00</td>
+          <td><span class="pill pill-success">Success</span></td>
+          <td><a class="admin-link" href="payment-detail.html">View</a></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox"></td>
+          <td class="mono"><a href="payment-detail.html" class="admin-link">GP-26-05140-184341</a></td>
+          <td>20 May, 13:58</td>
+          <td>Marcus St. Hill<br><span class="mono text-bb-mid-grey-00 text-[0.8125rem]">880201-6611</span></td>
+          <td>Driver's licence renewal &middot; 1y</td>
+          <td>Visa &middot; 2210</td>
+          <td class="text-right font-bold">BDS$80.00</td>
+          <td><span class="pill pill-danger">Declined</span></td>
+          <td><a class="admin-link" href="payment-detail.html">View</a></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox"></td>
+          <td class="mono"><a href="payment-detail.html" class="admin-link">GP-26-05140-184312</a></td>
+          <td>20 May, 13:32</td>
+          <td>Jamal Holder<br><span class="mono text-bb-mid-grey-00 text-[0.8125rem]">920411-4419</span></td>
+          <td>Provisional licence</td>
+          <td>BimPay &middot; 9981</td>
+          <td class="text-right font-bold">BDS$60.00</td>
+          <td><span class="pill pill-success">Success</span></td>
+          <td><a class="admin-link" href="payment-detail.html">View</a></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox"></td>
+          <td class="mono"><a href="payment-detail.html" class="admin-link">GP-26-05140-184291</a></td>
+          <td>20 May, 13:14</td>
+          <td>Tiana Greaves<br><span class="mono text-bb-mid-grey-00 text-[0.8125rem]">990321-2210</span></td>
+          <td>Driver's licence renewal &middot; 3y</td>
+          <td>Mastercard &middot; 4019</td>
+          <td class="text-right font-bold">BDS$200.00</td>
+          <td><span class="pill pill-neutral">Refunded</span></td>
+          <td><a class="admin-link" href="payment-detail.html">View</a></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox"></td>
+          <td class="mono"><a href="payment-detail.html" class="admin-link">GP-26-05140-184272</a></td>
+          <td>20 May, 12:54</td>
+          <td>Andrew Phillips<br><span class="mono text-bb-mid-grey-00 text-[0.8125rem]">770715-8841</span></td>
+          <td>Vehicle reg transfer</td>
+          <td>Visa &middot; 0099</td>
+          <td class="text-right font-bold">BDS$320.00</td>
+          <td><span class="pill pill-danger">Disputed</span></td>
+          <td><a class="admin-link" href="payment-detail.html">View</a></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="flex items-center justify-between px-3 py-2 text-[0.875rem] text-bb-mid-grey-00 border-t border-bb-grey-00">
+      <span>Showing 1&ndash;8 of 1,284</span>
+      <div class="flex gap-1">
+        <button class="btn btn-secondary" style="padding:.25rem .625rem;" disabled>&larr; Previous</button>
+        <button class="btn btn-secondary" style="padding:.25rem .625rem;">Next &rarr;</button>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<script src="../assets/govbb-admin-sidebar.js"></script>
+</body>
+</html>

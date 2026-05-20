@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services &amp; fees – gov.bb Pay Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300..900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../assets/govbb-config.js"></script>
+  <link rel="stylesheet" href="../assets/govbb-base.css">
+  <link rel="stylesheet" href="../assets/govbb-admin.css">
+</head>
+<body class="font-sans admin-shell" data-active="services">
+<main class="admin-main">
+
+  <header class="admin-topbar">
+    <div>
+      <h1 class="section-h">Services &amp; fees</h1>
+      <p class="section-sub">Define the services you take payment for. Changes to fees need approval from Treasury before they go live.</p>
+    </div>
+    <button class="btn">Add a service</button>
+  </header>
+
+  <section class="admin-card" style="padding:0;">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Service</th>
+          <th>Code</th>
+          <th>Fee structure</th>
+          <th>Settlement account</th>
+          <th>State</th>
+          <th>Last change</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <p class="font-bold">Driver's licence renewal</p>
+            <p class="text-[0.8125rem] text-bb-mid-grey-00">Renew an existing driver's licence for 1, 3, or 5 years.</p>
+          </td>
+          <td class="mono">DLR</td>
+          <td>
+            <p>Tiered:</p>
+            <ul class="text-[0.8125rem] text-bb-mid-grey-00">
+              <li>1y &mdash; BDS$80.00</li>
+              <li>3y &mdash; BDS$200.00</li>
+              <li>5y &mdash; BDS$320.00</li>
+            </ul>
+          </td>
+          <td>BLA &middot; 4421</td>
+          <td><span class="pill pill-success">Live</span></td>
+          <td>2 Apr 2026</td>
+          <td><a class="admin-link" href="#">Edit</a></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="font-bold">Driving theory test booking</p>
+            <p class="text-[0.8125rem] text-bb-mid-grey-00">Book a theory test slot.</p>
+          </td>
+          <td class="mono">DTT</td>
+          <td>Flat &mdash; BDS$40.00</td>
+          <td>BLA &middot; 4421</td>
+          <td><span class="pill pill-success">Live</span></td>
+          <td>11 Feb 2026</td>
+          <td><a class="admin-link" href="#">Edit</a></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="font-bold">Vehicle registration transfer</p>
+            <p class="text-[0.8125rem] text-bb-mid-grey-00">Transfer a vehicle's registered owner.</p>
+          </td>
+          <td class="mono">VRT</td>
+          <td>Flat &mdash; BDS$320.00</td>
+          <td>BLA &middot; 4421</td>
+          <td><span class="pill pill-success">Live</span></td>
+          <td>14 Jan 2026</td>
+          <td><a class="admin-link" href="#">Edit</a></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="font-bold">Provisional licence application</p>
+            <p class="text-[0.8125rem] text-bb-mid-grey-00">For new drivers.</p>
+          </td>
+          <td class="mono">PLA</td>
+          <td>Flat &mdash; BDS$60.00</td>
+          <td>BLA &middot; 4421</td>
+          <td><span class="pill pill-warn">Pending approval</span></td>
+          <td>18 May 2026</td>
+          <td><a class="admin-link" href="#">Review</a></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="font-bold">Heavy vehicle inspection fee</p>
+            <p class="text-[0.8125rem] text-bb-mid-grey-00">For trucks over 3.5 tonnes.</p>
+          </td>
+          <td class="mono">HVI</td>
+          <td>Flat &mdash; BDS$150.00</td>
+          <td>BLA &middot; 4421</td>
+          <td><span class="pill pill-neutral">Draft</span></td>
+          <td>16 May 2026</td>
+          <td><a class="admin-link" href="#">Edit</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Edit panel preview -->
+  <section class="admin-card mt-m">
+    <div class="flex items-baseline justify-between mb-s">
+      <h2 class="font-bold text-[1.25rem]">Driver's licence renewal &middot; configuration</h2>
+      <span class="pill pill-info">Editing</span>
+    </div>
+    <div class="grid md:grid-cols-2 gap-m">
+      <div class="space-y-s">
+        <div>
+          <label class="govbb-label block mb-xs">Service name</label>
+          <div class="govbb-input-wrap"><input class="govbb-input" value="Renew your driver's licence"></div>
+        </div>
+        <div>
+          <label class="govbb-label block mb-xs">Owning department</label>
+          <div class="govbb-input-wrap"><input class="govbb-input" value="Barbados Licensing Authority"></div>
+        </div>
+        <div>
+          <label class="govbb-label block mb-xs">Settlement sub-account</label>
+          <div class="govbb-input-wrap"><input class="govbb-input" value="110-4421-001 &middot; BLA"></div>
+        </div>
+        <div>
+          <label class="govbb-label block mb-xs">Tracking ID prefix</label>
+          <div class="govbb-input-wrap"><input class="govbb-input mono" value="DLR-" style="max-width:8rem;"></div>
+        </div>
+      </div>
+      <div class="space-y-s">
+        <div>
+          <label class="govbb-label block mb-xs">Fee structure</label>
+          <select class="input w-full"><option>Tiered (by option)</option><option>Flat</option><option>Calculated (formula)</option></select>
+        </div>
+        <div class="space-y-2">
+          <p class="text-[0.875rem] font-bold">Tiers</p>
+          <div class="flex gap-2 items-center">
+            <input class="input flex-1" value="1 year">
+            <input class="input" value="BDS$80.00" style="width:8rem;">
+          </div>
+          <div class="flex gap-2 items-center">
+            <input class="input flex-1" value="3 years">
+            <input class="input" value="BDS$200.00" style="width:8rem;">
+          </div>
+          <div class="flex gap-2 items-center">
+            <input class="input flex-1" value="5 years">
+            <input class="input" value="BDS$320.00" style="width:8rem;">
+          </div>
+          <a class="admin-link text-[0.875rem]" href="#">+ Add tier</a>
+        </div>
+        <div>
+          <label class="govbb-label block mb-xs">Accepted payment methods</label>
+          <label class="flex items-center gap-xs"><span class="govbb-checkbox" aria-checked="true" role="checkbox"></span> Debit or credit card</label>
+          <label class="flex items-center gap-xs mt-1"><span class="govbb-checkbox" aria-checked="true" role="checkbox"></span> BimPay</label>
+        </div>
+      </div>
+    </div>
+    <div class="flex gap-2 mt-m">
+      <button class="btn">Submit for Treasury approval</button>
+      <button class="btn btn-secondary">Save as draft</button>
+      <a class="admin-link ml-auto self-center" href="#">View change history (7 changes)</a>
+    </div>
+  </section>
+
+</main>
+
+<script src="../assets/govbb-admin-sidebar.js"></script>
+</body>
+</html>

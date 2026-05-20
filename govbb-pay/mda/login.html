@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign in – gov.bb Pay Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300..900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../assets/govbb-config.js"></script>
+  <link rel="stylesheet" href="../assets/govbb-base.css">
+  <link rel="stylesheet" href="../assets/govbb-admin.css">
+</head>
+<body class="font-sans" style="background:#00164a; min-height:100vh;">
+
+<div class="min-h-screen flex flex-col">
+
+  <!-- Top bar -->
+  <div class="bg-bb-blue-100 text-bb-white-00">
+    <div class="container flex items-center gap-2 py-2 text-[0.875rem]">
+      <img src="https://alpha.gov.bb/_next/image?url=%2Fimages%2Fcoat-of-arms.png&w=48&q=75" alt="" width="20" height="20" style="display:inline-block;">
+      Official government website
+    </div>
+  </div>
+
+  <main class="flex-1 flex items-center justify-center px-4 py-l">
+    <div class="bg-bb-white-00 max-w-md w-full p-m">
+      <p style="color:#ffc726; font-weight:900; letter-spacing:-0.02em; font-size:1.25rem;">gov.bb Pay</p>
+      <p class="text-bb-mid-grey-00 text-[0.875rem] font-bold uppercase tracking-wider" style="margin-top:-2px;">MDA Admin</p>
+
+      <h1 class="font-bold text-[2rem] leading-tight mt-m">Sign in</h1>
+      <p class="text-[1rem] text-bb-mid-grey-00 mt-xs">For staff at Ministries, Departments and Agencies that take payment through gov.bb Pay.</p>
+
+      <form novalidate onsubmit="event.preventDefault(); window.location.href='dashboard.html';" class="mt-m space-y-s">
+        <div>
+          <label for="work-email" class="govbb-label block mb-xs">Work email</label>
+          <div class="govbb-input-wrap">
+            <input id="work-email" class="govbb-input" type="email" value="sandra.cumberbatch@bla.gov.bb">
+          </div>
+        </div>
+        <div>
+          <label for="password" class="govbb-label block mb-xs">Password</label>
+          <div class="govbb-input-wrap">
+            <input id="password" class="govbb-input" type="password" value="••••••••••">
+          </div>
+        </div>
+        <div class="flex items-center justify-between flex-wrap gap-2">
+          <label class="flex items-center gap-xs text-[1rem]">
+            <span class="govbb-checkbox" aria-checked="true" role="checkbox"></span>
+            Trust this device for 30 days
+          </label>
+          <a href="#" class="govbb-link text-[1rem]">Forgot password?</a>
+        </div>
+
+        <button type="submit" class="govbb-btn w-full justify-center mt-s">Sign in with TridentID for Staff</button>
+
+        <p class="text-[0.9375rem] text-bb-mid-grey-00 text-center">
+          New to gov.bb Pay? <a href="#" class="govbb-link">Request access from your MDA admin</a>
+        </p>
+      </form>
+
+      <hr class="my-m border-bb-grey-00">
+
+      <p class="text-[0.9375rem] text-bb-mid-grey-00 text-center">
+        Treasury or Accountant General's Office? <br>
+        <a href="../treasury/dashboard.html" class="govbb-link font-bold">Open the Treasury view &rarr;</a>
+      </p>
+    </div>
+  </main>
+
+  <footer class="text-center text-bb-white-00/70 text-[0.8125rem] py-s">
+    &copy; 2026 Government of Barbados &middot; This service is in alpha
+  </footer>
+</div>
+</body>
+</html>

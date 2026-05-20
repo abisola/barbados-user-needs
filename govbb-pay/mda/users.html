@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Users &amp; audit – gov.bb Pay Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300..900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../assets/govbb-config.js"></script>
+  <link rel="stylesheet" href="../assets/govbb-base.css">
+  <link rel="stylesheet" href="../assets/govbb-admin.css">
+</head>
+<body class="font-sans admin-shell" data-active="users">
+<main class="admin-main">
+
+  <header class="admin-topbar">
+    <div>
+      <h1 class="section-h">Users, roles &amp; audit</h1>
+      <p class="section-sub">Manage who at the BLA can see what in gov.bb Pay, and review every action taken.</p>
+    </div>
+    <button class="btn">Invite a user</button>
+  </header>
+
+  <div class="grid lg:grid-cols-[1fr_22rem] gap-3 mb-m">
+
+    <!-- Users table -->
+    <section class="admin-card" style="padding:0;">
+      <div style="padding:1rem 1.25rem; border-bottom:1px solid #e0e4e9;" class="flex items-center justify-between flex-wrap gap-2">
+        <h2 class="font-bold text-[1.25rem]">Users</h2>
+        <div class="flex gap-2 items-center">
+          <input class="input" placeholder="Search users &hellip;">
+          <select class="input"><option>All roles</option><option>Super admin</option><option>Finance Lead</option><option>Finance Officer</option><option>Viewer</option></select>
+        </div>
+      </div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Role</th>
+            <th>Last sign-in</th>
+            <th>State</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <p class="font-bold">Sandra Cumberbatch</p>
+              <p class="text-[0.8125rem] text-bb-mid-grey-00">sandra.cumberbatch@bla.gov.bb</p>
+            </td>
+            <td>Finance Lead</td>
+            <td>Today, 14:08</td>
+            <td><span class="pill pill-success">Active</span></td>
+            <td><a class="admin-link" href="#">Manage</a></td>
+          </tr>
+          <tr>
+            <td>
+              <p class="font-bold">Janelle Goddard</p>
+              <p class="text-[0.8125rem] text-bb-mid-grey-00">janelle.goddard@bla.gov.bb</p>
+            </td>
+            <td>Finance Officer</td>
+            <td>Today, 12:41</td>
+            <td><span class="pill pill-success">Active</span></td>
+            <td><a class="admin-link" href="#">Manage</a></td>
+          </tr>
+          <tr>
+            <td>
+              <p class="font-bold">Marlon Walcott</p>
+              <p class="text-[0.8125rem] text-bb-mid-grey-00">marlon.walcott@bla.gov.bb</p>
+            </td>
+            <td>Service Owner &middot; DLR</td>
+            <td>Yesterday, 16:22</td>
+            <td><span class="pill pill-success">Active</span></td>
+            <td><a class="admin-link" href="#">Manage</a></td>
+          </tr>
+          <tr>
+            <td>
+              <p class="font-bold">Petra Inniss</p>
+              <p class="text-[0.8125rem] text-bb-mid-grey-00">petra.inniss@bla.gov.bb</p>
+            </td>
+            <td>Viewer</td>
+            <td>17 May, 10:11</td>
+            <td><span class="pill pill-success">Active</span></td>
+            <td><a class="admin-link" href="#">Manage</a></td>
+          </tr>
+          <tr>
+            <td>
+              <p class="font-bold">Devon Burke</p>
+              <p class="text-[0.8125rem] text-bb-mid-grey-00">devon.burke@bla.gov.bb</p>
+            </td>
+            <td>Super admin</td>
+            <td>2 days ago</td>
+            <td><span class="pill pill-success">Active</span></td>
+            <td><a class="admin-link" href="#">Manage</a></td>
+          </tr>
+          <tr>
+            <td>
+              <p class="font-bold">Camille Rock</p>
+              <p class="text-[0.8125rem] text-bb-mid-grey-00">camille.rock@bla.gov.bb</p>
+            </td>
+            <td>Finance Officer</td>
+            <td>10 days ago</td>
+            <td><span class="pill pill-warn">Invited</span></td>
+            <td><a class="admin-link" href="#">Resend invite</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Roles reference -->
+    <aside class="admin-card">
+      <h2 class="font-bold text-[1.125rem] mb-s">Roles</h2>
+      <div class="space-y-s text-[0.9375rem]">
+        <div>
+          <p class="font-bold">Super admin</p>
+          <p class="text-bb-mid-grey-00">All access. Manage users and service config.</p>
+        </div>
+        <div>
+          <p class="font-bold">Finance Lead</p>
+          <p class="text-bb-mid-grey-00">Approve refunds, run TSA reconciliation, export reports.</p>
+        </div>
+        <div>
+          <p class="font-bold">Finance Officer</p>
+          <p class="text-bb-mid-grey-00">Request refunds, view payments, respond to disputes.</p>
+        </div>
+        <div>
+          <p class="font-bold">Service Owner</p>
+          <p class="text-bb-mid-grey-00">Manage fees and copy for a specific service only.</p>
+        </div>
+        <div>
+          <p class="font-bold">Viewer</p>
+          <p class="text-bb-mid-grey-00">Read-only access to payments and reports.</p>
+        </div>
+      </div>
+      <a class="admin-link text-[0.875rem] mt-s block" href="#">Manage role permissions &rarr;</a>
+    </aside>
+  </div>
+
+  <!-- Audit log -->
+  <section class="admin-card" style="padding:0;">
+    <div style="padding:1rem 1.25rem; border-bottom:1px solid #e0e4e9;" class="flex items-center justify-between flex-wrap gap-2">
+      <h2 class="font-bold text-[1.25rem]">Audit log</h2>
+      <div class="flex gap-2">
+        <select class="input"><option>All actions</option><option>Refund</option><option>Service config</option><option>User</option><option>Sign in</option></select>
+        <button class="btn btn-secondary">Export</button>
+      </div>
+    </div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>When</th>
+          <th>User</th>
+          <th>Action</th>
+          <th>Object</th>
+          <th>IP</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>20 May, 14:32</td><td>System</td><td>Payment captured</td><td class="mono">GP-26-05140-184392</td><td>&mdash;</td></tr>
+        <tr><td>20 May, 13:42</td><td>Sandra Cumberbatch</td><td>Refund approved</td><td class="mono">GP-26-05140-184291 &middot; BDS$200.00</td><td>192.0.2.41</td></tr>
+        <tr><td>20 May, 13:40</td><td>Janelle Goddard</td><td>Refund requested</td><td class="mono">GP-26-05140-184291</td><td>192.0.2.42</td></tr>
+        <tr><td>20 May, 11:08</td><td>Janelle Goddard</td><td>Refund requested</td><td class="mono">GP-26-05140-184118</td><td>192.0.2.42</td></tr>
+        <tr><td>20 May, 09:14</td><td>Devon Burke</td><td>Service updated</td><td>Provisional licence application &middot; fee changed to BDS$60.00</td><td>192.0.2.55</td></tr>
+        <tr><td>20 May, 09:02</td><td>Sandra Cumberbatch</td><td>Sign in</td><td>&mdash;</td><td>192.0.2.41</td></tr>
+        <tr><td>19 May, 17:18</td><td>Devon Burke</td><td>User invited</td><td>camille.rock@bla.gov.bb &middot; Finance Officer</td><td>192.0.2.55</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+</main>
+
+<script src="../assets/govbb-admin-sidebar.js"></script>
+</body>
+</html>

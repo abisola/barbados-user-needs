@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard – gov.bb Pay Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300..900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../assets/govbb-config.js"></script>
+  <link rel="stylesheet" href="../assets/govbb-base.css">
+  <link rel="stylesheet" href="../assets/govbb-admin.css">
+</head>
+<body class="font-sans admin-shell" data-active="dashboard">
+<main class="admin-main">
+
+  <header class="admin-topbar">
+    <div>
+      <h1 class="section-h">Today, Wednesday 20 May 2026</h1>
+      <p class="section-sub">Good afternoon, Sandra &mdash; here is what's happening at the Barbados Licensing Authority.</p>
+    </div>
+    <div class="flex gap-2">
+      <button class="btn btn-secondary">Last 30 days &darr;</button>
+      <button class="btn">Export today's report</button>
+    </div>
+  </header>
+
+  <!-- Metric cards -->
+  <section class="grid md:grid-cols-2 lg:grid-cols-4 gap-3 mb-l">
+    <div class="metric-card">
+      <p class="metric-label">Today's revenue</p>
+      <p class="metric-value">BDS$24,840</p>
+      <p class="metric-delta up">&uarr; 12% vs. average Wed</p>
+    </div>
+    <div class="metric-card">
+      <p class="metric-label">Payments today</p>
+      <p class="metric-value">187</p>
+      <p class="metric-delta up">&uarr; 9 vs. yesterday</p>
+    </div>
+    <div class="metric-card">
+      <p class="metric-label">Pending settlement</p>
+      <p class="metric-value">BDS$48,120</p>
+      <p class="metric-delta flat">Settles 21 May 09:00 AST</p>
+    </div>
+    <div class="metric-card">
+      <p class="metric-label">Open disputes</p>
+      <p class="metric-value">3</p>
+      <p class="metric-delta down">1 awaiting your response</p>
+    </div>
+  </section>
+
+  <!-- Alerts -->
+  <section class="admin-card border-l-4 mb-m" style="border-left-color:#a42c2c;">
+    <div class="flex items-start gap-3 flex-wrap">
+      <span class="pill pill-danger">Action needed</span>
+      <div class="flex-1 min-w-[16rem]">
+        <p class="font-bold">1 reconciliation discrepancy on yesterday's settlement</p>
+        <p class="text-[0.9375rem] text-bb-mid-grey-00 mt-0.5">Gross collected does not match the amount credited to TSA sub-account 4421 by BDS$320.00. Open the reconciliation view to review.</p>
+      </div>
+      <a href="reconciliation.html" class="btn">Open reconciliation</a>
+    </div>
+  </section>
+
+  <div class="grid lg:grid-cols-3 gap-3">
+
+    <!-- Revenue chart -->
+    <section class="admin-card lg:col-span-2">
+      <div class="flex items-baseline justify-between mb-s">
+        <div>
+          <h2 class="font-bold text-[1.25rem]">Revenue, last 14 days</h2>
+          <p class="text-[0.875rem] text-bb-mid-grey-00">All services &middot; net of refunds</p>
+        </div>
+        <div class="text-right">
+          <p class="font-bold text-[1.5rem]">BDS$317,420</p>
+          <p class="metric-delta up">&uarr; 8.4% vs. previous 14 days</p>
+        </div>
+      </div>
+      <!-- Inline SVG bar chart -->
+      <svg viewBox="0 0 560 180" class="w-full h-44" preserveAspectRatio="none">
+        <g fill="#0e5f64">
+          <rect x="10"  y="92"  width="28" height="80"/>
+          <rect x="50"  y="74"  width="28" height="98"/>
+          <rect x="90"  y="60"  width="28" height="112"/>
+          <rect x="130" y="80"  width="28" height="92"/>
+          <rect x="170" y="50"  width="28" height="122"/>
+          <rect x="210" y="68"  width="28" height="104"/>
+          <rect x="250" y="44"  width="28" height="128"/>
+          <rect x="290" y="58"  width="28" height="114"/>
+          <rect x="330" y="38"  width="28" height="134"/>
+          <rect x="370" y="56"  width="28" height="116"/>
+          <rect x="410" y="32"  width="28" height="140"/>
+          <rect x="450" y="50"  width="28" height="122"/>
+          <rect x="490" y="28"  width="28" height="144"/>
+        </g>
+        <rect x="530" y="24" width="28" height="148" fill="#30c0c8"/>
+        <line x1="0" y1="172" x2="560" y2="172" stroke="#e0e4e9"/>
+        <g font-family="Figtree" font-size="10" fill="#595959">
+          <text x="14" y="180">7 May</text>
+          <text x="494" y="180">Today</text>
+        </g>
+      </svg>
+    </section>
+
+    <!-- Breakdown by service -->
+    <section class="admin-card">
+      <h2 class="font-bold text-[1.25rem] mb-s">Today by service</h2>
+      <div class="space-y-3 text-[0.9375rem]">
+        <div>
+          <div class="flex justify-between"><span>Driver's licence renewal</span><span class="font-bold">BDS$14,200</span></div>
+          <div class="h-1.5 bg-bb-grey-00 mt-1"><div class="h-full" style="width:57%; background:#0e5f64;"></div></div>
+        </div>
+        <div>
+          <div class="flex justify-between"><span>Vehicle registration transfer</span><span class="font-bold">BDS$6,400</span></div>
+          <div class="h-1.5 bg-bb-grey-00 mt-1"><div class="h-full" style="width:26%; background:#0e5f64;"></div></div>
+        </div>
+        <div>
+          <div class="flex justify-between"><span>Driving theory test booking</span><span class="font-bold">BDS$2,640</span></div>
+          <div class="h-1.5 bg-bb-grey-00 mt-1"><div class="h-full" style="width:11%; background:#0e5f64;"></div></div>
+        </div>
+        <div>
+          <div class="flex justify-between"><span>Provisional licence application</span><span class="font-bold">BDS$1,600</span></div>
+          <div class="h-1.5 bg-bb-grey-00 mt-1"><div class="h-full" style="width:6%; background:#0e5f64;"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recent payments -->
+    <section class="admin-card lg:col-span-2">
+      <div class="flex items-baseline justify-between mb-xs">
+        <h2 class="font-bold text-[1.25rem]">Recent payments</h2>
+        <a href="payments.html" class="admin-link text-[0.9375rem]">View all &rarr;</a>
+      </div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Reference</th>
+            <th>Service</th>
+            <th>Method</th>
+            <th class="text-right">Amount</th>
+            <th>Status</th>
+            <th>Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="mono"><a href="payment-detail.html" class="admin-link">GP-26-05140-184392</a></td>
+            <td>Driver's licence renewal</td>
+            <td>Visa &middot; 4242</td>
+            <td class="text-right font-bold">BDS$200.00</td>
+            <td><span class="pill pill-success">Success</span></td>
+            <td>14:32</td>
+          </tr>
+          <tr>
+            <td class="mono"><a href="payment-detail.html" class="admin-link">GP-26-05140-184388</a></td>
+            <td>Driving theory booking</td>
+            <td>BimPay &middot; 4193</td>
+            <td class="text-right font-bold">BDS$40.00</td>
+            <td><span class="pill pill-success">Success</span></td>
+            <td>14:28</td>
+          </tr>
+          <tr>
+            <td class="mono"><a href="payment-detail.html" class="admin-link">GP-26-05140-184377</a></td>
+            <td>Vehicle reg transfer</td>
+            <td>Mastercard &middot; 1182</td>
+            <td class="text-right font-bold">BDS$320.00</td>
+            <td><span class="pill pill-warn">3DS pending</span></td>
+            <td>14:21</td>
+          </tr>
+          <tr>
+            <td class="mono"><a href="payment-detail.html" class="admin-link">GP-26-05140-184365</a></td>
+            <td>Driver's licence renewal</td>
+            <td>Visa &middot; 7710</td>
+            <td class="text-right font-bold">BDS$320.00</td>
+            <td><span class="pill pill-success">Success</span></td>
+            <td>14:09</td>
+          </tr>
+          <tr>
+            <td class="mono"><a href="payment-detail.html" class="admin-link">GP-26-05140-184341</a></td>
+            <td>Driver's licence renewal</td>
+            <td>Visa &middot; 2210</td>
+            <td class="text-right font-bold">BDS$80.00</td>
+            <td><span class="pill pill-danger">Declined</span></td>
+            <td>13:58</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Settlement panel -->
+    <section class="admin-card">
+      <h2 class="font-bold text-[1.25rem] mb-xs">Next TSA settlement</h2>
+      <p class="text-[0.875rem] text-bb-mid-grey-00 mb-s">Funds clear into your sub-account at 09:00 AST.</p>
+      <dl class="space-y-2 text-[0.9375rem]">
+        <div class="flex justify-between"><dt class="text-bb-mid-grey-00">Settlement date</dt><dd>21 May 2026</dd></div>
+        <div class="flex justify-between"><dt class="text-bb-mid-grey-00">Gross</dt><dd>BDS$48,260.00</dd></div>
+        <div class="flex justify-between"><dt class="text-bb-mid-grey-00">Refunds</dt><dd>&ndash; BDS$140.00</dd></div>
+        <div class="flex justify-between font-bold text-[1.125rem] pt-2 border-t border-bb-grey-00"><dt>Net to TSA</dt><dd>BDS$48,120.00</dd></div>
+        <div class="flex justify-between"><dt class="text-bb-mid-grey-00">Sub-account</dt><dd>&hellip;4421</dd></div>
+      </dl>
+      <a href="reconciliation.html" class="btn btn-secondary mt-s w-full">Open reconciliation</a>
+    </section>
+  </div>
+
+</main>
+
+<script src="../assets/govbb-admin-sidebar.js"></script>
+</body>
+</html>

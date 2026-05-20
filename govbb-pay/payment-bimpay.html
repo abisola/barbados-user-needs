@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Approve in BimPay – Renew your driver's licence</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300..900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="assets/govbb-config.js"></script>
+  <link rel="stylesheet" href="assets/govbb-base.css">
+  <style>
+    .spinner {
+      display: inline-block; width: 1.5rem; height: 1.5rem;
+      border: 3px solid #ace6e9; border-top-color: #0e5f64;
+      border-radius: 50%; animation: spin 1s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+  </style>
+</head>
+<body data-govbb-chrome="citizen" class="font-sans">
+
+<main>
+  <div class="container py-l max-w-2xl">
+
+    <p class="govbb-caption">Renew your driver's licence</p>
+    <h1 class="font-bold text-[3rem] leading-[1.1] mt-xs mb-s">Approve the payment in BimPay</h1>
+    <p class="text-[1.125rem] text-bb-mid-grey-00 mb-m">
+      We've sent a payment request to the BimPay app on the phone ending <span class="govbb-mono">0182</span>. Open the app and approve it.
+    </p>
+
+    <div class="govbb-card p-m space-y-s">
+      <div class="flex items-center gap-s">
+        <span class="spinner" aria-hidden="true"></span>
+        <p class="font-bold text-[1.125rem]">Waiting for approval &hellip;</p>
+      </div>
+
+      <hr class="border-bb-grey-00">
+
+      <dl class="space-y-2 text-[1rem]">
+        <div class="flex justify-between"><dt class="text-bb-mid-grey-00">Service</dt><dd class="font-bold">Driver's licence renewal</dd></div>
+        <div class="flex justify-between"><dt class="text-bb-mid-grey-00">Reference</dt><dd class="govbb-mono">DLR-7K2M-9F4Q</dd></div>
+        <div class="flex justify-between"><dt class="text-bb-mid-grey-00">From wallet</dt><dd>BimPay &middot; ending 0182</dd></div>
+        <div class="flex justify-between text-[1.25rem] font-bold pt-2 border-t border-bb-grey-00"><dt>Amount</dt><dd>BDS$200.00</dd></div>
+      </dl>
+
+      <p class="text-[0.9375rem] text-bb-mid-grey-00">This request expires in 4 minutes 32 seconds.</p>
+    </div>
+
+    <div class="flex flex-wrap items-center gap-m mt-m">
+      <a href="payment-success.html" class="govbb-btn govbb-btn--start">Simulate approval &rarr;</a>
+      <a href="payment.html" class="govbb-link">Cancel and choose another method</a>
+    </div>
+
+    <p class="text-[0.9375rem] text-bb-mid-grey-00 mt-s">
+      Not getting the request? <a class="govbb-link" href="#">Resend</a> or <a class="govbb-link" href="#">try a different phone number</a>.
+    </p>
+
+  </div>
+</main>
+
+<script src="assets/govbb-chrome.js"></script>
+</body>
+</html>

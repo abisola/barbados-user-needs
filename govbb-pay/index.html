@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>gov.bb Pay – prototype index</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300..900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="assets/govbb-config.js"></script>
+  <link rel="stylesheet" href="assets/govbb-base.css">
+</head>
+<body data-govbb-chrome="citizen" class="font-sans">
+
+<main>
+  <div class="container py-l max-w-5xl">
+
+    <p class="govbb-caption">Prototype</p>
+    <h1 class="font-bold text-[3.5rem] leading-[1.1] mt-xs mb-s">gov.bb Pay</h1>
+    <p class="text-[1.25rem] text-bb-mid-grey-00 max-w-2xl mb-l">
+      A central payment service for the Government of Barbados. Citizens pay for government services in one consistent flow. Ministries, Departments and Agencies (MDAs) see what they have earned and reconcile against the Treasury Single Account.
+    </p>
+
+    <div class="grid md:grid-cols-3 gap-m mb-l">
+      <!-- Citizen card -->
+      <a href="pay.html" class="govbb-card govbb-card--accent block p-m hover:bg-bb-teal-10 transition-colors">
+        <span class="govbb-tag govbb-tag--info">Citizen</span>
+        <h2 class="font-bold text-[1.5rem] leading-tight mt-s">Pay for a government service</h2>
+        <p class="text-[1rem] text-bb-mid-grey-00 mt-xs">
+          Choose a service, apply, pay by card or via BimPay, and get a tracking ID.
+        </p>
+        <p class="mt-s font-bold text-bb-teal-00">Start citizen flow &rarr;</p>
+      </a>
+
+      <!-- MDA card -->
+      <a href="mda/login.html" class="govbb-card govbb-card--accent block p-m hover:bg-bb-teal-10 transition-colors">
+        <span class="govbb-tag govbb-tag--info">MDA admin</span>
+        <h2 class="font-bold text-[1.5rem] leading-tight mt-s">gov.bb Pay Admin</h2>
+        <p class="text-[1rem] text-bb-mid-grey-00 mt-xs">
+          For Ministry, Department and Agency staff: payments, refunds, reconciliation, services, users.
+        </p>
+        <p class="mt-s font-bold text-bb-teal-00">Sign in to MDA admin &rarr;</p>
+      </a>
+
+      <!-- Treasury card -->
+      <a href="treasury/dashboard.html" class="govbb-card block p-m hover:bg-bb-yellow-10 transition-colors" style="border-top:4px solid #ffc726;">
+        <span class="govbb-tag govbb-tag--warn">Treasury</span>
+        <h2 class="font-bold text-[1.5rem] leading-tight mt-s">Accountant General view</h2>
+        <p class="text-[1rem] text-bb-mid-grey-00 mt-xs">
+          Government-wide TSA reconciliation, MDA performance, fee-change approvals, audit log.
+        </p>
+        <p class="mt-s font-bold" style="color:#8a5a00;">Open Treasury view &rarr;</p>
+      </a>
+    </div>
+
+    <h2 class="font-bold text-[1.5rem] mb-s">What's in this prototype</h2>
+    <div class="grid md:grid-cols-3 gap-m">
+      <div>
+        <h3 class="font-bold text-[1.25rem] mb-xs">Citizen pages</h3>
+        <ul class="space-y-2 text-[1rem]">
+          <li><a class="govbb-link" href="pay.html">Category – pay for a service</a></li>
+          <li><a class="govbb-link" href="licence-renewal.html">Service guide – renew your driver's licence</a></li>
+          <li><a class="govbb-link" href="application-id.html">Apply – verify identity</a></li>
+          <li><a class="govbb-link" href="application-licence.html">Apply – licence details</a></li>
+          <li><a class="govbb-link" href="application-check.html">Check your answers</a></li>
+          <li><a class="govbb-link" href="payment.html">Payment page (Card + BimPay)</a></li>
+          <li><a class="govbb-link" href="payment-bimpay.html">BimPay – approve in app</a></li>
+          <li><a class="govbb-link" href="payment-success.html">Payment success</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-bold text-[1.25rem] mb-xs">MDA admin pages</h3>
+        <ul class="space-y-2 text-[1rem]">
+          <li><a class="govbb-link" href="mda/login.html">Sign in</a></li>
+          <li><a class="govbb-link" href="mda/dashboard.html">Dashboard</a></li>
+          <li><a class="govbb-link" href="mda/payments.html">Payments list</a></li>
+          <li><a class="govbb-link" href="mda/payment-detail.html">Payment detail</a></li>
+          <li><a class="govbb-link" href="mda/reconciliation.html">TSA reconciliation</a></li>
+          <li><a class="govbb-link" href="mda/refunds.html">Refunds &amp; chargebacks</a></li>
+          <li><a class="govbb-link" href="mda/users.html">Users, roles &amp; audit</a></li>
+          <li><a class="govbb-link" href="mda/services.html">Services &amp; fees</a></li>
+          <li><a class="govbb-link" href="mda/reports.html">Reports &amp; exports</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-bold text-[1.25rem] mb-xs">Treasury pages</h3>
+        <ul class="space-y-2 text-[1rem]">
+          <li><a class="govbb-link" href="treasury/dashboard.html">Treasury dashboard</a></li>
+          <li><a class="govbb-link" href="treasury/mdas.html">Ministries &amp; departments</a></li>
+          <li><a class="govbb-link" href="treasury/reconciliation.html">Cross-MDA TSA reconciliation</a></li>
+          <li><a class="govbb-link" href="treasury/approvals.html">Approvals queue</a></li>
+          <li><a class="govbb-link" href="treasury/audit.html">Government-wide audit log</a></li>
+          <li><a class="govbb-link" href="treasury/reports.html">Treasury reports</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="govbb-card mt-l p-m bg-bb-yellow-10 border-bb-yellow-100">
+      <p class="font-bold mb-xs">Prototype – not a working service</p>
+      <p class="text-[1rem] text-bb-mid-grey-00">All data is mocked. No payments are taken. Forms do not submit anywhere. Built on the alpha.gov.bb design system.</p>
+    </div>
+
+  </div>
+</main>
+
+<script src="assets/govbb-chrome.js"></script>
+</body>
+</html>

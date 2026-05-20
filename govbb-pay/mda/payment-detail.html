@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment GP-26-05140-184392 – gov.bb Pay Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300..900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../assets/govbb-config.js"></script>
+  <link rel="stylesheet" href="../assets/govbb-base.css">
+  <link rel="stylesheet" href="../assets/govbb-admin.css">
+</head>
+<body class="font-sans admin-shell" data-active="payments">
+<main class="admin-main">
+
+  <p class="text-[0.875rem] mb-1"><a class="admin-link" href="payments.html">&larr; Back to payments</a></p>
+
+  <header class="admin-topbar">
+    <div>
+      <p class="mono text-bb-mid-grey-00 text-[0.9375rem]">GP-26-05140-184392</p>
+      <h1 class="section-h flex items-center gap-2 flex-wrap">
+        BDS$200.00
+        <span class="pill pill-success">Success</span>
+      </h1>
+      <p class="section-sub">20 May 2026, 14:32:08 AST &middot; Visa ending 4242 &middot; Driver's licence renewal</p>
+    </div>
+    <div class="flex gap-2">
+      <button class="btn btn-secondary">Resend receipt</button>
+      <a class="btn btn-secondary" href="refunds.html">Issue refund</a>
+    </div>
+  </header>
+
+  <div class="grid lg:grid-cols-3 gap-3">
+
+    <!-- Main column -->
+    <div class="lg:col-span-2 space-y-3">
+
+      <section class="admin-card">
+        <h2 class="font-bold text-[1.125rem] mb-s">Payment</h2>
+        <dl class="kv">
+          <dt>gov.bb Pay reference</dt><dd class="mono">GP-26-05140-184392</dd>
+          <dt>MDA tracking ID</dt><dd class="mono">DLR-7K2M-9F4Q</dd>
+          <dt>Service</dt><dd>Driver's licence renewal &middot; 3 years</dd>
+          <dt>Owning MDA</dt><dd>Barbados Licensing Authority</dd>
+          <dt>Amount</dt><dd>BDS$200.00</dd>
+          <dt>Processing fee</dt><dd>BDS$0.00 (paid by MDA)</dd>
+          <dt>Net to MDA</dt><dd>BDS$197.40 <span class="text-bb-mid-grey-00">(1.3% acquirer fee deducted at settlement)</span></dd>
+        </dl>
+      </section>
+
+      <section class="admin-card">
+        <h2 class="font-bold text-[1.125rem] mb-s">Card details</h2>
+        <dl class="kv">
+          <dt>Brand</dt><dd>Visa</dd>
+          <dt>Card</dt><dd>•••• •••• •••• 4242</dd>
+          <dt>Expiry</dt><dd>04 / 28</dd>
+          <dt>3D Secure</dt><dd>Passed (frictionless)</dd>
+          <dt>AVS result</dt><dd>Match (postal &amp; street)</dd>
+          <dt>CVC check</dt><dd>Match</dd>
+          <dt>Issuer</dt><dd>Republic Bank (Barbados) Ltd.</dd>
+        </dl>
+      </section>
+
+      <section class="admin-card">
+        <h2 class="font-bold text-[1.125rem] mb-s">Applicant</h2>
+        <dl class="kv">
+          <dt>Name</dt><dd>Abisola Fatokun</dd>
+          <dt>NRN</dt><dd class="mono">000101-0001</dd>
+          <dt>Email</dt><dd><a class="admin-link" href="#">abisola@fatokun.com</a></dd>
+          <dt>Mobile</dt><dd>+1 246 555 0182</dd>
+          <dt>Billing postal code</dt><dd>BB11000</dd>
+        </dl>
+      </section>
+
+      <section class="admin-card">
+        <h2 class="font-bold text-[1.125rem] mb-s">Event timeline</h2>
+        <ol class="space-y-3 text-[0.9375rem]">
+          <li class="grid grid-cols-[8rem_1fr] gap-3">
+            <span class="text-bb-mid-grey-00 mono">14:32:08</span>
+            <span><strong>Payment succeeded.</strong> Card authorised by issuer (auth code 8KH92Q). Receipt emailed.</span>
+          </li>
+          <li class="grid grid-cols-[8rem_1fr] gap-3">
+            <span class="text-bb-mid-grey-00 mono">14:32:06</span>
+            <span><strong>3D Secure</strong> completed frictionlessly.</span>
+          </li>
+          <li class="grid grid-cols-[8rem_1fr] gap-3">
+            <span class="text-bb-mid-grey-00 mono">14:31:54</span>
+            <span><strong>Payment initiated</strong> by applicant. Trident ID confirmed at 14:30:11.</span>
+          </li>
+          <li class="grid grid-cols-[8rem_1fr] gap-3">
+            <span class="text-bb-mid-grey-00 mono">14:31:54</span>
+            <span><strong>Application created</strong> by Driver's Licence Renewal service.</span>
+          </li>
+        </ol>
+      </section>
+    </div>
+
+    <!-- Side column -->
+    <aside class="space-y-3">
+      <section class="admin-card">
+        <h2 class="font-bold text-[1.125rem] mb-s">Settlement</h2>
+        <dl class="kv">
+          <dt>State</dt><dd><span class="pill pill-warn">Pending settlement</span></dd>
+          <dt>Settlement date</dt><dd>21 May 2026</dd>
+          <dt>Settlement batch</dt><dd class="mono"><a class="admin-link" href="reconciliation.html">TSA-2026-05-21-001</a></dd>
+          <dt>Sub-account</dt><dd>BLA &middot; ending 4421</dd>
+        </dl>
+      </section>
+
+      <section class="admin-card">
+        <h2 class="font-bold text-[1.125rem] mb-s">Actions</h2>
+        <div class="flex flex-col gap-2">
+          <button class="btn btn-secondary">Resend receipt to applicant</button>
+          <a class="btn btn-secondary" href="refunds.html">Start refund</a>
+          <button class="btn btn-secondary">Export receipt as PDF</button>
+          <button class="btn btn-secondary">View in service backend</button>
+          <button class="btn btn-danger">Flag as fraud</button>
+        </div>
+      </section>
+
+      <section class="admin-card">
+        <h2 class="font-bold text-[1.125rem] mb-s">Notes</h2>
+        <p class="text-[0.875rem] text-bb-mid-grey-00 mb-2">Visible to MDA staff only.</p>
+        <textarea class="input w-full" rows="3" placeholder="Add a note &hellip;"></textarea>
+        <button class="btn btn-secondary mt-2">Add note</button>
+      </section>
+    </aside>
+  </div>
+
+</main>
+
+<script src="../assets/govbb-admin-sidebar.js"></script>
+</body>
+</html>

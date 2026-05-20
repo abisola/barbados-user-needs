@@ -1,0 +1,99 @@
+/* Small overrides on top of Tailwind for alpha.gov.bb prototypes */
+
+html { font-family: Figtree, -apple-system, system-ui, "Segoe UI", Roboto, sans-serif; }
+body { color: #000; background: #fff; }
+
+.container { max-width: 1200px; margin-left: auto; margin-right: auto; padding-left: 1rem; padding-right: 1rem; }
+@media (min-width: 768px) { .container { padding-left: 1.5rem; padding-right: 1.5rem; } }
+
+/* Standard alpha.gov.bb link treatment */
+.govbb-link {
+  color: #0e5f64;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.govbb-link:hover { text-decoration: none; background: #eaf9f9; color: #000; }
+.govbb-link:focus-visible { background: #ffc726; color: #000; text-decoration: none; outline: none; }
+
+/* Primary button */
+.govbb-btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
+  font-size: 1.25rem; line-height: 1.7; font-weight: 600;
+  background: #0e5f64; color: #fff;
+  padding: 1rem 1.5rem; border-radius: 0.125rem;
+  transition: background 200ms, box-shadow 200ms; outline: none;
+}
+.govbb-btn:hover { background: #1a777d; box-shadow: inset 0 0 0 4px rgba(222,245,246,0.10); }
+.govbb-btn:active { background: #0a4549; }
+.govbb-btn:focus-visible { box-shadow: 0 0 0 1px #fff, 0 0 0 5px #30c0c8; }
+.govbb-btn--secondary {
+  background: #fff; color: #0e5f64; box-shadow: inset 0 0 0 2px #0e5f64;
+}
+.govbb-btn--secondary:hover { background: #eaf9f9; color: #000; box-shadow: inset 0 0 0 2px #000; }
+.govbb-btn--start { background: #00654a; }
+.govbb-btn--start:hover { background: #15835f; }
+
+/* Form input */
+.govbb-input-wrap {
+  position: relative; display: inline-flex; width: 100%;
+  border-radius: 0.125rem; border: 2px solid #000;
+  align-items: center; background: #fff; transition: box-shadow 200ms;
+}
+.govbb-input-wrap:focus-within { box-shadow: 0 0 0 4px #30c0c8; }
+.govbb-input-wrap--error { border-color: #a42c2c; }
+.govbb-input {
+  width: 100%; min-width: 0; padding: 1rem; outline: none;
+  border-radius: inherit; background: transparent; font-size: 1.25rem;
+}
+.govbb-input::placeholder { color: rgba(0,0,0,0.5); }
+
+.govbb-label { font-size: 1.25rem; line-height: 1.4; font-weight: 700; color: #000; }
+.govbb-hint  { font-size: 1.125rem; line-height: 1.4; color: #595959; }
+.govbb-error { font-size: 1.125rem; line-height: 1.4; color: #a42c2c; font-weight: 700; }
+
+.govbb-caption {
+  border-left: 4px solid #99a8cc; padding: 0.5rem 0 0.5rem 1rem;
+  color: #595959; font-size: 1.125rem;
+}
+
+/* Radio (visual only) */
+.govbb-radio {
+  display: inline-block; width: 2.5rem; height: 2.5rem; min-width: 2.5rem;
+  border: 2px solid #000; border-radius: 9999px; background: #fff;
+  position: relative; flex-shrink: 0;
+}
+.govbb-radio[aria-checked="true"]::after {
+  content: ''; position: absolute; inset: 0.5rem;
+  background: #0e5f64; border-radius: 9999px;
+}
+
+/* Checkbox */
+.govbb-checkbox {
+  display: inline-block; width: 2rem; height: 2rem; min-width: 2rem;
+  border: 2px solid #000; background: #fff; flex-shrink: 0; position: relative;
+}
+.govbb-checkbox[aria-checked="true"] { background: #0e5f64; }
+.govbb-checkbox[aria-checked="true"]::after {
+  content: ''; position: absolute; left: 0.45rem; top: 0.1rem;
+  width: 0.6rem; height: 1.1rem; border: solid #fff; border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+/* Card */
+.govbb-card { border: 1px solid #e0e4e9; background: #fff; }
+.govbb-card--accent { border-top: 4px solid #0e5f64; }
+
+/* Tag */
+.govbb-tag {
+  display: inline-block; padding: 0.25rem 0.5rem;
+  font-size: 0.875rem; font-weight: 700; line-height: 1; letter-spacing: 0.02em;
+  text-transform: uppercase; border-radius: 0.125rem;
+}
+.govbb-tag--success { background: #e9f9f3; color: #00654a; }
+.govbb-tag--info    { background: #e5e9f2; color: #00267f; }
+.govbb-tag--warn    { background: #fff9e9; color: #8a5a00; }
+.govbb-tag--danger  { background: #fff0f0; color: #a42c2c; }
+.govbb-tag--neutral { background: #e0e4e9; color: #000; }
+
+/* Monospace tracking IDs / refs */
+.govbb-mono { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; }
