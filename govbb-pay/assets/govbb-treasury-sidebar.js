@@ -49,7 +49,7 @@
       `).join('')}
     </nav>
     <div class="user">
-      <p style="font-weight:700;">Dr. Yvette Sealy</p>
+      <p style="font-weight:700;">Ingrid Blunt</p>
       <p style="opacity:.7;">Accountant General</p>
       <p style="margin-top:.5rem;"><a href="../mda/login.html">Sign out</a></p>
     </div>

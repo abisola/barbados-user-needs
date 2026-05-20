@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 44" role="img" aria-label="BiMPay">
+  <!-- B icon -->
+  <g transform="translate(2,2)">
+    <!-- Top bump (teal) -->
+    <path d="M2 0 H14 C25 0 30 6 30 12 C30 17 25 22 16 22 H2 Z" fill="#22b9d8"/>
+    <!-- Bottom bump (navy) -->
+    <path d="M2 22 H16 C26 22 32 28 32 34 C32 38 26 40 14 40 H2 Z" fill="#0e2b5e"/>
+    <!-- Left stem (navy) -->
+    <rect x="0" y="0" width="6" height="40" fill="#0e2b5e"/>
+    <!-- Diagonal slash overlay (lighter navy) -->
+    <path d="M-2 8 L34 -6 L36 -2 L0 12 Z" fill="#1a3d7a" opacity="0.9"/>
+    <!-- Highlight on slash (cyan accent) -->
+    <path d="M-2 11 L34 -3 L34 -1 L-1 13 Z" fill="#22b9d8" opacity="0.55"/>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="48" y="32" font-family="Figtree, system-ui, -apple-system, sans-serif" font-weight="900" font-size="28" letter-spacing="-1" fill="#0e2b5e">BiM<tspan fill="#22b9d8">Pay</tspan></text>
+</svg>
